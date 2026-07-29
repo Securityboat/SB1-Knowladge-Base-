@@ -8,7 +8,7 @@ marketplace where you bid. If someone wants *you* specifically, it shows up here
 
 ### Navigation
 
-Click **Invites** in the sidebar. (RESEARCHER / Lead Researcher only.)
+Click **Invites** in the sidebar. (Researcher / Lead Researcher only.)
 
 ---
 

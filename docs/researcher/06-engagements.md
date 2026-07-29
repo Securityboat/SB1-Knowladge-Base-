@@ -17,8 +17,7 @@ coverage checklist, and — most importantly — where you **submit findings**.
 | Read the engagement (brief, assets, coverage, findings) | ✅ | ✅ |
 | Submit findings (from the Findings tab) | ✅ | ✅ |
 | Draft the report narrative + submit for review | ❌ | ✅ |
-| Approve the report | ❌ | ❌ (that's TPM/CSM/admin) |
-| See the **Reports** tab | ❌ | ✅ (to draft) |
+| Approve the report | ❌ | ❌ (that's admin) |
 
 ### Navigation
 

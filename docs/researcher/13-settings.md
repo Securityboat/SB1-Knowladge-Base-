@@ -8,8 +8,7 @@ paid. Tabs: **Account**, **MFA Setup**, **Payouts**, **Notifications**.
 
 ### Navigation
 
-Click **Settings** (bottom of the sidebar) → opens on **Account**
-(`/settings/account`).
+Click **Settings** (bottom of the sidebar) → opens on **Account**.
 
 ---
 
@@ -39,7 +38,7 @@ Click **Settings** (bottom of the sidebar) → opens on **Account**
 
 ### 13.2 MFA Setup
 
-`/settings/mfa` manages multi-factor authentication (WorkOS). Enable it — your
+Manage multi-factor authentication from this section. Enable it — your
 account carries findings, contracts, and payout details.
 
 ### 13.3 Payouts

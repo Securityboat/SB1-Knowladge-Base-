@@ -14,7 +14,7 @@ an engagement opens for bids. You browse, find work that fits your skills, and
 
 ### Navigation
 
-Click **Opportunities** in the sidebar. (RESEARCHER /
+Click **Opportunities** in the sidebar. (Researcher /
 Lead Researcher only.)
 
 ---

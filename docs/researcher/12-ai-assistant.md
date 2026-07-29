@@ -8,7 +8,7 @@ you're part of. It's permission-scoped and respects the platform's visibility ru
 
 ### Navigation
 
-Click **AI Assistant** in the sidebar (`/ai-chat`).
+Click **AI Assistant** in the sidebar.
 
 ---
 

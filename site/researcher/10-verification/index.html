@@ -1964,8 +1964,8 @@ your profile shows a <strong>Verified</strong> status to both you and SecurityBo
 <p>Verification is what <strong>unlocks platform capabilities such as payouts and premium
 work opportunities</strong>. You cannot start it yourself out of the blue; it becomes
 available after an administrator requests it.</p>
-<p><strong>Data privacy &amp; security:</strong> Verification is powered by <strong>Didit</strong>, SecurityBoat's
-identity provider, which performs the actual <strong>ID-document check</strong> and <strong>face match</strong>.
+<p><strong>Data privacy &amp; security:</strong> Verification is powered by SecurityBoat's identity
+provider, which performs the actual <strong>ID-document check</strong> and <strong>face match</strong>.
 SecurityBoat never sees or stores your raw documents — it receives only the
 provider's structured result (document type, name, date of birth, a masked document
 number, face-match score, and the decision).</p>
@@ -1982,22 +1982,22 @@ number, face-match score, and the decision).</p>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                                            │
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                                            ▼ Scan QR code on your phone
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                                    On phone: choose ID type (passport,
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                                    Aadhaar, driving licence, voter ID)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                                    driving licence, national ID card)
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                                    → photograph document → face match
 <a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>                                            │
 <a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>                                            ▼ Complete mobile flow
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Status updates: APPROVED /          Outcome reconciled automatically;
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>PENDING_REVIEW / DECLINED    ◀──    Verified status updates on profile
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Status updates: Approved /          Outcome reconciled automatically;
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>Pending Review / Declined    ◀──    Verified status updates on profile
 </code></pre></div>
 <p><strong>Verification statuses you may experience:</strong>
-- <strong>Not Requested (<code>NOT_REQUESTED</code>)</strong>: Initial state before an admin requests verification.
-- <strong>Requested / Notification Sent (<code>REQUESTED</code> / <code>NOTIFICATION_SENT</code>)</strong>: Verification has been requested by staff and a prompt is available.
-- <strong>In Progress (<code>STARTED</code> / <code>DOCUMENT_VERIFICATION</code> / <code>FACE_MATCH</code>)</strong>: You have opened the flow and are uploading documents or completing face match on your phone.
-- <strong>Under Review (<code>PENDING_REVIEW</code>)</strong>: Verification completed and awaiting administrator sign-off.
-- <strong>Verified (<code>APPROVED</code>)</strong>: Verification successful. "Verified" status active on your profile.
-- <strong>Resubmission Required (<code>RESUBMISSION_REQUIRED</code>)</strong>: Staff requested you re-run the verification process with clearer inputs.
-- <strong>Declined (<code>DECLINED</code>)</strong>: Verification check was rejected.
-- <strong>Expired / Incomplete (<code>FAILED</code> / <code>EXPIRED</code> / <code>ABANDONED</code>)</strong>: Session timed out or was closed before finishing.</p>
+- <strong>Not Requested</strong>: Initial state before an admin requests verification.
+- <strong>Requested</strong>: Verification has been requested by staff and a prompt is available.
+- <strong>In Progress</strong>: You have opened the flow and are uploading documents or completing face match on your phone.
+- <strong>Under Review</strong>: Verification completed and awaiting administrator sign-off.
+- <strong>Verified</strong>: Verification successful. "Verified" status active on your profile.
+- <strong>Resubmission Required</strong>: Staff requested you re-run the verification process with clearer inputs.
+- <strong>Declined</strong>: Verification check was rejected.
+- <strong>Expired / Incomplete</strong>: Session timed out or was closed before finishing.</p>
 <hr />
 <h3 id="102-receiving-the-prompt">10.2 Receiving the prompt</h3>
 <p>As soon as an administrator requests your verification, two things happen:</p>
@@ -2010,12 +2010,11 @@ number, face-match score, and the decision).</p>
 <p><strong>On your Dashboard:</strong></p>
 <p><img alt="Researcher dashboard — the Identity verification card: &quot;An administrator has requested identity verification. Complete it to unlock future platform capabilities.&quot; with a Verify Identity button and a &quot;Verification requested&quot; badge. (1 of 2)" src="../../images/res_verify_dashboard_01.png" /></p>
 <p><img alt="Researcher dashboard — the verification prompt above your KPI tiles. (2 of 2)" src="../../images/res_verify_dashboard_02.png" /></p>
-<p><strong>On the Identity Verification page</strong> (sidebar → <strong>Identity Verification</strong>, route
-<code>/dashboard/verification</code>):</p>
+<p><strong>On the Identity Verification page</strong> (sidebar → <strong>Identity Verification</strong>):</p>
 <p><img alt="Identity Verification page — &quot;Verify your identity to unlock future platform capabilities such as payouts and premium studios.&quot; with the Verify Identity button." src="../../images/res_verify_module.png" /></p>
 <hr />
 <h3 id="103-starting-the-check-the-verification-popup">10.3 Starting the check — the verification popup</h3>
-<p>Click <strong>Verify Identity</strong> (on either surface). SecurityBoat creates a secure Didit
+<p>Click <strong>Verify Identity</strong> (on either surface). SecurityBoat creates a secure
 verification session and opens a <strong>popup</strong> titled <em>"Verification for My Application —
 Complete these steps to verify your identity."</em> It lists the required steps and
 displays a <strong>QR code</strong>; the badge status switches to <strong>In progress</strong>.</p>
@@ -2045,13 +2044,13 @@ desktop session active waiting for the result.</p>
 <hr />
 <h3 id="104-completing-the-check-on-your-phone">10.4 Completing the check on your phone</h3>
 <ol>
-<li><strong>Scan the QR code</strong> using your phone's camera app to open the secure Didit flow in your mobile browser.</li>
-<li><strong>Choose your ID type</strong> — select your government-issued document type (e.g., <strong>passport, Aadhaar, driving licence, voter ID</strong>).</li>
-<li><strong>Capture your document</strong> — follow on-screen prompts to photograph your document clearly (<code>DOCUMENT_VERIFICATION</code> stage).</li>
-<li><strong>Complete face match</strong> — take a live selfie so the system can verify your liveness and compare against your ID photo (<code>FACE_MATCH</code> stage).</li>
+<li><strong>Scan the QR code</strong> using your phone's camera app to open the secure verification flow in your mobile browser.</li>
+<li><strong>Choose your ID type</strong> — select your government-issued document type (e.g., <strong>passport, driving licence, national ID card</strong>).</li>
+<li><strong>Capture your document</strong> — follow on-screen prompts to photograph your document clearly.</li>
+<li><strong>Complete face match</strong> — take a live selfie so the system can verify your liveness and compare against your ID photo.</li>
 <li>Upon successful completion, the mobile interface reports <strong>success</strong> and the popup automatically closes.</li>
 </ol>
-<p>SecurityBoat reconciles the signed outcome from the identity provider. Your status updates automatically to <strong>APPROVED</strong> or moves to <strong>PENDING_REVIEW</strong> if administrator review is required.</p>
+<p>SecurityBoat reconciles the signed outcome from the identity provider. Your status updates automatically to <strong>Verified</strong> or moves to <strong>Under Review</strong> if administrator review is required.</p>
 <hr />
 <h3 id="105-the-verified-state-and-status-handling">10.5 The verified state and status handling</h3>
 <h4 id="verified-state">Verified State</h4>
@@ -2068,17 +2067,17 @@ desktop session active waiting for the result.</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>Verification was declined</strong> (<code>DECLINED</code>)</td>
+<td><strong>Verification was declined</strong></td>
 <td>The verification check was rejected.</td>
 <td>Review the reason, ensure you use your own valid document, and click <strong>Verify Identity</strong> to try again.</td>
 </tr>
 <tr>
-<td><strong>Additional information required</strong> (<code>RESUBMISSION_REQUIRED</code>)</td>
+<td><strong>Additional information required</strong></td>
 <td>Administrator requested a fresh submission with better quality inputs.</td>
 <td>Click <strong>Verify Identity</strong> to re-run the verification flow.</td>
 </tr>
 <tr>
-<td><strong>Verification did not complete</strong> (<code>FAILED</code> / <code>EXPIRED</code> / <code>ABANDONED</code>)</td>
+<td><strong>Verification did not complete</strong></td>
 <td>Session timed out or was closed prior to completion.</td>
 <td>Click <strong>Verify Identity</strong> to initiate a new verification session when ready.</td>
 </tr>

@@ -12,8 +12,8 @@ Verification is what **unlocks platform capabilities such as payouts and premium
 work opportunities**. You cannot start it yourself out of the blue; it becomes
 available after an administrator requests it.
 
-**Data privacy & security:** Verification is powered by **Didit**, SecurityBoat's
-identity provider, which performs the actual **ID-document check** and **face match**.
+**Data privacy & security:** Verification is powered by SecurityBoat's identity
+provider, which performs the actual **ID-document check** and **face match**.
 SecurityBoat never sees or stores your raw documents — it receives only the
 provider's structured result (document type, name, date of birth, a masked document
 number, face-match score, and the decision).
@@ -34,23 +34,23 @@ Requests identity verification  ──▶  You receive a notification +
                                             │
                                             ▼ Scan QR code on your phone
                                     On phone: choose ID type (passport,
-                                    Aadhaar, driving licence, voter ID)
+                                    driving licence, national ID card)
                                     → photograph document → face match
                                             │
                                             ▼ Complete mobile flow
-Status updates: APPROVED /          Outcome reconciled automatically;
-PENDING_REVIEW / DECLINED    ◀──    Verified status updates on profile
+Status updates: Approved /          Outcome reconciled automatically;
+Pending Review / Declined    ◀──    Verified status updates on profile
 ```
 
 **Verification statuses you may experience:**
-- **Not Requested (`NOT_REQUESTED`)**: Initial state before an admin requests verification.
-- **Requested / Notification Sent (`REQUESTED` / `NOTIFICATION_SENT`)**: Verification has been requested by staff and a prompt is available.
-- **In Progress (`STARTED` / `DOCUMENT_VERIFICATION` / `FACE_MATCH`)**: You have opened the flow and are uploading documents or completing face match on your phone.
-- **Under Review (`PENDING_REVIEW`)**: Verification completed and awaiting administrator sign-off.
-- **Verified (`APPROVED`)**: Verification successful. "Verified" status active on your profile.
-- **Resubmission Required (`RESUBMISSION_REQUIRED`)**: Staff requested you re-run the verification process with clearer inputs.
-- **Declined (`DECLINED`)**: Verification check was rejected.
-- **Expired / Incomplete (`FAILED` / `EXPIRED` / `ABANDONED`)**: Session timed out or was closed before finishing.
+- **Not Requested**: Initial state before an admin requests verification.
+- **Requested**: Verification has been requested by staff and a prompt is available.
+- **In Progress**: You have opened the flow and are uploading documents or completing face match on your phone.
+- **Under Review**: Verification completed and awaiting administrator sign-off.
+- **Verified**: Verification successful. "Verified" status active on your profile.
+- **Resubmission Required**: Staff requested you re-run the verification process with clearer inputs.
+- **Declined**: Verification check was rejected.
+- **Expired / Incomplete**: Session timed out or was closed before finishing.
 
 ---
 
@@ -69,8 +69,7 @@ As soon as an administrator requests your verification, two things happen:
 
 ![Researcher dashboard — the verification prompt above your KPI tiles. (2 of 2)](../images/res_verify_dashboard_02.png)
 
-**On the Identity Verification page** (sidebar → **Identity Verification**, route
-`/dashboard/verification`):
+**On the Identity Verification page** (sidebar → **Identity Verification**):
 
 ![Identity Verification page — "Verify your identity to unlock future platform capabilities such as payouts and premium studios." with the Verify Identity button.](../images/res_verify_module.png)
 
@@ -78,7 +77,7 @@ As soon as an administrator requests your verification, two things happen:
 
 ### 10.3 Starting the check — the verification popup
 
-Click **Verify Identity** (on either surface). SecurityBoat creates a secure Didit
+Click **Verify Identity** (on either surface). SecurityBoat creates a secure
 verification session and opens a **popup** titled *"Verification for My Application —
 Complete these steps to verify your identity."* It lists the required steps and
 displays a **QR code**; the badge status switches to **In progress**.
@@ -100,13 +99,13 @@ desktop session active waiting for the result.
 
 ### 10.4 Completing the check on your phone
 
-1. **Scan the QR code** using your phone's camera app to open the secure Didit flow in your mobile browser.
-2. **Choose your ID type** — select your government-issued document type (e.g., **passport, Aadhaar, driving licence, voter ID**).
-3. **Capture your document** — follow on-screen prompts to photograph your document clearly (`DOCUMENT_VERIFICATION` stage).
-4. **Complete face match** — take a live selfie so the system can verify your liveness and compare against your ID photo (`FACE_MATCH` stage).
+1. **Scan the QR code** using your phone's camera app to open the secure verification flow in your mobile browser.
+2. **Choose your ID type** — select your government-issued document type (e.g., **passport, driving licence, national ID card**).
+3. **Capture your document** — follow on-screen prompts to photograph your document clearly.
+4. **Complete face match** — take a live selfie so the system can verify your liveness and compare against your ID photo.
 5. Upon successful completion, the mobile interface reports **success** and the popup automatically closes.
 
-SecurityBoat reconciles the signed outcome from the identity provider. Your status updates automatically to **APPROVED** or moves to **PENDING_REVIEW** if administrator review is required.
+SecurityBoat reconciles the signed outcome from the identity provider. Your status updates automatically to **Verified** or moves to **Under Review** if administrator review is required.
 
 ---
 
@@ -121,9 +120,9 @@ Once approved, your **Identity verification** card displays a green **Verified**
 
 | Status you see | What it means | Action to take |
 |----------------|---------------|----------------|
-| **Verification was declined** (`DECLINED`) | The verification check was rejected. | Review the reason, ensure you use your own valid document, and click **Verify Identity** to try again. |
-| **Additional information required** (`RESUBMISSION_REQUIRED`) | Administrator requested a fresh submission with better quality inputs. | Click **Verify Identity** to re-run the verification flow. |
-| **Verification did not complete** (`FAILED` / `EXPIRED` / `ABANDONED`) | Session timed out or was closed prior to completion. | Click **Verify Identity** to initiate a new verification session when ready. |
+| **Verification was declined** | The verification check was rejected. | Review the reason, ensure you use your own valid document, and click **Verify Identity** to try again. |
+| **Additional information required** | Administrator requested a fresh submission with better quality inputs. | Click **Verify Identity** to re-run the verification flow. |
+| **Verification did not complete** | Session timed out or was closed prior to completion. | Click **Verify Identity** to initiate a new verification session when ready. |
 
 ---
 

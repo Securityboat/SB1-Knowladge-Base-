@@ -562,6 +562,12 @@ body {
   padding-right: 1.5rem;
 }
 
+/* Remove the inner max-width so tables fill the full content area */
+.md-content__inner {
+  max-width: none !important;
+  width: 100% !important;
+}
+
 /* More vertical spacing between blocks */
 .md-typeset p,
 .md-typeset ul,
@@ -587,11 +593,15 @@ body {
 
 /* Wider tables that use available space */
 .md-typeset__table {
-  width: 100%;
+  display: block !important;
+  width: 100% !important;
 }
 
 .md-typeset table:not([class]) {
-  width: 100%;
+  display: table !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  table-layout: auto;
 }
 
 /* More spacing around admonitions */

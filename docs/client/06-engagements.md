@@ -11,8 +11,8 @@ The lifecycle runs through a series of **states**. You don't see all of them (ma
 are internal), but understanding the arc helps you know where your test stands:
 
 ```
-REQUESTED → DRAFT → SCOPING → OPEN_FOR_BIDS → TEAM_FORMED → SCHEDULED
-        → LIVE → REPORT_DRAFTING → REPORT_REVIEW → DELIVERED → REMEDIATION → CLOSED
+Requested → Draft → Scoping → Open for Bids → Team Formed → Scheduled
+        → Live → Report Drafting → Report Review → Delivered → Remediation → Closed
 ```
 
 | State | What's happening | Visible to you? |
