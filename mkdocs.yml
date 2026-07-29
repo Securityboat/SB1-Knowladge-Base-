@@ -2,30 +2,28 @@ site_name: SecurityBoat Documentation
 site_description: Official SecurityBoat user guides for Clients, Researchers, and Program Operators.
 site_url: https://docs.securityboat.in
 
-docs_dir: .
-site_dir: ../site
+docs_dir: docs
+site_dir: site
 
 theme:
   name: material
   language: en
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: slate
-      accent: blue
+    - scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: indigo
-      accent: blue
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Switch to light mode
   font:
-    text: Plus Jakarta Sans
-    code: JetBrains Mono
+    text: Geist
+    code: Geist Mono
   features:
     - navigation.tabs
     - navigation.sections
@@ -48,11 +46,21 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - md_in_html
 
 nav:
   - Overview: index.md
+  - TriNetra Platform:
+      - Overview: trinetra/index.md
+      - Bug Bounty: trinetra/bug-bounty.md
+      - PTaaS: trinetra/ptaas.md
+      - Agentic Pentest: trinetra/agentic-pentest.md
+      - Attack Surface Management: trinetra/attack-surface-management.md
+      - Digital Risk Protection: trinetra/digital-risk-protection.md
   - Client Guide:
       - Getting Started: client/00-GETTING_STARTED.md
       - 01. Introduction: client/01-introduction.md

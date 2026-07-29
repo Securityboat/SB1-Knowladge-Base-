@@ -1,0 +1,2322 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Official SecurityBoat user guides for Clients, Researchers, and Program Operators.">
+      
+      
+      
+        <link rel="canonical" href="https://docs.securityboat.in/client/06-engagements/">
+      
+      
+        <link rel="prev" href="../05-findings/">
+      
+      
+        <link rel="next" href="../07-my-requests/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>06. Engagements - SecurityBoat Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist:300,300i,400,400i,700,700i%7CGeist+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Geist";--md-code-font:"Geist Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-engagements-ptaas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SecurityBoat Documentation" class="md-header__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SecurityBoat Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              06. Engagements
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../trinetra/" class="md-tabs__link">
+          
+  
+  
+  TriNetra Platform
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00-GETTING_STARTED/" class="md-tabs__link">
+          
+  
+  
+  Client Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../researcher/00-GETTING_STARTED/" class="md-tabs__link">
+          
+  
+  
+  Researcher Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SecurityBoat Documentation" class="md-nav__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SecurityBoat Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TriNetra Platform
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TriNetra Platform
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/bug-bounty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/ptaas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PTaaS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/agentic-pentest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Pentest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/attack-surface-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attack Surface Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinetra/digital-risk-protection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Risk Protection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Client Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Client Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-GETTING_STARTED/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Signing In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-findings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Findings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Engagements
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Engagements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-engagements-ptaas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Engagements (PTaaS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Engagements (PTaaS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#60-what-an-engagement-is-and-how-the-ptaas-model-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.0 What an engagement is and how the PTaaS model works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#61-what-each-client-role-can-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 What each client role can do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-the-engagements-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 The Engagements list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-the-engagement-detail-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 The engagement detail page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-requesting-a-pentest-client-admin-client-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Requesting a pentest (Client Admin / Client TPM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-my-requests-tracking-pre-live-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 My requests — tracking pre-live work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-my-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. My Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-compliance-reports/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. Compliance Reports
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-admin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. User Administration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-integrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-asm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Attack Surface (ASM)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-bug-bounty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CLIENT_Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Full Client Guide Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Researcher Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Researcher Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/00-GETTING_STARTED/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/01-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/02-login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. Signing In
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/03-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/04-opportunities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. Opportunities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/05-invites/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05. Invites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/06-engagements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06. Engagements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/07-findings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07. Findings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/08-my-findings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08. My Findings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/09-payouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09. Payouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/10-verification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Identity Verification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/11-bug-bounty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/12-ai-assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. AI Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/13-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/RESEARCHER_Guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Full Researcher Guide Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#6-engagements-ptaas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Engagements (PTaaS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Engagements (PTaaS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#60-what-an-engagement-is-and-how-the-ptaas-model-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.0 What an engagement is and how the PTaaS model works
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#61-what-each-client-role-can-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 What each client role can do
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Navigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-the-engagements-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 The Engagements list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-the-engagement-detail-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 The engagement detail page
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-requesting-a-pentest-client-admin-client-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Requesting a pentest (Client Admin / Client TPM)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-my-requests-tracking-pre-live-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 My requests — tracking pre-live work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>06. Engagements</h1>
+
+<h2 id="6-engagements-ptaas">6. Engagements (PTaaS)</h2>
+<h3 id="60-what-an-engagement-is-and-how-the-ptaas-model-works">6.0 What an engagement is and how the PTaaS model works</h3>
+<p>An <strong>engagement</strong> is a scheduled penetration test of one of your assets, run by
+SecurityBoat's testing team. "PTaaS" (Penetration Testing as a Service) means the
+whole lifecycle — requesting, scoping, testing, reporting, and retesting — happens
+on this platform instead of over email and PDFs.</p>
+<p>The lifecycle runs through a series of <strong>states</strong>. You don't see all of them (many
+are internal), but understanding the arc helps you know where your test stands:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>REQUESTED → DRAFT → SCOPING → OPEN_FOR_BIDS → TEAM_FORMED → SCHEDULED
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        → LIVE → REPORT_DRAFTING → REPORT_REVIEW → DELIVERED → REMEDIATION → CLOSED
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>What's happening</th>
+<th style="text-align: center;">Visible to you?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Requested</strong></td>
+<td>You submitted a request; awaiting Tri-Netra review.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Draft</strong></td>
+<td>Approved; you can still refine scoping details.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Scoping / Open for bids / Team formed / Scheduled</strong></td>
+<td>Internal prep: scope lock, tester selection, scheduling.</td>
+<td style="text-align: center;">❌ (staff-only)</td>
+</tr>
+<tr>
+<td><strong>Live</strong></td>
+<td>Testing is in progress.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Report drafting / Report review</strong></td>
+<td>Testers are writing and reviewing the report.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Delivered</strong></td>
+<td>Final report issued.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Remediation</strong></td>
+<td>You're fixing; retest may follow.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Closed</strong></td>
+<td>Engagement complete.</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Why some states are hidden:</strong> the pre-LIVE steps (choosing testers, agreeing internal scope) are SecurityBoat's operational workflow. Exposing them would be noise for you and could leak tester or financial details. The platform strips internal fields from anything a client sees. To track a request <em>before</em> it goes live, use <strong>My requests</strong> (§6.4), which shows a simplified status without the internal machinery.</p>
+</blockquote>
+<h3 id="61-what-each-client-role-can-do">6.1 What each client role can do</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th style="text-align: center;">Client Admin</th>
+<th style="text-align: center;">Client TPM</th>
+<th style="text-align: center;">Client Viewer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View own-org engagements (visible states)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Open engagement detail (Brief, Findings, Reports…)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Submit a new pentest <strong>request</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Edit scoping details while in <strong>Draft</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Drive findings remediation (see Findings guide)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Why you request instead of "create":</strong> a client can't directly spin up a live
+engagement — scope, testers, and scheduling need Tri-Netra review. So clients file a
+<strong>request</strong> (a <code>Requested</code> engagement); once Tri-Netra approves it, it becomes a
+<code>Draft</code> engagement you can track end to end.</p>
+</blockquote>
+<h3 id="navigation">Navigation</h3>
+<p>Click <strong>Pentest Engagements</strong> in the main sidebar menu.</p>
+<hr />
+<h3 id="62-the-engagements-list">6.2 The Engagements list</h3>
+<p><img alt="Engagements list — KPI strip, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (1 of 2)" src="../../images/client_engagements_list_01.png" /></p>
+<p><img alt="Engagements list — KPI strip, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (2 of 2)" src="../../images/client_engagements_list_02.png" /></p>
+<p><strong>KPI strip:</strong> Total engagements · Active · Completed — computed from your visible
+set.</p>
+<p><strong>Filter pills (state buckets):</strong> the 11 internal states are grouped into
+friendly buckets so you can filter quickly:</p>
+<table>
+<thead>
+<tr>
+<th>Bucket</th>
+<th>Includes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>All</strong></td>
+<td>Everything visible to you.</td>
+</tr>
+<tr>
+<td><strong>Active</strong></td>
+<td>Draft/Scoping/…/Live/Report stages (in-flight work).</td>
+</tr>
+<tr>
+<td><strong>Live</strong></td>
+<td>Live + report drafting/review.</td>
+</tr>
+<tr>
+<td><strong>Delivered</strong></td>
+<td>Delivered + Remediation.</td>
+</tr>
+<tr>
+<td><strong>Closed</strong></td>
+<td>Closed.</td>
+</tr>
+<tr>
+<td><strong>Requested</strong></td>
+<td>Your pending engagement requests.</td>
+</tr>
+</tbody>
+</table>
+<p>Each pill shows a live count. There's also a <strong>search</strong> box (matches Project ID or
+title). <em>(A per-client dropdown appears only for users who span multiple orgs; as a
+single-org client you won't see it.)</em></p>
+<p><strong>Columns:</strong> Engagement (title + Project ID + sub-type/testing approach) ·
+Client · State · TPM (your SecurityBoat project manager) · Findings (count) ·
+Scheduled (start → end). Click a row — or the <strong>⋮</strong> menu (Open · View bids · Open
+checklist) — to open it. Paginated at 10/page.</p>
+<hr />
+<h3 id="63-the-engagement-detail-page">6.3 The engagement detail page</h3>
+<p>Opening an engagement shows a header (title, state, findings count, days
+remaining) and a set of <strong>tabs</strong>. What you can act on depends on the state and
+your role, but you can generally <strong>read</strong> all of these on your own engagements:</p>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What it shows / does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Brief</strong></td>
+<td>Overview: scope, testing approach, schedule, state history.</td>
+</tr>
+<tr>
+<td><strong>Assets</strong></td>
+<td>The asset(s) under test and their scope.</td>
+</tr>
+<tr>
+<td><strong>Team</strong></td>
+<td>The SecurityBoat testers/TPM assigned.</td>
+</tr>
+<tr>
+<td><strong>Coverage</strong></td>
+<td>The testing checklist/methodology coverage — what was tested.</td>
+</tr>
+<tr>
+<td><strong>Findings</strong></td>
+<td>All findings for this engagement (subject to the verified-only visibility rule — see the Findings guide).</td>
+</tr>
+<tr>
+<td><strong>Analytics</strong></td>
+<td>Charts: severity breakdown, progress over time.</td>
+</tr>
+<tr>
+<td><strong>Reports</strong></td>
+<td>Inline preview of the engagement report. <strong>Download PDF</strong> is enabled once the report is marked <strong>final</strong> (Approved / Post-retest final).</td>
+</tr>
+<tr>
+<td><strong>Chat</strong></td>
+<td>Message the engagement team directly.</td>
+</tr>
+<tr>
+<td><strong>Integrations</strong></td>
+<td>Push findings to connected tools (e.g. Jira).</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Reports tab nuance:</strong> you can preview the report as it progresses, but the
+<strong>Download PDF</strong> button only activates when the report reaches a final state.
+This prevents circulating a draft report as if it were the deliverable.</p>
+</blockquote>
+<hr />
+<h3 id="64-requesting-a-pentest-client-admin-client-tpm">6.4 Requesting a pentest (Client Admin / Client TPM)</h3>
+<p>From <strong>Pentest Engagements</strong> (or <strong>My requests</strong>) click <strong>New request</strong> to open the request form.</p>
+<p><img alt="Request a pentest — asset, engagement type, title, description, and preferred dates, with a &quot;what happens next&quot; panel. (1 of 2)" src="../../images/client_request_form_01.png" /></p>
+<p><img alt="Request a pentest — asset, engagement type, title, description, and preferred dates, with a &quot;what happens next&quot; panel. (2 of 2)" src="../../images/client_request_form_02.png" /></p>
+<p><strong>Fields:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th style="text-align: center;">Required</th>
+<th>Validation</th>
+<th>Meaning / use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Asset</strong></td>
+<td>Dropdown</td>
+<td style="text-align: center;">✅</td>
+<td>Scoped to your org's assets</td>
+<td>The system to be tested. If it's missing, add it under <strong>Assets</strong> first.</td>
+</tr>
+<tr>
+<td><strong>Engagement type</strong></td>
+<td>Dropdown</td>
+<td style="text-align: center;">✅ (defaults to Web Application)</td>
+<td>One asset-type</td>
+<td>The kind of test (Web App, API, Mobile, Network, …).</td>
+</tr>
+<tr>
+<td><strong>Title</strong></td>
+<td>Text</td>
+<td style="text-align: center;">✅</td>
+<td>3–255 chars</td>
+<td>A recognisable label, e.g. "Q3 2026 production pentest".</td>
+</tr>
+<tr>
+<td><strong>Description</strong></td>
+<td>Rich text</td>
+<td style="text-align: center;">—</td>
+<td>—</td>
+<td>Business context, special handling, anything testers should know up front.</td>
+</tr>
+<tr>
+<td><strong>Preferred start</strong></td>
+<td>Date</td>
+<td style="text-align: center;">—</td>
+<td>—</td>
+<td>Approximate is fine — Tri-Netra confirms the real schedule.</td>
+</tr>
+<tr>
+<td><strong>Preferred end</strong></td>
+<td>Date</td>
+<td style="text-align: center;">—</td>
+<td>—</td>
+<td>Your target window close.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What happens after you submit:</strong></p>
+<ol>
+<li><strong>Review</strong> — Tri-Netra reviews scope and feasibility (typically within 1 business day).</li>
+<li><strong>Scoping call</strong> — a short call to confirm scope, environment, access, and dates.</li>
+<li><strong>Approval</strong> — an approved request becomes a <strong>Draft</strong> engagement you can track.
+   (A rejected request comes back with a reason.)</li>
+<li><strong>Delivery</strong> — Live testing → findings → pre-final → final → post-retest report.</li>
+</ol>
+<blockquote>
+<p>While the engagement is in <strong>Draft</strong>, you (Client Admin / Client TPM) can still edit
+scoping details before Tri-Netra moves it into Scoping.</p>
+</blockquote>
+<hr />
+<h3 id="65-my-requests-tracking-pre-live-work">6.5 My requests — tracking pre-live work</h3>
+<p><img alt="My requests — status cards for each submitted request with simplified lifecycle status and preferred dates." src="../../images/client_my_requests.png" /></p>
+<p>Because pre-LIVE engagement states are hidden from the main list, <strong>My requests</strong>
+is your window into requests that haven't gone live yet.
+Each card shows a <strong>simplified status</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Submitted</strong></td>
+<td>Received; awaiting review.</td>
+</tr>
+<tr>
+<td><strong>Approved — preparing</strong></td>
+<td>Approved; scope/testers being arranged; live soon.</td>
+</tr>
+<tr>
+<td><strong>Live</strong></td>
+<td>Testing in progress — open the engagement for findings, chat, reports.</td>
+</tr>
+<tr>
+<td><strong>Completed</strong></td>
+<td>Closed; findings and reports remain available.</td>
+</tr>
+<tr>
+<td><strong>Closed</strong></td>
+<td>Closed before testing started; contact your account team.</td>
+</tr>
+</tbody>
+</table>
+<p>Cards show the project ID, title, asset, and your submitted/preferred dates. When a
+request goes live, an <strong>Open engagement</strong> button links straight to the full detail.</p>
+<hr />
+<h3 id="best-practices">Best practices</h3>
+<ul>
+<li><strong>Give rich context in the request description</strong> — the more testers know up front,
+  the less back-and-forth during scoping.</li>
+<li><strong>Keep the asset scope current</strong> before requesting so there's nothing to clarify.</li>
+<li><strong>Use the engagement Chat</strong> for questions during Live testing instead of email.</li>
+<li><strong>Wait for "final" before circulating the report</strong> — the Download PDF button
+  tells you when it's official.</li>
+</ul>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Cause / Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>My engagement disappeared from the list</strong></td>
+<td>It moved into an internal pre-LIVE state (Scoping/Team forming). Track it under <strong>My requests</strong> until it goes Live.</td>
+</tr>
+<tr>
+<td><strong>No "New request" button</strong></td>
+<td>You're <strong>Client Viewer</strong> (read-only). Ask a Client Admin / Client TPM.</td>
+</tr>
+<tr>
+<td><strong>Download PDF is greyed out</strong></td>
+<td>The report isn't final yet (still drafting/review). It enables at Approved / Post-retest final.</td>
+</tr>
+<tr>
+<td><strong>Can't pick my asset in the request form</strong></td>
+<td>The asset isn't registered in your org yet — add it under <strong>Assets</strong> first.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>← Previous: <a href="../05-findings/">Findings</a> | Next: <a href="../07-my-requests/">My Requests →</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
