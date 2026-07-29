@@ -3,8 +3,8 @@
   <div class="sb-hero-subtitle">
     Explore comprehensive guides, API references, platform navigation, and security workflows for Clients, Security Researchers, and Program Operators.
   </div>
-  <a href="client/00-GETTING_STARTED.md" class="sb-btn-primary">
-    Explore Client Guide :octicons-arrow-right-24:
+  <a href="client/00-GETTING_STARTED/" class="sb-btn-primary">
+    Explore Client Guide →
   </a>
 </div>
 

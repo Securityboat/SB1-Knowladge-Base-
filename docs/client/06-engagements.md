@@ -53,8 +53,6 @@ Click **Pentest Engagements** in the main sidebar menu.
 
 ![Engagements list — KPI strip, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (1 of 2)](../images/client_engagements_list_01.png)
 
-![Engagements list — KPI strip, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (2 of 2)](../images/client_engagements_list_02.png)
-
 **KPI strip:** Total engagements · Active · Completed — computed from your visible
 set.
 
@@ -82,6 +80,7 @@ checklist) — to open it. Paginated at 10/page.
 ---
 
 ### 6.3 The engagement detail page
+![Engagement details — header, state bar, and tabs: Brief, Assets, Team, Coverage, Findings, Analytics, Reports, Chat, Integrations. (1 of 3)](../images/client_engagements_detail.png)
 
 Opening an engagement shows a header (title, state, findings count, days
 remaining) and a set of **tabs**. What you can act on depends on the state and
