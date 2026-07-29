@@ -1,10 +1,14 @@
-# SecurityBoat — User Documentation Portal
+<div class="sb-hero-container">
+  <div class="sb-hero-title">SecurityBoat Knowledge Base</div>
+  <div class="sb-hero-subtitle">
+    Explore comprehensive guides, API references, platform navigation, and security workflows for Clients, Security Researchers, and Program Operators.
+  </div>
+  <a href="client/00-GETTING_STARTED.md" class="sb-btn-primary">
+    Explore Client Guide :octicons-arrow-right-24:
+  </a>
+</div>
 
-Welcome to the official **SecurityBoat** documentation portal. This website provides comprehensive user guides for Client Organisations and Security Researchers using the SecurityBoat platform.
-
----
-
-## Select Your Role Guide
+## Browse Guides by Role
 
 <div class="grid cards" markdown>
 
@@ -12,28 +16,50 @@ Welcome to the official **SecurityBoat** documentation portal. This website prov
 
     ---
 
-    Designed for Client Admins, TPMs, and Viewers. Learn how to manage assets, track pentest engagements, remediate findings, and download compliance reports.
+    Complete guide for client organization members, security managers, and compliance officers.
 
-    [:octicons-arrow-right-24: Open Client Guide](client/00-GETTING_STARTED.md)
+    - :octicons-chevron-right-16: [Getting Started Guide](client/00-GETTING_STARTED.md)
+    - :octicons-chevron-right-16: [Managing Assets & Scope](client/04-assets.md)
+    - :octicons-chevron-right-16: [Reviewing Security Findings](client/05-findings.md)
+    - :octicons-chevron-right-16: [Pentest Engagements](client/06-engagements.md)
+    - :octicons-chevron-right-16: [Attack Surface Management (ASM)](client/11-asm.md)
+    - :octicons-chevron-right-16: [Compliance & Executive Reports](client/08-compliance-reports.md)
 
--   :material-shield-search: **Researcher Guide**
+    [:octicons-arrow-right-24: View Full Client Directory](client/CLIENT_Guide.md)
+
+-   :material-shield-search: **Security Researcher Guide**
 
     ---
 
-    Designed for Security Researchers and Lead Testers. Learn how to view opportunities, manage invitations, submit findings, complete identity verification, and request payouts.
+    Detailed manual for security researchers, bug hunters, and penetration testers operating on SecurityBoat.
 
-    [:octicons-arrow-right-24: Open Researcher Guide](researcher/00-GETTING_STARTED.md)
+    - :octicons-chevron-right-16: [Researcher Onboarding & Getting Started](researcher/00-GETTING_STARTED.md)
+    - :octicons-chevron-right-16: [Identity Verification (KYC/KYB)](researcher/10-verification.md)
+    - :octicons-chevron-right-16: [Finding Opportunities & Invites](researcher/04-opportunities.md)
+    - :octicons-chevron-right-16: [Submitting High-Quality Findings](researcher/07-findings.md)
+    - :octicons-chevron-right-16: [Tracking Payouts & Disbursements](researcher/09-payouts.md)
+    - :octicons-chevron-right-16: [Bug Bounty Program Navigation](researcher/11-bug-bounty.md)
+
+    [:octicons-arrow-right-24: View Full Researcher Directory](researcher/RESEARCHER_Guide.md)
 
 </div>
 
 ---
 
-## Features & Capabilities
+## Core Security Features & Platform Capabilities
 
-| Module | Purpose & Scope |
-| :--- | :--- |
-| **Penetration Testing (PTaaS)** | Request, scope, track, and review end-to-end security pentests. |
-| **Unified Findings** | Manage vulnerabilities with CVSS scores, remediation guidance, and retest requests. |
-| **Attack Surface Management** | Monitor exposed targets, subdomains, and external security posture. |
-| **Bug Bounty & VDP** | Participate in crowd-sourced vulnerability disclosure programmes. |
-| **Compliance Reports** | Download regulator-ready security audit deliverables. |
+<div class="grid cards" markdown>
+
+-   :material-robot-industrial: **AI-Powered Vulnerability Triage**
+
+    Leverage the SecurityBoat AI Assistant for instant vulnerability remediation recommendations, finding summary generation, and automated report insights.
+
+-   :material-shield-sync: **Real-Time Attack Surface Monitoring**
+
+    Automated continuous discovery of cloud assets, domain subdomains, exposed services, and security posture monitoring.
+
+-   :material-file-certificate: **Automated Compliance Verification**
+
+    Instantly generate SOC 2, ISO 27001, PCI-DSS, and HIPAA compliance readiness mapping directly from verified penetration testing findings.
+
+</div>

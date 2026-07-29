@@ -1,0 +1,88 @@
+site_name: SecurityBoat Documentation
+site_description: Official SecurityBoat user guides for Clients, Researchers, and Program Operators.
+site_url: https://docs.securityboat.in
+
+docs_dir: .
+site_dir: ../site
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: slate
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+
+nav:
+  - Overview: index.md
+  - Client Guide:
+      - Getting Started: client/00-GETTING_STARTED.md
+      - 01. Introduction: client/01-introduction.md
+      - 02. Signing In: client/02-login.md
+      - 03. Dashboard: client/03-dashboard.md
+      - 04. Assets: client/04-assets.md
+      - 05. Findings: client/05-findings.md
+      - 06. Engagements: client/06-engagements.md
+      - 07. My Requests: client/07-my-requests.md
+      - 08. Compliance Reports: client/08-compliance-reports.md
+      - 09. User Administration: client/09-admin.md
+      - 10. Integrations: client/10-integrations.md
+      - 11. Attack Surface (ASM): client/11-asm.md
+      - 12. Bug Bounty: client/12-bug-bounty.md
+      - 13. AI Assistant: client/13-ai-assistant.md
+      - 14. Settings: client/14-settings.md
+      - Full Client Guide Index: client/CLIENT_Guide.md
+  - Researcher Guide:
+      - Getting Started: researcher/00-GETTING_STARTED.md
+      - 01. Introduction: researcher/01-introduction.md
+      - 02. Signing In: researcher/02-login.md
+      - 03. Dashboard: researcher/03-dashboard.md
+      - 04. Opportunities: researcher/04-opportunities.md
+      - 05. Invites: researcher/05-invites.md
+      - 06. Engagements: researcher/06-engagements.md
+      - 07. Findings: researcher/07-findings.md
+      - 08. My Findings: researcher/08-my-findings.md
+      - 09. Payouts: researcher/09-payouts.md
+      - 10. Identity Verification: researcher/10-verification.md
+      - 11. Bug Bounty: researcher/11-bug-bounty.md
+      - 12. AI Assistant: researcher/12-ai-assistant.md
+      - 13. Settings: researcher/13-settings.md
+      - Full Researcher Guide Index: researcher/RESEARCHER_Guide.md
