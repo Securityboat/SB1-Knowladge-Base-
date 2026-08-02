@@ -1,6 +1,6 @@
-## 13. Settings
+## Settings
 
-### 13.0 Overview
+### 1. Overview
 
 **Settings** is your personal account area. For researchers it has more than other
 roles because it holds the **payment and contract** details needed to work and get
@@ -12,7 +12,7 @@ Click **Settings** (bottom of the sidebar) → opens on **Account**.
 
 ---
 
-### 13.1 Account (researcher-specific)
+### 2. Account (researcher-specific)
 
 ![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme. (1 of 4)](../images/res_settings_account_01.png)
 
@@ -36,17 +36,17 @@ Click **Settings** (bottom of the sidebar) → opens on **Account**.
 > **identity verification** (see the Verification guide), and have an active
 > agreement/contract. Do these early.
 
-### 13.2 MFA Setup
+### 3. MFA Setup
 
 Manage multi-factor authentication from this section. Enable it — your
 account carries findings, contracts, and payout details.
 
-### 13.3 Payouts
+### 4. Payouts
 
 The **Payouts** tab is your earnings dashboard — see the dedicated
 [Payouts guide](09-payouts.md).
 
-### 13.4 Notifications
+### 5. Notifications
 
 Choose which notifications reach you and how. Keep invite/finding/payout
 notifications on so you don't miss opportunities, verification requests, or payment

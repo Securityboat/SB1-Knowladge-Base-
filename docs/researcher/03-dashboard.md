@@ -1,6 +1,6 @@
-## 3. Dashboard
+## Dashboard
 
-### 3.0 What the Dashboard is for
+### 1. What the Dashboard is for
 
 The Researcher **Dashboard** is your personal **work hub**. It's deliberately
 focused: it shows only what's yours — the engagements you're seated on, the findings
@@ -13,12 +13,12 @@ answers:
 
 The Dashboard is **read-only** — every card links into the module where you act.
 
-### 3.1 How to reach it
+### 2. How to reach it
 
 - Loads automatically after login.
 - Click **Dashboard** at the top of the left sidebar, or the SecurityBoat logo.
 
-### 3.2 The Dashboard, top to bottom
+### 3. The Dashboard, top to bottom
 
 ![Researcher dashboard — greeting, verification card, KPI tiles for active engagements, open findings and pay, plus recent engagements and recent findings.](../images/researcher_dashboard.png)
 
@@ -52,13 +52,13 @@ Two side-by-side cards:
 - **Recent Findings** — the findings you most recently authored, with severity and
   status, so you can pick up where you left off.
 
-### 3.3 Lead Researcher differences
+### 4. Lead Researcher differences
 
 If you're a **Lead Researcher**, your dashboard is a slightly richer variant
 (LeadResearcherDashboard) that adds team-coordination context for the engagements
 you lead, on top of the same personal KPIs above.
 
-### 3.4 How to use it day to day
+### 5. How to use it day to day
 
 1. **Clear the verification card** first if it's shown — no paid work proceeds until
    you're verified.

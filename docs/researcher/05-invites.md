@@ -1,6 +1,6 @@
-## 5. Invites
+## Invites
 
-### 5.0 What Invites are
+### 1. What Invites are
 
 **Invites** are direct invitations from program managers to join a **Bug Bounty
 program** or a **pentest engagement** — as opposed to the open **Opportunities**
@@ -12,7 +12,7 @@ Click **Invites** in the sidebar. (Researcher / Lead Researcher only.)
 
 ---
 
-### 5.1 The Invites list
+### 2. The Invites list
 
 ![Invites — a list of program/engagement invitations with source (BB/PTaaS), organisation, who invited you, date, and status. (1 of 2)](../images/res_invites_01.png)
 
@@ -31,7 +31,7 @@ Each invite shows:
 | **Invited by / date** | Who sent it and when. |
 | **Status** | **Pending** (awaiting your response), **Accepted**, or **Rejected**. |
 
-### 5.2 Responding
+### 3. Responding
 
 For **pending Bug Bounty invites**, you get **Accept** and **Reject** buttons. Both
 open a dialog where you can add an optional note/reason:

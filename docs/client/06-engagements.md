@@ -1,6 +1,6 @@
-## 6. Engagements (PTaaS)
+## Engagements (PTaaS)
 
-### 6.0 What an engagement is and how the PTaaS model works
+### 1. What an engagement is and how the PTaaS model works
 
 An **engagement** is a scheduled penetration test of one of your assets, run by
 SecurityBoat's testing team. "PTaaS" (Penetration Testing as a Service) means the
@@ -28,7 +28,7 @@ Requested → Draft → Scoping → Open for Bids → Team Formed → Scheduled
 
 > **Why some states are hidden:** the pre-LIVE steps (choosing testers, agreeing internal scope) are SecurityBoat's operational workflow. Exposing them would be noise for you and could leak tester or financial details. The platform strips internal fields from anything a client sees. To track a request *before* it goes live, use **My requests** (§6.4), which shows a simplified status without the internal machinery.
 
-### 6.1 What each client role can do
+### 2. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -49,11 +49,11 @@ Click **Pentest Engagements** in the main sidebar menu.
 
 ---
 
-### 6.2 The Engagements list
+### 3. The Engagements list
 
-![Engagements list — KPI strip, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (1 of 2)](../images/client_engagements_list_01.png)
+![Engagements list — Summary metrics bar, state-bucket filter pills, search, and a table with client, state, TPM, findings, and schedule. (1 of 2)](../images/client_engagements_list_01.png)
 
-**KPI strip:** Total engagements · Active · Completed — computed from your visible
+**Summary metrics bar:** Total engagements · Active · Completed — computed from your visible
 set.
 
 **Filter pills (state buckets):** the 11 internal states are grouped into
@@ -79,7 +79,7 @@ checklist) — to open it. Paginated at 10/page.
 
 ---
 
-### 6.3 The engagement detail page
+### 4. The engagement detail page
 ![Engagement details — header, state bar, and tabs: Brief, Assets, Team, Coverage, Findings, Analytics, Reports, Chat, Integrations. (1 of 3)](../images/client_engagements_detail.png)
 
 Opening an engagement shows a header (title, state, findings count, days
@@ -104,7 +104,7 @@ your role, but you can generally **read** all of these on your own engagements:
 
 ---
 
-### 6.4 Requesting a pentest (Client Admin / Client TPM)
+### 5. Requesting a pentest (Client Admin / Client TPM)
 
 From **Pentest Engagements** (or **My requests**) click **New request** to open the request form.
 
@@ -136,7 +136,7 @@ From **Pentest Engagements** (or **My requests**) click **New request** to open 
 
 ---
 
-### 6.5 My requests — tracking pre-live work
+### 6. My requests — tracking pre-live work
 
 ![My requests — status cards for each submitted request with simplified lifecycle status and preferred dates.](../images/client_my_requests.png)
 

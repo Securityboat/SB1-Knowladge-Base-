@@ -1,6 +1,6 @@
-## 7. My Requests
+## My Requests
 
-### 7.0 Why this page exists
+### 1. Why this page exists
 
 When you submit a pentest request, it becomes an engagement in the **Requested**
 state, and SecurityBoat then works it through several **internal** states
@@ -17,7 +17,7 @@ internal machinery.
 > **My Requests** = the status board for everything you've asked for, especially
 > before it goes live.
 
-### 7.1 Who can use it
+### 2. Who can use it
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -30,7 +30,7 @@ Navigate to **Pentest Engagements → My requests** via the main sidebar.
 
 ---
 
-### 7.2 Reading the page
+### 3. Reading the page
 
 ![My requests — a card per submitted request, each with a coloured status badge, project ID, title, asset, and preferred dates.](../images/client_my_requests.png)
 
@@ -58,10 +58,10 @@ plain language.
 
 ---
 
-### 7.3 Submitting a new request
+### 4. Submitting a new request
 
 Click **New request** (top-right) to open the request form. This is the same form
-described in the Engagements guide — see [§6.4 Requesting a pentest](06-engagements.md#64-requesting-a-pentest-client-admin--client-tpm)
+described in the Engagements guide — see [§5 Requesting a pentest](06-engagements.md#5-requesting-a-pentest-client-admin-client-tpm)
 for the field-by-field breakdown (asset, engagement type, title, description,
 preferred dates) and the review → scoping → approval → delivery flow.
 

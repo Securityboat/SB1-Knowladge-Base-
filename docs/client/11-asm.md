@@ -1,10 +1,10 @@
-## 11. Attack Surface (ASM)
+## Attack Surface (ASM)
 
 > **Availability:** ASM is a **platform-gated** module. You'll only see **Attack
 > Surface** in the sidebar if your organisation is onboarded for ASM. If it's not
 > there, your org isn't subscribed to ASM — talk to your CSM.
 
-### 11.0 What ASM is and why it matters
+### 1. What ASM is and why it matters
 
 **Attack Surface Management (ASM)** continuously discovers and monitors everything
 your organisation exposes to the internet — domains, subdomains, IPs, open ports,
@@ -15,7 +15,7 @@ always-on breadth**: it watches your perimeter between engagements.
 For a client, ASM is a **read-only exposure console** scoped to your own
 organisation. SecurityBoat runs the scanners; you consume the results.
 
-### 11.1 What each client role can do
+### 2. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -36,17 +36,17 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ---
 
-### 11.2 The Dashboard (Exposure Posture Console)
+### 3. The Dashboard (Exposure Posture Console)
 
-![ASM dashboard — posture band, KPI strip (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (1 of 3)](../images/client_asm_dashboard_01.png)
+![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (1 of 3)](../images/client_asm_dashboard_01.png)
 
-![ASM dashboard — posture band, KPI strip (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (2 of 3)](../images/client_asm_dashboard_02.png)
+![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (2 of 3)](../images/client_asm_dashboard_02.png)
 
-![ASM dashboard — posture band, KPI strip (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)](../images/client_asm_dashboard_03.png)
+![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)](../images/client_asm_dashboard_03.png)
 
-**KPI strip — what each number means:**
+**Metrics summary — what each number means:**
 
-| KPI | Meaning | Why it matters |
+| Card / Metric | Meaning | Why it matters |
 |-----|---------|----------------|
 | **Open Findings** | Total open exposures + cloud findings, from the newest completed scan per target. | Your outstanding perimeter risk. |
 | **Subdomain Takeovers** | Dangling DNS records pointing to deprovisioned services. | High-severity — an attacker could claim the subdomain. |
@@ -54,7 +54,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 | **Targets Monitored** | Targets on a recurring schedule vs total. | Coverage — unmonitored targets are scanned on demand only. |
 | **Assets Discovered** | Subdomains, IPs, ports, technologies found. | The true size of your exposed surface. |
 
-**Panels below the KPIs:**
+**Panels below the metrics:**
 
 - **Posture band / Threat posture donut** — targets classified At Risk / Needs
   Attention / Secure / Unrated.
@@ -77,7 +77,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ---
 
-### 11.3 Targets
+### 4. Targets
 
 ![ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status.](../images/client_asm_targets.png)
 
@@ -96,7 +96,7 @@ its scan history and details.
 
 ---
 
-### 11.4 Scans & Subdomains
+### 5. Scans & Subdomains
 
 - **Scans** — every scan run against your targets, with state (Queued, Running,
   Complete, Failed) and a link into per-scan results (findings, discovered assets,
@@ -104,7 +104,7 @@ its scan history and details.
 - **Subdomains** — the discovered subdomain inventory across your targets,
   including takeover risk flags.
 
-### 11.5 How ASM connects to the rest of the platform
+### 6. How ASM connects to the rest of the platform
 
 ASM findings flow into the unified **Findings** module (source = `ASM`), so a
 perimeter exposure is triaged the same way as a pentest finding. If an ASM finding

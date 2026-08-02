@@ -1,6 +1,6 @@
-## 9. Payouts
+## Payouts
 
-### 9.0 Where you get paid
+### 1. Where you get paid
 
 **Payouts** is your earnings dashboard. It aggregates money from **both** revenue
 streams — **Bug Bounty** (per accepted finding) and **Pentest engagements** (per
@@ -13,7 +13,7 @@ downloadable invoices.
 
 ---
 
-### 9.1 Earnings summary
+### 2. Earnings summary
 
 ![Payouts — Total Earned / Pending / Total Payouts summary tiles above a list of payout cards. (1 of 2)](../images/res_payouts_01.png)
 
@@ -27,7 +27,7 @@ Three tiles at the top:
 | **Pending** | Sum of everything approved/awaiting that isn't rejected. |
 | **Total Payouts** | Count of payout records. |
 
-### 9.2 The payout list
+### 3. The payout list
 
 Each payout card shows:
 
@@ -47,7 +47,7 @@ Each payout card shows:
 | **Pentest** | Status is **Paid** and an invoice number exists. |
 | **Bug Bounty** | Status is **Approved or Paid** and an invoice number exists. |
 
-### 9.3 The payout lifecycle
+### 4. The payout lifecycle
 
 ```
 Finding verified / engagement complete  →  payout created (Pending)

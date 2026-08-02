@@ -1,6 +1,6 @@
-## 14. Settings
+## Settings
 
-### 14.0 Overview
+### 1. Overview
 
 **Settings** is your personal, per-user area — it controls *your* account, not your
 organisation's. Every role has it. It has these tabs: **Account**, **MFA Setup**,
@@ -13,7 +13,7 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 
 ---
 
-### 14.1 Account
+### 2. Account
 
 ![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle. (1 of 2)](../images/client_settings_account_01.png)
 
@@ -30,14 +30,14 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 > attributes. Letting users self-edit them would undermine tenant isolation and
 > access control, so they're admin/IdP-managed and audited.
 
-### 14.2 MFA Setup
+### 3. MFA Setup
 
 The **MFA Setup** tab is where you manage multi-factor
 authentication. Enabling MFA is strongly recommended — it's your
 best defence against account takeover. Your current 2FA status also shows on the
 Account tab.
 
-### 14.3 Notifications
+### 4. Notifications
 
 ![Notification preferences — per-event toggles and delivery channels.](../images/client_settings_notifications.png)
 

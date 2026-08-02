@@ -1,6 +1,6 @@
-## 6. Engagements
+## Engagements
 
-### 6.0 The researcher's view of an engagement
+### 1. The researcher's view of an engagement
 
 Once your bid is accepted (or you're invited), you join an **engagement** team. The
 engagement is your workspace for that pentest: the brief, the assets and scope, the
@@ -10,7 +10,7 @@ coverage checklist, and — most importantly — where you **submit findings**.
 > (hidden in the marketplace) is visible here once you're on the team. Internal
 > financials of *other* people are not shown to you.
 
-### 6.1 What a researcher can do on an engagement
+### 2. What a researcher can do on an engagement
 
 | Capability | Researcher | Lead Researcher |
 |------------|:---:|:---:|
@@ -25,7 +25,7 @@ Click **Pentest Engagements** in the main sidebar menu.
 
 ---
 
-### 6.2 The list & detail
+### 3. The list & detail
 
 ![Researcher Engagements — the engagements you're assigned to, with state and schedule. (1 of 2)](../images/res_engagements_list_01.png)
 
@@ -46,7 +46,7 @@ Open one to reach its tabs:
 > Researchers don't see the Reports tab (only the Lead does, to draft); report
 > approval is a TPM/CSM/admin step.
 
-### 6.3 Your workflow on a LIVE engagement
+### 4. Your workflow on a LIVE engagement
 
 ```
 Read brief + scope (Assets)  →  test against the coverage checklist

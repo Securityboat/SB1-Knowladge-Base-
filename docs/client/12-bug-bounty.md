@@ -1,11 +1,11 @@
-## 12. Bug Bounty
+## Bug Bounty
 
 > **Availability:** Bug Bounty is **platform-gated**. You'll only see the **BB
 > Program**, **Hacktivity**, and **Disclosure Requests** entries in the sidebar
 > if your organisation is onboarded for Bug Bounty. If they're missing, your org
 > isn't subscribed — talk to your CSM.
 
-### 12.0 What Bug Bounty is and how it differs from a pentest
+### 1. What Bug Bounty is and how it differs from a pentest
 
 A **Bug Bounty** program invites SecurityBoat's vetted researcher community to
 continuously test your assets and submit vulnerabilities, typically for a reward.
@@ -23,7 +23,7 @@ SecurityBoat supports two program types:
 Programs also have a **visibility**: **Public** (any researcher can participate) or
 **Private** (invite-only).
 
-### 12.1 What each client role can do
+### 2. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -40,11 +40,11 @@ The sidebar shows **BB Program**, **Hacktivity**, and **Disclosure Requests**.
 
 ---
 
-### 12.2 Programs
+### 3. Programs
 
-![Bug Bounty programs — KPI tiles (total/active/inactive), type tabs (All/VDP/Bug Bounty), search, and a table with type, visibility, status, and findings count.](../images/client_bb_programs.png)
+![Bug Bounty programs — metrics cards (total/active/inactive), type tabs (All/VDP/Bug Bounty), search, and a table with type, visibility, status, and findings count.](../images/client_bb_programs.png)
 
-**KPI tiles:** Total programs · Active · Inactive.
+**Metrics cards:** Total programs · Active · Inactive.
 
 **Type tabs:** All Programs / VDP / Bug Bounty (each with a live count).
 
@@ -67,7 +67,7 @@ and (for Bug Bounty) reward tiers. **Client TPM**/**Client Viewer** don't see th
 
 ---
 
-### 12.3 Hacktivity
+### 4. Hacktivity
 
 ![Hacktivity — a public activity feed of disclosed/resolved bug-bounty reports. (1 of 2)](../images/client_bb_hacktivity_01.png)
 
@@ -78,9 +78,12 @@ public — resolved and disclosed reports across programs. It's useful for seein
 the kinds of issues researchers are finding and for transparency. Sensitive detail
 stays private until a disclosure is approved (see below).
 
+> For a full walkthrough of the Hacktivity feed and how disclosures get there,
+> see the dedicated **[Hacktivity guide](17-hacktivity.md)**.
+
 ---
 
-### 12.4 Disclosure Requests
+### 5. Disclosure Requests
 
 ![Disclosure Requests — researcher requests to publicly disclose a resolved finding, with their status.](../images/client_bb_disclosures.png)
 
@@ -90,9 +93,12 @@ Disclosure is a deliberate, reviewed step: it balances researcher recognition an
 community learning against your organisation's confidentiality. Nothing is
 published without going through this review.
 
+> For a detailed walkthrough of the approval workflow — including how to review,
+> approve, and reject requests — see the dedicated **[Disclosure Requests guide](18-disclosure-requests.md)**.
+
 ---
 
-### 12.5 How it fits together
+### 6. How it fits together
 
 ```
 Program (VDP / Bug Bounty)  →  Researchers test  →  Submit findings
@@ -120,4 +126,4 @@ Program (VDP / Bug Bounty)  →  Researchers test  →  Submit findings
 
 ---
 
-← Previous: [ASM](11-asm.md) | Next: [AI Assistant →](13-ai-assistant.md)
+← Previous: [ASM](11-asm.md) | Next: [Hacktivity →](17-hacktivity.md)

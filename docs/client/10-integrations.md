@@ -1,6 +1,6 @@
-## 10. Integrations (Jira)
+## Integrations (Jira)
 
-### 10.0 What it does and why you'd use it
+### 1. What it does and why you'd use it
 
 The **Jira integration** connects your organisation's Jira Cloud to
 SecurityBoat so security findings flow into your engineering workflow
@@ -12,7 +12,7 @@ state changes on SecurityBoat, the linked Jira issue can transition too (and vic
 versa, via the transition mappings you configure). This keeps your remediation
 board and your security findings in lockstep.
 
-### 10.1 Who can do what
+### 2. Who can do what
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -31,7 +31,7 @@ Click **Integrations → Jira** in the main sidebar menu.
 
 ---
 
-### 10.2 The page, section by section
+### 3. The page, section by section
 
 ![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integrations_jira.png)
 ![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integrations_jira_2.png)
@@ -65,7 +65,7 @@ stop when something looks out of sync.
 
 ---
 
-### 10.3 Typical setup flow (Client Admin)
+### 4. Typical setup flow (Client Admin)
 
 1. **Connect** your Jira Cloud (OAuth) — or use **Manual setup**.
 2. **Map** the relevant source(s) to your Jira project(s).
@@ -97,7 +97,7 @@ stop when something looks out of sync.
 
 ---
 
-## 10.4 Slack (engagement chat mirrored to Slack)
+## 5. Slack (engagement chat mirrored to Slack)
 
 Alongside Jira, SecurityBoat can mirror your **pentest engagement chat** into your
 **Slack** workspace, so your team can follow and reply to engagement conversations

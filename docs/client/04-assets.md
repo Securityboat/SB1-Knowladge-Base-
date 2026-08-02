@@ -1,6 +1,6 @@
-## 4. Assets
+## Assets
 
-### 4.0 What an "asset" is and why it matters
+### 1. What an "asset" is and why it matters
 
 In Tri-Netra an **asset** is a single testable target that belongs to your
 organisation — a web application, an API, a mobile app, a network range, a cloud
@@ -26,7 +26,7 @@ identity (name, type), risk classification (criticality), a precise definition o
 what's in bounds (scope contract), optional secrets testers need (credentials),
 and a lifecycle (active → archived).
 
-### 4.1 What each client role can do (and why)
+### 2. What each client role can do (and why)
 
 Asset permissions are enforced centrally by the platform's authorization service. That means the rules below hold no matter how you reach a page.
 
@@ -40,11 +40,6 @@ Asset permissions are enforced centrally by the platform's authorization service
 | Archive / Restore | ✅ | ✅ | ❌ | Lifecycle changes are writes. |
 | View asset **credentials** | ❌ | ❌ | ❌ | Secrets are gated by a *separate* policy; clients don't read them back. |
 
-**Key point:** everything is scoped to **your organisation only**. The service
-layer filters every query by your **Organization ID**, so you can never see or
-modify another tenant's assets, regardless of role. **Client Viewer** is read-only
-everywhere in this module — if you're a viewer, the create/import/edit controls
-simply won't appear.
 
 ### Navigation
 
@@ -52,7 +47,7 @@ Click **Assets** in the left sidebar menu.
 
 ---
 
-### 4.2 The Assets list — every control explained
+### 3. The Assets list — every control explained
 
 The list is your inventory dashboard: what exists, how risky it is, and whether
 it's actively being tested.
@@ -107,7 +102,7 @@ prompt with **Add asset** and **Import CSV** buttons instead of a table.
 
 ---
 
-### 4.3 Create a new asset — the full flow (Client Admin / Client TPM)
+### 4. Create a new asset — the full flow (Client Admin / Client TPM)
 
 Click **New asset**. The form is broken into **numbered sections** so you build
 the record in a logical order: identity → classification → what it is → what's in
@@ -225,7 +220,7 @@ a warning naming anything that needs a retry.
 
 ---
 
-### 4.4 Import assets from CSV — bulk creation (Client Admin / Client TPM)
+### 5. Import assets from CSV — bulk creation (Client Admin / Client TPM)
 
 When you're onboarding many assets at once, use **Import CSV** instead of the form.
 
@@ -261,7 +256,7 @@ When you're onboarding many assets at once, use **Import CSV** instead of the fo
 
 ---
 
-### 4.5 Asset detail page — reviewing and managing one asset
+### 6. Asset detail page — reviewing and managing one asset
 
 Click any asset (from the list) to open its detail page.
 
@@ -289,7 +284,7 @@ never the credential secrets.
 
 ---
 
-### 4.6 Export to CSV — getting data out
+### 7. Export to CSV — getting data out
 
 The **Export CSV** button on the list produces a point-in-time snapshot of the rows currently loaded (respecting your active filters), exporting asset name, target type, target URL, criticality, owner email, and description fields. Use it for offline reviews, sharing an inventory with auditors, or re-importing after edits. It's a client-side export, so it's instant and available to every client role.
 

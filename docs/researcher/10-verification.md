@@ -1,6 +1,6 @@
-## 10. Identity Verification
+## Identity Verification
 
-### 10.0 What it is and why it exists
+### 1. What it is and why it exists
 
 **Identity verification** confirms you are a real, named person before SecurityBoat
 entrusts you with sensitive work and payments. It is an **admin-initiated** check:
@@ -20,7 +20,7 @@ number, face-match score, and the decision).
 
 ---
 
-### 10.1 Verification process at a glance
+### 2. Verification process at a glance
 
 ```
 ADMIN (SecurityBoat)                         YOU (researcher)
@@ -54,7 +54,7 @@ Pending Review / Declined    ◀──    Verified status updates on profile
 
 ---
 
-### 10.2 Receiving the prompt
+### 3. Receiving the prompt
 
 As soon as an administrator requests your verification, two things happen:
 
@@ -75,7 +75,7 @@ As soon as an administrator requests your verification, two things happen:
 
 ---
 
-### 10.3 Starting the check — the verification popup
+### 4. Starting the check — the verification popup
 
 Click **Verify Identity** (on either surface). SecurityBoat creates a secure
 verification session and opens a **popup** titled *"Verification for My Application —
@@ -97,7 +97,7 @@ desktop session active waiting for the result.
 
 ---
 
-### 10.4 Completing the check on your phone
+### 5. Completing the check on your phone
 
 1. **Scan the QR code** using your phone's camera app to open the secure verification flow in your mobile browser.
 2. **Choose your ID type** — select your government-issued document type (e.g., **passport, driving licence, national ID card**).
@@ -109,7 +109,7 @@ SecurityBoat reconciles the signed outcome from the identity provider. Your stat
 
 ---
 
-### 10.5 The verified state and status handling
+### 6. The verified state and status handling
 
 #### Verified State
 Once approved, your **Identity verification** card displays a green **Verified** indicator (with approval date), and the **Verify Identity** button is removed. Staff can see your verified status on your profile.
@@ -126,7 +126,7 @@ Once approved, your **Identity verification** card displays a green **Verified**
 
 ---
 
-### 10.6 Best practices & troubleshooting
+### 7. Best practices & troubleshooting
 
 #### Best Practices
 

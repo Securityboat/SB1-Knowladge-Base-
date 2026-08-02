@@ -1,6 +1,6 @@
-## 11. Bug Bounty
+## Bug Bounty
 
-### 11.0 Bug Bounty for researchers
+### 1. Bug Bounty for researchers
 
 **Bug Bounty** is the continuous, rewarded testing side of the platform. As a
 researcher you browse programs, test in-scope assets, and submit findings — earning
@@ -14,7 +14,7 @@ Sidebar: **BB Program**, **Hacktivity**, **Disclosure Requests**.
 
 ---
 
-### 11.1 Programs
+### 2. Programs
 
 ![Researcher Bug Bounty programs — programs with type (VDP/Bug Bounty), visibility, status, and findings count. (1 of 2)](../images/res_bb_programs_01.png)
 
@@ -28,19 +28,22 @@ reward structure — before you start testing.
 > You participate in **Public** programs freely; **Private** programs are
 > invite-only (watch your [Invites](05-invites.md)).
 
-### 11.2 Submitting bug-bounty findings
+### 3. Submitting bug-bounty findings
 
 Findings you submit against a program flow into the unified **Findings** module
 (source = `Bug Bounty`) and follow the same lifecycle: submit → TPM/triage verifies
 → (client) remediates → resolved → payout. Write-up quality matters just as much as
 on an engagement — see the [Findings guide](07-findings.md).
 
-### 11.3 Hacktivity & Disclosure Requests
+### 4. Hacktivity & Disclosure Requests
 
 - **Hacktivity** — the public feed of disclosed/resolved reports across programs.
-  Good for seeing what's being found and building your reputation.
+  Good for seeing what's being found and building your reputation. For a full
+  walkthrough, see the dedicated **[Hacktivity guide](17-hacktivity.md)**.
 - **Disclosure Requests** — when your finding is fixed, you can request permission
-  to publish a sanitised write-up; it's reviewed before anything goes public.
+  to publish a sanitised write-up; it's reviewed before anything goes public. For
+  the complete submission workflow, see the dedicated
+  **[Disclosure Requests guide](16-disclosure-requests.md)**.
 
 ### Best practices
 
@@ -57,4 +60,4 @@ on an engagement — see the [Findings guide](07-findings.md).
 
 ---
 
-← Previous: [Identity Verification](10-verification.md) | Next: [AI Assistant →](12-ai-assistant.md)
+← Previous: [Identity Verification](10-verification.md) | Next: [Hacktivity →](17-hacktivity.md)

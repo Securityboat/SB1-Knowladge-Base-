@@ -1,12 +1,12 @@
-## 1. Introduction
+## Introduction
 
 ### Welcome
 
 **Tri-Netra** is the security platform your organisation uses to run
 penetration tests, track and remediate vulnerabilities, monitor your internet-facing
-attack surface, run bug-bounty programs, and receive compliance-ready reports — all
-in one place. This guide is for **client users**: the people at your organisation
-who consume security testing services.
+attack surface, run bug-bounty programs, and receive compliance-ready reports all
+in one place. This guide is for **client users** (the people at your organisation
+who consume security testing services).
 
 ### Who this guide is for — the three client roles
 
@@ -19,8 +19,7 @@ Your access depends on which client role you've been given:
 | **Client Viewer** | **Read-only** — view assets, verified findings, engagements, and compliance reports. No create/edit actions. |
 
 Throughout this guide, actions restricted to a specific role are labelled (e.g.
-"Client Admin only"). Everything is scoped to **your organisation** — you never see
-another company's data.
+"Client Admin only"). Everything is scoped to **your organisation**.
 
 ### What you can do on Tri-Netra (client modules)
 

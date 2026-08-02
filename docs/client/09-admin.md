@@ -1,6 +1,6 @@
-## 9. Admin (User Management)
+## Admin (User Management)
 
-### 9.0 What this section is and who can reach it
+### 1. What this section is and who can reach it
 
 The **Admin** area is where a client organisation manages its own people on the
 platform — inviting teammates and controlling their access. For client
@@ -21,7 +21,7 @@ Click **Admin** in the left sidebar menu (visible only to Client Admins), then *
 
 ---
 
-### 9.1 The Users list
+### 2. The Users list
 
 ![Admin Users — your organisation's users with name, email, role, status, and joined date; role filter, search, and an Invite button.](../images/client_admin_users.png)
 
@@ -52,7 +52,7 @@ LinkedIn/GitHub/website, etc.).
 
 ---
 
-### 9.2 Inviting a user
+### 3. Inviting a user
 
 Click **Invite** to open the invite dialog.
 
@@ -86,7 +86,7 @@ They complete sign-up (via WorkOS) to activate the account.
 
 ---
 
-### 9.3 Managing existing users
+### 4. Managing existing users
 
 Open a user from the list to:
 

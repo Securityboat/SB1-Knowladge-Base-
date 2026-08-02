@@ -1,28 +1,28 @@
-## 3. Dashboard
+## Dashboard
 
-### 3.0 What the Dashboard is for
+### 1. What the Dashboard is for
 
 The **Dashboard** is the first screen you see after signing in. It's your
 organisation's **security posture at a glance** — a single, always-current
 summary that answers three questions without you having to open any module:
 
 - **Where do I stand right now?** (open findings, active engagements, assets)
-- **What needs my attention most?** (top findings by severity)
-- **What's happened recently?** (latest engagements and reports)
+- **What needs my attention most?** (top findings and findings by severity)
+- **What's happened recently?** (Recent engagements and reports)
 
 Everything on it is **scoped to your organisation** and **filtered to your role** —
 you never see another company's data, and the tiles reflect only what you're
 permitted to access. The Dashboard is **read-only**: it's a launchpad, not a place
 to edit. Every card links through to the module where you can act.
 
-### 3.1 How to reach it
+### 2. How to reach it
 
 - It loads automatically after login.
 - From anywhere, click **Dashboard** (top of the left sidebar) or the SecurityBoat logo.
 
-### 3.2 The Dashboard, top to bottom
+### 3. The Dashboard, top to bottom
 
-![Client dashboard — greeting, KPI tiles, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard.png)
 
 The client dashboard is assembled from these sections, in order:
 
@@ -31,12 +31,11 @@ The client dashboard is assembled from these sections, in order:
 A personalised header showing your **first name**, your **role**, and your
 **organisation name**. It orients you and confirms which org's data you're viewing.
 
-#### b. KPI tiles (MetricTiles)
+#### b. Key Metrics (Overview Cards)
 
-A row of headline metrics — each is a live count, and each is clickable to jump to
-the underlying module:
+A row of overview cards showing your current key metrics. Each card displays a live count and can be clicked to jump to the respective module:
 
-| Tile | Meaning | Links to |
+| Card / Metric | Meaning | Links to |
 |------|---------|----------|
 | **Active Engagements** | Penetration tests currently in progress for your org. | Engagements |
 | **Open Findings** | Vulnerabilities not yet resolved (across all sources). | Findings |
@@ -44,9 +43,7 @@ the underlying module:
 | **Team Members** | People in your organisation with Tri-Netra access. | Admin → Users |
 | **Assets** | Items in your testable inventory. | Assets |
 
-> The exact tiles vary slightly by client role. **Client Admin** sees the team/user
-> metric because it manages users; **Client TPM** and **Client Viewer** see a
-> security-focused subset. The numbers are always your org's real-time totals.
+> The exact metrics shown vary slightly by client role. **Client Admin** sees the team/user count because they manage users; **Client TPM** and **Client Viewer** see a security-focused subset. All numbers reflect your organisation's real-time totals.
 
 #### c. Top Findings
 
@@ -59,7 +56,7 @@ queue — start at the top. Click any row to open the full finding.
 
 A **donut chart** breaking your open findings down by severity. The centre shows the
 total; each coloured segment is one severity band. Use it to gauge overall risk
-concentration at a glance — a ring ring dominated by red/orange signals urgent exposure.
+concentration at a glance, a ring dominated by red/orange signals urgent exposure.
 
 #### e. Recent Engagements
 
@@ -78,7 +75,7 @@ monitored targets, discovered assets, and exposures. If you're onboarded for
 **Bug Bounty**, a **Recent Programs** card lists your active programs. These cards
 **do not appear** if your org isn't subscribed to those platforms.
 
-### 3.3 Role differences on the Dashboard
+### 4. Role differences on the Dashboard
 
 The dashboard component is chosen by your role:
 
@@ -90,10 +87,9 @@ The dashboard component is chosen by your role:
 In every case the data is identical in scope (your org) — only the emphasis and the
 actions you can take downstream differ.
 
-### 3.4 How to use it day to day
+### 5. How to use it day to day
 
-1. **Scan the KPI tiles** for anything that jumped (a spike in open findings, a new
-   active engagement).
+1. **Scan the key metrics** for any sudden changes (such as a spike in open findings or a new active engagement).
 2. **Work the Top Findings list** from the top down — highest severity first.
 3. **Check the posture ring** to confirm your risk is trending down over time.
 4. **Open Recent Reports** when you're notified a deliverable is ready.
@@ -102,7 +98,7 @@ actions you can take downstream differ.
 
 - Treat **Top Findings** as your daily triage queue.
 - Watch the **posture ring** week over week — the goal is fewer red/orange segments.
-- Use the tiles as shortcuts rather than navigating the sidebar manually.
+- Use the overview cards as shortcuts to quickly access specific modules instead of using the sidebar.
 
 ### Troubleshooting
 

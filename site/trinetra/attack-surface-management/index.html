@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.securityboat.in/trinetra/attack-surface-management/">
       
       
-        <link rel="prev" href="../agentic-pentest/">
+        <link rel="prev" href="../ptaas/">
       
       
         <link rel="next" href="../digital-risk-protection/">
@@ -22,7 +22,7 @@
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#attack-surface-management" class="md-skip">
+        <a href="#attack-surface-management-asm" class="md-skip">
           Skip to content
         </a>
       
@@ -96,8 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="SecurityBoat Documentation" class="md-header__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -314,8 +313,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="SecurityBoat Documentation" class="md-nav__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     SecurityBoat Documentation
@@ -442,6 +440,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../ish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ish (Ask Anything)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../bug-bounty/" class="md-nav__link">
         
   
@@ -495,6 +521,198 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attack Surface Management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attack Surface Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-asm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is ASM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-request-and-approve-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Request-and-Approve Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-provide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What We Provide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What We Provide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-exposure-scorecard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exposure Scorecard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-living-subdomain-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Living Subdomain Inventory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-integrated-scans-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Integrated Scans Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digital-risk-protection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Risk Protection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -523,26 +741,17 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../continuous-testing/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Attack Surface Management
+    Continuous Testing
   
 
     
@@ -551,7 +760,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -564,14 +772,154 @@
   
   
     <li class="md-nav__item">
-      <a href="../digital-risk-protection/" class="md-nav__link">
+      <a href="../ai-red-teaming/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Digital Risk Protection
+    AI Red Teaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../continuous-controls-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Controls Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trust-center/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trust Center
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vciso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vCISO as a Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../incident-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Response
   
 
     
@@ -686,7 +1034,7 @@
   <span class="md-ellipsis">
     
   
-    01. Introduction
+    Introduction
   
 
     
@@ -714,7 +1062,7 @@
   <span class="md-ellipsis">
     
   
-    02. Signing In
+    Signing In
   
 
     
@@ -742,7 +1090,7 @@
   <span class="md-ellipsis">
     
   
-    03. Dashboard
+    Dashboard
   
 
     
@@ -770,7 +1118,7 @@
   <span class="md-ellipsis">
     
   
-    04. Assets
+    Assets
   
 
     
@@ -798,7 +1146,7 @@
   <span class="md-ellipsis">
     
   
-    05. Findings
+    Findings
   
 
     
@@ -826,7 +1174,7 @@
   <span class="md-ellipsis">
     
   
-    06. Engagements
+    Engagements
   
 
     
@@ -854,7 +1202,7 @@
   <span class="md-ellipsis">
     
   
-    07. My Requests
+    My Requests
   
 
     
@@ -882,7 +1230,7 @@
   <span class="md-ellipsis">
     
   
-    08. Compliance Reports
+    Compliance Reports
   
 
     
@@ -910,7 +1258,7 @@
   <span class="md-ellipsis">
     
   
-    09. User Administration
+    User Administration
   
 
     
@@ -938,7 +1286,7 @@
   <span class="md-ellipsis">
     
   
-    10. Integrations
+    Integrations
   
 
     
@@ -966,7 +1314,7 @@
   <span class="md-ellipsis">
     
   
-    11. Attack Surface (ASM)
+    Attack Surface (ASM)
   
 
     
@@ -994,7 +1342,63 @@
   <span class="md-ellipsis">
     
   
-    12. Bug Bounty
+    Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client/17-hacktivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacktivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client/18-disclosure-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disclosure Requests
   
 
     
@@ -1022,7 +1426,7 @@
   <span class="md-ellipsis">
     
   
-    13. AI Assistant
+    AI Assistant
   
 
     
@@ -1050,7 +1454,7 @@
   <span class="md-ellipsis">
     
   
-    14. Settings
+    Settings
   
 
     
@@ -1193,7 +1597,7 @@
   <span class="md-ellipsis">
     
   
-    01. Introduction
+    Introduction
   
 
     
@@ -1221,7 +1625,7 @@
   <span class="md-ellipsis">
     
   
-    02. Signing In
+    Signing In
   
 
     
@@ -1249,7 +1653,7 @@
   <span class="md-ellipsis">
     
   
-    03. Dashboard
+    Dashboard
   
 
     
@@ -1277,7 +1681,7 @@
   <span class="md-ellipsis">
     
   
-    04. Opportunities
+    Opportunities
   
 
     
@@ -1305,7 +1709,7 @@
   <span class="md-ellipsis">
     
   
-    05. Invites
+    Invites
   
 
     
@@ -1333,7 +1737,7 @@
   <span class="md-ellipsis">
     
   
-    06. Engagements
+    Engagements
   
 
     
@@ -1361,7 +1765,7 @@
   <span class="md-ellipsis">
     
   
-    07. Findings
+    Findings
   
 
     
@@ -1389,7 +1793,7 @@
   <span class="md-ellipsis">
     
   
-    08. My Findings
+    My Findings
   
 
     
@@ -1417,7 +1821,7 @@
   <span class="md-ellipsis">
     
   
-    09. Payouts
+    Payouts
   
 
     
@@ -1445,7 +1849,7 @@
   <span class="md-ellipsis">
     
   
-    10. Identity Verification
+    Identity Verification
   
 
     
@@ -1473,7 +1877,63 @@
   <span class="md-ellipsis">
     
   
-    11. Bug Bounty
+    Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/17-hacktivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacktivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/16-disclosure-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disclosure Requests
   
 
     
@@ -1501,7 +1961,7 @@
   <span class="md-ellipsis">
     
   
-    12. AI Assistant
+    AI Assistant
   
 
     
@@ -1529,7 +1989,7 @@
   <span class="md-ellipsis">
     
   
-    13. Settings
+    Settings
   
 
     
@@ -1598,6 +2058,103 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-asm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is ASM?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-request-and-approve-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Request-and-Approve Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-provide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What We Provide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What We Provide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-exposure-scorecard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Exposure Scorecard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-living-subdomain-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Living Subdomain Inventory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-integrated-scans-tab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Integrated Scans Tab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1613,15 +2170,57 @@
 
 
 
-<h1 id="attack-surface-management">Attack Surface Management</h1>
+<h1 id="attack-surface-management-asm">Attack Surface Management (ASM)</h1>
 <blockquote>
-<p><strong>TriNetra</strong> · Public product information</p>
+<p><strong>TriNetra · Exposure &amp; Risk</strong> · Public product information</p>
 </blockquote>
-<p>Continuous discovery and monitoring of your internet-facing attack surface.
-11-stage scan pipeline covering domains, subdomains, IP ranges, and 15+ cloud
-providers. Know what attackers see — before they do.</p>
+<p>TriNetra's Attack Surface Management (ASM) module continuously discovers, inventories, and scores your organization's public internet footprint, ensuring that shadow IT, stale subdomains, and cloud assets are mapped and monitored.</p>
 <hr />
-<p><em>Detailed product information will be added here.</em></p>
+<h2 id="what-is-asm">What is ASM?</h2>
+<p>Organizations routinely lose track of their internet-facing systems. Developers spin up staging environments, marketing teams register vanity domains, and subsidiaries deploy cloud applications without central IT oversight. These unmonitored assets are the first targets external attackers find.</p>
+<p>TriNetra ASM solves this through controlled, continuous discovery:</p>
+<ul>
+<li><strong>Scope Confirmation First:</strong> Unlike tools that scan blindly, ASM requires a target to be requested, reviewed, and approved before a scan runs.</li>
+<li><strong>Living Inventory:</strong> Keeps a real-time record of your active infrastructure, replacing static, outdated spreadsheets.</li>
+<li><strong>Attributable Scans:</strong> Every scan pipeline run has a clear, recorded trigger, eliminating mystery cron jobs or unexpected bandwidth consumption.</li>
+</ul>
+<hr />
+<h2 id="how-it-works">How it Works</h2>
+<p>Onboarding and scanning follow a strict workflow to ensure authorization and scoping accuracy.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph LR
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    A[Request a Scan] --&gt; B(Security Team Review)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    B --&gt;|Approved| C(Configured Cadence Scan)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    B --&gt;|Approved| D(On-Demand / Ad-Hoc Scan)
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    C --&gt; E[Living Subdomain Inventory]
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    D --&gt; E
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    E --&gt; F[Posture Scorecard &amp; Threat Radar]
+</code></pre></div>
+<h3 id="the-request-and-approve-flow">The Request-and-Approve Flow</h3>
+<ol>
+<li><strong>Request a Scan:</strong> Use the onboarding wizard to add targets by type:<ul>
+<li><strong>Standard Targets:</strong> Root domains, IP ranges (CIDRs), or ASNs.</li>
+<li><strong>Cloud Targets:</strong> API integrations for AWS, GCP, Azure, or SaaS providers.</li>
+</ul>
+</li>
+<li><strong>Review &amp; Approve:</strong> SecurityBoat's operations team validates ownership and bounds to prevent accidental out-of-scope testing.</li>
+<li><strong>Execution &amp; Inventory:</strong> Discovered assets populate the <strong>Subdomains</strong> inventory tab, listing open ports, detected technologies, TLS strength, and exposure scores.</li>
+</ol>
+<hr />
+<h2 id="what-we-provide">What We Provide</h2>
+<h3 id="1-exposure-scorecard">1. Exposure Scorecard</h3>
+<p>The ASM dashboard provides immediate visibility into your highest-risk exposure metrics:
+* <strong>Subdomain Takeovers:</strong> Identifies subdomains pointing to orphaned cloud resources (e.g., deleted AWS S3 buckets or GitHub Pages) that attackers could hijack.
+* <strong>Exposed Login Portals:</strong> Detects authentication endpoints (e.g., admin interfaces, databases, or Jenkins panels) open to the public.
+* <strong>Exposed Secrets:</strong> Scans discovered web roots for exposed API keys, configuration files, or backup archives.
+* <strong>Weak TLS Hosts:</strong> Identifies servers running obsolete encryption protocols (like SSLv3 or TLS 1.0) or expired certificates.</p>
+<h3 id="2-living-subdomain-inventory">2. Living Subdomain Inventory</h3>
+<p>A searchable, tabular view of all assets under your footprint. Each row shows:
+* Asset name and IP address.
+* HTTP response code and titles.
+* Detected software versions and frameworks.
+* Threat level based on discovered exposures.</p>
+<h3 id="3-integrated-scans-tab">3. Integrated Scans Tab</h3>
+<p>The <strong>Scans</strong> tab displays every automated scan event, showing the start time, completion time, targets scanned, and the user or automated scheduler that triggered the execution.</p>
 
 
 
@@ -1656,11 +2255,6 @@ providers. Know what attackers see — before they do.</p>
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       

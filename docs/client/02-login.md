@@ -1,6 +1,6 @@
-## 2. Logging In
+## Logging In
 
-### 2.0 How SecurityBoat sign-in works
+### 1. How SecurityBoat sign-in works
 
 SecurityBoat uses **WorkOS** as its identity provider. You never create or store a
 password inside SecurityBoat itself — authentication is delegated to WorkOS's hosted
@@ -11,9 +11,9 @@ enforced MFA) apply automatically.
 
 Access is **invite-only**: you can sign in only with an account that has been
 invited to your organisation. A Client Admin at your company (or your SecurityBoat
-CSM) sends the invitation.
+CSM) sends the invitation. If your organisation is new to SecurityBoat, please click the **Contact sales** button on the sign-in screen to submit an onboarding request.
 
-### 2.1 The sign-in screen
+### 2. The sign-in screen
 
 ![SecurityBoat sign-in — "Continue with SSO" launches the WorkOS hosted login; below are MFA recovery and apply/contact links.](../images/login_workos.png)
 
@@ -22,9 +22,9 @@ Open your SecurityBoat URL. You'll see the **Sign in to Tri-Netra** card with:
 - **Continue with SSO** — the primary button; starts the WorkOS login flow.
 - **Reset MFA** — "Lost access to your authenticator app?" recovery link.
 - **Apply as a researcher / Contact sales** — for prospective researchers and new
-  customers (not used by existing client users).
+  customers (if you are a new organisation, click the **Contact sales** button to open and submit the onboarding request form).
 
-### 2.2 Sign-in, step by step (end to end)
+### 3. Sign-in, step by step (end to end)
 
 1. **Click "Continue with SSO".** SecurityBoat redirects your browser to the WorkOS
    hosted login page.
@@ -34,7 +34,7 @@ Open your SecurityBoat URL. You'll see the **Sign in to Tri-Netra** card with:
      Okta, Azure AD, Google Workspace) and sign in there.
 3. **Complete MFA** if your account or organisation requires it (authenticator app
    code, etc.).
-4. **WorkOS verifies you** and redirects back to SecurityBoat's secure callback.
+4. **Redirected to SecurityBoat:** Once verified, you are automatically returned to the platform.
 5. **You land on your Dashboard**, scoped to your role and organisation.
 
 ```
@@ -42,19 +42,19 @@ You → "Continue with SSO" → WorkOS hosted login (password / SSO / SAML + MFA
     → verified → SecurityBoat callback → Dashboard
 ```
 
-### 2.3 First-time sign-in (from an invitation)
+### 4. First-time sign-in (from an invitation)
 
 If you're new, you'll receive an **invitation email**. Follow its link to complete
 account setup in WorkOS (set your password and/or link your SSO, and enrol MFA if
 required). After that first setup, you sign in normally via **Continue with SSO**.
 
-### 2.4 MFA and recovery
+### 5. MFA and recovery
 
 - **Enrol/manage MFA** from **Settings → MFA Setup** once signed in.
 - **Lost your authenticator?** Use **Reset MFA** on the sign-in screen (the
   "Lost access to your authenticator app?" link) to start recovery.
 
-### 2.5 Signing out
+### 6. Signing out
 
 Use the **user menu** (top-right) → **Sign out**. This ends your SecurityBoat
 session (clears the session cookie). For shared or public devices, always sign out.

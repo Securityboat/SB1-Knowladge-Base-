@@ -1,6 +1,6 @@
-## 4. Opportunities (Marketplace)
+## Opportunities (Marketplace)
 
-### 4.0 What Opportunities is
+### 1. What Opportunities is
 
 **Opportunities** is the researcher marketplace: a feed of **open pentest
 engagements** you can bid on. SecurityBoat posts sanitised scope summaries here when
@@ -19,7 +19,7 @@ Lead Researcher only.)
 
 ---
 
-### 4.1 Browsing open engagements
+### 2. Browsing open engagements
 
 ![Opportunities marketplace — collapsible engagement cards with project ID, title, and an expandable detail panel.](../images/res_opportunities.png)
 
@@ -35,7 +35,7 @@ Click to expand the detail panel:
 | **Fixed Payout** | The researcher payout (amount + currency), or "Contact for details". |
 | **Tags** | "Source access" vs "Black-box only", and the scheduled dates. |
 
-### 4.2 Applying (placing a bid)
+### 3. Applying (placing a bid)
 
 At the bottom of an expanded card:
 

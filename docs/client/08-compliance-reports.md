@@ -1,6 +1,6 @@
-## 8. Compliance Reports
+## Compliance Reports
 
-### 8.0 What this module is for
+### 1. What this module is for
 
 **Compliance Reports** are the formal, framework-aligned reports SecurityBoat
 produces for your organisation — the documents you hand to auditors, regulators,
@@ -18,7 +18,7 @@ Each report is tied to a **compliance framework**:
 A report aggregates the results of one or more engagements over an **audit period**
 into a single deliverable.
 
-### 8.1 The visibility rule (why your list may be short)
+### 2. The visibility rule (why your list may be short)
 
 > You only see compliance reports that are **Approved** and belong to **your
 > organisation**. Reports still being drafted, reviewed, or QA'd by SecurityBoat
@@ -27,7 +27,7 @@ into a single deliverable.
 > screen: a request for a non-approved or another org's report simply returns
 > "not found".
 
-### 8.2 What each client role can do
+### 3. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -47,7 +47,7 @@ Click **Compliance Reports** in the main sidebar menu.
 
 ---
 
-### 8.3 Reading the list
+### 4. Reading the list
 
 ![Compliance Reports — a card per approved report with framework, engagement count, audit period, a published/pending badge, and Review / View / Download actions.](../images/client_compliance_reports.png)
 
@@ -76,7 +76,7 @@ Each report is a card showing:
 
 ---
 
-### 8.4 Management review (Client Admin only)
+### 5. Management review (Client Admin only)
 
 Click **Review** to record your organisation's formal response to a report. A
 Client Admin can edit a small, fixed set of **client-review fields** on an approved

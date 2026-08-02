@@ -14,7 +14,7 @@ throughout (e.g. "Client Admin only").
 |---|---------|----------------|
 | 1 | [Introduction](01-introduction.md) | The platform, the three client roles, and the modules you can access. |
 | 2 | [Logging In](02-login.md) | WorkOS sign-in end to end — SSO, SAML, MFA, sessions, sign-out. |
-| 3 | [Dashboard](03-dashboard.md) | Your security posture at a glance — KPIs, top findings, posture ring. |
+| 3 | [Dashboard](03-dashboard.md) | Your security posture at a glance — key metrics, top findings, posture ring. |
 | 4 | [Assets](04-assets.md) | Your testable inventory; create/import/export per role. |
 | 5 | [Findings](05-findings.md) | Verified vulnerabilities and the remediation workflow. |
 | 6 | [Engagements](06-engagements.md) | Your penetration tests — request, track, report. |

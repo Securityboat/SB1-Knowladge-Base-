@@ -1,6 +1,6 @@
-## 8. My Findings
+## My Findings
 
-### 8.0 Your personal finding tracker
+### 1. Your personal finding tracker
 
 **My Findings** is your view of the findings **you submitted** — across all your
 engagements and programs — so you can track each one from submission through
@@ -14,7 +14,7 @@ My Findings entry in your researcher workspace.
 
 ---
 
-### 8.1 What to track
+### 2. What to track
 
 ![My Findings — the researcher's own submissions with severity, state, and source. (1 of 2)](../images/res_findings_list_01.png)
 
@@ -40,7 +40,7 @@ For each of your findings, watch:
 | **Resolved** | Closed — typically the trigger for payout eligibility. |
 | **(Duplicate / rejected side-states)** | Not counted — check the comments for why. |
 
-### 8.2 From finding to payout
+### 3. From finding to payout
 
 A finding that reaches **Verified/Resolved** on a paid program or engagement becomes
 a **payout**. Track the money side under [Payouts](09-payouts.md); track the

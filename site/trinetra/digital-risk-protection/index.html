@@ -16,13 +16,13 @@
         <link rel="prev" href="../attack-surface-management/">
       
       
-        <link rel="next" href="../../client/00-GETTING_STARTED/">
+        <link rel="next" href="../agentic-pentest/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#digital-risk-protection" class="md-skip">
+        <a href="#digital-risk-protection-drp" class="md-skip">
           Skip to content
         </a>
       
@@ -96,8 +96,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="SecurityBoat Documentation" class="md-header__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -314,8 +313,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="SecurityBoat Documentation" class="md-nav__button md-logo" aria-label="SecurityBoat Documentation" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="../../images/logo.png" alt="logo">
 
     </a>
     SecurityBoat Documentation
@@ -442,6 +440,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../ish/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ish (Ask Anything)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../bug-bounty/" class="md-nav__link">
         
   
@@ -478,34 +504,6 @@
     
   
     PTaaS
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../agentic-pentest/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Agentic Pentest
   
 
     
@@ -563,6 +561,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Risk Protection
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -580,6 +596,338 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-drp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DRP?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-takedown-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Takedown Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-provide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What We Provide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What We Provide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-seven-alert-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Seven Alert Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-live-forensic-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Live Forensic Evidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-takedown-retesting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Takedown Retesting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agentic-pentest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentic Pentest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../continuous-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-red-teaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Red Teaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../continuous-controls-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Controls Validation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trust-center/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trust Center
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vciso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vCISO as a Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../incident-response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incident Response
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -686,7 +1034,7 @@
   <span class="md-ellipsis">
     
   
-    01. Introduction
+    Introduction
   
 
     
@@ -714,7 +1062,7 @@
   <span class="md-ellipsis">
     
   
-    02. Signing In
+    Signing In
   
 
     
@@ -742,7 +1090,7 @@
   <span class="md-ellipsis">
     
   
-    03. Dashboard
+    Dashboard
   
 
     
@@ -770,7 +1118,7 @@
   <span class="md-ellipsis">
     
   
-    04. Assets
+    Assets
   
 
     
@@ -798,7 +1146,7 @@
   <span class="md-ellipsis">
     
   
-    05. Findings
+    Findings
   
 
     
@@ -826,7 +1174,7 @@
   <span class="md-ellipsis">
     
   
-    06. Engagements
+    Engagements
   
 
     
@@ -854,7 +1202,7 @@
   <span class="md-ellipsis">
     
   
-    07. My Requests
+    My Requests
   
 
     
@@ -882,7 +1230,7 @@
   <span class="md-ellipsis">
     
   
-    08. Compliance Reports
+    Compliance Reports
   
 
     
@@ -910,7 +1258,7 @@
   <span class="md-ellipsis">
     
   
-    09. User Administration
+    User Administration
   
 
     
@@ -938,7 +1286,7 @@
   <span class="md-ellipsis">
     
   
-    10. Integrations
+    Integrations
   
 
     
@@ -966,7 +1314,7 @@
   <span class="md-ellipsis">
     
   
-    11. Attack Surface (ASM)
+    Attack Surface (ASM)
   
 
     
@@ -994,7 +1342,63 @@
   <span class="md-ellipsis">
     
   
-    12. Bug Bounty
+    Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client/17-hacktivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacktivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client/18-disclosure-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disclosure Requests
   
 
     
@@ -1022,7 +1426,7 @@
   <span class="md-ellipsis">
     
   
-    13. AI Assistant
+    AI Assistant
   
 
     
@@ -1050,7 +1454,7 @@
   <span class="md-ellipsis">
     
   
-    14. Settings
+    Settings
   
 
     
@@ -1193,7 +1597,7 @@
   <span class="md-ellipsis">
     
   
-    01. Introduction
+    Introduction
   
 
     
@@ -1221,7 +1625,7 @@
   <span class="md-ellipsis">
     
   
-    02. Signing In
+    Signing In
   
 
     
@@ -1249,7 +1653,7 @@
   <span class="md-ellipsis">
     
   
-    03. Dashboard
+    Dashboard
   
 
     
@@ -1277,7 +1681,7 @@
   <span class="md-ellipsis">
     
   
-    04. Opportunities
+    Opportunities
   
 
     
@@ -1305,7 +1709,7 @@
   <span class="md-ellipsis">
     
   
-    05. Invites
+    Invites
   
 
     
@@ -1333,7 +1737,7 @@
   <span class="md-ellipsis">
     
   
-    06. Engagements
+    Engagements
   
 
     
@@ -1361,7 +1765,7 @@
   <span class="md-ellipsis">
     
   
-    07. Findings
+    Findings
   
 
     
@@ -1389,7 +1793,7 @@
   <span class="md-ellipsis">
     
   
-    08. My Findings
+    My Findings
   
 
     
@@ -1417,7 +1821,7 @@
   <span class="md-ellipsis">
     
   
-    09. Payouts
+    Payouts
   
 
     
@@ -1445,7 +1849,7 @@
   <span class="md-ellipsis">
     
   
-    10. Identity Verification
+    Identity Verification
   
 
     
@@ -1473,7 +1877,63 @@
   <span class="md-ellipsis">
     
   
-    11. Bug Bounty
+    Bug Bounty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/17-hacktivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacktivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../researcher/16-disclosure-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disclosure Requests
   
 
     
@@ -1501,7 +1961,7 @@
   <span class="md-ellipsis">
     
   
-    12. AI Assistant
+    AI Assistant
   
 
     
@@ -1529,7 +1989,7 @@
   <span class="md-ellipsis">
     
   
-    13. Settings
+    Settings
   
 
     
@@ -1598,6 +2058,103 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-drp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is DRP?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How it Works
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-takedown-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Takedown Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-provide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What We Provide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What We Provide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-seven-alert-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Seven Alert Categories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-live-forensic-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Live Forensic Evidence
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-takedown-retesting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Takedown Retesting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1613,15 +2170,55 @@
 
 
 
-<h1 id="digital-risk-protection">Digital Risk Protection</h1>
+<h1 id="digital-risk-protection-drp">Digital Risk Protection (DRP)</h1>
 <blockquote>
-<p><strong>TriNetra</strong> · Public product information</p>
+<p><strong>TriNetra · Exposure &amp; Risk</strong> · Public product information</p>
 </blockquote>
-<p>Detect and respond to external threats targeting your brand. Identifies phishing
-clones, brand impersonations, and fraudulent domains with side-by-side visual
-proof. Automated takedown workflows to neutralize threats fast.</p>
+<p>TriNetra's Digital Risk Protection (DRP) module monitors the external internet landscape beyond your owned infrastructure, identifying brand impersonations, typosquats, leaked credentials, and phishing clones, and managing the takedown process.</p>
 <hr />
-<p><em>Detailed product information will be added here.</em></p>
+<h2 id="what-is-drp">What is DRP?</h2>
+<p>An organization's security boundary does not end at its IP addresses. Attackers register lookalike domains, clone your web applications pixel-for-pixel to steal user credentials, post fraudulent mobile apps on mirror stores, and sell stolen employee credentials on leak sites. Because these assets are hosted on third-party infrastructure, standard scanners will never find them.</p>
+<p>TriNetra DRP protects your brand's digital footprint:</p>
+<ul>
+<li><strong>Watchlist-Driven Monitoring:</strong> Monitors for lookalike domains, brand keywords, product names, and executive names.</li>
+<li><strong>Kanban Takedown Tracking:</strong> Tracks the lifecycle of a threat from detection through registrar notification to confirmed removal.</li>
+<li><strong>Evidence-Backed Alerts:</strong> Every alert is accompanied by forensic evidence (such as HTML similarity scores, favicon hashes, and DNS histories) to justify action.</li>
+</ul>
+<hr />
+<h2 id="how-it-works">How it Works</h2>
+<p>The DRP engine runs continuous sweeps across domain registries, app stores, leak forums, and search indexes.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>graph TD
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    A[Watchlist Configuration] --&gt; B(Continuous Internet Sweeps)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    B --&gt; C{Correlation &amp; Fingerprinting}
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    C --&gt;|No Match / Normal| D[Ignore]
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    C --&gt;|Matched Indicator| E[Triage &amp; Severity Score]
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    E --&gt; F[Takedown Board: Detect -&gt; Validate -&gt; Action -&gt; Confirm]
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    F --&gt; G[Takedown Resolved &amp; Monitored for Re-emergence]
+</code></pre></div>
+<h3 id="the-takedown-workflow">The Takedown Workflow</h3>
+<p>When a threat is confirmed, it is placed on a governed Kanban board to prevent stalled requests:
+1. <strong>Detect:</strong> Initial discovery of the threat, populated with raw WHOIS and DNS data.
+2. <strong>Validate:</strong> Enriched with visual proof (e.g., side-by-side screenshots) and technical signatures (e.g., HTML structure matches).
+3. <strong>Action:</strong> A formal takedown request is filed with the hosting provider, registrar, or app store.
+4. <strong>Confirm:</strong> The endpoint is verified as resolving to a parking page, showing a 404 error, or removed from the store.</p>
+<hr />
+<h2 id="what-we-provide">What We Provide</h2>
+<h3 id="1-seven-alert-categories">1. Seven Alert Categories</h3>
+<p>All external detections are classified into one of seven threat vectors:
+* <strong>Phishing Clone:</strong> Identical or high-similarity replicas of your login interfaces hosted on external servers.
+* <strong>Typosquat / New Domain:</strong> Lookalike domain names targeting your brand (e.g., swapping letters, adding dashes, or using obscure TLDs).
+* <strong>Financial Fraud:</strong> Scam sites offering fake promotions, jobs, or products in your name.
+* <strong>Ransomware Leak Site:</strong> Monitoring dark web leak sites for mentions of your brand or stolen datasets.
+* <strong>Credential Leak:</strong> Scouring public repositories and leak dumps for compromised corporate email credentials.
+* <strong>Fake Mobile App:</strong> Unauthorized mobile applications mimicking your software on third-party Android/iOS mirror sites.
+* <strong>Executive Impersonation:</strong> Fraudulent social profiles (LinkedIn, X, Facebook) using your executives' names and images to target employees or clients.</p>
+<h3 id="2-live-forensic-evidence">2. Live Forensic Evidence</h3>
+<p>Every finding provides the data needed to file abuse reports:
+* <strong>Favicon Hash:</strong> SHA256 signature of the site's icon, proving it was copied from your source.
+* <strong>HTML Similarity Score:</strong> Numerical comparison of page structures.
+* <strong>DNS and WHOIS Trails:</strong> IP hosting histories and registrar contact details.</p>
+<h3 id="3-takedown-retesting">3. Takedown Retesting</h3>
+<p>Even after a phishing site is taken down, DRP continues to monitor the hostname and IP for 30 days to ensure the attacker does not quietly restore service once the registrar complaint resolves.</p>
 
 
 
@@ -1656,11 +2253,6 @@ proof. Automated takedown workflows to neutralize threats fast.</p>
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
   
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
   
 </div>
       

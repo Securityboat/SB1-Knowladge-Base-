@@ -7,6 +7,8 @@ site_dir: site
 
 theme:
   name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
   language: en
   palette:
     - scheme: default
@@ -37,6 +39,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  generator: false
+
 markdown_extensions:
   - admonition
   - pymdownx.superfences
@@ -56,41 +61,53 @@ nav:
   - Overview: index.md
   - TriNetra Platform:
       - Overview: trinetra/index.md
+      - Ish (Ask Anything): trinetra/ish.md
       - Bug Bounty: trinetra/bug-bounty.md
       - PTaaS: trinetra/ptaas.md
-      - Agentic Pentest: trinetra/agentic-pentest.md
       - Attack Surface Management: trinetra/attack-surface-management.md
       - Digital Risk Protection: trinetra/digital-risk-protection.md
+      - Agentic Pentest: trinetra/agentic-pentest.md
+      - Continuous Testing: trinetra/continuous-testing.md
+      - AI Red Teaming: trinetra/ai-red-teaming.md
+      - Code Security: trinetra/code-security.md
+      - Continuous Controls Validation: trinetra/continuous-controls-validation.md
+      - Trust Center: trinetra/trust-center.md
+      - vCISO as a Service: trinetra/vciso.md
+      - Incident Response: trinetra/incident-response.md
   - Client Guide:
       - Getting Started: client/00-GETTING_STARTED.md
-      - 01. Introduction: client/01-introduction.md
-      - 02. Signing In: client/02-login.md
-      - 03. Dashboard: client/03-dashboard.md
-      - 04. Assets: client/04-assets.md
-      - 05. Findings: client/05-findings.md
-      - 06. Engagements: client/06-engagements.md
-      - 07. My Requests: client/07-my-requests.md
-      - 08. Compliance Reports: client/08-compliance-reports.md
-      - 09. User Administration: client/09-admin.md
-      - 10. Integrations: client/10-integrations.md
-      - 11. Attack Surface (ASM): client/11-asm.md
-      - 12. Bug Bounty: client/12-bug-bounty.md
-      - 13. AI Assistant: client/13-ai-assistant.md
-      - 14. Settings: client/14-settings.md
+      - Introduction: client/01-introduction.md
+      - Signing In: client/02-login.md
+      - Dashboard: client/03-dashboard.md
+      - Assets: client/04-assets.md
+      - Findings: client/05-findings.md
+      - Engagements: client/06-engagements.md
+      - My Requests: client/07-my-requests.md
+      - Compliance Reports: client/08-compliance-reports.md
+      - User Administration: client/09-admin.md
+      - Integrations: client/10-integrations.md
+      - Attack Surface (ASM): client/11-asm.md
+      - Bug Bounty: client/12-bug-bounty.md
+      - Hacktivity: client/17-hacktivity.md
+      - Disclosure Requests: client/18-disclosure-requests.md
+      - AI Assistant: client/13-ai-assistant.md
+      - Settings: client/14-settings.md
       - Full Client Guide Index: client/CLIENT_Guide.md
   - Researcher Guide:
       - Getting Started: researcher/00-GETTING_STARTED.md
-      - 01. Introduction: researcher/01-introduction.md
-      - 02. Signing In: researcher/02-login.md
-      - 03. Dashboard: researcher/03-dashboard.md
-      - 04. Opportunities: researcher/04-opportunities.md
-      - 05. Invites: researcher/05-invites.md
-      - 06. Engagements: researcher/06-engagements.md
-      - 07. Findings: researcher/07-findings.md
-      - 08. My Findings: researcher/08-my-findings.md
-      - 09. Payouts: researcher/09-payouts.md
-      - 10. Identity Verification: researcher/10-verification.md
-      - 11. Bug Bounty: researcher/11-bug-bounty.md
-      - 12. AI Assistant: researcher/12-ai-assistant.md
-      - 13. Settings: researcher/13-settings.md
+      - Introduction: researcher/01-introduction.md
+      - Signing In: researcher/02-login.md
+      - Dashboard: researcher/03-dashboard.md
+      - Opportunities: researcher/04-opportunities.md
+      - Invites: researcher/05-invites.md
+      - Engagements: researcher/06-engagements.md
+      - Findings: researcher/07-findings.md
+      - My Findings: researcher/08-my-findings.md
+      - Payouts: researcher/09-payouts.md
+      - Identity Verification: researcher/10-verification.md
+      - Bug Bounty: researcher/11-bug-bounty.md
+      - Hacktivity: researcher/17-hacktivity.md
+      - Disclosure Requests: researcher/16-disclosure-requests.md
+      - AI Assistant: researcher/12-ai-assistant.md
+      - Settings: researcher/13-settings.md
       - Full Researcher Guide Index: researcher/RESEARCHER_Guide.md

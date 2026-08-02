@@ -3,25 +3,46 @@
 > **Version 4.0 — July 2026** · Production guide for live end users · en-GB
 > **Applies to client roles:** Client Admin, Client TPM, Client Viewer.
 
-Welcome to **Tri-Netra**. This Getting Started guide helps client users quickly understand their workspace, navigation, role permissions, and key workflows without needing to reference internal administrative documentation.
+Welcome to **Tri-Netra**. This Getting Started guide helps client users quickly understand their workspace, navigation, role permissions, and key workflows.
 
 ---
 
 ## 1. What Tri-Netra is for Clients
 
-Tri-Netra is your central security portal. Instead of managing security reports via static emails or PDFs, you use SecurityBoat to:
-- Monitor your testable inventory (**Assets**).
-- Track pentest progress and request new tests (**Engagements** / **My Requests**).
-- Review and remediate verified vulnerabilities (**Findings**).
-- Access regulator-ready compliance deliverables (**Compliance Reports**).
-- Monitor continuous exposure (**Attack Surface**) and crowd-sourced programs (**Bug Bounty**) if subscribed.
+Tri-Netra is your organisation's central security portal. Instead of managing
+security work through static emails and PDFs, you have a single, governed
+workspace where every activity testing, remediation, compliance is tracked
+from start to verified fix.
 
-All data is strictly multi-tenant and **scoped to your organisation** — you only see your own company's assets and findings.
+### The accessable modules
+
+- **Dashboard** — your security posture at a glance.
+- **Assets** — your testable inventory: web apps, APIs, mobile, networks, cloud.
+- **Findings** — verified vulnerabilities with a full remediation workflow.
+- **Engagements** — live penetration tests: request, track, receive reports.
+- **My Requests** — track pentest requests through go-live.
+- **Compliance Reports** — regulator-ready deliverables (SOC 2, ISO 27001, RBI, …).
+- **Attack Surface (ASM)** — continuous monitoring of your exposed surface *(if subscribed)*.
+- **Bug Bounty** — crowd-sourced testing programs *(if subscribed)*.
+- **Integrations** — sync findings to Jira *(Client Admin only)*.
+- **AI Assistant** — plain-language questions about your security data.
+- **Settings** — your account, MFA, and notification preferences.
+
+> Some modules are **platform-gated** — they appear only if your organisation
+> is subscribed. If you don't see ASM or Bug Bounty, ask your CSM.
+
+### Security & Privacy
+
+Your data is kept private and secure. You only have access to information within your own organisation.
 
 ---
 
-## 2. Signing In & First-Time Setup
+## 2. Signing In & Onboarding
 
+### Onboarding a New Organisation
+If your organisation is new to Tri-Netra and does not have a workspace setup yet, click the **Contact sales** button on the platform's sign-in page to open and submit the sales onboarding request form. Our team will review your request, configure your workspace, and invite your primary Client Admin.
+
+### First-Time Sign-In (For Invited Users)
 1. **Sign-in:** Navigate to the platform sign-in page, enter your company email, and authenticate via **Single Sign-On (SSO)** or email credentials.
 2. **Multi-Factor Authentication (MFA):** Complete 2FA verification if required by your organisation's security policy.
 3. **Profile & Preferences:** Go to **Settings** (bottom sidebar) to update your name, set your theme (Light/Dark/System), and configure notification channels for new findings or delivered reports.

@@ -1,6 +1,6 @@
-## 7. Findings
+## Findings
 
-### 7.0 Findings are your deliverable
+### 1. Findings are your deliverable
 
 A **finding** is a documented vulnerability you discover. As a researcher, findings
 are what you produce and get paid for. You **create** them on an engagement (or bug
@@ -9,7 +9,7 @@ bounty program), write them up clearly, and submit them for the TPM to verify.
 > **Scope:** you see findings on the engagements you're on, plus your own
 > submissions. You **create** findings; you don't verify them (that's the TPM).
 
-### 7.1 What a researcher can do
+### 2. What a researcher can do
 
 | Action | Researcher |
 |--------|:---:|
@@ -26,7 +26,7 @@ engagement's **Findings** tab.
 
 ---
 
-### 7.2 Submitting a finding
+### 3. Submitting a finding
 
 Findings are created **from the engagement** (so the source binding can't be
 forged). On your engagement's **Findings** tab, use **Submit finding** and fill in
@@ -48,7 +48,7 @@ the record:
 It starts as **Draft** (you can keep editing), then you submit it (→ **New**) for
 the TPM to verify.
 
-### 7.3 The list & detail
+### 4. The list & detail
 
 ![Researcher Findings list — findings on the researcher's engagements with severity, state, and source. (1 of 2)](../images/res_findings_list_01.png)
 
@@ -58,7 +58,7 @@ The list has KPI tallies, filters, and columns for tracking findings.
 Open a finding to see its full record, comments (coordinate with the TPM), and state
 history.
 
-### 7.4 What happens after you submit
+### 5. What happens after you submit
 
 ```
 Draft (you edit) → New (submitted) → TPM verifies → Verified (client sees it)

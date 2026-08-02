@@ -1,6 +1,6 @@
-## 5. Findings
+## Findings
 
-### 5.0 What a "finding" is and why the module works the way it does
+### 1. What a "finding" is and why the module works the way it does
 
 A **finding** is a single, documented security issue discovered on one of your
 assets — a SQL injection, a broken access control, an exposed secret, and so on.
@@ -31,7 +31,7 @@ different tools.
 This is why your list may show fewer findings than testers are actively working
 on — the pre-verification ones simply aren't surfaced yet.
 
-### 5.1 What each client role can do
+### 2. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
@@ -55,11 +55,11 @@ Click **Findings** in the main sidebar menu.
 
 ---
 
-### 5.2 The Findings list — every control explained
+### 3. The Findings list — every control explained
 
-![Findings list — KPI tallies, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/client_findings_list.png)
+![Findings list — metrics tallies, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/client_findings_list.png)
 
-#### KPI tally row (top)
+#### Summary metrics row (top)
 
 A flat count strip that respects your active filters:
 
@@ -106,7 +106,7 @@ Paginated at **10 per page**. Click a row to open the finding.
 
 ---
 
-### 5.3 Understanding severity and CVSS
+### 4. Understanding severity and CVSS
 
 Every finding carries a **severity** and a **CVSS v4.0** score/vector. Severity is
 the at-a-glance priority; the CVSS vector is the precise, standardised breakdown
@@ -127,7 +127,7 @@ confidentiality/integrity/availability, etc.).
 
 ---
 
-### 5.4 The finding detail page — fields and the remediation workflow
+### 5. The finding detail page — fields and the remediation workflow
 
 Click any finding to open it.
 
@@ -186,7 +186,7 @@ but not post.
 
 ---
 
-### 5.5 Export to CSV
+### 6. Export to CSV
 
 **Export CSV** produces a full snapshot of the currently filtered findings — ideal
 for sharing a remediation backlog with your engineering team or handing evidence
@@ -196,7 +196,7 @@ to auditors. Available to all client roles.
 
 ### Best practices
 
-- **Work Critical/High first** — the KPI tallies make the backlog obvious.
+- **Work Critical/High first** — the metrics tallies make the backlog obvious.
 - **Move findings through the states honestly.** Marking "Ready for retest" before
   the fix is deployed just wastes a retest cycle.
 - **Use comments, don't email.** Keeping the discussion on the finding preserves

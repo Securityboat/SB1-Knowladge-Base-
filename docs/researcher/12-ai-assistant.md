@@ -1,6 +1,6 @@
-## 12. AI Assistant
+## AI Assistant
 
-### 12.0 What it is for a researcher
+### 1. What it is for a researcher
 
 The **AI Assistant** is a data-aware chat scoped to the data your role can access —
 for a researcher, your engagements, your findings, and the opportunities/programs
@@ -12,7 +12,7 @@ Click **AI Assistant** in the sidebar.
 
 ---
 
-### 12.1 Using it
+### 2. Using it
 
 ![Researcher AI Assistant — data-aware chat scoped to the researcher's work.](../images/res_ai_chat.png)
 
@@ -41,4 +41,4 @@ context for follow-ups.
 
 ---
 
-← Previous: [Bug Bounty](11-bug-bounty.md) | Next: [Settings →](13-settings.md)
+← Previous: [Disclosure Requests](16-disclosure-requests.md) | Next: [Settings →](13-settings.md)

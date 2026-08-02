@@ -1,6 +1,6 @@
-## 13. AI Assistant
+## AI Assistant
 
-### 13.0 What it is
+### 1. What it is
 
 The **AI Assistant** is a data-aware chat built into the platform. Unlike a
 general chatbot, it can "see" the SecurityBoat data **you are allowed to see** and
@@ -17,7 +17,7 @@ Two important properties:
   you can ask "what does this number mean?" on the page you're viewing and get a
   grounded answer.
 
-### 13.1 Availability
+### 2. Availability
 
 Available to all client roles (Client Admin, Client TPM, Client Viewer).
 
@@ -27,7 +27,7 @@ Click **AI Assistant** in the main sidebar menu.
 
 ---
 
-### 13.2 Using it
+### 3. Using it
 
 ![AI Assistant — a chat interface with a message box and conversation history.](../images/client_ai_chat.png)
 
@@ -57,4 +57,4 @@ Click **AI Assistant** in the main sidebar menu.
 
 ---
 
-← Previous: [Bug Bounty](12-bug-bounty.md) | Next: [Settings →](14-settings.md)
+← Previous: [Disclosure Requests](18-disclosure-requests.md) | Next: [Settings →](14-settings.md)
