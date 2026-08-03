@@ -1,6 +1,6 @@
 site_name: SecurityBoat Documentation
 site_description: Official SecurityBoat user guides for Clients, Researchers, and Program Operators.
-site_url: https://docs.securityboat.in
+site_url: https://securityboat.github.io/SB1-Knowladge-Base-/
 
 docs_dir: docs
 site_dir: site
