@@ -6,10 +6,10 @@ hide:
 
 <div class="sb-hero" markdown>
 
-<div class="sb-hero-badge">
+<span class="sb-hero-badge">
   <span class="sb-badge-dot"></span>
   TriNetra — the agentic security platform by SecurityBoat
-</div>
+</span>
 
 <h1 class="sb-hero-title">Security that<br><span class="sb-hero-highlight">never stops looking.</span></h1>
 
@@ -17,21 +17,21 @@ hide:
 AI agents and vetted researchers on one governed record of your risk from first discovery to verified fix.
 </p>
 
-<div class="sb-hero-actions" markdown>
-[:material-rocket-launch: Explore the Platform](trinetra/index.md){ .sb-btn-primary }
-[:material-open-in-new: Let's Connect](https://securityboat.net/lets-connect){ .sb-btn-ghost target="_blank" }
+<div class="sb-hero-actions">
+<a class="sb-btn-primary" href="trinetra/">:material-rocket-launch: Explore the Platform</a>
+<a class="sb-btn-ghost" href="https://securityboat.net/lets-connect" target="_blank">:material-open-in-new: Let's Connect</a>
 </div>
 
-<div class="sb-hero-stats" markdown>
-<div class="sb-hero-stat" markdown>
+<div class="sb-hero-stats">
+<div class="sb-hero-stat">
 <div class="sb-hero-stat-value">12</div>
 <div class="sb-hero-stat-label">Platform modules</div>
 </div>
-<div class="sb-hero-stat" markdown>
+<div class="sb-hero-stat">
 <div class="sb-hero-stat-value">2</div>
 <div class="sb-hero-stat-label">Role guides</div>
 </div>
-<div class="sb-hero-stat" markdown>
+<div class="sb-hero-stat">
 <div class="sb-hero-stat-value">28+</div>
 <div class="sb-hero-stat-label">Documentation pages</div>
 </div>
@@ -197,6 +197,8 @@ Jump straight into the module you need today.
 
 ## Browse Guides by Role {#browse-guides-by-role}
 
+</div>
+
 <div class="grid cards guide-cards" markdown>
 
 -   [:material-domain: **Client Organisation Guide**](client/00-GETTING_STARTED.md)
@@ -213,8 +215,6 @@ Jump straight into the module you need today.
 
     Detailed manual for security researchers, bug hunters, and penetration
     testers — onboarding, findings, payouts, and bug bounty programs.
-
-</div>
 
 </div>
 
