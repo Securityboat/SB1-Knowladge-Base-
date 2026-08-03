@@ -137,12 +137,13 @@ nav:
       - Invites: researcher/05-invites.md
       - Engagements: researcher/06-engagements.md
       - Findings: researcher/07-findings.md
-      - My Findings: researcher/08-my-findings.md
       - Payouts: researcher/09-payouts.md
       - Identity Verification: researcher/10-verification.md
       - Bug Bounty: researcher/11-bug-bounty.md
       - Hacktivity: researcher/17-hacktivity.md
       - Disclosure Requests: researcher/16-disclosure-requests.md
       - AI Assistant: researcher/12-ai-assistant.md
+      - Feedback: researcher/18-feedback.md
       - Settings: researcher/13-settings.md
       - Full Researcher Guide Index: researcher/RESEARCHER_Guide.md
+

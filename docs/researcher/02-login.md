@@ -1,4 +1,4 @@
-## Signing In
+# Signing In
 
 ### 1. How you get access
 

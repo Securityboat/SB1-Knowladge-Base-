@@ -1,4 +1,4 @@
-## AI Assistant
+# AI Assistant
 
 ### 1. What it is for a researcher
 
@@ -41,4 +41,5 @@ context for follow-ups.
 
 ---
 
-← Previous: [Disclosure Requests](16-disclosure-requests.md) | Next: [Settings →](13-settings.md)
+← Previous: [AI Red Teaming](15-ai-red-teaming.md) | Next: [Feedback →](18-feedback.md)
+

@@ -1,4 +1,4 @@
-## Opportunities (Marketplace)
+# Opportunities (Marketplace)
 
 ### 1. What Opportunities is
 
@@ -8,14 +8,13 @@ an engagement opens for bids. You browse, find work that fits your skills, and
 **apply** — as a Researcher or a Lead Researcher.
 
 > **Privacy by design:** the customer's identity is **not** shown in the
-> marketplace. You see the scope, type, duration, and payout — the client name is
+> marketplace. You see the project ID (e.g. `SB-PTEST-ACM-05`), scope summary, pentest type, duration, and payout — the client name is
 > revealed only **after your bid is accepted**. This protects the client and keeps
 > bidding merit-based.
 
 ### Navigation
 
-Click **Opportunities** in the sidebar. (Researcher /
-Lead Researcher only.)
+Click **Opportunities** in the sidebar. (Researcher / Lead Researcher only.)
 
 ---
 
@@ -23,51 +22,53 @@ Lead Researcher only.)
 
 ![Opportunities marketplace — collapsible engagement cards with project ID, title, and an expandable detail panel.](../images/res_opportunities.png)
 
-Each opportunity is a collapsible card showing its **project ID** and **title**.
-Click to expand the detail panel:
+Each opportunity is a collapsible card displaying its **Project ID badge** (e.g. `SB-PTEST-ACM-05`) and **Title**. Click any card to expand its detail panel:
 
-| Field | Meaning |
-|-------|---------|
-| **Pentest Type** | The engagement types (Web App, API, Mobile, Network, …). |
-| **Testing Type** | Black-box / Grey-box / White-box approach. |
-| **Pentest Duration** | Computed from the scheduled window (or testing hours). |
-| **Testing Hours** | Budgeted hours. |
-| **Fixed Payout** | The researcher payout (amount + currency), or "Contact for details". |
-| **Tags** | "Source access" vs "Black-box only", and the scheduled dates. |
+| Field | Description / Value |
+|-------|---------------------|
+| **Project ID** | Unique uppercase project identifier code. |
+| **Pentest Type** | The target surface types (e.g., Web Application, API & Web Services, Mobile, Network). |
+| **Testing Type** | Black-box / Grey-box / White-box testing approach. |
+| **Pentest Duration** | Calculated automatically from scheduled start and end dates (e.g., "2 weeks", "1 day"), or testing hours. |
+| **Testing Hours** | Total budgeted testing hours (e.g., `40h`). |
+| **Fixed Payout** | Fixed compensation amount + currency (e.g., `INR 45,000`), or "Contact for details". |
+| **Tags** | Visual pills indicating **Source access** vs **Black-box only**, and scheduled execution date range (`YYYY-MM-DD → YYYY-MM-DD`). |
+
+---
 
 ### 3. Applying (placing a bid)
 
-At the bottom of an expanded card:
+At the bottom of an expanded opportunity card:
 
-| Button | What it does |
-|--------|--------------|
-| **Apply as Researcher** | Submits a bid to join the engagement as a Researcher. |
-| **Apply as Lead Researcher** | Submits a bid to join as the Lead (who also drafts the report). |
+| Button / State | Action / Meaning |
+|----------------|------------------|
+| **Apply as Researcher** | Submits your bid to join the engagement team as a security researcher. |
+| **Apply as Lead Researcher** | Submits your bid to lead the engagement, coordinate testing, and author the report narrative. |
+| **✓ You have already applied for this opportunity** | Confirms your bid has been recorded; disables further submissions on this item. |
 
-After you apply, the card shows **"✓ You have already applied for this
-opportunity."** Your bids are tracked, and if accepted the engagement appears under
-**Engagements** (with the client revealed) and you're added to its team.
+After applying, your application status persists. If your bid is accepted by the SecurityBoat CSM/TPM, the engagement will appear in your **Pentest Engagements** view with full client identity and asset access unlocked.
 
-> **Researcher vs Lead:** a Lead Researcher additionally **drafts the report
-> narrative** and can submit it for review. Only apply as Lead if you're prepared
-> to own the reporting.
+> **Researcher vs Lead Researcher:** a Lead Researcher owns the drafting of the **report narrative** on the engagement's Reports tab. Only apply as Lead if you are prepared to lead team coordination and report authoring.
+
+---
 
 ### Best practices
 
-- **Bid to your strengths** — match the pentest type and testing approach to your
-  skills.
-- **Read the scope + payout carefully** before applying; the payout is fixed.
-- **Don't double-apply** — one bid per opportunity; the card tells you when you've
-  applied.
+- **Bid to your strengths** — select opportunities that align with your verified skills and asset expertise.
+- **Review duration & hours** — ensure your schedule accommodates the required testing window.
+- **Check payout currency** — payouts are processed in the displayed currency (e.g., INR / USD).
+
+---
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **"No open engagements right now"** | Nothing is open for bids currently — check back or ask your CSM. |
-| **Can't see a client name** | By design — identity is revealed only after your bid is accepted. |
-| **Already applied** | You've bid on this one; watch **Invites**/**Engagements** for the outcome. |
+| **"No open engagements right now"** | No active opportunities are currently accepting bids. Check back regularly or reach out to your CSM. |
+| **Client identity hidden** | Intentional privacy protection; organization name is revealed upon bid acceptance. |
+| **Already applied banner** | You have already submitted a bid for this engagement. Track status under **Invites** or **Engagements**. |
 
 ---
 
 ← Previous: [Dashboard](03-dashboard.md) | Next: [Invites →](05-invites.md)
+

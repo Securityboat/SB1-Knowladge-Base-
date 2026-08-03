@@ -1,4 +1,4 @@
-## Bug Bounty
+# Bug Bounty
 
 ### 1. Bug Bounty for researchers
 
@@ -8,6 +8,7 @@ per valid finding (tracked in [Payouts](09-payouts.md)). It complements pentest
 engagements: bug bounty is open-ended and self-directed, engagements are scheduled
 and team-based.
 
+---
 
 ### 2. Programs
 
@@ -23,6 +24,8 @@ reward structure — before you start testing.
 > You participate in **Public** programs freely; **Private** programs are
 > invite-only (watch your [Invites](05-invites.md)).
 
+---
+
 ### 3. Submitting bug-bounty findings
 
 Findings you submit against a program flow into the unified **Findings** module
@@ -35,7 +38,10 @@ graph LR
     C --> D[Resolved]
     D --> E[Payout]
 ```
-on an engagement — see the [Findings guide](07-findings.md).
+
+Submitting a bug-bounty finding follows the same form and requirements as filing a finding on an engagement — see the [Findings guide](07-findings.md).
+
+---
 
 ### 4. Hacktivity & Disclosure Requests
 
@@ -47,11 +53,15 @@ on an engagement — see the [Findings guide](07-findings.md).
   the complete submission workflow, see the dedicated
   **[Disclosure Requests guide](16-disclosure-requests.md)**.
 
+---
+
 ### Best practices
 
 - **Read the program scope carefully** — out-of-scope submissions won't be rewarded.
 - **Check Hacktivity** to avoid re-reporting known issues.
 - **Request disclosure** on resolved findings to build a public track record.
+
+---
 
 ### Troubleshooting
 
@@ -63,3 +73,4 @@ on an engagement — see the [Findings guide](07-findings.md).
 ---
 
 ← Previous: [Identity Verification](10-verification.md) | Next: [Hacktivity →](17-hacktivity.md)
+

@@ -1,5 +1,9 @@
 # Feedback (Researcher View)
 
+![Researcher Feedback — submit feature requests and bug reports.](../images/researcher_dashboard.png)
+
+---
+
 The **Feedback** module lets you report bugs or request features directly from the platform. Submissions are sent to the SecurityBoatOne issue tracker for review.
 
 ---
@@ -39,3 +43,8 @@ The **Feedback** module lets you report bugs or request features directly from t
 - **Be specific** — include steps to reproduce bugs, expected vs actual behaviour
 - **Attach context** — the URL field automatically captures the page you were on
 - **Use Console excerpt** — if you see errors in your browser's developer console (F12), paste relevant lines here
+
+---
+
+← Previous: [AI Assistant](12-ai-assistant.md) | Next: [Settings →](13-settings.md)
+

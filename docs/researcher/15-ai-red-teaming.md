@@ -1,5 +1,9 @@
 # AI Red Teaming (Researcher View)
 
+![AI Red Teaming — testing AI systems for vulnerabilities.](../images/res_engagements_list_01.png)
+
+---
+
 The **AI Red Teaming** module lets you assess the safety, security, and trustworthiness of AI/LLM-powered applications before they ship to production.
 
 ---
@@ -65,3 +69,8 @@ This is a critical test category for multi-tenant AI applications. The platform 
 - User A's conversation context is never leaked into User B's responses
 - Model fine-tuning or RAG data from one tenant cannot be accessed by another
 - Session tokens and authentication boundaries are enforced at the LLM gateway level
+
+---
+
+← Previous: [Agentic Pentest](14-agentic-pentest.md) | Next: [AI Assistant →](12-ai-assistant.md)
+

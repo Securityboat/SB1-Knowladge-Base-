@@ -1,4 +1,8 @@
-## Introduction
+# Introduction
+
+![Researcher dashboard overview.](../images/researcher_dashboard.png)
+
+---
 
 ### Welcome
 
@@ -48,4 +52,5 @@ do. Start with **Login**, then your **Dashboard**.
 
 ---
 
-Next: [Login →](02-login.md)
+← Previous: [Getting Started](00-GETTING_STARTED.md) | Next: [Login →](02-login.md)
+

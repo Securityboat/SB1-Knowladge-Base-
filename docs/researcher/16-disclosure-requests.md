@@ -6,6 +6,10 @@
 
 ## Accessing Disclosure Requests
 
+![Researcher Disclosure Requests — manage requests to publish resolved vulnerabilities.](../images/res_disclosure_requests.png)
+
+---
+
 1. Sign in as a Researcher
 2. In the sidebar, under **OPERATIONS**, click **Disclosure Requests**
 
@@ -66,4 +70,4 @@ Use the filter tabs at the top of the page — **All**, **Pending TPM**, **Pendi
 
 ---
 
-← Previous: [Hacktivity](17-hacktivity.md) | Next: [AI Assistant →](12-ai-assistant.md)
+← Previous: [Hacktivity](17-hacktivity.md) | Next: [Agentic Pentest →](14-agentic-pentest.md)

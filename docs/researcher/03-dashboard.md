@@ -1,4 +1,4 @@
-## Dashboard
+# Dashboard
 
 ### 1. What the Dashboard is for
 

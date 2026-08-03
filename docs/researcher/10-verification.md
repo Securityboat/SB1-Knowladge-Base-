@@ -1,4 +1,4 @@
-## Identity Verification
+# Identity Verification
 
 ### 1. What it is and why it exists
 
@@ -60,9 +60,8 @@ As soon as an administrator requests your verification, two things happen:
 
 **On your Dashboard:**
 
-![Researcher dashboard — the Identity verification card: "An administrator has requested identity verification. Complete it to unlock future platform capabilities." with a Verify Identity button and a "Verification requested" badge. (1 of 2)](../images/res_verify_dashboard_01.png)
+![Researcher dashboard — the Identity verification card: "An administrator has requested identity verification. Complete it to unlock future platform capabilities." with a Verify Identity button and a "Verification requested" badge. (1 of 2)](../images/res_verify_dashboard.png)
 
-![Researcher dashboard — the verification prompt above your KPI tiles. (2 of 2)](../images/res_verify_dashboard_02.png)
 
 **On the Identity Verification page** (sidebar → **Identity Verification**):
 

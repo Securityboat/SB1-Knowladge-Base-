@@ -6,6 +6,10 @@
 
 ## Accessing Hacktivity
 
+![Researcher Hacktivity — public feed of disclosed vulnerabilities.](../images/res_hacktivity.png)
+
+---
+
 1. Sign in as a Researcher
 2. In the sidebar, under **OPERATIONS**, click **Hacktivity**
 
@@ -49,3 +53,4 @@ graph LR
 ---
 
 ← Previous: [Bug Bounty](11-bug-bounty.md) | Next: [Disclosure Requests →](16-disclosure-requests.md)
+
