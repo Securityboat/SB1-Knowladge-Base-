@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#logging-in" class="md-skip">
+        <a href="#signing-in" class="md-skip">
           Skip to content
         </a>
       
@@ -2566,22 +2566,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logging-in" class="md-nav__link">
+  <a href="#signing-in" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Logging In
+        Signing In
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Logging In">
+    <nav class="md-nav" aria-label="Signing In">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-how-securityboat-sign-in-works" class="md-nav__link">
+  <a href="#1-how-you-get-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. How SecurityBoat sign-in works
+        1. How you get access
       
     </span>
   </a>
@@ -2600,10 +2600,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-sign-in-step-by-step-end-to-end" class="md-nav__link">
+  <a href="#3-signing-in-what-you-actually-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Sign-in, step by step (end to end)
+        3. Signing in — what you actually do
       
     </span>
   </a>
@@ -2611,10 +2611,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-first-time-sign-in-from-an-invitation" class="md-nav__link">
+  <a href="#4-first-time-setup-from-an-invitation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. First-time sign-in (from an invitation)
+        4. First-time setup (from an invitation)
       
     </span>
   </a>
@@ -2622,10 +2622,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-mfa-and-recovery" class="md-nav__link">
+  <a href="#5-managing-mfa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. MFA and recovery
+        5. Managing MFA
       
     </span>
   </a>
@@ -3103,22 +3103,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#logging-in" class="md-nav__link">
+  <a href="#signing-in" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Logging In
+        Signing In
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Logging In">
+    <nav class="md-nav" aria-label="Signing In">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-how-securityboat-sign-in-works" class="md-nav__link">
+  <a href="#1-how-you-get-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. How SecurityBoat sign-in works
+        1. How you get access
       
     </span>
   </a>
@@ -3137,10 +3137,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-sign-in-step-by-step-end-to-end" class="md-nav__link">
+  <a href="#3-signing-in-what-you-actually-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Sign-in, step by step (end to end)
+        3. Signing in — what you actually do
       
     </span>
   </a>
@@ -3148,10 +3148,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-first-time-sign-in-from-an-invitation" class="md-nav__link">
+  <a href="#4-first-time-setup-from-an-invitation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. First-time sign-in (from an invitation)
+        4. First-time setup (from an invitation)
       
     </span>
   </a>
@@ -3159,10 +3159,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-mfa-and-recovery" class="md-nav__link">
+  <a href="#5-managing-mfa" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. MFA and recovery
+        5. Managing MFA
       
     </span>
   </a>
@@ -3226,86 +3226,89 @@
 
   <h1>Signing In</h1>
 
-<h2 id="logging-in">Logging In</h2>
-<h3 id="1-how-securityboat-sign-in-works">1. How SecurityBoat sign-in works</h3>
-<p>SecurityBoat uses <strong>WorkOS</strong> as its identity provider. You never create or store a
-password inside SecurityBoat itself — authentication is delegated to WorkOS's hosted
-login (AuthKit), which supports email/password, <strong>Single Sign-On (SSO)</strong>,
-<strong>SAML</strong>, and <strong>multi-factor authentication (2FA/MFA)</strong>.</p>
-<p>Access is <strong>invite-only</strong>: you can sign in only with an account that has been
-approved as a researcher. If you're new, you'll typically start by applying via
-<strong>Apply as a researcher</strong> on the sign-in screen; once approved and invited, you sign
-in normally.</p>
-<h3 id="2-the-sign-in-screen">2. The sign-in screen</h3>
-<p><img alt="SecurityBoat sign-in — &quot;Continue with SSO&quot; launches the WorkOS hosted login; below are MFA recovery and apply/contact links." src="../../images/login_workos.png" /></p>
-<p>Open your SecurityBoat URL. You'll see the <strong>Sign in to Tri-Netra</strong> card with:</p>
-<ul>
-<li><strong>Continue with SSO</strong> — the primary button; starts the WorkOS login flow.</li>
-<li><strong>Reset MFA</strong> — "Lost access to your authenticator app?" recovery link.</li>
-<li><strong>Apply as a researcher</strong> — for prospective researchers who don't yet have an
-  account.</li>
-<li><strong>Contact sales</strong> — for prospective customers (not used by researchers).</li>
-</ul>
-<h3 id="3-sign-in-step-by-step-end-to-end">3. Sign-in, step by step (end to end)</h3>
+<h2 id="signing-in">Signing In</h2>
+<h3 id="1-how-you-get-access">1. How you get access</h3>
+<p>Access to Tri-Netra is <strong>invite-only</strong>. Here's how you get onboarded as a researcher:</p>
 <ol>
-<li><strong>Click "Continue with SSO".</strong> SecurityBoat redirects your browser to the WorkOS
-   hosted login page.</li>
-<li><strong>Authenticate with WorkOS</strong> using your email + password (or SSO/SAML if you've
-   linked one).</li>
-<li><strong>Complete MFA</strong> if your account requires it (authenticator app code, etc.).</li>
-<li><strong>WorkOS verifies you</strong> and redirects back to SecurityBoat's secure callback.</li>
-<li><strong>You land on your Dashboard</strong>, scoped to your engagements and findings.</li>
+<li><strong>Apply.</strong> Click <strong>Apply as a researcher</strong> on the sign-in screen and submit your application.</li>
+<li><strong>Get approved.</strong> SecurityBoat reviews your application.</li>
+<li><strong>Receive your invitation.</strong> Once approved, you get an invitation email with a setup link.</li>
+<li><strong>Set up your account.</strong> Follow the link to create your password and set up MFA.</li>
 </ol>
-<pre class="mermaid"><code>graph LR
-    A[You] --&gt;|Click Continue with SSO| B[WorkOS Hosted Login]
-    B --&gt; C{Authenticate}
-    C --&gt;|Password| D[Verify + MFA]
-    C --&gt;|SSO / SAML| D
-    D --&gt; E[SecurityBoat Callback]
-    E --&gt; F[Dashboard]</code></pre>
-<h3 id="4-first-time-sign-in-from-an-invitation">4. First-time sign-in (from an invitation)</h3>
-<p>After your researcher application is approved, you'll receive an <strong>invitation
-email</strong>. Follow its link to complete account setup in WorkOS (set your password
-and/or link your SSO, and enrol MFA if required). After that first setup, you sign
-in normally via <strong>Continue with SSO</strong>.</p>
-<blockquote>
-<p>Before you can be seated on paid work you'll usually also complete <strong>Identity
-Verification</strong> — see that chapter.</p>
-</blockquote>
-<h3 id="5-mfa-and-recovery">5. MFA and recovery</h3>
+<p>After setup, you sign in whenever you're ready to work.</p>
+<hr />
+<h3 id="2-the-sign-in-screen">2. The sign-in screen</h3>
+<p><img alt="SecurityBoat sign-in screen — Continue with SSO button, MFA recovery link, and apply/contact options." src="../../images/login_workos.png" /></p>
+<p>Open your Tri-Netra URL. You'll see the sign-in screen with:</p>
 <ul>
-<li><strong>Enrol/manage MFA</strong> from <strong>Settings → MFA Setup</strong> once signed in.</li>
-<li><strong>Lost your authenticator?</strong> Use <strong>Reset MFA</strong> on the sign-in screen (the
-  "Lost access to your authenticator app?" link) to start recovery.</li>
+<li><strong>Continue with SSO</strong> — the main sign-in button. Click this every time you sign in.</li>
+<li><strong>Apply as a researcher</strong> — for new researchers who haven't applied yet.</li>
+<li><strong>Reset MFA</strong> — recovery link if you've lost access to your authenticator app.</li>
+<li><strong>Contact sales</strong> — for prospective customers (not relevant to researchers).</li>
 </ul>
+<hr />
+<h3 id="3-signing-in-what-you-actually-do">3. Signing in — what you actually do</h3>
+<pre class="mermaid"><code>graph LR
+    A[Click Continue with SSO] --&gt; B[Enter your email + password]
+    B --&gt; C[Enter MFA code if prompted]
+    C --&gt; D[Dashboard — you're in]</code></pre>
+<ol>
+<li><strong>Click "Continue with SSO".</strong> Your browser opens the sign-in page.</li>
+<li><strong>Enter your email and password.</strong> These are the credentials you set up when you accepted your invitation.</li>
+<li><strong>Enter your MFA code</strong> if prompted (from your authenticator app).</li>
+<li><strong>You land on your Dashboard.</strong> Everything is scoped to your engagements, findings, and payouts.</li>
+</ol>
+<hr />
+<h3 id="4-first-time-setup-from-an-invitation">4. First-time setup (from an invitation)</h3>
+<ol>
+<li>Open the <strong>invitation email</strong> and click the link inside.</li>
+<li>Set your <strong>password</strong> — pick something strong and unique.</li>
+<li>Set up <strong>MFA</strong> if prompted — scan the QR code with your authenticator app.</li>
+<li>After setup, sign in anytime by clicking <strong>Continue with SSO</strong> on the sign-in screen.</li>
+</ol>
+<blockquote>
+<p>Before you can work on paid engagements, you'll usually need to complete <strong>Identity Verification</strong> — see <a href="../10-verification/">that chapter</a>.</p>
+</blockquote>
+<hr />
+<h3 id="5-managing-mfa">5. Managing MFA</h3>
+<ul>
+<li><strong>Set up or change MFA:</strong> go to <strong>Settings → MFA Setup</strong> once signed in.</li>
+<li><strong>Lost your authenticator?</strong> Click <strong>Reset MFA</strong> on the sign-in screen to start recovery.</li>
+</ul>
+<hr />
 <h3 id="6-signing-out">6. Signing out</h3>
-<p>Use the <strong>user menu</strong> (top-right) → <strong>Sign out</strong>. This ends your SecurityBoat
-session (clears the session cookie). For shared or public devices, always sign out.</p>
+<p>Click your avatar (top-right) → <strong>Sign out</strong>. Always sign out on shared or public devices.</p>
+<hr />
 <h3 id="best-practices">Best practices</h3>
 <ul>
-<li><strong>Enable MFA</strong> — it's your best protection against account takeover.</li>
-<li><strong>Never share your login</strong> — accounts are per-person and audited.</li>
+<li><strong>Set up MFA</strong> — it's your strongest protection against account takeover.</li>
+<li><strong>Never share your login</strong> — accounts are per-person and all activity is audited.</li>
+<li><strong>Complete identity verification early</strong> — you can't be seated on paid engagements without it.</li>
 </ul>
 <h3 id="troubleshooting">Troubleshooting</h3>
 <table>
 <thead>
 <tr>
 <th>Symptom</th>
-<th>Cause / Fix</th>
+<th>What to do</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>"You're not invited" / access denied</strong></td>
-<td>Your researcher application isn't approved yet, or you haven't accepted your invite.</td>
+<td><strong>"You're not invited" or access denied</strong></td>
+<td>Your application may still be under review, or you haven't accepted your invitation yet.</td>
+</tr>
+<tr>
+<td><strong>Can't sign in with your password</strong></td>
+<td>Use the password reset option on the sign-in page.</td>
 </tr>
 <tr>
 <td><strong>Lost MFA device</strong></td>
-<td>Use <strong>Reset MFA</strong> on the sign-in page.</td>
+<td>Click <strong>Reset MFA</strong> on the sign-in screen.</td>
 </tr>
 <tr>
 <td><strong>Signed out unexpectedly</strong></td>
-<td>Sessions expire for security; simply sign in again.</td>
+<td>Sessions expire after inactivity for security. Sign in again — it takes 30 seconds.</td>
 </tr>
 </tbody>
 </table>

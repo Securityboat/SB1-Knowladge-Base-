@@ -1,82 +1,85 @@
-## Logging In
+## Signing In
 
-### 1. How SecurityBoat sign-in works
+### 1. How you get access
 
-SecurityBoat uses **WorkOS** as its identity provider. You never create or store a
-password inside SecurityBoat itself — authentication is delegated to WorkOS's hosted
-login (AuthKit), which supports email/password, **Single Sign-On (SSO)**,
-**SAML**, and **multi-factor authentication (2FA/MFA)**.
+Access to Tri-Netra is **invite-only**. Here's how you get onboarded as a researcher:
 
-Access is **invite-only**: you can sign in only with an account that has been
-approved as a researcher. If you're new, you'll typically start by applying via
-**Apply as a researcher** on the sign-in screen; once approved and invited, you sign
-in normally.
+1. **Apply.** Click **Apply as a researcher** on the sign-in screen and submit your application.
+2. **Get approved.** SecurityBoat reviews your application.
+3. **Receive your invitation.** Once approved, you get an invitation email with a setup link.
+4. **Set up your account.** Follow the link to create your password and set up MFA.
+
+After setup, you sign in whenever you're ready to work.
+
+---
 
 ### 2. The sign-in screen
 
-![SecurityBoat sign-in — "Continue with SSO" launches the WorkOS hosted login; below are MFA recovery and apply/contact links.](../images/login_workos.png)
+![SecurityBoat sign-in screen — Continue with SSO button, MFA recovery link, and apply/contact options.](../images/login_workos.png)
 
-Open your SecurityBoat URL. You'll see the **Sign in to Tri-Netra** card with:
+Open your Tri-Netra URL. You'll see the sign-in screen with:
 
-- **Continue with SSO** — the primary button; starts the WorkOS login flow.
-- **Reset MFA** — "Lost access to your authenticator app?" recovery link.
-- **Apply as a researcher** — for prospective researchers who don't yet have an
-  account.
-- **Contact sales** — for prospective customers (not used by researchers).
+- **Continue with SSO** — the main sign-in button. Click this every time you sign in.
+- **Apply as a researcher** — for new researchers who haven't applied yet.
+- **Reset MFA** — recovery link if you've lost access to your authenticator app.
+- **Contact sales** — for prospective customers (not relevant to researchers).
 
-### 3. Sign-in, step by step (end to end)
+---
 
-1. **Click "Continue with SSO".** SecurityBoat redirects your browser to the WorkOS
-   hosted login page.
-2. **Authenticate with WorkOS** using your email + password (or SSO/SAML if you've
-   linked one).
-3. **Complete MFA** if your account requires it (authenticator app code, etc.).
-4. **WorkOS verifies you** and redirects back to SecurityBoat's secure callback.
-5. **You land on your Dashboard**, scoped to your engagements and findings.
+### 3. Signing in — what you actually do
 
 ```mermaid
 graph LR
-    A[You] -->|Click Continue with SSO| B[WorkOS Hosted Login]
-    B --> C{Authenticate}
-    C -->|Password| D[Verify + MFA]
-    C -->|SSO / SAML| D
-    D --> E[SecurityBoat Callback]
-    E --> F[Dashboard]
+    A[Click Continue with SSO] --> B[Enter your email + password]
+    B --> C[Enter MFA code if prompted]
+    C --> D[Dashboard — you're in]
 ```
 
-### 4. First-time sign-in (from an invitation)
+1. **Click "Continue with SSO".** Your browser opens the sign-in page.
+2. **Enter your email and password.** These are the credentials you set up when you accepted your invitation.
+3. **Enter your MFA code** if prompted (from your authenticator app).
+4. **You land on your Dashboard.** Everything is scoped to your engagements, findings, and payouts.
 
-After your researcher application is approved, you'll receive an **invitation
-email**. Follow its link to complete account setup in WorkOS (set your password
-and/or link your SSO, and enrol MFA if required). After that first setup, you sign
-in normally via **Continue with SSO**.
+---
 
-> Before you can be seated on paid work you'll usually also complete **Identity
-> Verification** — see that chapter.
+### 4. First-time setup (from an invitation)
 
-### 5. MFA and recovery
+1. Open the **invitation email** and click the link inside.
+2. Set your **password** — pick something strong and unique.
+3. Set up **MFA** if prompted — scan the QR code with your authenticator app.
+4. After setup, sign in anytime by clicking **Continue with SSO** on the sign-in screen.
 
-- **Enrol/manage MFA** from **Settings → MFA Setup** once signed in.
-- **Lost your authenticator?** Use **Reset MFA** on the sign-in screen (the
-  "Lost access to your authenticator app?" link) to start recovery.
+> Before you can work on paid engagements, you'll usually need to complete **Identity Verification** — see [that chapter](10-verification.md).
+
+---
+
+### 5. Managing MFA
+
+- **Set up or change MFA:** go to **Settings → MFA Setup** once signed in.
+- **Lost your authenticator?** Click **Reset MFA** on the sign-in screen to start recovery.
+
+---
 
 ### 6. Signing out
 
-Use the **user menu** (top-right) → **Sign out**. This ends your SecurityBoat
-session (clears the session cookie). For shared or public devices, always sign out.
+Click your avatar (top-right) → **Sign out**. Always sign out on shared or public devices.
+
+---
 
 ### Best practices
 
-- **Enable MFA** — it's your best protection against account takeover.
-- **Never share your login** — accounts are per-person and audited.
+- **Set up MFA** — it's your strongest protection against account takeover.
+- **Never share your login** — accounts are per-person and all activity is audited.
+- **Complete identity verification early** — you can't be seated on paid engagements without it.
 
 ### Troubleshooting
 
-| Symptom | Cause / Fix |
-|---------|-------------|
-| **"You're not invited" / access denied** | Your researcher application isn't approved yet, or you haven't accepted your invite. |
-| **Lost MFA device** | Use **Reset MFA** on the sign-in page. |
-| **Signed out unexpectedly** | Sessions expire for security; simply sign in again. |
+| Symptom | What to do |
+|---------|------------|
+| **"You're not invited" or access denied** | Your application may still be under review, or you haven't accepted your invitation yet. |
+| **Can't sign in with your password** | Use the password reset option on the sign-in page. |
+| **Lost MFA device** | Click **Reset MFA** on the sign-in screen. |
+| **Signed out unexpectedly** | Sessions expire after inactivity for security. Sign in again — it takes 30 seconds. |
 
 ---
 

@@ -1,83 +1,84 @@
-## Logging In
+## Signing In
 
-### 1. How SecurityBoat sign-in works
+### 1. How you get access
 
-SecurityBoat uses **WorkOS** as its identity provider. You never create or store a
-password inside SecurityBoat itself — authentication is delegated to WorkOS's hosted
-login (AuthKit), which supports email/password, **Single Sign-On (SSO)**,
-**SAML** (your corporate identity provider), and **multi-factor authentication
-(2FA/MFA)**. This means your organisation's existing security policies (SSO,
-enforced MFA) apply automatically.
+Access to Tri-Netra is **invite-only**. You don't create an account yourself — your
+organisation's admin or SecurityBoat sends you an invitation.
 
-Access is **invite-only**: you can sign in only with an account that has been
-invited to your organisation. A Client Admin at your company (or your SecurityBoat
-CSM) sends the invitation. If your organisation is new to SecurityBoat, please click the **Contact sales** button on the sign-in screen to submit an onboarding request.
+| If you are... | What happens |
+|---------------|--------------|
+| **New to your organisation** | Your Client Admin or SecurityBoat CSM sends you an invitation email. |
+| **Your organisation is new to SecurityBoat** | Click **Contact sales** on the sign-in screen to submit an onboarding request. |
+
+Once invited, check your inbox for the invitation email and follow its link to set
+up your account.
+
+---
 
 ### 2. The sign-in screen
 
-![SecurityBoat sign-in — "Continue with SSO" launches the WorkOS hosted login; below are MFA recovery and apply/contact links.](../images/login_workos.png)
+![SecurityBoat sign-in screen — Continue with SSO button, MFA recovery link, and contact options.](../images/login_workos.png)
 
-Open your SecurityBoat URL. You'll see the **Sign in to Tri-Netra** card with:
+Open your Tri-Netra URL. You'll see the sign-in screen with:
 
-- **Continue with SSO** — the primary button; starts the WorkOS login flow.
-- **Reset MFA** — "Lost access to your authenticator app?" recovery link.
-- **Apply as a researcher / Contact sales** — for prospective researchers and new
-  customers (if you are a new organisation, click the **Contact sales** button to open and submit the onboarding request form).
+- **Continue with SSO** — the main sign-in button. Click this every time you sign in.
+- **Reset MFA** — recovery link if you've lost access to your authenticator app.
+- **Apply as a researcher / Contact sales** — for prospective researchers and new customers.
 
-### 3. Sign-in, step by step (end to end)
+---
 
-1. **Click "Continue with SSO".** SecurityBoat redirects your browser to the WorkOS
-   hosted login page.
-2. **Authenticate with WorkOS.** Depending on how your organisation is configured:
-   - **Email + password** (with your WorkOS credentials), or
-   - **SSO / SAML** — you're bounced to your company's identity provider (e.g.
-     Okta, Azure AD, Google Workspace) and sign in there.
-3. **Complete MFA** if your account or organisation requires it (authenticator app
-   code, etc.).
-4. **Redirected to SecurityBoat:** Once verified, you are automatically returned to the platform.
-5. **You land on your Dashboard**, scoped to your role and organisation.
+### 3. Signing in — what you actually do
 
 ```mermaid
 graph LR
-    A[You] -->|Click Continue with SSO| B[WorkOS Hosted Login]
-    B --> C{Authenticate}
-    C -->|Password| D[Verify + MFA]
-    C -->|SSO / SAML| D
-    D --> E[SecurityBoat Callback]
-    E --> F[Dashboard]
+    A[Click Continue with SSO] --> B[Enter your email + password]
+    B --> C[Enter MFA code if prompted]
+    C --> D[Dashboard — you're in]
 ```
 
-### 4. First-time sign-in (from an invitation)
+1. **Click "Continue with SSO".** Your browser opens the sign-in page.
+2. **Enter your email and password.** These are the credentials you set up when you accepted your invitation.
+3. **Enter your MFA code** if prompted (from your authenticator app).
+4. **You land on your Dashboard.** Everything you see is scoped to your organisation and role.
 
-If you're new, you'll receive an **invitation email**. Follow its link to complete
-account setup in WorkOS (set your password and/or link your SSO, and enrol MFA if
-required). After that first setup, you sign in normally via **Continue with SSO**.
+---
 
-### 5. MFA and recovery
+### 4. First-time setup (from an invitation)
 
-- **Enrol/manage MFA** from **Settings → MFA Setup** once signed in.
-- **Lost your authenticator?** Use **Reset MFA** on the sign-in screen (the
-  "Lost access to your authenticator app?" link) to start recovery.
+1. Open the **invitation email** and click the link inside.
+2. Set your **password** — pick something strong and unique.
+3. Set up **MFA** if prompted — scan the QR code with your authenticator app.
+4. After setup, sign in anytime by clicking **Continue with SSO** on the sign-in screen.
+
+---
+
+### 5. Managing MFA
+
+- **Set up or change MFA:** go to **Settings → MFA Setup** once signed in.
+- **Lost your authenticator?** Click **Reset MFA** on the sign-in screen to start recovery.
+
+---
 
 ### 6. Signing out
 
-Use the **user menu** (top-right) → **Sign out**. This ends your SecurityBoat
-session (clears the session cookie). For shared or public devices, always sign out.
+Click your avatar (top-right) → **Sign out**. Always sign out on shared or public devices.
+
+---
 
 ### Best practices
 
-- **Enable MFA** — it's your best protection against account takeover.
-- **Use your corporate SSO** if your org offers it — one identity, central control.
-- **Never share your login** — accounts are per-person and audited.
+- **Set up MFA** — it's your strongest protection against account takeover.
+- **Never share your login** — accounts are per-person and all activity is audited.
+- **Sign out on shared devices** — sessions persist until you sign out or they expire.
 
 ### Troubleshooting
 
-| Symptom | Cause / Fix |
-|---------|-------------|
-| **"You're not invited" / access denied** | Your account isn't invited to an org yet — ask your Client Admin or CSM to invite you. |
-| **Stuck at your company's SSO** | An SSO/SAML issue on your identity provider — contact your internal IT. |
-| **Lost MFA device** | Use **Reset MFA** on the sign-in page. |
-| **Signed out unexpectedly** | Sessions expire for security; simply sign in again. |
+| Symptom | What to do |
+|---------|------------|
+| **"You're not invited" or access denied** | Your account hasn't been invited yet. Ask your organisation's admin or CSM. |
+| **Can't sign in with your password** | Use the password reset option on the sign-in page, or contact your admin. |
+| **Lost MFA device** | Click **Reset MFA** on the sign-in screen. |
+| **Signed out unexpectedly** | Sessions expire after inactivity for security. Sign in again — it takes 30 seconds. |
 
 ---
 
