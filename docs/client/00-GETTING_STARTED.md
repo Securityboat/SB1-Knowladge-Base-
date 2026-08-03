@@ -85,14 +85,14 @@ For complete step-by-step documentation on each module, see the chapters below:
 1. [Introduction](01-introduction.md)
 2. [Logging In](02-login.md)
 3. [Dashboard](03-dashboard.md)
-4. [Assets](04-assets.md)
+4. [Assets](assets/overview.md)
 5. [Findings](05-findings.md)
-6. [Engagements](06-engagements.md)
+6. [Engagements](engagements/overview.md)
 7. [My Requests](07-my-requests.md)
 8. [Compliance Reports](08-compliance-reports.md)
 9. [Admin — Users](09-admin.md) *(Client Admin only)*
 10. [Integrations — Jira](10-integrations.md) *(Client Admin only)*
 11. [Attack Surface (ASM)](11-asm.md)
-12. [Bug Bounty](12-bug-bounty.md)
+12. [Bug Bounty](bug-bounty/overview.md)
 13. [AI Assistant](13-ai-assistant.md)
 14. [Settings](14-settings.md)

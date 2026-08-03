@@ -38,7 +38,7 @@ into a single deliverable.
 | Author / edit report content | ❌ | ❌ | ❌ |
 
 > Clients never author compliance reports — that's SecurityBoat's job. The one
-> client-editable surface is the **management review** (see §8.4), and only a
+> client-editable surface is the **management review**, and only a
 > **Client Admin** may use it.
 
 ### Navigation
@@ -65,7 +65,7 @@ Each report is a card showing:
 
 | Button | Who | What it does |
 |--------|-----|--------------|
-| **Review** | Client Admin | Opens the review screen to add your management response (see §8.4). |
+| **Review** | Client Admin | Opens the review screen to add your management response |
 | **View** | all client roles | Opens the fully rendered report in the viewer. |
 | **Download** | all client roles | Downloads the report PDF — **only shown once the report is Published**. |
 

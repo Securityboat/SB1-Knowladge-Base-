@@ -22,24 +22,19 @@ number, face-match score, and the decision).
 
 ### 2. Verification process at a glance
 
-```
-ADMIN (SecurityBoat)                         YOU (researcher)
-────────────────────                         ─────────────────
-Requests identity verification  ──▶  You receive a notification +
-                                    a "Verify Identity" button appears
-                                    on your Dashboard and Verification page
-                                            │
-                                            ▼ Click "Verify Identity"
-                                    A popup opens showing steps & QR code
-                                            │
-                                            ▼ Scan QR code on your phone
-                                    On phone: choose ID type (passport,
-                                    driving licence, national ID card)
-                                    → photograph document → face match
-                                            │
-                                            ▼ Complete mobile flow
-Status updates: Approved /          Outcome reconciled automatically;
-Pending Review / Declined    ◀──    Verified status updates on profile
+```mermaid
+sequenceDiagram
+    participant A as SecurityBoat Admin
+    participant R as You (Researcher)
+    A->>R: Requests identity verification
+    R->>R: Notification received +<br/>"Verify Identity" button appears
+    R->>R: Click "Verify Identity"
+    R->>R: Popup opens showing steps & QR code
+    R->>R: Scan QR code on phone
+    R->>R: Choose ID type + photograph<br/>document + face match
+    R->>R: Complete mobile flow
+    R-->>A: Outcome reconciled automatically
+    A-->>R: Status: Approved / Pending Review / Declined
 ```
 
 **Verification statuses you may experience:**

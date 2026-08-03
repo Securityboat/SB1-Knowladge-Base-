@@ -44,7 +44,11 @@ extra:
 
 markdown_extensions:
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -79,15 +83,46 @@ nav:
       - Introduction: client/01-introduction.md
       - Signing In: client/02-login.md
       - Dashboard: client/03-dashboard.md
-      - Assets: client/04-assets.md
+      - Assets:
+          - Overview: client/assets/overview.md
+          - Create Asset: client/assets/create-asset.md
+          - Asset Detail: client/assets/asset-detail.md
+          - Edit Asset: client/assets/edit-asset.md
       - Findings: client/05-findings.md
-      - Engagements: client/06-engagements.md
+      - Engagements:
+          - Overview: client/engagements/overview.md
+          - Create Engagement: client/engagements/create-engagement.md
+          - Engagement Detail:
+              - Overview: client/engagements/engagement-details/engagement-detail.md
+              - Brief: client/engagements/engagement-details/brief.md
+              - Assets: client/engagements/engagement-details/assets.md
+              - Team: client/engagements/engagement-details/team.md
+              - Coverage: client/engagements/engagement-details/coverage.md
+              - Findings: client/engagements/engagement-details/findings.md
+              - Analytics: client/engagements/engagement-details/analytics.md
+              - Reports: client/engagements/engagement-details/reports.md
+              - Chat: client/engagements/engagement-details/chat.md
+              - Integrations: client/engagements/engagement-details/integrations.md
+          - Edit Engagement: client/engagements/edit-engagement.md
       - My Requests: client/07-my-requests.md
       - Compliance Reports: client/08-compliance-reports.md
       - User Administration: client/09-admin.md
       - Integrations: client/10-integrations.md
       - Attack Surface (ASM): client/11-asm.md
-      - Bug Bounty: client/12-bug-bounty.md
+      - Bug Bounty:
+          - Overview: client/bug-bounty/overview.md
+          - Create Program: client/bug-bounty/create-bug-bounty.md
+          - Program Detail:
+              - Overview: client/bug-bounty/program-detail.md
+              - Scope: client/bug-bounty/detail/scope.md
+              - Rewards: client/bug-bounty/detail/rewards.md
+              - Findings: client/bug-bounty/detail/findings.md
+              - Team: client/bug-bounty/detail/team.md
+              - Payouts: client/bug-bounty/detail/payouts.md
+              - Leaderboard: client/bug-bounty/detail/leaderboard.md
+              - Collaborators: client/bug-bounty/detail/collaborators.md
+              - Chat: client/bug-bounty/detail/chat.md
+          - Edit Program: client/bug-bounty/edit-bug-bounty.md
       - Hacktivity: client/17-hacktivity.md
       - Disclosure Requests: client/18-disclosure-requests.md
       - AI Assistant: client/13-ai-assistant.md

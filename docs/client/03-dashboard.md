@@ -110,4 +110,4 @@ actions you can take downstream differ.
 
 ---
 
-← Previous: [Login](02-login.md) | Next: [Assets →](04-assets.md)
+← Previous: [Login](02-login.md) | Next: [Assets →](assets/overview.md)

@@ -15,6 +15,15 @@
 
 Each disclosure request moves through four stages:
 
+```mermaid
+graph LR
+    A[You submit] --> B[Pending TPM]
+    B -->|TPM approves| C[Pending Client]
+    B -->|TPM rejects| D[Rejected]
+    C -->|Client approves| E[Published]
+    C -->|Client rejects| D
+```
+
 | State | Description |
 |---|---|
 | Pending TPM | You submitted the request; it is awaiting review by the TriNetra Program Manager |

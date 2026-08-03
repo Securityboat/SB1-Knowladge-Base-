@@ -1,4 +1,4 @@
-# Disclosure Requests (Client View)
+# Disclosure Requests
 
 **Disclosure Requests** let you manage researcher requests to publicly disclose resolved vulnerabilities. You have the final say on whether a finding is published to the Hacktivity feed.
 
@@ -12,6 +12,15 @@
 ---
 
 ## The Request Workflow
+
+```mermaid
+graph LR
+    A[Researcher submits] --> B[Pending TPM]
+    B -->|TPM approves| C[Pending Client]
+    B -->|TPM rejects| D[Rejected]
+    C -->|You approve| E[Published]
+    C -->|You reject| D
+```
 
 | State | Description |
 |---|---|

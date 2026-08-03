@@ -22,51 +22,48 @@ PTaaS redefines this model:
 
 A PTaaS engagement is scoped using your live asset list from **Attack Surface Management (ASM)**. Once approved, the project transitions into active testing.
 
-```
-+--------------------+
-|  1. Scope Defined  |
-+--------------------+
-          |
-          v
-+--------------------+
-| 2. In Preparation  |
-+--------------------+
-          |
-          v
-+--------------------+
-| 3. Active Testing  | <---> [ Real-Time Finding Stream ]
-+--------------------+
-          |
-          v
-+--------------------+
-|  4. Draft Report   |
-+--------------------+
-          |
-          v
-+--------------------+
-| 5. Client Review   |
-+--------------------+
-          |
-          v
-+--------------------+
-|  6. Final Report   |
-+--------------------+
+```mermaid
+graph TD
+    A[1. Scope Defined] --> B[2. In Preparation]
+    B --> C[3. Active Testing]
+    C <--> D[Real-Time Finding Stream]
+    C --> E[4. Draft Report]
+    E --> F[5. Client Review]
+    F --> G[6. Final Report]
 ```
 
 ### The 12-State Lifecycle
 The platform maps engagements, targets, and findings through 12 formal states to guarantee accountability:
-1. **Scope Gained:** Scope and targets defined.
-2. **Setup Pending:** Awaiting credentials and configurations.
-3. **Scheduled:** Assigned to testers and queued.
-4. **Pre-Assessment:** Initial recon and scoping validation.
-5. **In Progress (Active Testing):** Testers actively exploiting targets.
-6. **Reporting:** Draft report being written by SecurityBoat leads.
-7. **Quality Check:** Internal QA reviews finding evidence.
-8. **Draft Released:** Released to you for feedback.
-9. **Final Released:** Signed-off report issued.
-10. **Retest Pending:** Remediation completed; awaiting validation.
-11. **Retest In Progress:** Retesting the specific finding.
-12. **Closed:** Finding verified as resolved or risk-accepted.
+
+```mermaid
+graph LR
+    S1[Scope Gained] --> S2[Setup Pending]
+    S2 --> S3[Scheduled]
+    S3 --> S4[Pre-Assessment]
+    S4 --> S5[In Progress]
+    S5 --> S6[Reporting]
+    S6 --> S7[Quality Check]
+    S7 --> S8[Draft Released]
+    S8 --> S9[Final Released]
+    S9 --> S10[Retest Pending]
+    S10 --> S11[Retest In Progress]
+    S11 --> S12[Closed]
+```
+
+| # | State | Description |
+|---|-------|-------------|
+| 1 | **Scope Gained** | Scope and targets defined. |
+| 2 | **Setup Pending** | Awaiting credentials and configurations. |
+| 3 | **Scheduled** | Assigned to testers and queued. |
+| 4 | **Pre-Assessment** | Initial recon and scoping validation. |
+| 5 | **In Progress** | Testers actively exploiting targets. |
+| 6 | **Reporting** | Draft report being written by SecurityBoat leads. |
+| 7 | **Quality Check** | Internal QA reviews finding evidence. |
+| 8 | **Draft Released** | Released to you for feedback. |
+| 9 | **Final Released** | Signed-off report issued. |
+| 10 | **Retest Pending** | Remediation completed; awaiting validation. |
+| 11 | **Retest In Progress** | Retesting the specific finding. |
+| 12 | **Closed** | Finding verified as resolved or risk-accepted.
 
 ---
 

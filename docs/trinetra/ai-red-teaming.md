@@ -22,23 +22,10 @@ AI Red Teaming tests the specific vulnerabilities of AI systems:
 
 AI Red Teaming evaluates the three key layers of a modern generative AI architecture.
 
-```
-                  +-----------------------------------+
-                  |      1. LLM Endpoint Layer        |
-                  | (Prompt Injection, Jailbreaking)  |
-                  +-----------------------------------+
-                                    |
-                                    v
-                  +-----------------------------------+
-                  |      2. RAG Retrieval Layer       |
-                  |  (Indirect Injections, Poisoning) |
-                  +-----------------------------------+
-                                    |
-                                    v
-                  +-----------------------------------+
-                  |      3. Agent & Tool-Calling      |
-                  | (Sandbox Bypass, Privilege Escal) |
-                  +-----------------------------------+
+```mermaid
+graph TD
+    A[1. LLM Endpoint Layer<br/>Prompt Injection, Jailbreaking] --> B[2. RAG Retrieval Layer<br/>Indirect Injections, Poisoning]
+    B --> C[3. Agent & Tool-Calling<br/>Sandbox Bypass, Privilege Escal]
 ```
 
 ### The Three-Layer AI Security Stack

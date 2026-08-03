@@ -48,10 +48,15 @@ Open one to reach its tabs:
 
 ### 4. Your workflow on a LIVE engagement
 
-```
-Read brief + scope (Assets)  →  test against the coverage checklist
-    →  submit findings (Findings tab)  →  TPM verifies  →  (Lead) draft report
-    →  client remediates  →  you retest when asked  →  engagement closes
+```mermaid
+graph LR
+    A[Read brief + scope] --> B[Test against coverage checklist]
+    B --> C[Submit findings]
+    C --> D[TPM verifies]
+    D --> E[Lead drafts report]
+    E --> F[Client remediates]
+    F --> G[You retest when asked]
+    G --> H[Engagement closes]
 ```
 
 Submitting a well-scoped, well-evidenced finding is your core deliverable — see the

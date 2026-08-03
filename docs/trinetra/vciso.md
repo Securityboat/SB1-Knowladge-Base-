@@ -22,30 +22,12 @@ Our vCISO service places a senior security leader on retainer, backed by Securit
 
 A vCISO engagement progresses through five clear stages to establish governance and align with your business objectives.
 
-```
-+--------------------+
-|    1. Baseline     | -> Assess security maturity against regulatory frameworks.
-+--------------------+
-          |
-          v
-+--------------------+
-|    2. Roadmap      | -> Prioritize key security milestones, policies, and tests.
-+--------------------+
-          |
-          v
-+--------------------+
-|     3. Embed       | -> Set recurring board reporting and risk register reviews.
-+--------------------+
-          |
-          v
-+--------------------+
-|    4. Oversee      | -> Direct testing programs (PTaaS, ASM, DRP, Bug Bounty).
-+--------------------+
-          |
-          v
-+--------------------+
-| 5. Review & Adjust | -> Re-evaluate strategy as the threat landscape changes.
-+--------------------+
+```mermaid
+graph TD
+    A[1. Baseline<br/>Assess security maturity] --> B[2. Roadmap<br/>Prioritize milestones & policies]
+    B --> C[3. Embed<br/>Set recurring board reporting]
+    C --> D[4. Oversee<br/>Direct testing programs]
+    D --> E[5. Review & Adjust<br/>Re-evaluate strategy]
 ```
 
 ### Strategic Integration Areas

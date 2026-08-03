@@ -19,12 +19,14 @@ Publicly disclosed vulnerabilities from bug bounty programs. Each entry includes
 
 ## How Disclosures Get Here
 
-1. You discover and report a vulnerability through a bug bounty program or pentest engagement
-2. The finding is triaged, validated, and resolved by the client
-3. You submit a **Disclosure Request** from the Disclosure Requests page
-4. The TPM (TriNetra Program Manager) reviews the submission for technical accuracy
-5. The client approves the disclosure
-6. Once approved, it appears on Hacktivity with your name attached
+```mermaid
+graph LR
+    A[You discover +<br/>report vuln] --> B[Finding triaged,<br/>validated, resolved]
+    B --> C[You submit<br/>Disclosure Request]
+    C --> D[TPM reviews<br/>technical accuracy]
+    D --> E[Client approves<br/>disclosure]
+    E --> F[Published on Hacktivity<br/>with your name]
+```
 
 ---
 

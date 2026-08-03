@@ -99,6 +99,8 @@ stop when something looks out of sync.
 
 ## 5. Slack (engagement chat mirrored to Slack)
 
+![Slack Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../../images/client_integration_Slack.png)
+
 Alongside Jira, SecurityBoat can mirror your **pentest engagement chat** into your
 **Slack** workspace, so your team can follow and reply to engagement conversations
 without leaving Slack.

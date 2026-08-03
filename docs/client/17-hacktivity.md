@@ -36,11 +36,13 @@ The Hacktivity page lists all published disclosures in reverse chronological ord
 
 Before a finding appears on Hacktivity, it must pass through your approval:
 
-1. A researcher finds and resolves a vulnerability
-2. They submit a **Disclosure Request** through the platform
-3. The TPM (TriNetra Program Manager) reviews it for technical accuracy
-4. **You** review and approve or reject the disclosure
-5. Once approved, it appears on the Hacktivity feed
+```mermaid
+graph LR
+    A[Researcher finds<br/>+ resolves vuln] --> B[Researcher submits<br/>Disclosure Request]
+    B --> C[TPM reviews<br/>technical accuracy]
+    C --> D[You review +<br/>Approve or Reject]
+    D -->|Approved| E[Published on<br/>Hacktivity Feed]
+```
 
 ---
 
@@ -52,4 +54,4 @@ Before a finding appears on Hacktivity, it must pass through your approval:
 
 ---
 
-← Previous: [Bug Bounty](12-bug-bounty.md) | Next: [Disclosure Requests →](18-disclosure-requests.md)
+← Previous: [Edit a Program](bug-bounty/edit-bug-bounty.md) | Next: [Disclosure Requests →](18-disclosure-requests.md)

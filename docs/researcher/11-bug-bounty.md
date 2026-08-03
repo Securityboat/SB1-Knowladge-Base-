@@ -8,11 +8,6 @@ per valid finding (tracked in [Payouts](09-payouts.md)). It complements pentest
 engagements: bug bounty is open-ended and self-directed, engagements are scheduled
 and team-based.
 
-### Navigation
-
-Sidebar: **BB Program**, **Hacktivity**, **Disclosure Requests**.
-
----
 
 ### 2. Programs
 
@@ -31,8 +26,15 @@ reward structure — before you start testing.
 ### 3. Submitting bug-bounty findings
 
 Findings you submit against a program flow into the unified **Findings** module
-(source = `Bug Bounty`) and follow the same lifecycle: submit → TPM/triage verifies
-→ (client) remediates → resolved → payout. Write-up quality matters just as much as
+(source = `Bug Bounty`) and follow the same lifecycle:
+
+```mermaid
+graph LR
+    A[Submit Finding] --> B[TPM/Triage Verifies]
+    B --> C[Client Remediates]
+    C --> D[Resolved]
+    D --> E[Payout]
+```
 on an engagement — see the [Findings guide](07-findings.md).
 
 ### 4. Hacktivity & Disclosure Requests

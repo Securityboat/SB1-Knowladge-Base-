@@ -2,242 +2,346 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.securityboat.in/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/00-GETTING_STARTED/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/01-introduction/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/02-login/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/03-dashboard/</loc>
-         <lastmod>2026-08-01</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.securityboat.in/client/04-assets/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/05-findings/</loc>
-         <lastmod>2026-08-01</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.securityboat.in/client/06-engagements/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/07-my-requests/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/08-compliance-reports/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/09-admin/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/10-integrations/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/11-asm/</loc>
-         <lastmod>2026-08-01</lastmod>
-    </url>
-    <url>
-         <loc>https://docs.securityboat.in/client/12-bug-bounty/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/13-ai-assistant/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/14-settings/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/15-threat-intelligence/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/16-feedback/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/17-hacktivity/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/18-disclosure-requests/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/19-agentic-pentest/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/20-continuous-testing/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/21-drp/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/22-trust-center/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/23-ai-red-teaming/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/client/CLIENT_Guide/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/assets/asset-detail/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/assets/create-asset/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/assets/edit-asset/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/assets/overview/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/create-bug-bounty/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/edit-bug-bounty/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/overview/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/program-detail/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/chat/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/collaborators/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/findings/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/leaderboard/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/payouts/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/rewards/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/scope/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/bug-bounty/detail/team/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/create-engagement/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/edit-engagement/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/overview/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/analytics/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/assets/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/brief/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/chat/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/coverage/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/engagement-detail/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/findings/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/integrations/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/reports/</loc>
+         <lastmod>2026-08-03</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.securityboat.in/client/engagements/engagement-details/team/</loc>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/00-GETTING_STARTED/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/01-introduction/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/02-login/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/03-dashboard/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/04-opportunities/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/05-invites/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/06-engagements/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/07-findings/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/08-my-findings/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/09-payouts/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/10-verification/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/11-bug-bounty/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/12-ai-assistant/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/13-settings/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/14-agentic-pentest/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/15-ai-red-teaming/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/16-disclosure-requests/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/17-hacktivity/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/18-feedback/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/researcher/RESEARCHER_Guide/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/agentic-pentest/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/ai-red-teaming/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/attack-surface-management/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/bug-bounty/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/code-security/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/continuous-controls-validation/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/continuous-testing/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/digital-risk-protection/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/incident-response/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/ish/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/ptaas/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/trust-center/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
     <url>
          <loc>https://docs.securityboat.in/trinetra/vciso/</loc>
-         <lastmod>2026-08-01</lastmod>
+         <lastmod>2026-08-03</lastmod>
     </url>
 </urlset>

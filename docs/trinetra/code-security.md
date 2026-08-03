@@ -44,11 +44,12 @@ Rather than relying on basic string matching, our engine traces variable values 
 
 ### 1. Interactive Data-Flow Traces
 Each finding features a code-level visual path showing the journey of tainted input, making it easy for developers to understand *why* the vulnerability is exploitable:
-```
-input 
-  └─> validate() 
-       └─> sanitize() [bypassed] 
-            └─> executeQuery() [sink]
+
+```mermaid
+graph TD
+    input[Input Source] --> validate[validate]
+    validate --> sanitize[sanitize]
+    sanitize -.->|bypassed| executeQuery[executeQuery Sink]
 ```
 
 ### 2. SCA & Dependency Scanning

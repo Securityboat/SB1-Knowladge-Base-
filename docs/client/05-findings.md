@@ -156,10 +156,12 @@ Click any finding to open it.
 Once a finding is **Verified** (visible to you), remediation is a shared workflow.
 Use the **State actions** panel on the detail page:
 
-```
-VERIFIED ──▶ FIX IN PROGRESS ──▶ READY FOR RETEST ──▶ (tester retests) ──▶ RESOLVED
-   │
-   └──▶ ACCEPTED RISK   (Client Admin only)
+```mermaid
+graph TD
+    VERIFIED[VERIFIED] --> FIP[FIX IN PROGRESS]
+    FIP --> RFR[READY FOR RETEST]
+    RFR -->|tester retests| RESOLVED[RESOLVED]
+    VERIFIED -->|Client Admin only| AR[ACCEPTED RISK]
 ```
 
 | Transition | Who | When to use it | Input required |
@@ -215,4 +217,4 @@ to auditors. Available to all client roles.
 
 ---
 
-← Previous: [Assets](04-assets.md) | Next: [Engagements →](06-engagements.md)
+← Previous: [Assets](assets/overview.md) | Next: [Engagements →](engagements/overview.md)

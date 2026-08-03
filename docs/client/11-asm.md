@@ -131,4 +131,4 @@ warrants a deeper look, it can inform a new **pentest engagement request**.
 
 ---
 
-← Previous: [Integrations](10-integrations.md) | Next: [Bug Bounty →](12-bug-bounty.md)
+← Previous: [Integrations](10-integrations.md) | Next: [Bug Bounty →](bug-bounty/overview.md)

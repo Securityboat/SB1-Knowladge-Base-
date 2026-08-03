@@ -61,7 +61,7 @@ plain language.
 ### 4. Submitting a new request
 
 Click **New request** (top-right) to open the request form. This is the same form
-described in the Engagements guide — see [§5 Requesting a pentest](06-engagements.md#5-requesting-a-pentest-client-admin-client-tpm)
+described in the [Create Engagement](engagements/create-engagement.md) guide
 for the field-by-field breakdown (asset, engagement type, title, description,
 preferred dates) and the review → scoping → approval → delivery flow.
 
@@ -85,4 +85,4 @@ preferred dates) and the review → scoping → approval → delivery flow.
 
 ---
 
-← Previous: [Engagements](06-engagements.md) | Next: [Compliance Reports →](08-compliance-reports.md)
+← Previous: [Engagements](engagements/overview.md) | Next: [Compliance Reports →](08-compliance-reports.md)

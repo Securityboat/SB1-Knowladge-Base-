@@ -34,9 +34,14 @@ Open your SecurityBoat URL. You'll see the **Sign in to Tri-Netra** card with:
 4. **WorkOS verifies you** and redirects back to SecurityBoat's secure callback.
 5. **You land on your Dashboard**, scoped to your engagements and findings.
 
-```
-You → "Continue with SSO" → WorkOS hosted login (password / SSO / SAML + MFA)
-    → verified → SecurityBoat callback → Dashboard
+```mermaid
+graph LR
+    A[You] -->|Click Continue with SSO| B[WorkOS Hosted Login]
+    B --> C{Authenticate}
+    C -->|Password| D[Verify + MFA]
+    C -->|SSO / SAML| D
+    D --> E[SecurityBoat Callback]
+    E --> F[Dashboard]
 ```
 
 ### 4. First-time sign-in (from an invitation)
