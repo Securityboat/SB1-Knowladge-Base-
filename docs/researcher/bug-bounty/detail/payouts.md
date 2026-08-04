@@ -18,16 +18,21 @@ For each validated finding that qualifies for a reward, a payout entry is genera
 
 ## Payout Status Flow
 
-All payouts progress through a standard disbursement lifecycle:
+All payouts progress through a standard disbursement lifecycle as shown below:
 
-```
-[Created] ──> [Hold Period] ──> [Approved] ──> [Settled]
+```mermaid
+graph LR
+    Created[Created] --> Hold[Hold Period]
+    Hold --> Approved[Approved]
+    Approved --> Settled[Settled]
 ```
 
-1.  **Created**: The finding has been verified, and the reward is registered.
-2.  **Hold Period**: A temporary validation period (typically 7–14 days) to ensure client confirmation and check for duplicate disclosures.
-3.  **Approved**: The payout is approved by the SecurityBoat billing department.
-4.  **Settled**: The funds have been transferred to your registered bank account or payout provider.
+### Explanation of Lifecycle States
+
+*   **Created**: The finding has been verified, and the reward is registered in the system.
+*   **Hold Period**: A temporary validation period (typically 7–14 days) to ensure client confirmation and check for duplicate disclosures.
+*   **Approved**: The payout has been verified and approved by the SecurityBoat billing department.
+*   **Settled**: The funds have been successfully transferred to your registered bank account or payout provider.
 
 ---
 

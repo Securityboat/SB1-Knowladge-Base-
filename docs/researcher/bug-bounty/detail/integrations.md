@@ -14,6 +14,16 @@ When Jira is connected and active:
 *   This ensures fast visibility for the client's developers, speeding up the patch lifecycle and expediting your payouts.
 *   Status updates in the client's Jira system can sync back, updating the finding state on the Tri-Netra platform automatically.
 
+The diagram below illustrates the automated Jira synchronization flow:
+
+```mermaid
+graph LR
+    Sub[Submit Finding] --> Ver[TPM Verifies Finding]
+    Ver --> Jira[Jira Ticket Created Automatically]
+    Jira --> Dev[Client Developer Patches Bug]
+    Dev --> Sync[Status Syncs Back to Tri-Netra]
+```
+
 ---
 
 ← Previous: [Chat](chat.md) | Back to: [Bug Bounty Overview](../overview.md)

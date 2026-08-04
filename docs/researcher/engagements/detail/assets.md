@@ -28,7 +28,9 @@ Each credential block includes:
 
 ## Secure Asset Handling Guidelines
 
-*   **Credential Confidentiality**: Credentials provided for testing are strictly confidential. Do not share them outside the engagement team or use them after the testing window closes.
+> [!WARNING]
+> **Credential Confidentiality**: Credentials provided for testing are strictly confidential. Do not share them outside the engagement team or use them after the testing window closes.
+
 *   **Credential Verification**: Verify all login credentials on the first day of the **Live** phase. If credentials are locked, expired, or have insufficient permissions, report it immediately in the engagement **Chat** tab.
 *   **MFA Bypass**: If Multi-Factor Authentication is enabled on a target, clients may provide a static bypass code or a shared TOTP secret (listed in the credentials card) to enable automated or manual testing.
 

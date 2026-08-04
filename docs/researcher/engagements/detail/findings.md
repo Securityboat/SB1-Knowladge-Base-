@@ -53,7 +53,17 @@ Click **Save as Draft** or **Submit Finding**.
 
 ## Retesting & Verification
 
-Once the client remediates a vulnerability, they will transition the state to **Ready for Retest**.
+Once the client remediates a vulnerability, they will transition the state to **Ready for Retest**. The workflow follows the diagram below:
+
+```mermaid
+graph TD
+    Ready[Status: Ready for Retest] --> Assign[Retest Assigned to Researcher]
+    Assign --> Test[Re-run Reproduction Steps]
+    Test --> Verified{Is Vulnerability Fixed?}
+    Verified -->|Yes| Resolved[Mark Status: Resolved]
+    Verified -->|No| Progress[Mark Status: Fix in Progress]
+```
+
 *   **Retest Assignment**: The TPM or Lead Researcher will assign the retest to a team member.
 *   **Performing the Retest**: Re-run the reproduction steps using the original PoC.
 *   **Documenting the Result**: Add a comment detailing the retest outcome and transition the status to **Resolved** (if fixed) or back to **Fix in Progress** (if still vulnerable).

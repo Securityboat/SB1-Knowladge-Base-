@@ -6,6 +6,21 @@ Completing the coverage checklist is a critical requirement of the penetration t
 
 ---
 
+## Logging Coverage Workflow
+
+The flowchart below illustrates the process for completing and logging a methodology checklist item:
+
+```mermaid
+graph TD
+    Test[Perform Test Check] --> Decision{Is Feature Present?}
+    Decision -->|Yes| Tested[Mark Status: Tested + Add Test Notes]
+    Decision -->|No| NA[Mark Status: Not Applicable + Add Justification]
+    Tested --> Progress[Completion Progress Bar Updates]
+    NA --> Progress
+```
+
+---
+
 ## Methodology Checklists
 
 The checklists are automatically populated based on the engagement type. Common frameworks include:

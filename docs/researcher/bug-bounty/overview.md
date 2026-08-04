@@ -1,4 +1,4 @@
-# Bug Bounty Overview
+# Bug Bounty & VDP Overview
 
 Welcome to the **Bug Bounty & VDP** module on the Tri-Netra platform. This guide helps you navigate, participate in, and submit vulnerability reports to continuous, rewarded security programs.
 
@@ -6,14 +6,39 @@ Bug Bounty testing on Tri-Netra is self-directed and continuous, complementing s
 
 ---
 
+## Testing Workflow
+
+The diagram below maps the typical lifecycle of a bug bounty or VDP submission on Tri-Netra:
+
+```mermaid
+graph TD
+    A[Browse Programs] --> B{Program Visibility?}
+    B -->|Public| C[Start Testing Directly]
+    B -->|Private| D[Awaiting Invitation]
+    D -->|Accept Invite| C
+    C --> E[Discover Vulnerability]
+    E --> F[Submit Finding via Drawer]
+    F --> G[TPM Triage & Verification]
+    G -->|Accepted/Verified| H{Program Type?}
+    H -->|Bug Bounty| I[Monetary Payout + Reputation Points]
+    H -->|VDP| J[Swag/Hall of Fame + Reputation Points]
+```
+
+---
+
 ## Program Types
 
 Tri-Netra supports two types of crowdsourced security testing programs:
 
-| Program Type | Description | Reward Model |
-| :--- | :--- | :--- |
-| **Bug Bounty** | Paid programs targeting critical enterprise assets. | Tiered monetary payouts based on finding severity (P1–P5) plus reputation points. |
-| **VDP (Vulnerability Disclosure Program)** | Non-monetary programs focused on safe harbor and responsible disclosure. | Swag, Hall of Fame positioning, certificates of appreciation, and reputation points. |
+### 1. Bug Bounty
+*   **Target Scope**: Critical enterprise production and staging environments.
+*   **Incentives**: Tiered monetary payouts based on finding severity (P1–P5) plus reputation points.
+*   **Verification**: Managed by SecurityBoat TPMs or client security leads.
+
+### 2. VDP (Vulnerability Disclosure Program)
+*   **Target Scope**: Responsible disclosure targets for safe harbor testing.
+*   **Incentives**: Recognition-based rewards including swag, Hall of Fame placements, certificates of appreciation, and reputation points.
+*   **Verification**: Self-managed by clients or SecurityBoat triage teams.
 
 ---
 
@@ -21,8 +46,12 @@ Tri-Netra supports two types of crowdsourced security testing programs:
 
 Programs are categorized by visibility, which determines how you can access them:
 
-*   **Public Programs**: Open to all registered and identity-verified researchers on the Tri-Netra platform. You can begin testing in-scope assets immediately.
-*   **Private Programs**: Invite-only programs. Clients run these with a curated subset of trusted researchers. Invitations appear under your **Invites** sidebar menu. Accepting a private invite grants you access to the program details and target scope.
+*   **Public Programs**: 
+    *   **Access**: Open to all registered and identity-verified researchers on the Tri-Netra platform.
+    *   **Action**: You can begin testing in-scope assets immediately without requiring an invitation.
+*   **Private Programs**: 
+    *   **Access**: Invite-only programs based on reputation scores or custom skills.
+    *   **Action**: Invitations appear under your **Invites** sidebar menu. Accepting a private invite grants you access to the program details and target scope.
 
 ---
 
@@ -43,11 +72,12 @@ To view the programs list, click **BB Program** in the main sidebar.
 ![Bug Bounty Programs List](../../images/res_bb_programs_01.png)
 
 The listing page displays:
-1.  **Summary Metrics**: Quick counts of all programs, active programs, and total findings you have submitted.
-2.  **Program Cards**: Each card displays the organization avatar, program name, reference code, visibility (Public/Private), program type (Bug Bounty/VDP), active findings count, and status badge.
-3.  **Search & Filters**: Search by program name or filter by type (Bug Bounty, VDP) and visibility.
+*   **Summary Metrics**: Quick counts of all programs, active programs, and total findings you have submitted.
+*   **Program Cards**: Each card displays the organization avatar, program name, reference code, visibility (Public/Private), program type (Bug Bounty/VDP), active findings count, and status badge.
+*   **Search & Filters**: Search by program name or filter by type (Bug Bounty, VDP) and visibility.
 
-Click on any active program card to open the **Program Detail** view and access the individual testing tabs.
+> [!NOTE]
+> Click on any active program card to open the **Program Detail** view and access the individual testing tabs.
 
 ---
 

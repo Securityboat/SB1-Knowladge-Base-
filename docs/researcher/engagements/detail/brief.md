@@ -1,14 +1,24 @@
 # Brief
 
-The **Brief** tab is the default landing view when you open a pentest engagement. It provides a complete, single-scroll overview of the engagement's configuration, rules of engagement, testing schedule, and assigned team.
+The **Brief** tab is the default landing view when you open a pentest engagement. It provides a complete overview of the engagement's configuration, rules of engagement, testing schedule, and assigned team.
 
 ---
 
-## Page Layout
+## Page Layout Diagram
 
-The Brief tab is organized into a two-column layout:
-*   **Left Column (Main)**: Configuration metrics, Project Description, and Rules of Engagement (In-scope and Out-of-scope summaries).
-*   **Right Column (Sidebar)**: Timeline, Testing Team roster, and State History log.
+The Brief tab is organized into a two-column layout as illustrated below:
+
+```mermaid
+graph TD
+    Brief[Brief Tab Layout] --> Left[Left Column: Configuration & Scope]
+    Brief --> Right[Right Column: Sidebar Metrics]
+    Left --> MetricChips[Metric Chips: Type, Approach, Environment, Source-code]
+    Left --> Desc[Description]
+    Left --> RoE[Rules of Engagement: In-scope vs Out-of-scope]
+    Right --> Schedule[Schedule: Window progress, Dates, Effort]
+    Right --> Team[Team: Lead, Researchers]
+    Right --> History[State History: Timeline]
+```
 
 ---
 

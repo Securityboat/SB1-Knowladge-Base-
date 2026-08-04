@@ -10,9 +10,17 @@ Unlike continuous Bug Bounty programs, a **PTaaS Engagement** is a scheduled, te
 
 Engagements progress through a series of states. Knowing where an engagement stands helps you align your testing and reporting activities:
 
+```mermaid
+graph LR
+    Scheduled[Scheduled] --> Live[Live]
+    Live --> Drafting[Report Drafting]
+    Drafting --> Review[Report Review]
+    Review --> Delivered[Delivered]
+    Delivered --> Remediation[Remediation]
+    Remediation --> Closed[Closed]
 ```
-[Scheduled] ──> [Live] ──> [Report Drafting] ──> [Report Review] ──> [Delivered] ──> [Remediation] ──> [Closed]
-```
+
+### Explanation of Lifecycle States
 
 | State | What It Means for You |
 | :--- | :--- |
@@ -51,7 +59,8 @@ The listing page includes:
     *   **Closed**: Finished engagements.
 3.  **Search & Table**: Search by Project ID or title. The table lists the Project ID, Title, Client Organization, State, Assigned TPM, and Scheduled Dates.
 
-Click on any row in the table to open the **Engagement Detail** view.
+> [!NOTE]
+> Click on any row in the table to open the **Engagement Detail** view.
 
 ---
 

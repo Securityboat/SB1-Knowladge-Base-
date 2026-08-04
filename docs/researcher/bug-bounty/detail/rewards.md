@@ -16,7 +16,8 @@ For paid Bug Bounty programs, rewards are structured into a tier-based grid matc
 | **P4 — Low** | 0.1 – 3.9 | \$100 – \$299 |
 | **P5 — Informational** | 0.0 | Swag / Points Only |
 
-*Note: Individual program reward ranges are set by the client and may vary. Always refer to the live grid on the Rewards tab.*
+> [!TIP]
+> Individual program reward ranges are set by the client and may vary. Always refer to the live grid on the Rewards tab.
 
 ---
 
@@ -33,14 +34,16 @@ VDPs do not offer cash payouts. Instead, they reward valid contributions through
 
 All valid findings (on both Bug Bounty and VDP programs) award **Reputation Points** upon transitioning to the **Verified** state. Reputation points determine your overall ranking on the leaderboard and eligibility for exclusive, high-paying private program invites.
 
-Points are awarded based on finding severity:
+The diagram below outlines the reputation points assigned based on finding severity:
 
-```
-P1 (Critical)      =========================================> 40 Points
-P2 (High)          =================================> 30 Points
-P3 (Medium)        =========================> 20 Points
-P4 (Low)           =================> 10 Points
-P5 (Info)          =========> 5 Points
+```mermaid
+graph TD
+    Finding[Accepted Finding] --> Sev{Severity Level?}
+    Sev -->|P1 - Critical| P1[40 Points]
+    Sev -->|P2 - High| P2[30 Points]
+    Sev -->|P3 - Medium| P3[20 Points]
+    Sev -->|P4 - Low| P4[10 Points]
+    Sev -->|P5 - Informational| P5[5 Points]
 ```
 
 ### Reputation Deductions

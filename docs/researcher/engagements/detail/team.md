@@ -4,6 +4,19 @@ The **Team** tab lists the full security team roster assigned to the engagement,
 
 ---
 
+## Communication & Collaboration Hierarchy
+
+The hierarchy diagram below illustrates how communication flows during an engagement:
+
+```mermaid
+graph TD
+    Client[Client Admin / Client TPM] <--> PM[SecurityBoat TPM / CSM]
+    PM <--> Lead[Lead Researcher]
+    Lead <--> Researchers[Testing Researchers]
+```
+
+---
+
 ## Roster Classification
 
 The team page classifies members by their role on the project:
@@ -23,9 +36,13 @@ The team page classifies members by their role on the project:
 
 ## Communication Protocols
 
-*   **For Technical Questions**: Use the engagement **Chat** tab to discuss target behavior, credential errors, or testing blockages. This keeps the communications centralized and visible to both the testing team and the client.
+> [!TIP]
+> **For Technical Questions**: Use the engagement **Chat** tab to discuss target behavior, credential errors, or testing blockages. This keeps the communications centralized and visible to both the testing team and the client.
+
 *   **For Severity Queries**: If you have a question about how a finding is classified or need clarification on a duplicate triage state, message your assigned **TPM** or **Lead Researcher** directly.
 
 ---
+
+<!-- slide -->
 
 ← Previous: [Assets](assets.md) | Next: [Coverage →](coverage.md)

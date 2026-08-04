@@ -4,6 +4,25 @@ When you select a Bug Bounty or VDP program, you land on the **Program Detail** 
 
 ---
 
+## Page Layout & Tab Structure
+
+The diagram below outlines the structural layout of the Program Detail view:
+
+```mermaid
+graph TD
+    ProgramDetail[Program Detail Page] --> Header[Header: Status, Visibility, Type badges]
+    ProgramDetail --> KPI[KPIs: Bounties paid, Reports received, Active since]
+    ProgramDetail --> Tabs[Tab Navigation]
+    Tabs --> TabOverview[Overview Tab]
+    Tabs --> TabOther[Other Tabs: Scope, Rewards, Findings...]
+    TabOverview --> LeftCol[Left/Main: Details, Policy Description]
+    TabOverview --> RightCol[Right/Sidebar: Reward structure summary]
+    TabOverview --> Stats[Stats Grid: Lifecycle status counts]
+    TabOverview --> HoF[Hall of Fame: Top 3 Podium]
+```
+
+---
+
 ## Page Header & KPIs
 
 At the top of the program detail page, the header bar identifies the target at a glance:
