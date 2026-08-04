@@ -132,4 +132,4 @@ A finding that reaches **Verified/Resolved** on a paid program or engagement bec
 
 ---
 
-← Previous: [Engagements](06-engagements.md) | Next: [Payouts →](09-payouts.md)
+← Previous: [Engagements](engagements/overview.md) | Next: [Payouts →](09-payouts.md)

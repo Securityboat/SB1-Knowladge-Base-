@@ -15,9 +15,7 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 
 ### 2. Account
 
-![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle. (1 of 2)](../images/client_settings_account_01.png)
-
-![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle. (2 of 2)](../images/client_settings_account_02.png)
+![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle.](../images/client_settings_account_01.png)
 
 | Section | What you can do |
 |---------|-----------------|
@@ -31,6 +29,8 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 > access control, so they're admin/IdP-managed and audited.
 
 ### 3. MFA Setup
+
+![MFA Setup — configure multi-factor authentication for your account.](../images/client_settings_mfa.png)
 
 The **MFA Setup** tab is where you manage multi-factor
 authentication. Enabling MFA is strongly recommended — it's your

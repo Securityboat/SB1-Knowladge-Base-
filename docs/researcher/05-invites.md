@@ -61,5 +61,5 @@ For **pending Bug Bounty invites**, you get action buttons:
 
 ---
 
-← Previous: [Opportunities](04-opportunities.md) | Next: [Engagements →](06-engagements.md)
+← Previous: [Opportunities](04-opportunities.md) | Next: [Engagements →](engagements/overview.md)
 

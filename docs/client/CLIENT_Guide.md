@@ -23,9 +23,16 @@ throughout (e.g. "Client Admin only").
 | 9 | [Admin — Users](09-admin.md) | Team/user management — **Client Admin only**. |
 | 10 | [Integrations — Jira](10-integrations.md) | Sync findings to Jira — **Client Admin only**. |
 | 11 | [Attack Surface (ASM)](11-asm.md) | Continuous exposure monitoring *(if subscribed)*. |
-| 12 | [Bug Bounty](bug-bounty/overview.md) | Crowd-sourced testing programs *(if subscribed)*. |
-| 13 | [AI Assistant](13-ai-assistant.md) | Ask about your security data in plain language. |
-| 14 | [Settings](14-settings.md) | Account, MFA, and notifications. |
+| 12 | [Threat Intelligence](15-threat-intelligence.md) | External attack surface visibility — domains, IPs, exposed services *(if subscribed)*. |
+| 13 | [Bug Bounty](bug-bounty/overview.md) | Crowd-sourced testing programs *(if subscribed)*. |
+| 14 | [Agentic Pentest](19-agentic-pentest.md) | AI-driven penetration testing with human-validated findings *(if subscribed)*. |
+| 15 | [Continuous Testing](20-continuous-testing.md) | Exploit-confirmed vulnerability detection in every commit *(if subscribed)*. |
+| 16 | [AI Red Teaming](23-ai-red-teaming.md) | Adversarial testing for LLM-powered applications *(if subscribed)*. |
+| 17 | [Digital Risk Protection (DRP)](21-drp.md) | Phishing detection, credential leaks, brand impersonation monitoring *(if subscribed)*. |
+| 18 | [Trust Center](22-trust-center.md) | Governed access to security and compliance documentation *(if subscribed)*. |
+| 19 | [AI Assistant](13-ai-assistant.md) | Ask about your security data in plain language. |
+| 20 | [Feedback](16-feedback.md) | Report bugs or request features directly from the platform. |
+| 21 | [Settings](14-settings.md) | Account, MFA, and notifications. |
 
 ## Role access at a glance
 
@@ -37,7 +44,7 @@ throughout (e.g. "Client Admin only").
 | Manage users (Admin → Users) | ✅ | ❌ | ❌ |
 | Configure Jira integration | ✅ | ❌ | ❌ |
 
-> Modules ASM, Bug Bounty, and Compliance are **platform-gated** — they appear only
+> Modules ASM, Threat Intelligence, Bug Bounty, Agentic Pentest, Continuous Testing, AI Red Teaming, DRP, Trust Center, and Compliance are **platform-gated** — they appear only
 > if your organisation is onboarded for them.
 
 ---

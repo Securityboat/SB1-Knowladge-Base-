@@ -1,0 +1,39 @@
+# Coverage
+
+The **Coverage** tab is where the testing team tracks and documents the progress of the security assessment. It provides a structured methodology checklist based on the type of assets under review.
+
+Completing the coverage checklist is a critical requirement of the penetration test. It demonstrates to the client that a thorough, systematic assessment was conducted, rather than just running automated scanners.
+
+---
+
+## Methodology Checklists
+
+The checklists are automatically populated based on the engagement type. Common frameworks include:
+*   **OWASP Top 10** (for Web Applications)
+*   **OWASP API Security Top 10** (for APIs)
+*   **OWASP MASVS** (for Mobile Apps)
+*   **NIST SP 800-115** (for Network Infrastructure)
+
+---
+
+## Recording Testing Coverage
+
+During the **Live** phase, as you complete specific testing checks, you must document your progress:
+
+1.  **Checkoff**: Mark the checkbox next to the completed testing item (e.g., *Verify password policy enforcement*).
+2.  **Add Testing Context**:
+    *   **Status**: Mark as **Tested** (fully verified), **Not Applicable** (the feature is not present on the target), or **In Progress**.
+    *   **Assigned Tester**: Select your name from the dropdown list.
+    *   **Notes**: Add a brief note detailing the paths or parameters tested, tools used, or manual test results (especially when marking an item as "Not Applicable").
+
+---
+
+## Collaborative Progress Tracking
+
+The coverage tab features a visual progress bar indicating the overall completion percentage of the checklist.
+*   **Real-time Updates**: Both the client organization and the SecurityBoat TPM can monitor the progress bar.
+*   **Lead Researcher Review**: The Lead Researcher reviews the notes and ensures all checklist items are fully resolved before transitioning the engagement to the **Report Drafting** phase.
+
+---
+
+← Previous: [Team](team.md) | Next: [Findings →](findings.md)

@@ -17,12 +17,12 @@ your pay.
 | 3 | [Dashboard](03-dashboard.md) | Your work hub — active engagements, open findings, pay. |
 | 4 | [Opportunities](04-opportunities.md) | Open engagement opportunities you can apply for. |
 | 5 | [Invites](05-invites.md) | Direct invitations to join engagements. |
-| 6 | [Engagements](06-engagements.md) | The engagements you're seated on — scope, team, timeline. |
+| 6 | [Engagements](engagements/overview.md) | The engagements you're seated on — scope, team, timeline. |
 | 7 | [Findings](07-findings.md) | Vulnerabilities on your engagements. |
 | 8 | [My Findings](07-findings.md) | The findings you personally authored. |
 | 9 | [Payouts](09-payouts.md) | Your earnings and payout history (your scope only). |
 | 10 | [Identity Verification](10-verification.md) | Complete verification to unlock paid work. |
-| 11 | [Bug Bounty](11-bug-bounty.md) | Programs you participate in — submit and track reports. |
+| 11 | [Bug Bounty](bug-bounty/overview.md) | Programs you participate in — submit and track reports. |
 | 12 | [Hacktivity](17-hacktivity.md) | Public feed of disclosed vulnerability reports. |
 | 13 | [Disclosure Requests](16-disclosure-requests.md) | Submit and track public disclosure requests. |
 | 14 | [Agentic Pentest](14-agentic-pentest.md) | Direct and validate AI-driven recon & exploit swarms. |

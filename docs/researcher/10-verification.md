@@ -141,4 +141,4 @@ Once approved, your **Identity verification** card displays a green **Verified**
 
 ---
 
-← Previous: [Payouts](09-payouts.md) | Next: [Bug Bounty →](11-bug-bounty.md)
+← Previous: [Payouts](09-payouts.md) | Next: [Bug Bounty →](bug-bounty/overview.md)

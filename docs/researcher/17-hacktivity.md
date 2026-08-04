@@ -52,5 +52,5 @@ graph LR
 
 ---
 
-← Previous: [Bug Bounty](11-bug-bounty.md) | Next: [Disclosure Requests →](16-disclosure-requests.md)
+← Previous: [Bug Bounty](bug-bounty/overview.md) | Next: [Disclosure Requests →](16-disclosure-requests.md)
 

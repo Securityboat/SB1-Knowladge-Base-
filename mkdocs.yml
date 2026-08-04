@@ -109,6 +109,7 @@ nav:
       - User Administration: client/09-admin.md
       - Integrations: client/10-integrations.md
       - Attack Surface (ASM): client/11-asm.md
+      - Threat Intelligence: client/15-threat-intelligence.md
       - Bug Bounty:
           - Overview: client/bug-bounty/overview.md
           - Create Program: client/bug-bounty/create-bug-bounty.md
@@ -123,9 +124,15 @@ nav:
               - Collaborators: client/bug-bounty/detail/collaborators.md
               - Chat: client/bug-bounty/detail/chat.md
           - Edit Program: client/bug-bounty/edit-bug-bounty.md
+      - Agentic Pentest: client/19-agentic-pentest.md
+      - Continuous Testing: client/20-continuous-testing.md
+      - AI Red Teaming: client/23-ai-red-teaming.md
+      - Digital Risk Protection (DRP): client/21-drp.md
+      - Trust Center: client/22-trust-center.md
       - Hacktivity: client/17-hacktivity.md
       - Disclosure Requests: client/18-disclosure-requests.md
       - AI Assistant: client/13-ai-assistant.md
+      - Feedback: client/16-feedback.md
       - Settings: client/14-settings.md
       - Full Client Guide Index: client/CLIENT_Guide.md
   - Researcher Guide:
@@ -135,11 +142,35 @@ nav:
       - Dashboard: researcher/03-dashboard.md
       - Opportunities: researcher/04-opportunities.md
       - Invites: researcher/05-invites.md
-      - Engagements: researcher/06-engagements.md
+      - Engagements:
+          - Overview: researcher/engagements/overview.md
+          - Detail:
+              - Brief: researcher/engagements/detail/brief.md
+              - Assets: researcher/engagements/detail/assets.md
+              - Team: researcher/engagements/detail/team.md
+              - Coverage: researcher/engagements/detail/coverage.md
+              - Findings: researcher/engagements/detail/findings.md
+              - Analytics: researcher/engagements/detail/analytics.md
+              - Chat: researcher/engagements/detail/chat.md
       - Findings: researcher/07-findings.md
       - Payouts: researcher/09-payouts.md
       - Identity Verification: researcher/10-verification.md
-      - Bug Bounty: researcher/11-bug-bounty.md
+      - Bug Bounty:
+          - Overview: researcher/bug-bounty/overview.md
+          - Detail:
+              - Overview: researcher/bug-bounty/detail/overview.md
+              - Scope: researcher/bug-bounty/detail/scope.md
+              - Rewards: researcher/bug-bounty/detail/rewards.md
+              - Findings: researcher/bug-bounty/detail/findings.md
+              - Payouts: researcher/bug-bounty/detail/payouts.md
+              - Activity: researcher/bug-bounty/detail/activity.md
+              - Leaderboard: researcher/bug-bounty/detail/leaderboard.md
+              - Collaborators: researcher/bug-bounty/detail/collaborators.md
+              - Updates: researcher/bug-bounty/detail/updates.md
+              - Chat: researcher/bug-bounty/detail/chat.md
+              - Integrations: researcher/bug-bounty/detail/integrations.md
+      - Agentic Pentest: researcher/14-agentic-pentest.md
+      - AI Red Teaming: researcher/15-ai-red-teaming.md
       - Hacktivity: researcher/17-hacktivity.md
       - Disclosure Requests: researcher/16-disclosure-requests.md
       - AI Assistant: researcher/12-ai-assistant.md
