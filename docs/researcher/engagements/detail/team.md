@@ -22,15 +22,24 @@ graph TD
 The team page classifies members by their role on the project:
 
 ### 1. SecurityBoat Testing Team
-*   **Lead Researcher**: The primary technical contact for the engagement. They coordinate the testing team, review reported findings, ensure the coverage checklist is completed, and draft the final executive report.
-*   **Researchers**: Security engineers responsible for identifying vulnerabilities, documenting coverage, and submitting findings.
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **Lead Researcher** | The primary technical contact. Coordinates the testing team, reviews findings, ensures coverage checklist completion, and drafts the executive report. |
+| **Researchers** | Security engineers responsible for identifying vulnerabilities, documenting coverage, and submitting findings. |
 
 ### 2. SecurityBoat Project Management
-*   **TPM (Technical Project Manager)**: Coordinates the project timeline, manages scheduling, and triages submitted findings. The TPM serves as the escalation point for technical blockers (e.g., target downtime, credentials).
-*   **CSM (Customer Success Manager)**: Ensures overall client satisfaction and handles commercial or administrative questions.
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **TPM (Technical Project Manager)** | Coordinates the project timeline, manages scheduling, and triages submitted findings. Serves as the escalation point for technical blockers. |
+| **CSM (Customer Success Manager)** | Ensures overall client satisfaction and handles commercial or administrative questions. |
 
 ### 3. Client Team
-*   **Client Admin / Client TPM**: The client representatives who requested the pentest. They receive notifications, discuss findings in chat, and coordinate remediation on their end.
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **Client Admin / Client TPM** | The client representatives who requested the pentest. They receive notifications, discuss findings in chat, and coordinate remediation. |
 
 ---
 
@@ -42,7 +51,5 @@ The team page classifies members by their role on the project:
 *   **For Severity Queries**: If you have a question about how a finding is classified or need clarification on a duplicate triage state, message your assigned **TPM** or **Lead Researcher** directly.
 
 ---
-
-<!-- slide -->
 
 ← Previous: [Assets](assets.md) | Next: [Coverage →](coverage.md)

@@ -13,27 +13,37 @@ A visually prominent section highlighting the three highest-scoring researchers 
 
 ### Detailed Ranking Table
 Lists all contributing researchers. The columns include:
-*   **Rank**: Numeric position.
-*   **Researcher**: Platform username and avatar.
-*   **Reputation Points**: Total points earned on this program.
-*   **Accepted Submissions**: Count of valid findings verified by the TPM.
-*   **Rewards Earned**: Swag tier or total monetary rewards.
+
+| Column | Description |
+| :--- | :--- |
+| **Rank** | Numeric position. |
+| **Researcher** | Platform username and avatar. |
+| **Reputation Points** | Total points earned on this program. |
+| **Accepted Submissions** | Count of valid findings verified by the TPM. |
+| **Rewards Earned** | Swag tier or total monetary rewards. |
 
 ---
 
 ## Filter Options
 
 You can filter the leaderboard to track activity over different periods:
-*   **Today**: Ranks researchers by points earned in the last 24 hours.
-*   **This Week**: Focuses on the current calendar week.
-*   **All Time**: Accumulates all points since the program was launched.
+
+| Filter | Scope |
+| :--- | :--- |
+| **Today** | Ranks researchers by points earned in the last 24 hours. |
+| **This Week** | Focuses on the current calendar week. |
+| **All Time** | Accumulates all points since the program was launched. |
 
 ---
 
 ## Why Leaderboard Standing Matters
 
-1.  **Private Program Invites**: Organizations hosting high-payout, private Bug Bounty programs look at local and global leaderboards to select which researchers to invite.
-2.  **Reputation & Trust**: Top-ranked researchers are often selected as Lead Researchers for scheduled PTaaS engagements.
+Your position on leaderboards directly affects your opportunities on the platform:
+
+| Benefit | How It Works |
+| :--- | :--- |
+| **Private Program Invites** | Organizations hosting high-payout, private Bug Bounty programs inspect leaderboards to select which researchers to invite. |
+| **Reputation & Trust** | Top-ranked researchers are selected as Lead Researchers for scheduled PTaaS engagements. |
 
 ---
 

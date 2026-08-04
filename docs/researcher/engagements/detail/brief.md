@@ -25,29 +25,40 @@ graph TD
 ## Left Column: Configuration & Scope
 
 ### 1. Configuration Metric Chips
+
 Four key parameters define the testing environment:
-*   **Engagement Types**: The target category (Web Application, API, Mobile, Network, Cloud, IoT, Source Code).
-*   **Testing Approach**: Black box (no info), Grey box (credentials/details provided), or White box (source code and full access).
-*   **Environment**: The targeted host platform (Production, Staging, QA, Development).
-*   **Source-Code Access**: Indicates if repositories have been shared (Granted / Not Granted).
+
+| Chip Parameter | Supported Target Categories / Options |
+| :--- | :--- |
+| **Engagement Types** | Web Application, API, Mobile, Network, Cloud, IoT, Source Code. |
+| **Testing Approach** | Black box (no info), Grey box (credentials/details provided), or White box (full access). |
+| **Environment** | Production, Staging, QA, Development. |
+| **Source-Code Access** | Indicates if repositories have been shared (Granted / Not Granted). |
 
 ### 2. Project Description
 Contains high-level objectives, business context, or specific focus areas requested by the client.
 
 ### 3. Rules of Engagement
+
 Defines target constraints:
-*   **In-Scope Targets**: Domains, IPs, and code repos authorized for probing.
-*   **Out-of-Scope Targets**: Strictly excluded targets that must not be tested.
+
+| Scope Category | Description |
+| :--- | :--- |
+| **In-Scope Targets** | Domains, IPs, and code repos authorized for probing. |
+| **Out-of-Scope Targets** | Systems, endpoints, or third-party integrations strictly excluded from testing. |
 
 ---
 
 ## Right Column: Sidebar Metrics
 
-### 1. Schedule Card
-*   **Window Progress**: A visual bar showing the percentage of the testing timeline that has elapsed.
-*   **Scheduled Dates**: Planned start and end dates.
-*   **Actual Dates**: Timestamps of when the testing phase actually started and finished.
-*   **Testing Effort (hrs)**: Total allocated hours budgeted for the assessment.
+### 1. Schedule & Effort
+
+| Schedule Field | Description |
+| :--- | :--- |
+| **Window Progress** | A visual bar showing the percentage of the testing timeline that has elapsed. |
+| **Scheduled Dates** | Planned start and end dates. |
+| **Actual Dates** | Timestamps of when the testing phase actually started and finished. |
+| **Testing Effort (hrs)** | Total allocated hours budgeted for the assessment. |
 
 ### 2. Testing Team Card
 Lists the security team members assigned to this engagement, categorized by role (Lead Researcher, Researcher) with their names and contact emails.

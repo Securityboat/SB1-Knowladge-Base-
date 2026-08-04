@@ -7,27 +7,37 @@ The **Chat** tab is a secure, real-time messaging workspace built into the engag
 ## Channels & Scope
 
 The chat tab is structured as a multi-party group channel containing:
-*   Assigned **Researchers** and the **Lead Researcher**.
-*   The SecurityBoat **TPM** and **CSM**.
-*   The client organization's **Admins** and **TPMs**.
+
+| Roster Party | Platform Role |
+| :--- | :--- |
+| **Testing Team** | Assigned Researchers and the Lead Researcher. |
+| **SecurityBoat Management** | The assigned Technical Project Manager (TPM) and Customer Success Manager (CSM). |
+| **Client Organization** | Client Administrators and Client TPMs. |
 
 ---
 
 ## When to Use Chat
 
 The chat tab is the primary channel for operational communication during testing:
-*   **Credential Blockers**: Ask the client to reset password locks or update expired accounts.
-*   **IP Whitelisting**: Request that client system administrators whitelist testing IP addresses if firewall blocks occur.
-*   **Scope Inquiries**: Ask for clarification on whether specific subdomains or endpoints are in-scope.
-*   **Vulnerability Proof of Concept Discussions**: Discuss reproduction steps or technical impacts with the client's engineering team before writing the final report.
+
+| Scenario | Objective |
+| :--- | :--- |
+| **Credential Blockers** | Ask the client to reset password locks or update expired accounts. |
+| **IP Whitelisting** | Request that client system administrators whitelist testing IP addresses if firewall blocks occur. |
+| **Scope Inquiries** | Ask for clarification on wildcard subdomains or testing endpoints. |
+| **PoC Discussion** | Discuss reproduction steps or technical impacts with client developers. |
 
 ---
 
 ## Chat Best Practices
 
-*   **No Finding Writeups**: Do not write complete vulnerability reports or paste full exploit scripts directly into the chat channel. Report findings using the official **Submit Finding** drawer. Use chat only to flag urgent findings or ask scoping questions.
-*   **Keep it Centralized**: Avoid using external email or messaging tools. Centralizing communication in the Chat tab ensures that all updates are recorded and visible to the entire project team.
-*   **Professionalism**: Maintain a constructive and professional tone at all times.
+Please observe the following guidelines when using the chat:
+
+| Guideline | Policy / Protocol |
+| :--- | :--- |
+| **No Finding Writeups** | Do not write complete vulnerability reports or paste exploit scripts in the chat. Use the **Submit Finding** drawer for reports. |
+| **Keep it Centralized** | Avoid using external communication channels. Centralizing chat ensures all updates are recorded. |
+| **Professionalism** | Maintain a constructive, professional tone at all times. |
 
 ---
 

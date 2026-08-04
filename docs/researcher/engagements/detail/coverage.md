@@ -24,10 +24,13 @@ graph TD
 ## Methodology Checklists
 
 The checklists are automatically populated based on the engagement type. Common frameworks include:
-*   **OWASP Top 10** (for Web Applications)
-*   **OWASP API Security Top 10** (for APIs)
-*   **OWASP MASVS** (for Mobile Apps)
-*   **NIST SP 800-115** (for Network Infrastructure)
+
+| Framework | Target Category |
+| :--- | :--- |
+| **OWASP Top 10** | Web Applications |
+| **OWASP API Security Top 10** | APIs & Web Services |
+| **OWASP MASVS** | Mobile Applications (iOS / Android) |
+| **NIST SP 800-115** | Network Infrastructure & Servers |
 
 ---
 
@@ -36,10 +39,13 @@ The checklists are automatically populated based on the engagement type. Common 
 During the **Live** phase, as you complete specific testing checks, you must document your progress:
 
 1.  **Checkoff**: Mark the checkbox next to the completed testing item (e.g., *Verify password policy enforcement*).
-2.  **Add Testing Context**:
-    *   **Status**: Mark as **Tested** (fully verified), **Not Applicable** (the feature is not present on the target), or **In Progress**.
-    *   **Assigned Tester**: Select your name from the dropdown list.
-    *   **Notes**: Add a brief note detailing the paths or parameters tested, tools used, or manual test results (especially when marking an item as "Not Applicable").
+2.  **Add Testing Context**: Configure the following fields in the checklist item drawer:
+
+| Context Field | Requirement |
+| :--- | :--- |
+| **Status** | Mark as **Tested** (fully verified), **Not Applicable** (the feature is not present on the target), or **In Progress**. |
+| **Assigned Tester** | Select your name from the assigned testers dropdown list. |
+| **Notes** | Add a brief note detailing paths or parameters tested, tools used, or manual results (especially if marking as "Not Applicable"). |
 
 ---
 

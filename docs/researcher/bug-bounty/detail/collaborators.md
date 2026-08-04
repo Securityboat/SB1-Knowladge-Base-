@@ -7,17 +7,23 @@ The **Collaborators** tab lists the registered researchers who are actively part
 ## Collaborator List
 
 The tab provides a roster of participants, allowing you to see your fellow security testers:
-*   **Username**: The researcher's platform handle.
-*   **Role**: Displays the researcher's classification (e.g., *Researcher*, *Lead Researcher*).
-*   **Verification Status**: Shows if the researcher's identity has been verified.
+
+| Column | Description |
+| :--- | :--- |
+| **Username** | The researcher's platform handle. |
+| **Role** | Displays the researcher's classification (e.g., *Researcher*, *Lead Researcher*). |
+| **Verification Status** | Shows if the researcher's identity has been verified. |
 
 ---
 
 ## Cooperation Guidelines
 
-While researchers compete for findings and rewards, the Collaborators tab fosters a shared community. When testing:
-*   Do not attempt to disrupt or block other researchers' testing activities.
-*   In private invite-only programs, all program details, targets, and finding descriptions are strictly confidential and must not be shared with external parties or other researchers unless explicit collaboration is enabled by the program rules.
+While researchers compete for findings and rewards, the Collaborators tab fosters a shared community. When testing, you must follow these cooperation guidelines:
+
+| Rule | Guideline Requirement |
+| :--- | :--- |
+| **Fair Testing** | Do not attempt to disrupt or block other researchers' testing activities. |
+| **Confidentiality** | In private invite-only programs, all program details, targets, and findings are strictly confidential and must not be shared. |
 
 ---
 

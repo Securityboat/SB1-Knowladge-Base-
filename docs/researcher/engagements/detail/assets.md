@@ -7,10 +7,13 @@ The **Assets** tab houses the detailed technical information for each target ite
 ## Assets Grid
 
 The assets page presents a card grid or table listing each target asset:
-*   **Asset Name**: A recognizable label (e.g., *Staging Authentication API*).
-*   **Type**: Category of the asset (Web Application, API, Mobile, Network, Cloud, Source Code, AI/LLM Model).
-*   **Target/URL**: The IP address, URL, or endpoint path.
-*   **Asset Description**: Detailed context or testing goals specific to the asset.
+
+| Asset Field | Description |
+| :--- | :--- |
+| **Asset Name** | A recognizable label (e.g., *Staging Authentication API*). |
+| **Type** | Category of the asset (Web Application, API, Mobile, Network, Cloud, Source Code, AI/LLM Model). |
+| **Target/URL** | The IP address, URL, or endpoint path. |
+| **Asset Description** | Detailed context or testing goals specific to the asset. |
 
 ---
 
@@ -19,10 +22,13 @@ The assets page presents a card grid or table listing each target asset:
 For authenticated testing (Grey-Box/White-Box), the client provides credentials. These are secure login records attached directly to individual assets.
 
 Each credential block includes:
-*   **Role/Type**: The user role associated with the credentials (e.g., *Standard User*, *Tenant Admin*, *Read-Only Viewer*).
-*   **Username / ID**: The email or username to authenticate with.
-*   **Password / Key**: The password, API token, or SSH key.
-*   **Testing Notes**: Guidance on how to authenticate, where to find MFA bypass codes, or specific paths to test with these credentials.
+
+| Credential Field | Description |
+| :--- | :--- |
+| **Role/Type** | The user role associated with the credentials (e.g., *Standard User*, *Tenant Admin*, *Read-Only Viewer*). |
+| **Username / ID** | The email or username to authenticate with. |
+| **Password / Key** | The password, API token, or SSH key. |
+| **Testing Notes** | Guidance on how to authenticate, where to find MFA bypass codes, or specific paths to test with these credentials. |
 
 ---
 
@@ -31,8 +37,10 @@ Each credential block includes:
 > [!WARNING]
 > **Credential Confidentiality**: Credentials provided for testing are strictly confidential. Do not share them outside the engagement team or use them after the testing window closes.
 
-*   **Credential Verification**: Verify all login credentials on the first day of the **Live** phase. If credentials are locked, expired, or have insufficient permissions, report it immediately in the engagement **Chat** tab.
-*   **MFA Bypass**: If Multi-Factor Authentication is enabled on a target, clients may provide a static bypass code or a shared TOTP secret (listed in the credentials card) to enable automated or manual testing.
+| Handling Principle | Standard Protocol |
+| :--- | :--- |
+| **Credential Verification** | Verify all login credentials on the first day of the **Live** phase. If credentials are locked, expired, or have insufficient permissions, report it immediately in the engagement **Chat** tab. |
+| **MFA Bypass** | If Multi-Factor Authentication is enabled on a target, clients may provide a static bypass code or a shared TOTP secret (listed in the credentials card) to enable automated or manual testing. |
 
 ---
 

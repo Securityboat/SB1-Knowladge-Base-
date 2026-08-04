@@ -27,21 +27,25 @@ graph TD
 
 At the top of the program detail page, the header bar identifies the target at a glance:
 
-*   **Program Code**: A unique reference (e.g., `BBP-ACM`) displayed in a pill badge.
-*   **Status Badge**: Indicates whether the program is **Active**, **Inactive**, or **Closed**.
-*   **Visibility Badge**: Indicates **Public** (blue) or **Private** (purple) access.
-*   **Type Label**: Indicates whether the program is a **VDP** or a **Bug Bounty**.
-*   **Program Name**: The full program name.
-*   **Management Badge**: Shows whether the program is **SB-Managed** (triaged by SecurityBoat staff) or **Self-Managed** (triaged directly by the client).
-*   **Organization**: The owning organization avatar and name.
+| Header Element | Description |
+| :--- | :--- |
+| **Program Code** | A unique reference (e.g., `BBP-ACM`) displayed in a pill badge. |
+| **Status Badge** | Indicates whether the program is **Active**, **Inactive**, or **Closed**. |
+| **Visibility Badge** | Indicates **Public** (blue) or **Private** (purple) access. |
+| **Type Label** | Indicates whether the program is a **VDP** or a **Bug Bounty**. |
+| **Program Name** | The full program name. |
+| **Management Badge** | Shows whether the program is **SB-Managed** (triaged by SecurityBoat) or **Self-Managed** (triaged by client). |
+| **Organization** | The owning organization initials avatar and name. |
 
 ### Summary KPI Tiles
 
 Directly below the header are three metrics that summarize your or the program's history:
 
-1.  **Total Bounties Paid / Recognition**: Cumulative cash paid out (Bug Bounty) or recognition summary (VDP).
-2.  **Reports Received**: Total findings submitted by all researchers to this program.
-3.  **Active Since**: The launch date of the program.
+| KPI Tile | Description |
+| :--- | :--- |
+| **Total Bounties Paid / Recognition** | Cumulative cash paid out (Bug Bounty) or recognition summary (VDP). |
+| **Reports Received** | Total findings submitted by all researchers to this program. |
+| **Active Since** | The launch date of the program. |
 
 ---
 
@@ -70,21 +74,30 @@ The program detail view is structured into eleven tabs. Click a tab to switch vi
 The **Overview** tab provides a dual-column summary:
 
 ### Left Column: Program Details & Policy
-*   **Program Metadata**: Key fields showing Start Date, End Date ("Continuous" if open-ended), and Hall of Fame settings.
-*   **Description**: Background information about the organization and any high-level testing policies.
+
+| Section | Description |
+| :--- | :--- |
+| **Program Metadata** | Key fields showing Start Date, End Date ("Continuous" if open-ended), and Hall of Fame settings. |
+| **Description** | Background information about the organization and any high-level testing policies. |
 
 ### Right Column: Configuration & Rewards Summary
+
 *   A summary card displaying the current P1 through P5 reward tiers (monetary or point-based).
 
 ### Program Finding Stats
+
 A grid showing your finding counts on this program, split by lifecycle states:
-*   **Total**: All findings you submitted to this program.
-*   **Triage**: New findings awaiting TPM review.
-*   **Accepted**: Confirmed vulnerabilities currently in remediation.
-*   **Resolved**: Findings that have been patched.
-*   **Discarded**: Submissions rejected as duplicates, out-of-scope, or invalid.
+
+| State | Description |
+| :--- | :--- |
+| **Total** | All findings you submitted to this program. |
+| **Triage** | New findings awaiting TPM review. |
+| **Accepted** | Confirmed vulnerabilities currently in remediation. |
+| **Resolved** | Findings that have been patched. |
+| **Discarded** | Submissions rejected as duplicates, out-of-scope, or invalid. |
 
 ### Hall of Fame Podium
+
 If the Hall of Fame is enabled, a podium displays the top three contributing researchers for the program (based on reputation points).
 *   Filters allow viewing rankings for **Today**, **This Week**, or **All Time**.
 *   If no accepted findings exist yet, a placeholder message is displayed: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
