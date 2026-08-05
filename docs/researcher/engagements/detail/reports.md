@@ -79,4 +79,4 @@ In addition to narrative text, the Lead Researcher maintains the **Scope Detail 
 
 ---
 
-← Previous: [Analytics](analytics.md) | Next: [Chat →](chat.md)
+← Previous: [Analytics](analytics.md) | Next: [Edit Narrative →](edit-narrative.md)

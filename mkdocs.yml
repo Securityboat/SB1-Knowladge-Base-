@@ -152,6 +152,7 @@ nav:
               - Findings: researcher/engagements/detail/findings.md
               - Analytics: researcher/engagements/detail/analytics.md
               - Reports: researcher/engagements/detail/reports.md
+              - Edit Narrative: researcher/engagements/detail/edit-narrative.md
               - Chat: researcher/engagements/detail/chat.md
       - Findings: researcher/07-findings.md
       - Payouts: researcher/09-payouts.md
