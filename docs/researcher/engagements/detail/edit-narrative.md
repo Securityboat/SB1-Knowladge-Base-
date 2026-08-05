@@ -4,6 +4,8 @@ The **Edit Narrative** workspace allows authorized authors to draft and refine t
 
 ---
 
+![Edit Narrative Editor](../../../images/res_engagement_edit_narrative_top.png)
+
 ## Editor Access & Role Delegation
 
 Edit capability is strictly delegated to ensure quality control and clear segregation of duties:
@@ -39,6 +41,9 @@ Authorized authors use a rich-text editor to configure five core sections:
 *   **Audience**: Actionable guidance for the client engineering and operations teams.
 
 ### 5. Assessment Limitations
+
+![Edit Narrative — Scrolled](../../../images/res_engagement_edit_narrative_mid.png)
+
 *   **Purpose**: Documents any testing constraints (e.g. time limits, restricted testing windows, or system downtime).
 *   **Audience**: Provides context for the final coverage results.
 

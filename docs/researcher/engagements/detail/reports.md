@@ -1,11 +1,13 @@
 # Reports
 
-The **Reports** tab is a secure, collaborative workspace on the engagement details page. It is visible to the **Lead Researcher**, **Technical Project Manager**, **Customer Success Manager**, **Administrators**, and **Client** roles.
+The **Reports** tab is a secure, collaborative workspace on the engagement details page. It is visible to the **Lead Researcher**, **TPM**, **CSM**, **Platform Admin**, and **Client** roles.
 
 > [!IMPORTANT]
 > **Role Restriction**: Standard **Researchers** do not have access to this tab. Only the assigned **Lead Researcher** has authorization to author and submit the report narrative.
 
 ---
+
+![Reports Tab](../../../images/res_engagement_reports.png)
 
 ## Report Lifecycle Flow
 
@@ -30,17 +32,19 @@ Access to view, edit, transition, or download reports is strictly controlled:
 
 | Action | Allowed Roles | Preconditions / States |
 | :--- | :--- | :--- |
-| **View Preview** | Lead Researcher, Technical Project Manager, Customer Success Manager, Administrators, Client Users | All states |
-| **Edit Narrative & Scope** | Lead Researcher, Technical Project Manager, Customer Success Manager, Administrators | Draft, Rejected |
-| **Submit for Review** | Lead Researcher, Administrators | Draft, Rejected (requires narrative content) |
-| **Reject / Request Revision** | Technical Project Manager, Customer Success Manager, Administrators | In Review, Pre-Final (requires revision note) |
-| **Mark Pre-Final** | Technical Project Manager, Customer Success Manager, Administrators | In Review |
-| **Mark Final (Approve)** | Technical Project Manager, Customer Success Manager, Administrators | In Review, Pre-Final |
-| **Re-issue Post-Retest Final** | Technical Project Manager, Customer Success Manager, Administrators | Approved |
-| **Reopen for Revision** | Administrators (Escape Hatch) | In Review, Pre-Final, Approved, Post-Retest Final (reverts to Draft, requires revision justification) |
-| **Download PDF** | Administrators, Customer Success Manager, Client Users | Approved, Post-Retest Final (Lead Researcher is denied) |
+| **View Preview** | Lead Researcher, TPM, CSM, Admin, Client | All states |
+| **Edit Narrative & Scope** | Lead Researcher, TPM, CSM, Admin | Draft, Rejected |
+| **Submit for Review** | Lead Researcher, Admin | Draft, Rejected (requires narrative content) |
+| **Reject / Request Revision** | TPM, CSM, Admin | In Review, Pre-Final (requires revision note) |
+| **Mark Pre-Final** | TPM, CSM, Admin | In Review |
+| **Mark Final (Approve)** | TPM, CSM, Admin | In Review, Pre-Final |
+| **Re-issue Post-Retest Final** | TPM, CSM, Admin | Approved |
+| **Reopen for Revision** | Admin (Escape Hatch) | In Review, Pre-Final, Approved, Post-Retest Final (reverts to Draft, requires revision justification) |
+| **Download PDF** | Admin, CSM, Client | Approved, Post-Retest Final (Lead Researcher is denied) |
 
 ---
+
+![Report Content — Scrolled](../../../images/res_engagement_reports_scroll.png)
 
 ## Editor Mode Narrative Sections
 
