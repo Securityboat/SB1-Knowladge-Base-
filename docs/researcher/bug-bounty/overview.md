@@ -72,12 +72,13 @@ To view the programs list, click **BB Program** in the main sidebar.
 ![Bug Bounty Programs List](../../images/res_bb_programs_01.png)
 
 The listing page displays:
+
 *   **Summary Metrics**: Quick counts of all programs, active programs, and total findings you have submitted.
 *   **Program Cards**: Each card displays the organization avatar, program name, reference code, visibility (Public/Private), program type (Bug Bounty/VDP), active findings count, and status badge.
 *   **Search & Filters**: Search by program name or filter by type (Bug Bounty, VDP) and visibility.
 
-> [!NOTE]
-> Click on any active program card to open the **Program Detail** view and access the individual testing tabs.
+!!! note
+    Click on any active program card to open the **Program Detail** view and access the individual testing tabs.
 
 ---
 

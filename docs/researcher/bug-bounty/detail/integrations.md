@@ -12,6 +12,7 @@ While researchers do not configure integrations, you can see which tools are con
 
 ### Jira Integration
 When Jira is connected and active:
+
 *   Once your submitted finding moves to the **Verified** state, it is automatically pushed as an issue ticket to the client's internal Jira board.
 *   This ensures fast visibility for the client's developers, speeding up the patch lifecycle and expediting your payouts.
 *   Status updates in the client's Jira system can sync back, updating the finding state on the Tri-Netra platform automatically.

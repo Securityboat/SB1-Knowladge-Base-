@@ -21,6 +21,7 @@ Ish solves this by providing a unified, conversational interface grounded direct
 ## How it Works
 
 Ish resides in two places within the TriNetra interface:
+
 1. **Dedicated Ask Ish Portal:** A full-screen conversational interface for deep-dive questions.
 2. **Floating Dashboard Widget:** A persistent helper on every product screen that understands the active page context.
 
@@ -35,6 +36,7 @@ graph TD
 
 ### Three-Layer Grounding Engine
 Rather than relying on generic LLM knowledge, Ish constructs answers using three layers of context:
+
 * **Your Tenant Data:** Live facts, vulnerabilities, scans, and assets from your account.
 * **Product Knowledge:** Deep understanding of the TriNetra platform's structure, tools, and methodologies.
 * **Page Context:** Awareness of exactly where you are in the application (e.g., viewing a specific finding or target) to tailor its responses.
@@ -45,6 +47,7 @@ Rather than relying on generic LLM knowledge, Ish constructs answers using three
 
 ### 1. Cross-Module Correlated Answers
 Ish can synthesize information across different disciplines. For example:
+
 * **The Question:** *"Is anything impersonating our brand right now?"*
 * **The Answer:** Ish queries **Digital Risk Protection (DRP)** and identifies active typosquats/clones, checks **Attack Surface Management (ASM)** to see if any point to your infrastructure, and tells you where the takedown requests stand.
 

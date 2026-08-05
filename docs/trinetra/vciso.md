@@ -32,6 +32,7 @@ graph TD
 
 ### Strategic Integration Areas
 Your vCISO takes ownership of three core security operations:
+
 * **Governance, Risk & Compliance (GRC):** Drafting and updating security policies, maintaining an active risk register, and translating technical vulnerabilities into business risk metrics for executive leadership.
 * **Offensive Program Design:** Deciding which assets are scanned by **ASM**, setting the testing cadence for **PTaaS** or **Agentic Pentesting**, and managing the scope of your **Bug Bounty** program.
 * **Managed Response Direction:** Prioritizing vulnerability remediation schedules, reviewing third-party vendor risks, and managing escalations directly to the SecurityBoat **Incident Response** team if a threat arises.

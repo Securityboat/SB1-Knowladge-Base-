@@ -47,8 +47,8 @@ The team page classifies members by their role on the project:
 
 ## Communication Protocols
 
-> [!TIP]
-> **For Technical Questions**: Use the engagement **Chat** tab to discuss target behavior, credential errors, or testing blockages. This keeps the communications centralized and visible to both the testing team and the client.
+!!! tip "For Technical Questions"
+    Use the engagement **Chat** tab to discuss target behavior, credential errors, or testing blockages. This keeps the communications centralized and visible to both the testing team and the client.
 
 *   **For Severity Queries**: If you have a question about how a finding is classified or need clarification on a duplicate triage state, message your assigned **TPM** or **Lead Researcher** directly.
 

@@ -2,8 +2,8 @@
 
 The **Reports** tab is a secure, collaborative workspace on the engagement details page. It is visible to the **Lead Researcher**, **TPM**, **CSM**, **Platform Admin**, and **Client** roles.
 
-> [!IMPORTANT]
-> **Role Restriction**: Standard **Researchers** do not have access to this tab. Only the assigned **Lead Researcher** has authorization to author and submit the report narrative.
+!!! important "Role Restriction"
+    Standard **Researchers** do not have access to this tab. Only the assigned **Lead Researcher** has authorization to author and submit the report narrative.
 
 ---
 

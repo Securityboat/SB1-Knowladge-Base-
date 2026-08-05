@@ -42,12 +42,14 @@ Manage multi-factor authentication (MFA) to secure your account. Because your pr
 
 #### Disabling or Resetting MFA
 If you currently have MFA enabled and need to re-key or disable it:
+
 1. Navigate to **Settings → MFA Setup**.
 2. Click the red **Reset MFA** button.
 3. Confirming this action removes all active MFA factors from your account immediately. You can now log in using only your email and password, or begin the enrollment flow again.
 
 #### Recovery & Lost Authenticator Access
 If you lose access to your authenticator app, you can reset your MFA using the self-service flow:
+
 *   **Request recovery**: Click the **Reset MFA** link on the login page, enter your registered email, and follow the link sent to your inbox.
 *   **Administrative assistance**: You can also contact your organization's Client Administrator (who can reset user MFA settings via the administrative panel) or reach out to your SecurityBoat Customer Success Manager (CSM) to reset your MFA factors.
 

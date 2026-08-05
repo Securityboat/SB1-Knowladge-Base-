@@ -45,6 +45,7 @@ graph LR
 
 ### 1. Exposure Scorecard
 The ASM dashboard provides immediate visibility into your highest-risk exposure metrics:
+
 * **Subdomain Takeovers:** Identifies subdomains pointing to orphaned cloud resources (e.g., deleted AWS S3 buckets or GitHub Pages) that attackers could hijack.
 * **Exposed Login Portals:** Detects authentication endpoints (e.g., admin interfaces, databases, or Jenkins panels) open to the public.
 * **Exposed Secrets:** Scans discovered web roots for exposed API keys, configuration files, or backup archives.
@@ -52,6 +53,7 @@ The ASM dashboard provides immediate visibility into your highest-risk exposure 
 
 ### 2. Living Subdomain Inventory
 A searchable, tabular view of all assets under your footprint. Each row shows:
+
 * Asset name and IP address.
 * HTTP response code and titles.
 * Detected software versions and frameworks.

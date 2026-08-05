@@ -52,6 +52,7 @@ Authorized authors use a rich-text editor to configure five core sections:
 ## Prefill Templates
 
 To accelerate report drafting, the platform automatically generates prefill templates when editing begins. These templates pull metadata from the engagement context to dynamically populate:
+
 *   The client organization name.
 *   The target asset title.
 *   The total number of researchers assigned.

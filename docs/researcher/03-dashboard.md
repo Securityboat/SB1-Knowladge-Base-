@@ -47,6 +47,7 @@ Three headline metrics, all scoped to **you**:
 #### d. Recent Engagements + Recent Findings
 
 Two side-by-side cards:
+
 - **Recent Engagements** — the latest engagements you're on, with the client/org
   name, title, and status. Click through to work the engagement.
 - **Recent Findings** — the findings you most recently authored, with severity and

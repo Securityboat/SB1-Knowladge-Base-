@@ -19,6 +19,7 @@ Click **Invites** in the sidebar. (Researcher / Lead Researcher only.)
 ![Invites — a list of program/engagement invitations with source (BB/PTaaS), organisation, who invited you, date, and status. (2 of 2)](../images/res_invites_02.png)
 
 **Filters:**
+
 - **Status Filter:** `All`, `Accepted`, `Rejected`
 - **Source Filter:** `All Sources`, `Bug Bounty`, `Pentest`
 

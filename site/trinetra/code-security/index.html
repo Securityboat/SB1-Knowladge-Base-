@@ -4246,11 +4246,13 @@
     C --&gt;|Yes / Reaches Sink| E[Send to SecurityBoat Analyst]
     E --&gt;|Analyst Confirms| F[Escalate Actionable Finding to Team]</code></pre>
 <h3 id="the-data-flow-triage-engine">The Data-Flow Triage Engine</h3>
-<p>Rather than relying on basic string matching, our engine traces variable values through your codebase. Every escalated finding carries an interactive <strong>Reasoning Trace</strong> showing:
-1. <strong>Input (Source):</strong> Where untrusted data enters the application (e.g., query parameters, request headers).
-2. <strong>Transformations:</strong> Any validation or sanitization functions applied along the path.
-3. <strong>Bypass Analysis:</strong> Verifies if sanitizers were bypassed or if a variable was missed.
-4. <strong>Sink:</strong> The execution point (e.g., an SQL query, file operation, or system command).</p>
+<p>Rather than relying on basic string matching, our engine traces variable values through your codebase. Every escalated finding carries an interactive <strong>Reasoning Trace</strong> showing:</p>
+<ol>
+<li><strong>Input (Source):</strong> Where untrusted data enters the application (e.g., query parameters, request headers).</li>
+<li><strong>Transformations:</strong> Any validation or sanitization functions applied along the path.</li>
+<li><strong>Bypass Analysis:</strong> Verifies if sanitizers were bypassed or if a variable was missed.</li>
+<li><strong>Sink:</strong> The execution point (e.g., an SQL query, file operation, or system command).</li>
+</ol>
 <hr />
 <h2 id="what-we-provide">What We Provide</h2>
 <h3 id="1-interactive-data-flow-traces">1. Interactive Data-Flow Traces</h3>

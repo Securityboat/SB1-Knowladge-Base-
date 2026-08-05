@@ -4260,9 +4260,11 @@
 </ul>
 <hr />
 <h2 id="how-it-works">How it Works</h2>
-<p>Ish resides in two places within the TriNetra interface:
-1. <strong>Dedicated Ask Ish Portal:</strong> A full-screen conversational interface for deep-dive questions.
-2. <strong>Floating Dashboard Widget:</strong> A persistent helper on every product screen that understands the active page context.</p>
+<p>Ish resides in two places within the TriNetra interface:</p>
+<ol>
+<li><strong>Dedicated Ask Ish Portal:</strong> A full-screen conversational interface for deep-dive questions.</li>
+<li><strong>Floating Dashboard Widget:</strong> A persistent helper on every product screen that understands the active page context.</li>
+</ol>
 <pre class="mermaid"><code>graph TD
     A[User Question] --&gt; B(Ish AI Layer)
     C[Page Context] --&gt; B
@@ -4270,16 +4272,20 @@
     E[Product Knowledge] --&gt; B
     B --&gt; F[Plain Language Answer + Guided Screen Links]</code></pre>
 <h3 id="three-layer-grounding-engine">Three-Layer Grounding Engine</h3>
-<p>Rather than relying on generic LLM knowledge, Ish constructs answers using three layers of context:
-* <strong>Your Tenant Data:</strong> Live facts, vulnerabilities, scans, and assets from your account.
-* <strong>Product Knowledge:</strong> Deep understanding of the TriNetra platform's structure, tools, and methodologies.
-* <strong>Page Context:</strong> Awareness of exactly where you are in the application (e.g., viewing a specific finding or target) to tailor its responses.</p>
+<p>Rather than relying on generic LLM knowledge, Ish constructs answers using three layers of context:</p>
+<ul>
+<li><strong>Your Tenant Data:</strong> Live facts, vulnerabilities, scans, and assets from your account.</li>
+<li><strong>Product Knowledge:</strong> Deep understanding of the TriNetra platform's structure, tools, and methodologies.</li>
+<li><strong>Page Context:</strong> Awareness of exactly where you are in the application (e.g., viewing a specific finding or target) to tailor its responses.</li>
+</ul>
 <hr />
 <h2 id="what-we-provide">What We Provide</h2>
 <h3 id="1-cross-module-correlated-answers">1. Cross-Module Correlated Answers</h3>
-<p>Ish can synthesize information across different disciplines. For example:
-* <strong>The Question:</strong> <em>"Is anything impersonating our brand right now?"</em>
-* <strong>The Answer:</strong> Ish queries <strong>Digital Risk Protection (DRP)</strong> and identifies active typosquats/clones, checks <strong>Attack Surface Management (ASM)</strong> to see if any point to your infrastructure, and tells you where the takedown requests stand.</p>
+<p>Ish can synthesize information across different disciplines. For example:</p>
+<ul>
+<li><strong>The Question:</strong> <em>"Is anything impersonating our brand right now?"</em></li>
+<li><strong>The Answer:</strong> Ish queries <strong>Digital Risk Protection (DRP)</strong> and identifies active typosquats/clones, checks <strong>Attack Surface Management (ASM)</strong> to see if any point to your infrastructure, and tells you where the takedown requests stand.</li>
+</ul>
 <h3 id="2-live-security-posture-summaries">2. Live Security Posture Summaries</h3>
 <p>Ask Ish to list your highest-priority issues, and it will return a list of actionable critical/high findings prioritized by reachability and compliance scope (e.g., pointing out a SQL injection first because it is in your active PCI DSS scope).</p>
 <h3 id="3-model-transparency">3. Model Transparency</h3>

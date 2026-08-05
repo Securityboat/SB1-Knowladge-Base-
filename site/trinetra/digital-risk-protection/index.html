@@ -4247,27 +4247,33 @@
     E --&gt; F[Takedown Board: Detect -&gt; Validate -&gt; Action -&gt; Confirm]
     F --&gt; G[Takedown Resolved &amp; Monitored for Re-emergence]</code></pre>
 <h3 id="the-takedown-workflow">The Takedown Workflow</h3>
-<p>When a threat is confirmed, it is placed on a governed Kanban board to prevent stalled requests:
-1. <strong>Detect:</strong> Initial discovery of the threat, populated with raw WHOIS and DNS data.
-2. <strong>Validate:</strong> Enriched with visual proof (e.g., side-by-side screenshots) and technical signatures (e.g., HTML structure matches).
-3. <strong>Action:</strong> A formal takedown request is filed with the hosting provider, registrar, or app store.
-4. <strong>Confirm:</strong> The endpoint is verified as resolving to a parking page, showing a 404 error, or removed from the store.</p>
+<p>When a threat is confirmed, it is placed on a governed Kanban board to prevent stalled requests:</p>
+<ol>
+<li><strong>Detect:</strong> Initial discovery of the threat, populated with raw WHOIS and DNS data.</li>
+<li><strong>Validate:</strong> Enriched with visual proof (e.g., side-by-side screenshots) and technical signatures (e.g., HTML structure matches).</li>
+<li><strong>Action:</strong> A formal takedown request is filed with the hosting provider, registrar, or app store.</li>
+<li><strong>Confirm:</strong> The endpoint is verified as resolving to a parking page, showing a 404 error, or removed from the store.</li>
+</ol>
 <hr />
 <h2 id="what-we-provide">What We Provide</h2>
 <h3 id="1-seven-alert-categories">1. Seven Alert Categories</h3>
-<p>All external detections are classified into one of seven threat vectors:
-* <strong>Phishing Clone:</strong> Identical or high-similarity replicas of your login interfaces hosted on external servers.
-* <strong>Typosquat / New Domain:</strong> Lookalike domain names targeting your brand (e.g., swapping letters, adding dashes, or using obscure TLDs).
-* <strong>Financial Fraud:</strong> Scam sites offering fake promotions, jobs, or products in your name.
-* <strong>Ransomware Leak Site:</strong> Monitoring dark web leak sites for mentions of your brand or stolen datasets.
-* <strong>Credential Leak:</strong> Scouring public repositories and leak dumps for compromised corporate email credentials.
-* <strong>Fake Mobile App:</strong> Unauthorized mobile applications mimicking your software on third-party Android/iOS mirror sites.
-* <strong>Executive Impersonation:</strong> Fraudulent social profiles (LinkedIn, X, Facebook) using your executives' names and images to target employees or clients.</p>
+<p>All external detections are classified into one of seven threat vectors:</p>
+<ul>
+<li><strong>Phishing Clone:</strong> Identical or high-similarity replicas of your login interfaces hosted on external servers.</li>
+<li><strong>Typosquat / New Domain:</strong> Lookalike domain names targeting your brand (e.g., swapping letters, adding dashes, or using obscure TLDs).</li>
+<li><strong>Financial Fraud:</strong> Scam sites offering fake promotions, jobs, or products in your name.</li>
+<li><strong>Ransomware Leak Site:</strong> Monitoring dark web leak sites for mentions of your brand or stolen datasets.</li>
+<li><strong>Credential Leak:</strong> Scouring public repositories and leak dumps for compromised corporate email credentials.</li>
+<li><strong>Fake Mobile App:</strong> Unauthorized mobile applications mimicking your software on third-party Android/iOS mirror sites.</li>
+<li><strong>Executive Impersonation:</strong> Fraudulent social profiles (LinkedIn, X, Facebook) using your executives' names and images to target employees or clients.</li>
+</ul>
 <h3 id="2-live-forensic-evidence">2. Live Forensic Evidence</h3>
-<p>Every finding provides the data needed to file abuse reports:
-* <strong>Favicon Hash:</strong> SHA256 signature of the site's icon, proving it was copied from your source.
-* <strong>HTML Similarity Score:</strong> Numerical comparison of page structures.
-* <strong>DNS and WHOIS Trails:</strong> IP hosting histories and registrar contact details.</p>
+<p>Every finding provides the data needed to file abuse reports:</p>
+<ul>
+<li><strong>Favicon Hash:</strong> SHA256 signature of the site's icon, proving it was copied from your source.</li>
+<li><strong>HTML Similarity Score:</strong> Numerical comparison of page structures.</li>
+<li><strong>DNS and WHOIS Trails:</strong> IP hosting histories and registrar contact details.</li>
+</ul>
 <h3 id="3-takedown-retesting">3. Takedown Retesting</h3>
 <p>Even after a phishing site is taken down, DRP continues to monitor the hostname and IP for 30 days to ensure the attacker does not quietly restore service once the registrar complaint resolves.</p>
 

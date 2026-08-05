@@ -33,6 +33,7 @@ graph TD
 
 ### The Data-Flow Triage Engine
 Rather than relying on basic string matching, our engine traces variable values through your codebase. Every escalated finding carries an interactive **Reasoning Trace** showing:
+
 1. **Input (Source):** Where untrusted data enters the application (e.g., query parameters, request headers).
 2. **Transformations:** Any validation or sanitization functions applied along the path.
 3. **Bypass Analysis:** Verifies if sanitizers were bypassed or if a variable was missed.

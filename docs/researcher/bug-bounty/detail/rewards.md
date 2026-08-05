@@ -18,14 +18,15 @@ For paid Bug Bounty programs, rewards are structured into a tier-based grid matc
 | **P4 — Low** | 0.1 – 3.9 | \$100 – \$299 |
 | **P5 — Informational** | 0.0 | Swag / Points Only |
 
-> [!TIP]
-> Individual program reward ranges are set by the client and may vary. Always refer to the live grid on the Rewards tab.
+!!! tip
+    Individual program reward ranges are set by the client and may vary. Always refer to the live grid on the Rewards tab.
 
 ---
 
 ## Vulnerability Disclosure Program (VDP) Recognition
 
 VDPs do not offer cash payouts. Instead, they reward valid contributions through:
+
 *   **Swag**: T-shirts, stickers, or branded merchandise shipped to your verified address.
 *   **Hall of Fame**: Public listing on the program overview page, displaying top-performing researchers.
 *   **Certificates**: A formal certificate of appreciation detailing your contribution.
@@ -50,6 +51,7 @@ graph TD
 
 ### Reputation Deductions
 To maintain high-quality submissions, the platform enforces deductions for poor-quality reports:
+
 *   **Spam / Malicious reports**: -10 points.
 *   **Repeated invalid out-of-scope submissions**: -5 points.
 

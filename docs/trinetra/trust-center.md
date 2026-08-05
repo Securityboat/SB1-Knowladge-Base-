@@ -48,6 +48,7 @@ graph TD
 
 ### 1. Governed Document Library
 Organize security documentation into four distinct sections:
+
 * **Compliance Reports:** Attestations for SOC 2 Type II, ISO 27001 certificates, PCI DSS reports, and regulatory filings.
 * **Pentest Reports:** Executive summaries and attestations generated directly from your **PTaaS** engagements.
 * **Policies:** Public-facing summaries of your internal security controls, data retention policies, and sub-processor lists.
@@ -55,6 +56,7 @@ Organize security documentation into four distinct sections:
 
 ### 2. Request Review Dashboard
 A dedicated portal listing all pending requests with visitor details. For example:
+
 * **User:** Arjun Mehta · Stealth Labs
 * **Target:** Annual Penetration Test Summary
 * **Reason:** *"Vendor risk assessment for Q3 pilot program"*

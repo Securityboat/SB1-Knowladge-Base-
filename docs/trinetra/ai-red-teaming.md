@@ -45,6 +45,7 @@ Findings include the exact prompt sequences, payload variations, and temperature
 
 ### 3. AI-Specific Remediation Guidance
 Rather than generic code fixes, AI Red Teaming findings provide architectural solutions, including:
+
 * **System Prompt Hardening:** Re-structuring instructions to prevent bypasses.
 * **Output Validation:** Implementing guardrail layers (such as Llama Guard or custom regex checks) before outputs reach users.
 * **Sandboxed Tool Environments:** Restricting what tools can do and enforcing human approval for high-risk actions.

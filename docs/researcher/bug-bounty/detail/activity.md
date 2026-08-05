@@ -18,8 +18,8 @@ The activity log records the following milestones:
 | **New Updates Published** | Logs when a new announcement is posted on the Updates tab. |
 | **Submissions & Payouts** | Broad entries confirming finding submissions or payout confirmations. |
 
-> [!NOTE]
-> Out of respect for researcher privacy, finding details, specific reporter names, and payout specifics are anonymized or hidden from the general activity log.
+!!! note
+    Out of respect for researcher privacy, finding details, specific reporter names, and payout specifics are anonymized or hidden from the general activity log.
 
 ---
 

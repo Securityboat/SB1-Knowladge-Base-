@@ -30,8 +30,8 @@ Each update card displays:
 | **Date** | Timestamp of publication. |
 | **Content** | Rich text detailing the update. |
 
-> [!TIP]
-> Always check the Updates tab first before starting a testing session. This ensures you do not waste time testing retired assets or miss out on high-reward targets.
+!!! tip
+    Always check the Updates tab first before starting a testing session. This ensures you do not waste time testing retired assets or miss out on high-reward targets.
 
 ---
 

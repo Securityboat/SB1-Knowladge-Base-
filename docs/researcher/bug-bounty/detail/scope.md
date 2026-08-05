@@ -25,10 +25,11 @@ These are the assets you are authorized to test. Each asset entry displays the f
 
 These are systems or targets that are strictly excluded from testing. 
 
-> [!WARNING]
-> **Testing out-of-scope assets is a violation of platform guidelines.**
+!!! warning "Testing out-of-scope assets is a violation of platform guidelines."
+    
 
 Out-of-scope lists typically include:
+
 *   Third-party integrations or external payment gateways (e.g., Stripe, Paypal).
 *   Production databases or sensitive backend endpoints.
 *   Acquired subsidiaries or sandbox systems not owned by the parent program.

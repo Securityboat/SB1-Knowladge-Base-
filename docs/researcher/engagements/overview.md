@@ -50,6 +50,7 @@ To browse your assigned engagements, click **Pentest Engagements** in the main s
 ![Engagements List](../../images/res_engagements_list_01.png)
 
 The listing page includes:
+
 1.  **Summary Metrics**: Quick counters for Active Engagements, Open Findings, and Total Payouts.
 2.  **Filter Pills**: Filter engagements by lifecycle states:
     *   **All**: Every engagement you are assigned to.
@@ -59,8 +60,8 @@ The listing page includes:
     *   **Closed**: Finished engagements.
 3.  **Search & Table**: Search by Project ID or title. The table lists the Project ID, Title, Client Organization, State, Assigned TPM, and Scheduled Dates.
 
-> [!NOTE]
-> Click on any row in the table to open the **Engagement Detail** view.
+!!! note
+    Click on any row in the table to open the **Engagement Detail** view.
 
 ---
 

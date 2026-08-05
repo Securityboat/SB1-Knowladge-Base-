@@ -38,6 +38,7 @@ sequenceDiagram
 ```
 
 **Verification statuses you may experience:**
+
 - **Not Requested**: Initial state before an admin requests verification.
 - **Requested**: Verification has been requested by staff and a prompt is available.
 - **In Progress**: You have opened the flow and are uploading documents or completing face match on your phone.

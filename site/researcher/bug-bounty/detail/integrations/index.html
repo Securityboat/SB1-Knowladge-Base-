@@ -4117,10 +4117,12 @@
 <h2 id="active-integrations">Active Integrations</h2>
 <p>While researchers do not configure integrations, you can see which tools are connected (e.g., <strong>Jira</strong>).</p>
 <h3 id="jira-integration">Jira Integration</h3>
-<p>When Jira is connected and active:
-*   Once your submitted finding moves to the <strong>Verified</strong> state, it is automatically pushed as an issue ticket to the client's internal Jira board.
-*   This ensures fast visibility for the client's developers, speeding up the patch lifecycle and expediting your payouts.
-*   Status updates in the client's Jira system can sync back, updating the finding state on the Tri-Netra platform automatically.</p>
+<p>When Jira is connected and active:</p>
+<ul>
+<li>Once your submitted finding moves to the <strong>Verified</strong> state, it is automatically pushed as an issue ticket to the client's internal Jira board.</li>
+<li>This ensures fast visibility for the client's developers, speeding up the patch lifecycle and expediting your payouts.</li>
+<li>Status updates in the client's Jira system can sync back, updating the finding state on the Tri-Netra platform automatically.</li>
+</ul>
 <p>The diagram below illustrates the automated Jira synchronization flow:</p>
 <pre class="mermaid"><code>graph LR
     Sub[Submit Finding] --&gt; Ver[TPM Verifies Finding]

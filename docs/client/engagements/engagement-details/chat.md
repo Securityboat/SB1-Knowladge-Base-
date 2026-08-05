@@ -34,6 +34,7 @@ When sending a message, use the **Visible to** dropdown to control who sees it:
 The chat composer supports both **Rich text** and **Markdown** modes — toggle between them with the tabs above the input area.
 
 **Rich text mode** includes a formatting toolbar:
+
 - Bold (⌘B), Italic (⌘I), Strikethrough
 - Inline code
 - Clear formatting
@@ -41,6 +42,7 @@ The chat composer supports both **Rich text** and **Markdown** modes — toggle 
 - Undo / Redo
 
 **Markdown mode** supports standard syntax:
+
 - `**bold**` · `*italic*` · `` `code` ``
 - ` ``` code block ``` ` — paste raw HTTP/JSON and it auto-formats as a code block
 - `# heading` · `- list` · `> quote`

@@ -31,6 +31,7 @@ There are two major differences between the creation form and the edit form:
 
 #### a. Credentials Management
 The **Credentials** section is **not present** on the Edit Asset page. Because credentials contain sensitive secrets that are encrypted at rest, they cannot be modified in a bulk form. Instead:
+
 - All additions, views (reveals), and deletions of test accounts are managed directly under the **Credentials tab** on the **Asset Details** page.
 
 #### b. Rules of Engagement (Section 4)

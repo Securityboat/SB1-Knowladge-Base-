@@ -54,6 +54,7 @@ During the **Live** phase, as you complete specific testing checks, you must doc
 ## Collaborative Progress Tracking
 
 The coverage tab features a visual progress bar indicating the overall completion percentage of the checklist.
+
 *   **Real-time Updates**: Both the client organization and the SecurityBoat TPM can monitor the progress bar.
 *   **Lead Researcher Review**: The Lead Researcher reviews the notes and ensures all checklist items are fully resolved before transitioning the engagement to the **Report Drafting** phase.
 

@@ -35,6 +35,7 @@ graph LR
 
 ### The Two-Stage Approval Gate
 To maintain security and prevent unauthorized leaks, any disclosure request must clear:
+
 1. **TPM Review:** A SecurityBoat Technical Program Manager verifies the write-up, CVSS score, and reproducibility.
 2. **Customer Approval:** Your team reviews the approved draft and gives final sign-off before the details are published.
 
@@ -48,6 +49,7 @@ To maintain security and prevent unauthorized leaks, any disclosure request must
 
 ### 2. Standardized Reward Tiers
 Programs leverage pre-published, transparent payout tiers aligned with threat severity:
+
 * **P1 · Critical:** High-impact issues (e.g., SQL injection, remote code execution)
 * **P2 · High:** Serious vulnerabilities (e.g., access control bypass, stored XSS on critical endpoints)
 * **P3 · Medium:** Moderate findings (e.g., CSRF, sensitive info disclosure)

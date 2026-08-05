@@ -100,6 +100,7 @@ A grid showing your finding counts on this program, split by lifecycle states:
 ### Hall of Fame Podium
 
 If the Hall of Fame is enabled, a podium displays the top three contributing researchers for the program (based on reputation points).
+
 *   Filters allow viewing rankings for **Today**, **This Week**, or **All Time**.
 *   If no accepted findings exist yet, a placeholder message is displayed: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
 

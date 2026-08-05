@@ -3,6 +3,7 @@
 ### 1. Where you get paid
 
 **Payouts** is your personal earnings dashboard. It aggregates compensation from **both** revenue streams:
+
 - **Bug Bounty**: Bounty payouts per verified finding.
 - **Pentest Engagements**: Fixed researcher payouts per completed engagement.
 

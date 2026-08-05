@@ -36,8 +36,8 @@ Each credential block includes:
 
 ## Secure Asset Handling Guidelines
 
-> [!WARNING]
-> **Credential Confidentiality**: Credentials provided for testing are strictly confidential. Do not share them outside the engagement team or use them after the testing window closes.
+!!! warning "Credential Confidentiality"
+    Credentials provided for testing are strictly confidential. Do not share them outside the engagement team or use them after the testing window closes.
 
 | Handling Principle | Standard Protocol |
 | :--- | :--- |

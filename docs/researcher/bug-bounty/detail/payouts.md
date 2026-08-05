@@ -9,6 +9,7 @@ The **Payouts** tab tracks all financial earnings and rewards associated with th
 ## Payouts Table
 
 For each validated finding that qualifies for a reward, a payout entry is generated. The table displays:
+
 *   **Finding ID**: Links back to the original finding.
 *   **Title**: Brief description of the resolved vulnerability.
 *   **Severity**: Triage-confirmed severity level.

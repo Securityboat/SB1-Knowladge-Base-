@@ -44,6 +44,7 @@ graph TD
 
 ### 1. Supported Frameworks
 CCV provides templates and mapping rules for key security frameworks:
+
 * **SEBI Cyber Security & Cyber Resilience Framework (CSCRF):** Attestations and templates designed for Indian financial market intermediaries.
 * **RBI Cyber Security Framework:** Annual and periodic assessments mapped to bank and non-bank financial institution requirements.
 * **IRDAI Information Security Guidelines:** Reports structured for insurance providers.
@@ -51,6 +52,7 @@ CCV provides templates and mapping rules for key security frameworks:
 
 ### 2. Multi-Format Rendering Engine
 Export reports in the layout required by your target audience:
+
 * **Full Technical Reports:** Detailed breakdowns including proof of concepts and trace logs.
 * **Executive Summary Reports:** High-level metrics, vulnerability counts, and sign-offs.
 * **CERT-In Vulnerability Sheets:** The specific tabular structure required for reporting incidents and assessments to the Indian Computer Emergency Response Team.

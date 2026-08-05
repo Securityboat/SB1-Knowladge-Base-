@@ -34,6 +34,7 @@ graph TD
 
 ### The Takedown Workflow
 When a threat is confirmed, it is placed on a governed Kanban board to prevent stalled requests:
+
 1. **Detect:** Initial discovery of the threat, populated with raw WHOIS and DNS data.
 2. **Validate:** Enriched with visual proof (e.g., side-by-side screenshots) and technical signatures (e.g., HTML structure matches).
 3. **Action:** A formal takedown request is filed with the hosting provider, registrar, or app store.
@@ -45,6 +46,7 @@ When a threat is confirmed, it is placed on a governed Kanban board to prevent s
 
 ### 1. Seven Alert Categories
 All external detections are classified into one of seven threat vectors:
+
 * **Phishing Clone:** Identical or high-similarity replicas of your login interfaces hosted on external servers.
 * **Typosquat / New Domain:** Lookalike domain names targeting your brand (e.g., swapping letters, adding dashes, or using obscure TLDs).
 * **Financial Fraud:** Scam sites offering fake promotions, jobs, or products in your name.
@@ -55,6 +57,7 @@ All external detections are classified into one of seven threat vectors:
 
 ### 2. Live Forensic Evidence
 Every finding provides the data needed to file abuse reports:
+
 * **Favicon Hash:** SHA256 signature of the site's icon, proving it was copied from your source.
 * **HTML Similarity Score:** Numerical comparison of page structures.
 * **DNS and WHOIS Trails:** IP hosting histories and registrar contact details.

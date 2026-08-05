@@ -9,6 +9,7 @@ The **Findings** tab displays all security issues identified during the engageme
 ## Findings List
 
 The page lists the findings submitted for this engagement:
+
 *   **Finding ID**: Reference ID (e.g., `PT-ACME-01`).
 *   **Title**: Vulnerability summary.
 *   **Severity**: Triaged CVSS v4.0 rating.
