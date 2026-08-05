@@ -92,30 +92,31 @@ its scan history and details.
 
 
 #### How to Request a Scan
-Only a **Client Admin** can submit new targets for scanning. To add a target:
-
-1. Navigate to **Attack Surface → Targets** and click the **Request Scan** button.
-2. Select your onboarding flow based on the target type:
-   - **For Network & Infrastructure Targets** (Domain, IP, or ASN):
-     1. Set **Target Type** to `Domain`, `IP`, or `ASN`.
-     2. Enter the **Target Value** (e.g. `example.com`, IP range, or ASN).
-     3. Select the recurring **Monitoring Schedule** cadence.
-     4. Set the **Freshness SLA Override (days)**.
-     5. (Optional) Provide a **Note for the Reviewer** and submit.
-   - **For Cloud Integration Targets** (AWS, Azure, GCP):
-     1. Choose your cloud service provider.
-     2. Specify the target organization and account identifier.
-     3. Select a credential setup method and enter the required credentials.
-     4. Click **Validate** to verify that the credentials connect successfully.
-     5. Enter an optional **Scan Name**, add notes for the reviewer, and submit.
+Only a **Client Admin** can submit new targets for scanning. To add a target, navigate to **Attack Surface → Targets**, click the **Request Scan** button, and choose one of the two onboarding flows:
 
 ![ASM targets — request new target](../images/client_asm_request_scan.png)
 
-> [!IMPORTANT]
-> **Staff Approval Requirement:** All newly requested targets enter a `Requested` state. Scans will not run, and configured schedules will remain dormant, until a SecurityBoat staff member (CSM or TPM) reviews and **approves** the request.
+**Option 1: Network & Infrastructure Targets** (Domain, IP, or ASN)
 
-- **Client Admin** can request scans and adjust existing targets' **monitoring cadence** and freshness **SLA**.
-- **Client TPM / Client Viewer** view targets read-only.
+* **Target Type**: Choose from `Domain` (e.g., apex domain names), `IP` (specific IP addresses or ranges), or `ASN` (Autonomous System Numbers).
+* **Target Value**: Enter the corresponding domain name, IP address, CIDR block, or ASN.
+* **Monitoring Schedule**: Select a recurring scan cadence: `Daily`, `Weekly`, `Monthly`, or `Manual` (on-demand).
+* **Freshness SLA Override (days)**: Define the maximum age of the scan results before they are flagged as stale on your dashboard.
+* **Note for the Reviewer**: An optional field to provide context or special instructions to the SecurityBoat operations team.
+
+**Option 2: Cloud Integration Targets**
+
+* **Provider Selection**: Select your cloud service provider (e.g., AWS, Azure, GCP).
+* **Account Details**: Choose the target organization and enter your account identifier.
+* **Credentials Configuration**: Select a credential setup method (e.g., AWS AssumeRole role ARN, access keys, or credential files) and input the security parameters.
+* **Credential Validation**: Click **Validate** to run an automated check confirming the credentials work correctly before final submission.
+* **Review**: Set a descriptive **Scan Name** (defaults to "Provider - Organization Name") and add optional notes for the reviewer.
+
+!!! important "Staff Approval Requirement"
+    All newly requested targets enter a `Requested` state. Scans will not run, and configured schedules will remain dormant, until a SecurityBoat staff member (CSM or TPM) reviews and **approves** the request.
+
+* **Client Admin** can request new targets and adjust existing targets' **monitoring cadence** and freshness **SLA**.
+* **Client TPM / Client Viewer** view targets read-only.
 
 ---
 
@@ -126,6 +127,7 @@ The **Scans** tab displays a chronological registry of all automated and manual 
 ![ASM scans — chronological list of completed, running, and queued scans for your targets.](../images/client_asm_scans.png)
 
 #### Scans List Columns
+
 - **Target**: The domain name, IP, ASN, or cloud integration target being scanned.
 - **State**: The real-time status of the scan execution (`Queued`, `Running`, `Complete`, or `Failed`).
 - **Trigger**: Indicates whether the scan was initiated by a recurring `Scheduled` job or triggered `Manual`ly by a platform operator.
@@ -133,7 +135,9 @@ The **Scans** tab displays a chronological registry of all automated and manual 
 - **Scan ID**: The unique system identifier for auditing and referencing the scan.
 
 #### Detailed Scan Results View
+
 Clicking on any scan opens a comprehensive dashboard dedicated to that specific run:
+
 - **Overview (Home)**: Displays key metrics (threat score, open findings count, assets discovered) alongside scan timeline metadata.
 - **Compliance**: For cloud targets, lists the passed/failed security controls mapped to standard frameworks.
 - **Vulnerabilities (Exposures)**: Lists verified vulnerabilities and exposures (e.g., open ports, TLS certificate issues, exposed keys) sorted by severity (Critical, High, Medium, Low, Info) with full request/response templates and Jira sync buttons.
@@ -150,26 +154,32 @@ The **Subdomains** tab lists a deduplicated, organization-wide inventory of ever
 ![ASM subdomains](../images/client_asm_subdomain.png)
 
 #### Subdomains Inventory Details
-- **Liveness Status**: Shows whether a subdomain is resolving and active (`Live` along with the HTTP response code, e.g., `Live · 200`) or offline (`Not Live`).
-- **Classification**: Color-coded categorization indicating the function or nature of the host (e.g., `web`, `api`, `admin`, `dev`, `infra`, `cloud`).
-- **Source**: Identifies how the subdomain was discovered (e.g., passive DNS, certificate transparency logs, active brute force).
-- **Scan Status**: Shows real-time in-flight status (`queued` with a pulsating indicator, `running` with a loading spinner) or the terminal status of the last scan (`complete`, `no live hosts`, `failed`, `aborted`).
-- **Risk Score**: The calculated numeric threat indicator based on discovered exposures.
-- **Monitoring Toggle**: Click the bell icon to toggle whether that specific subdomain is on a recurring monitoring cadence.
-- **Inline Tags**: Add custom labels (e.g., "production", "testing") directly to subdomains to categorize and filter them.
+
+* **Liveness Status**: Shows whether a subdomain is resolving and active (`Live` along with the HTTP response code, e.g., `Live · 200`) or offline (`Not Live`).
+* **Classification**: Color-coded categorization indicating the function or nature of the host (e.g., `web`, `api`, `admin`, `dev`, `infra`, `cloud`).
+* **Source**: Identifies how the subdomain was discovered (e.g., passive DNS, certificate transparency logs, active brute force).
+* **Scan Status**: Shows real-time in-flight status (`queued` with a pulsating indicator, `running` with a loading spinner) or the terminal status of the last scan (`complete`, `no live hosts`, `failed`, `aborted`).
+* **Risk Score**: The calculated numeric threat indicator based on discovered exposures.
+* **Monitoring Toggle**: Click the bell icon to toggle whether that specific subdomain is on a recurring monitoring cadence.
+* **Inline Tags**: Add custom labels (e.g., "production", "testing") directly to subdomains to categorize and filter them.
 
 #### How to Initiate Subdomain Scans
 To actively probe subdomains outside of the global target schedule:
 
-- **Scan Selected (Bulk Scan)**:
-  1. Navigate to the **Subdomains** tab.
-  2. Check the boxes next to one or more subdomains in the inventory table.
-  3. Click the **Scan Selected** button in the toolbar that appears. This triggers a scan scoped strictly to the chosen hosts under their parent targets.
-- **Scan Ad-hoc**:
-  1. Navigate to the **Subdomains** tab and click the **Scan Ad-hoc** button in the top-right corner.
-  2. Choose a registered target domain from the dropdown.
-  3. Paste the subdomains (separated by spaces, commas, or lines) in the text area.
-  4. Click **Scan these** to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.
+**Method 1: Scan Selected (Bulk Scan)**
+
+1. Navigate to the **Subdomains** tab.
+2. Check the boxes next to one or more subdomains in the inventory table.
+3. Click the **Scan Selected** button in the toolbar that appears. This triggers a scan scoped strictly to the chosen hosts under their parent targets.
+
+**Method 2: Scan Ad-hoc**
+
+1. Navigate to the **Subdomains** tab and click the **Scan Ad-hoc** button in the top-right corner.
+2. Choose a registered target domain from the dropdown.
+3. Paste the subdomains (separated by spaces, commas, or lines) in the text area.
+4. Click **Scan these** to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.
+
+![ASM ad-hoc scan](../images/client_asm_subdomain_scan_ad_doc.png)
 
 ### 7. How ASM connects to the rest of the platform
 

@@ -4582,34 +4582,30 @@ using your live numbers.</p>
 target's type, monitoring cadence, last scan, and status. Click a target to see
 its scan history and details.</p>
 <h4 id="how-to-request-a-scan">How to Request a Scan</h4>
-<p>Only a <strong>Client Admin</strong> can submit new targets for scanning. To add a target:</p>
-<ol>
-<li>Navigate to <strong>Attack Surface → Targets</strong> and click the <strong>Request Scan</strong> button.</li>
-<li>Select your onboarding flow based on the target type:</li>
-<li><strong>For Network &amp; Infrastructure Targets</strong> (Domain, IP, or ASN):<ol>
-<li>Set <strong>Target Type</strong> to <code>Domain</code>, <code>IP</code>, or <code>ASN</code>.</li>
-<li>Enter the <strong>Target Value</strong> (e.g. <code>example.com</code>, IP range, or ASN).</li>
-<li>Select the recurring <strong>Monitoring Schedule</strong> cadence.</li>
-<li>Set the <strong>Freshness SLA Override (days)</strong>.</li>
-<li>(Optional) Provide a <strong>Note for the Reviewer</strong> and submit.</li>
-</ol>
-</li>
-<li><strong>For Cloud Integration Targets</strong> (AWS, Azure, GCP):<ol>
-<li>Choose your cloud service provider.</li>
-<li>Specify the target organization and account identifier.</li>
-<li>Select a credential setup method and enter the required credentials.</li>
-<li>Click <strong>Validate</strong> to verify that the credentials connect successfully.</li>
-<li>Enter an optional <strong>Scan Name</strong>, add notes for the reviewer, and submit.</li>
-</ol>
-</li>
-</ol>
+<p>Only a <strong>Client Admin</strong> can submit new targets for scanning. To add a target, navigate to <strong>Attack Surface → Targets</strong>, click the <strong>Request Scan</strong> button, and choose one of the two onboarding flows:</p>
 <p><img alt="ASM targets — request new target" src="../../images/client_asm_request_scan.png" /></p>
-<blockquote>
-<p>[!IMPORTANT]
-<strong>Staff Approval Requirement:</strong> All newly requested targets enter a <code>Requested</code> state. Scans will not run, and configured schedules will remain dormant, until a SecurityBoat staff member (CSM or TPM) reviews and <strong>approves</strong> the request.</p>
-</blockquote>
+<p><strong>Option 1: Network &amp; Infrastructure Targets</strong> (Domain, IP, or ASN)</p>
 <ul>
-<li><strong>Client Admin</strong> can request scans and adjust existing targets' <strong>monitoring cadence</strong> and freshness <strong>SLA</strong>.</li>
+<li><strong>Target Type</strong>: Choose from <code>Domain</code> (e.g., apex domain names), <code>IP</code> (specific IP addresses or ranges), or <code>ASN</code> (Autonomous System Numbers).</li>
+<li><strong>Target Value</strong>: Enter the corresponding domain name, IP address, CIDR block, or ASN.</li>
+<li><strong>Monitoring Schedule</strong>: Select a recurring scan cadence: <code>Daily</code>, <code>Weekly</code>, <code>Monthly</code>, or <code>Manual</code> (on-demand).</li>
+<li><strong>Freshness SLA Override (days)</strong>: Define the maximum age of the scan results before they are flagged as stale on your dashboard.</li>
+<li><strong>Note for the Reviewer</strong>: An optional field to provide context or special instructions to the SecurityBoat operations team.</li>
+</ul>
+<p><strong>Option 2: Cloud Integration Targets</strong></p>
+<ul>
+<li><strong>Provider Selection</strong>: Select your cloud service provider (e.g., AWS, Azure, GCP).</li>
+<li><strong>Account Details</strong>: Choose the target organization and enter your account identifier.</li>
+<li><strong>Credentials Configuration</strong>: Select a credential setup method (e.g., AWS AssumeRole role ARN, access keys, or credential files) and input the security parameters.</li>
+<li><strong>Credential Validation</strong>: Click <strong>Validate</strong> to run an automated check confirming the credentials work correctly before final submission.</li>
+<li><strong>Review</strong>: Set a descriptive <strong>Scan Name</strong> (defaults to "Provider - Organization Name") and add optional notes for the reviewer.</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Staff Approval Requirement</p>
+<p>All newly requested targets enter a <code>Requested</code> state. Scans will not run, and configured schedules will remain dormant, until a SecurityBoat staff member (CSM or TPM) reviews and <strong>approves</strong> the request.</p>
+</div>
+<ul>
+<li><strong>Client Admin</strong> can request new targets and adjust existing targets' <strong>monitoring cadence</strong> and freshness <strong>SLA</strong>.</li>
 <li><strong>Client TPM / Client Viewer</strong> view targets read-only.</li>
 </ul>
 <hr />
@@ -4625,13 +4621,15 @@ its scan history and details.</p>
 <li><strong>Scan ID</strong>: The unique system identifier for auditing and referencing the scan.</li>
 </ul>
 <h4 id="detailed-scan-results-view">Detailed Scan Results View</h4>
-<p>Clicking on any scan opens a comprehensive dashboard dedicated to that specific run:
-- <strong>Overview (Home)</strong>: Displays key metrics (threat score, open findings count, assets discovered) alongside scan timeline metadata.
-- <strong>Compliance</strong>: For cloud targets, lists the passed/failed security controls mapped to standard frameworks.
-- <strong>Vulnerabilities (Exposures)</strong>: Lists verified vulnerabilities and exposures (e.g., open ports, TLS certificate issues, exposed keys) sorted by severity (Critical, High, Medium, Low, Info) with full request/response templates and Jira sync buttons.
-  - <strong>Subdomain Takeovers</strong>: High-severity dangling DNS records pointing to deprovisioned or abandoned third-party services.
-- <strong>Discovered Assets</strong>: Lists all discovered entities grouped by category (e.g., subdomains, technologies, open ports).
-  - <strong>Scanning Selected Subdomains</strong>: In the subdomains sub-view, users can check boxes next to discovered subdomains and click <strong>Scan Selected</strong> to trigger a targeted rescan focused strictly on those hosts.</p>
+<p>Clicking on any scan opens a comprehensive dashboard dedicated to that specific run:</p>
+<ul>
+<li><strong>Overview (Home)</strong>: Displays key metrics (threat score, open findings count, assets discovered) alongside scan timeline metadata.</li>
+<li><strong>Compliance</strong>: For cloud targets, lists the passed/failed security controls mapped to standard frameworks.</li>
+<li><strong>Vulnerabilities (Exposures)</strong>: Lists verified vulnerabilities and exposures (e.g., open ports, TLS certificate issues, exposed keys) sorted by severity (Critical, High, Medium, Low, Info) with full request/response templates and Jira sync buttons.</li>
+<li><strong>Subdomain Takeovers</strong>: High-severity dangling DNS records pointing to deprovisioned or abandoned third-party services.</li>
+<li><strong>Discovered Assets</strong>: Lists all discovered entities grouped by category (e.g., subdomains, technologies, open ports).</li>
+<li><strong>Scanning Selected Subdomains</strong>: In the subdomains sub-view, users can check boxes next to discovered subdomains and click <strong>Scan Selected</strong> to trigger a targeted rescan focused strictly on those hosts.</li>
+</ul>
 <hr />
 <h3 id="6-subdomain-inventory">6. Subdomain Inventory</h3>
 <p>The <strong>Subdomains</strong> tab lists a deduplicated, organization-wide inventory of every subdomain discovered across all active targets. This module allows you to track and selectively audit your web perimeter.</p>
@@ -4648,17 +4646,20 @@ its scan history and details.</p>
 </ul>
 <h4 id="how-to-initiate-subdomain-scans">How to Initiate Subdomain Scans</h4>
 <p>To actively probe subdomains outside of the global target schedule:</p>
-<ul>
-<li><strong>Scan Selected (Bulk Scan)</strong>:</li>
+<p><strong>Method 1: Scan Selected (Bulk Scan)</strong></p>
+<ol>
 <li>Navigate to the <strong>Subdomains</strong> tab.</li>
 <li>Check the boxes next to one or more subdomains in the inventory table.</li>
 <li>Click the <strong>Scan Selected</strong> button in the toolbar that appears. This triggers a scan scoped strictly to the chosen hosts under their parent targets.</li>
-<li><strong>Scan Ad-hoc</strong>:</li>
+</ol>
+<p><strong>Method 2: Scan Ad-hoc</strong></p>
+<ol>
 <li>Navigate to the <strong>Subdomains</strong> tab and click the <strong>Scan Ad-hoc</strong> button in the top-right corner.</li>
 <li>Choose a registered target domain from the dropdown.</li>
 <li>Paste the subdomains (separated by spaces, commas, or lines) in the text area.</li>
 <li>Click <strong>Scan these</strong> to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.</li>
-</ul>
+</ol>
+<p><img alt="ASM ad-hoc scan" src="../../images/client_asm_subdomain_scan_ad_doc.png" /></p>
 <h3 id="7-how-asm-connects-to-the-rest-of-the-platform">7. How ASM connects to the rest of the platform</h3>
 <p>ASM findings flow into the unified <strong>Findings</strong> module (source = <code>ASM</code>), so a
 perimeter exposure is triaged the same way as a pentest finding. If an ASM finding
