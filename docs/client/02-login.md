@@ -22,7 +22,6 @@ up your account.
 Open your Tri-Netra URL. You'll see the sign-in screen with:
 
 - **Continue with SSO** — the main sign-in button. Click this every time you sign in.
-- **Reset MFA** — recovery link if you've lost access to your authenticator app.
 - **Apply as a researcher / Contact sales** — for prospective researchers and new customers.
 
 ---
@@ -55,7 +54,7 @@ graph LR
 ### 5. Managing MFA
 
 - **Set up or change MFA:** go to **Settings → MFA Setup** once signed in.
-- **Lost your authenticator?** Click **Reset MFA** on the sign-in screen to start recovery.
+- **Lost your authenticator?** Contact your Organization Administrator or SecurityBoat CSM to reset your MFA.
 
 ---
 
@@ -77,7 +76,7 @@ Click your avatar (top-right) → **Sign out**. Always sign out on shared or pub
 |---------|------------|
 | **"You're not invited" or access denied** | Your account hasn't been invited yet. Ask your organisation's admin or CSM. |
 | **Can't sign in with your password** | Use the password reset option on the sign-in page, or contact your admin. |
-| **Lost MFA device** | Click **Reset MFA** on the sign-in screen. |
+| **Lost MFA device** | Contact your Organization Administrator or SecurityBoat CSM to reset your MFA. |
 | **Signed out unexpectedly** | Sessions expire after inactivity for security. Sign in again — it takes 30 seconds. |
 
 ---

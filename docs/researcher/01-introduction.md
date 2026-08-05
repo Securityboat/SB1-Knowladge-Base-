@@ -39,10 +39,6 @@ testing team on an engagement (a slightly richer dashboard and team view).
 | **Notifications** | Your alerts and updates. | View |
 | **Settings** | Your account, MFA, and notification preferences. | Manage own |
 
-> **What a Researcher does _not_ have:** no **Clients**, **Assets**, **ASM**,
-> **Reports**, **Compliance**, **Integrations**, or **Admin** — those are staff/client
-> surfaces. **Pay is always your own scope** and is never shared across researchers.
-> This guide only documents modules you can actually reach.
 
 ### How to use this guide
 
