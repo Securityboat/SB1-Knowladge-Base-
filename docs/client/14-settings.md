@@ -32,10 +32,24 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 
 ![MFA Setup — configure multi-factor authentication for your account.](../images/client_settings_mfa.png)
 
-The **MFA Setup** tab is where you manage multi-factor
-authentication. Enabling MFA is strongly recommended — it's your
-best defence against account takeover. Your current 2FA status also shows on the
-Account tab.
+Manage multi-factor authentication (MFA) to secure your account. Because your profile grants access to organization assets, vulnerability reports, and project tracking dashboards, maintaining active MFA is strongly recommended. Your current two-factor setup status also appears on the **Account** tab.
+
+#### How to Enroll in MFA
+1. **Open Setup**: Navigate to **Settings → MFA Setup** and click **Setup MFA**.
+2. **Scan QR Code**: Open your preferred authenticator app (e.g., Google Authenticator, Authy, Microsoft Authenticator, or 1Password) and scan the displayed QR code. If your device cannot scan the code, click **Show** to reveal the secret key and enter it manually.
+3. **Save/Copy Key**: You can also click the copy icon to securely copy the configuration key to your clipboard.
+4. **Complete Enrollment**: Once you have scanned or entered the code into your authenticator app, click the **Done — I've added it to my app** button. The app will confirm your enrollment, and you will be prompted for your MFA verification code during your next login attempt.
+
+#### Disabling or Resetting MFA
+If you currently have MFA enabled and need to re-key or disable it:
+1. Navigate to **Settings → MFA Setup**.
+2. Click the red **Reset MFA** button.
+3. Confirming this action removes all active MFA factors from your account immediately. You can now log in using only your email and password, or begin the enrollment flow again.
+
+#### Recovery & Lost Authenticator Access
+If you lose access to your authenticator app, you can reset your MFA using the self-service flow:
+*   **Request recovery**: Click the **Reset MFA** link on the login page, enter your registered email, and follow the link sent to your inbox.
+*   **Administrative assistance**: You can also contact your organization's Client Administrator (who can reset user MFA settings via the administrative panel) or reach out to your SecurityBoat Customer Success Manager (CSM) to reset your MFA factors.
 
 ### 4. Notifications
 
