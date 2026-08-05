@@ -4,6 +4,8 @@ The **Chat** tab is a secure, real-time messaging workspace built into the engag
 
 ---
 
+![Chat Tab](../../../images/res_engagement_chat.png)
+
 ## Channels & Scope
 
 The chat tab is structured as a multi-party group channel containing:
@@ -41,4 +43,4 @@ Please observe the following guidelines when using the chat:
 
 ---
 
-← Previous: [Analytics](analytics.md) | Back to: [Engagements Overview](../overview.md)
+← Previous: [Reports](reports.md) | Back to: [Engagements Overview](../overview.md)

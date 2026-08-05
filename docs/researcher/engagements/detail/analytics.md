@@ -4,6 +4,8 @@ The **Analytics** tab provides visual representations and charts summarizing the
 
 ---
 
+![Analytics Tab](../../../images/res_engagement_analytics.png)
+
 ## Visual Dashboards
 
 The analytics page displays three primary metrics:
@@ -19,4 +21,4 @@ A timeline graph tracking the cumulative number of vulnerabilities discovered ov
 
 ---
 
-← Previous: [Findings](findings.md) | Next: [Chat →](chat.md)
+← Previous: [Findings](findings.md) | Next: [Reports →](reports.md)

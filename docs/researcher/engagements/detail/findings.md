@@ -4,6 +4,8 @@ The **Findings** tab displays all security issues identified during the engageme
 
 ---
 
+![Findings Tab](../../../images/res_engagement_findings.png)
+
 ## Findings List
 
 The page lists the findings submitted for this engagement:
@@ -19,7 +21,11 @@ Clicking any row opens the finding details page. Here, you can review client com
 
 ## Submitting a Finding
 
-During the **Live** phase, click the **Submit finding** button on the top right of the Findings tab. Complete the form across the following sections:
+During the **Live** phase, click the **Submit finding** button on the top right of the Findings tab. A drawer opens with the structured finding form:
+
+![Submit Finding Drawer — Top](../../../images/res_engagement_submit_finding_top.png)
+
+Complete the form across the following sections:
 
 ### 1. Title & Classification
 *   **Title**: Write a descriptive title (e.g., *"SQL Injection in Search API"*).
@@ -43,6 +49,9 @@ Compute the CVSS v4.0 score by filling out the 11 metrics. The platform will aut
 *   **OWASP Risk Rating**: Set Likelihood (0-9) and Impact (0-9) to populate the executive report heat matrix.
 
 ### 5. Technical Details & Endpoints
+
+![Submit Finding Drawer — Bottom](../../../images/res_engagement_submit_finding_bottom.png)
+
 *   **HTTP Method**: GET, POST, PUT, DELETE, etc.
 *   **Endpoint Path / Affected Parameter**: Specific target variables.
 *   **Raw HTTP Request & Response**: Paste the raw HTTP requests and responses to speed up verification.

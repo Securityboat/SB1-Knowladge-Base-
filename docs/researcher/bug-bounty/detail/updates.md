@@ -4,6 +4,8 @@ The **Updates** tab is the official communication board for the program. It is m
 
 ---
 
+![Updates Tab](../../../images/res_bb_detail_updates.png)
+
 ## What is Posted in Updates?
 
 Whenever an important change is made to the program, an update is posted. Common updates include:

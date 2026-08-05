@@ -4,6 +4,8 @@ The **Payouts** tab tracks all financial earnings and rewards associated with th
 
 ---
 
+![Payouts Tab](../../../images/res_bb_detail_payouts.png)
+
 ## Payouts Table
 
 For each validated finding that qualifies for a reward, a payout entry is generated. The table displays:

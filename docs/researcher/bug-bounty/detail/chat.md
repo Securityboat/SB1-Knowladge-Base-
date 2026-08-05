@@ -4,6 +4,8 @@ The **Chat** tab provides a direct communication channel for the program.
 
 ---
 
+![Chat Tab](../../../images/res_bb_detail_chat.png)
+
 ## Channel Structure
 
 Depending on the program's setup, the chat tab behaves in one of two ways:

@@ -4,6 +4,8 @@ The **Leaderboard** tab highlights the top-performing researchers who have succe
 
 ---
 
+![Leaderboard Tab](../../../images/res_bb_detail_leaderboard.png)
+
 ## Leaderboard Rankings
 
 Researchers are ranked based on the total **Reputation Points** earned on this specific program. The tab features:

@@ -4,6 +4,8 @@ The **Assets** tab houses the detailed technical information for each target ite
 
 ---
 
+![Assets Tab](../../../images/res_engagement_assets.png)
+
 ## Assets Grid
 
 The assets page presents a card grid or table listing each target asset:

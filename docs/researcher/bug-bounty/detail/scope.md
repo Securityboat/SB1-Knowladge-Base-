@@ -4,6 +4,8 @@ The **Scope** tab acts as the formal contract between you and the client organiz
 
 ---
 
+![Scope Tab](../../../images/res_bb_detail_scope.png)
+
 ## Scope Asset Tables
 
 The tab is split into two primary lists:

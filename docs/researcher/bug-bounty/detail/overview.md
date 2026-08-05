@@ -4,6 +4,8 @@ When you select a Bug Bounty or VDP program, you land on the **Program Detail** 
 
 ---
 
+![Program Detail Overview](../../../images/res_bb_detail_overview.png)
+
 ## Page Layout & Tab Structure
 
 The diagram below outlines the structural layout of the Program Detail view:
@@ -34,8 +36,7 @@ At the top of the program detail page, the header bar identifies the target at a
 | **Visibility Badge** | Indicates **Public** (blue) or **Private** (purple) access. |
 | **Type Label** | Indicates whether the program is a **VDP** or a **Bug Bounty**. |
 | **Program Name** | The full program name. |
-| **Management Badge** | Shows whether the program is **SB-Managed** (triaged by SecurityBoat) or **Self-Managed** (triaged by client). |
-| **Organization** | The owning organization initials avatar and name. |
+| **Management Badge** | Shows whether the program is **SB-Managed** (triaged by SecurityBoat) or **Self-Managed** (triaged by Organization). |
 
 ### Summary KPI Tiles
 

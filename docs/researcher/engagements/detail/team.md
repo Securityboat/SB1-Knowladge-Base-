@@ -4,6 +4,8 @@ The **Team** tab lists the full security team roster assigned to the engagement,
 
 ---
 
+![Team Tab](../../../images/res_engagement_team.png)
+
 ## Communication & Collaboration Hierarchy
 
 The hierarchy diagram below illustrates how communication flows during an engagement:

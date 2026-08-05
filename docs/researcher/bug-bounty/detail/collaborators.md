@@ -4,6 +4,8 @@ The **Collaborators** tab lists the registered researchers who are actively part
 
 ---
 
+![Collaborators Tab](../../../images/res_bb_detail_collaborators.png)
+
 ## Collaborator List
 
 The tab provides a roster of participants, allowing you to see your fellow security testers:

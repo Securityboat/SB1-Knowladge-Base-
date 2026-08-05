@@ -4,6 +4,8 @@ The **Integrations** tab lists third-party tools that have been linked to this p
 
 ---
 
+![Integrations Tab](../../../images/res_bb_detail_integrations.png)
+
 ## Active Integrations
 
 While researchers do not configure integrations, you can see which tools are connected (e.g., **Jira**).

@@ -4,6 +4,8 @@ The **Findings** tab contains your history of submissions to this program. It is
 
 ---
 
+![Findings Tab](../../../images/res_bb_detail_findings.png)
+
 ## Your Submissions Tracker
 
 The findings table displays a list of your submissions:

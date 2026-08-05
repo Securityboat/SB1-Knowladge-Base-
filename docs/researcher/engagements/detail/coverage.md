@@ -6,6 +6,8 @@ Completing the coverage checklist is a critical requirement of the penetration t
 
 ---
 
+![Coverage Tab](../../../images/res_engagement_coverage.png)
+
 ## Logging Coverage Workflow
 
 The flowchart below illustrates the process for completing and logging a methodology checklist item:
