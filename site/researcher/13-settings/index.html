@@ -1793,34 +1793,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../client/15-threat-intelligence/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Threat Intelligence
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     
     
     
@@ -1835,10 +1807,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13" >
         
           
-          <label class="md-nav__link" for="__nav_3_14" id="__nav_3_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13" id="__nav_3_13_label" tabindex="0">
             
   
   
@@ -1856,8 +1828,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1943,10 +1915,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_14_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_14_3" id="__nav_3_14_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_3" id="__nav_3_13_3_label" tabindex="0">
             
   
   
@@ -1964,8 +1936,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_14_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_14_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -4033,6 +4005,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3. MFA Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-enroll-in-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Enroll in MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-or-resetting-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disabling or Resetting MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-lost-authenticator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery &amp; Lost Authenticator Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4191,6 +4202,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3. MFA Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-enroll-in-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Enroll in MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabling-or-resetting-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Disabling or Resetting MFA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovery-lost-authenticator-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recovery &amp; Lost Authenticator Access
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4312,8 +4362,24 @@ agreement/contract. Do these early.</p>
 </blockquote>
 <hr />
 <h3 id="3-mfa-setup">3. MFA Setup</h3>
-<p>Manage multi-factor authentication from this section. Enable it — your
-account carries findings, contracts, and payout details.</p>
+<p>Manage multi-factor authentication (MFA) to secure your account. Because your profile carries sensitive findings, signed contracts, and bank payout details, maintaining active MFA is highly recommended.</p>
+<p><img alt="Researcher Settings — MFA Setup tab shows current status (MFA Disabled), links to &quot;Show QR code&quot; and &quot;Reset MFA&quot;, and a summary of how MFA works. (1 of 1)" src="../../images/res_settings_mfa_setup.png" /></p>
+<h4 id="how-to-enroll-in-mfa">How to Enroll in MFA</h4>
+<ol>
+<li><strong>Open Setup</strong>: Navigate to <strong>Settings → MFA Setup</strong> and click <strong>Setup MFA</strong>.</li>
+<li><strong>Scan QR Code</strong>: Open your preferred authenticator app (e.g., Google Authenticator, Authy, Microsoft Authenticator, or 1Password) and scan the displayed QR code. If your device cannot scan the code, click <strong>Show</strong> to reveal the secret key and enter it manually.</li>
+<li><strong>Save/Copy Key</strong>: You can also click the copy icon to securely copy the configuration key to your clipboard.</li>
+<li><strong>Complete Enrollment</strong>: Once you have scanned or entered the code into your authenticator app, click the <strong>Done — I've added it to my app</strong> button. The app will confirm your enrollment, and you will be prompted for your MFA verification code during your next login attempt.</li>
+</ol>
+<h4 id="disabling-or-resetting-mfa">Disabling or Resetting MFA</h4>
+<p>If you currently have MFA enabled and need to re-key or disable it:
+1. Navigate to <strong>Settings → MFA Setup</strong>.
+2. Click the red <strong>Reset MFA</strong> button.
+3. Confirming this action removes all active MFA factors from your account immediately. You can now log in using only your email and password, or begin the enrollment flow again.</p>
+<h4 id="recovery-lost-authenticator-access">Recovery &amp; Lost Authenticator Access</h4>
+<p>If you lose access to your authenticator app, you can reset your MFA using the self-service flow:
+*   <strong>Request recovery</strong>: Click the <strong>Reset MFA</strong> link on the login page, enter your registered email, and follow the link sent to your inbox.
+*   <strong>Administrative assistance</strong>: If you cannot access your email, contact the SecurityBoat support team to verify your identity and manually reset your MFA settings from the administration panel.</p>
 <hr />
 <h3 id="4-payouts">4. Payouts</h3>
 <p>The <strong>Payouts</strong> tab is your earnings dashboard — see the dedicated

@@ -109,7 +109,6 @@ nav:
       - User Administration: client/09-admin.md
       - Integrations: client/10-integrations.md
       - Attack Surface (ASM): client/11-asm.md
-      - Threat Intelligence: client/15-threat-intelligence.md
       - Bug Bounty:
           - Overview: client/bug-bounty/overview.md
           - Create Program: client/bug-bounty/create-bug-bounty.md
