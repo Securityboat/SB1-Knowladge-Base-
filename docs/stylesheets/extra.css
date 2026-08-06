@@ -161,11 +161,21 @@ body {
    HEADER — transparent, matches securityboat.net
    ═══════════════════════════════════════════ */
 /* Header logo icon styling */
+.md-header__button.md-logo {
+  padding: 0.2rem 0.15rem !important;
+  margin-right: 0 !important;
+}
+
 .md-header__button.md-logo img,
 .md-header__button.md-logo svg {
   height: 22px !important;
   width: auto !important;
   object-fit: contain;
+}
+
+.md-header__title {
+  margin-left: 0.2rem !important;
+  padding-left: 0 !important;
 }
 
 [data-md-color-scheme="default"] .md-header {
@@ -199,6 +209,121 @@ body {
   font-family: 'Geist', sans-serif !important;
   font-weight: 800 !important;
   letter-spacing: -0.02em;
+}
+
+/* Theme Toggle Button Hidden State Fix */
+.md-header__button.md-icon[for^="__palette_"][hidden] {
+  display: none !important;
+}
+
+/* Search Bar Line Height & Alignment Fix */
+.md-search,
+.md-search__inner,
+.md-search__form,
+.md-search__input,
+.md-search__label {
+  line-height: normal !important;
+}
+
+/* Navbar CTA Button matching securityboat.net */
+.sb-nav-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 32px !important;
+  padding: 0 0.85rem !important;
+  border-radius: 8px !important;
+  font-family: 'Geist', 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 12.5px !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  margin-left: 0.5rem !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+[data-md-color-scheme="default"] .sb-nav-cta {
+  background: linear-gradient(135deg, #1d70b7 0%, #175a92 100%);
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(29, 112, 183, 0.2);
+  border: 1px solid #1d70b7;
+}
+
+[data-md-color-scheme="default"] .sb-nav-cta:hover {
+  background: linear-gradient(135deg, #04baee 0%, #1d70b7 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(4, 186, 238, 0.3);
+}
+
+[data-md-color-scheme="slate"] .sb-nav-cta {
+  background: linear-gradient(135deg, #22d3f0 0%, #1d70b7 100%);
+  color: #050b17 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 2px 10px rgba(34, 211, 240, 0.25);
+  border: none;
+}
+
+[data-md-color-scheme="slate"] .sb-nav-cta:hover {
+  background: linear-gradient(135deg, #38bdf8 0%, #22d3f0 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(34, 211, 240, 0.4);
+}
+
+/* Redesigned Brand Logo Text Components */
+.sb-brand-logo {
+  font-family: 'Geist', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 850;
+  letter-spacing: -0.035em;
+  display: inline-flex;
+  align-items: center;
+}
+
+[data-md-color-scheme="default"] .sb-brand-main {
+  color: #0a1428;
+}
+
+[data-md-color-scheme="slate"] .sb-brand-main {
+  color: #ffffff;
+}
+
+.sb-brand-cyan {
+  background-image: linear-gradient(135deg, #04baee 0%, #1d70b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-md-color-scheme="slate"] .sb-brand-cyan {
+  background-image: linear-gradient(135deg, #22d3f0 0%, #5b9fe6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sb-brand-tag {
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 0.08rem 0.35rem;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+[data-md-color-scheme="default"] .sb-brand-tag {
+  background: rgba(16, 104, 191, 0.08);
+  color: #1d70b7;
+  border: 1px solid rgba(29, 112, 183, 0.2);
+}
+
+[data-md-color-scheme="slate"] .sb-brand-tag {
+  background: rgba(4, 186, 238, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(4, 186, 238, 0.25);
 }
 
 /* ═══════════════════════════════════════════

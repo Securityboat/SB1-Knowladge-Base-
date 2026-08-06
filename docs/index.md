@@ -1,6 +1,5 @@
 ---
 hide:
-
   - navigation
   - toc
 ---
@@ -12,7 +11,7 @@ hide:
   TriNetra — the agentic security platform by SecurityBoat
 </span>
 
-<h1 class="sb-hero-title">Security that<br><span class="sb-hero-highlight">never stops looking.</span></h1>
+<h1 class="sb-hero-title">Security that <span class="sb-hero-highlight">never stops looking</span>.</h1>
 
 <p class="sb-hero-subtitle">
 AI agents and vetted researchers on one governed record of your risk from first discovery to verified fix.
@@ -56,139 +55,95 @@ Jump straight into the module you need today.
 
 -   :material-target:
 
-    **Bug Bounty**
-
-    ---
+    [**Bug Bounty**](trinetra/bug-bounty.md)
 
     Vetted researchers, published reward tiers, pay for impact.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/bug-bounty.md)
-
 -   :material-shield-check:
 
-    **PTaaS**
-
-    ---
+    [**PTaaS**](trinetra/ptaas.md)
 
     Pentests as a live 12-state engagement, not a PDF.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/ptaas.md)
-
 -   :material-radar:
 
-    **Attack Surface Management**
-
-    ---
+    [**Attack Surface Management**](trinetra/attack-surface-management.md)
 
     11-stage scan pipeline across domains, IPs, 15+ cloud providers.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/attack-surface-management.md)
-
 -   :material-shield-alert:
 
-    **Digital Risk Protection**
-
-    ---
+    [**Digital Risk Protection**](trinetra/digital-risk-protection.md)
 
     Phishing clones caught with side-by-side visual proof.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/digital-risk-protection.md)
-
 -   :material-robot-industrial:
 
-    **Agentic Pentest**
-
-    ---
+    [**Agentic Pentest**](trinetra/agentic-pentest.md)
 
     Agents run recon and exploit-chaining around the clock. Nothing ships
     without a human signature.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/agentic-pentest.md)
-
 -   :material-refresh:
 
-    **Continuous Testing**
-
-    ---
+    [**Continuous Testing**](trinetra/continuous-testing.md)
 
     1,240 raw indicators distilled to 9 exploit-confirmed.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/continuous-testing.md)
-
 -   :material-lightning-bolt:
 
-    **AI Red Teaming**
-
-    ---
+    [**AI Red Teaming**](trinetra/ai-red-teaming.md)
 
     Prompt injection, jailbreaks, cross-tenant isolation — OWASP LLM Top 10
     and MITRE ATLAS.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/ai-red-teaming.md)
-
 -   :material-code-json:
 
-    **Code Security**
-
-    ---
+    [**Code Security**](trinetra/code-security.md)
 
     1,204 scanner alerts filtered to 6 before a human looks.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/code-security.md)
-
 -   :material-check-circle:
 
-    **Continuous Controls Validation**
-
-    ---
+    [**Continuous Controls Validation**](trinetra/continuous-controls-validation.md)
 
     Controls tested on a cadence, evidence always current.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/continuous-controls-validation.md)
-
 -   :material-certificate:
 
-    **Trust Center**
-
-    ---
+    [**Trust Center**](trinetra/trust-center.md)
 
     SOC 2, RBI, sub-processor docs behind a request gate.
-
-    [:octicons-arrow-right-24: Learn more](trinetra/trust-center.md)
 
 </div>
 
 <div class="sb-section-header" markdown>
 
-### Managed Services
+<span class="sb-section-label">MANAGED SERVICES</span>
+
+## Senior security & incident leadership
+
+Expert leadership and rapid incident response whenever you need it.
 
 </div>
 
-<div class="grid cards trinetra-cards" markdown>
+<div class="grid cards trinetra-cards managed-cards" markdown>
 
--   :material-account:
+-   :material-account-tie:
 
-    **vCISO as a Service**
-
-    ---
+    [**vCISO as a Service**](trinetra/vciso.md)
 
     Senior security leadership on tap — strategy, board reporting, and
     regulator conversations run by practitioners who have delivered 1,000+
     pentests.
 
-    [:octicons-arrow-right-24: Learn more](trinetra/vciso.md)
+-   :material-shield-alert:
 
--   :material-security:
-
-    **Incident Response**
-
-    ---
+    [**Incident Response**](trinetra/incident-response.md)
 
     When something breaks through, the same team that knows your attack
     surface runs containment, forensics, and recovery — no cold-start
     onboarding mid-crisis.
-
-    [:octicons-arrow-right-24: Learn more](trinetra/incident-response.md)
 
 </div>
 
@@ -202,15 +157,11 @@ Jump straight into the module you need today.
 
 -   [:material-domain: **Client Organisation Guide**](client/00-GETTING_STARTED.md)
 
-    ---
-
     Complete guide for client organization members, security managers, and
     compliance officers — covering assets, findings, engagements, and
     compliance reports.
 
 -   [:material-shield-search: **Security Researcher Guide**](researcher/00-GETTING_STARTED.md)
-
-    ---
 
     Detailed manual for security researchers, bug hunters, and penetration
     testers — onboarding, findings, payouts, and bug bounty programs.
@@ -226,7 +177,7 @@ Jump straight into the module you need today.
 <div class="sb-footer-col sb-footer-brand-col">
   <div class="sb-footer-brand">
     <img src="images/logo.png" alt="SecurityBoat Shield Logo" class="sb-footer-logo" />
-    <span class="sb-footer-title">SecurityBoat</span>
+    <span class="sb-brand-logo"><span class="sb-brand-main">Security</span><span class="sb-brand-cyan">Boat</span></span><span class="sb-brand-tag">Docs</span>
   </div>
   <p class="sb-footer-desc">
     AI agents and vetted researchers on one governed record of your risk — from first discovery to verified fix.
