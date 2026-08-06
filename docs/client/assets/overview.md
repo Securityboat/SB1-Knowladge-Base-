@@ -79,7 +79,6 @@ All filters combine (AND logic) and narrow the table in place:
 | **Engagements** | How many engagements (active or historical) reference this asset — a quick signal of how heavily tested it is. |
 | **Created** | When the asset record was created. |
 
-The table paginates at **10 rows per page**. Click any row to open that asset.
 
 **Empty state:** With no assets (or none matching your filters) you'll see a prompt with **Add asset** and **Import CSV** buttons instead of a table.
 

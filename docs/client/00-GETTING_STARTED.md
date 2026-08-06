@@ -1,6 +1,6 @@
 # Client Organisation — Getting Started
 
-> **Version 4.0 — July 2026** · Production guide for live end users · en-GB
+> **Version 4.1 — August 2026** · Production guide for live end users · en-GB
 > **Applies to client roles:** Client Admin, Client TPM, Client Viewer.
 
 Welcome to **Tri-Netra**. This Getting Started guide helps client users quickly understand their workspace, navigation, role permissions, and key workflows.
@@ -37,19 +37,7 @@ Your data is kept private and secure. You only have access to information within
 
 ---
 
-## 2. Signing In & Onboarding
-
-### Onboarding a New Organisation
-If your organisation is new to Tri-Netra and does not have a workspace setup yet, click the **Contact sales** button on the platform's sign-in page to open and submit the sales onboarding request form. Our team will review your request, configure your workspace, and invite your primary Client Admin.
-
-### First-Time Sign-In (For Invited Users)
-1. **Sign-in:** Navigate to the platform sign-in page, enter your company email, and authenticate via **Single Sign-On (SSO)** or email credentials.
-2. **Multi-Factor Authentication (MFA):** Complete 2FA verification if required by your organisation's security policy.
-3. **Profile & Preferences:** Go to **Settings** (bottom sidebar) to update your name, set your theme (Light/Dark/System), and configure notification channels for new findings or delivered reports.
-
----
-
-## 3. Client Roles & Access
+## 2. Client Roles & Access
 
 | Capability | Client Admin | Client TPM | Client Viewer |
 |------------|:---:|:---:|:---:|
@@ -61,24 +49,7 @@ If your organisation is new to Tri-Netra and does not have a workspace setup yet
 
 ---
 
-## 4. Key Workflows
-
-### Remediating a Vulnerability
-1. Open **Findings** from the main sidebar menu.
-2. Filter by severity or state.
-3. Review the detailed description, evidence, and remediation guidance.
-4. Mark the finding as **Fix in Progress**, complete the fix internally, then click **Ready for Retest**.
-5. Once retested by the SecurityBoat team, the finding state updates to **Resolved**.
-
-### Requesting a Pentest
-1. Click **My Requests** or **Engagements** in the sidebar.
-2. Click **New request**.
-3. Select your target asset, preferred testing window, and scope details.
-4. Submit the request for SecurityBoat team review.
-
----
-
-## 5. Chapter Index
+## 3. Chapter Index
 
 For complete step-by-step documentation on each module, see the chapters below:
 

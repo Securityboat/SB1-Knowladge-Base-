@@ -22,7 +22,12 @@ to edit. Every card links through to the module where you can act.
 
 ### 3. The Dashboard, top to bottom
 
-![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_01.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_02.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_03.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_04.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_05.png)
+![Client dashboard — greeting, key metrics overview cards, top findings, severity posture ring, recent engagements and reports.](../images/client_dashboard_06.png)
 
 The client dashboard is assembled from these sections, in order:
 

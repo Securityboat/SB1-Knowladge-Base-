@@ -1,6 +1,6 @@
 # TriNetra — Agentic Security Platform
 
-> **Version 1.0 — July 2026** · Public product documentation
+> **Version 1.1 — August 2026** · Public product documentation
 
 TriNetra is SecurityBoat's agentic cybersecurity platform. It combines AI-driven
 automation with human expertise across thirteen integrated modules that cover the

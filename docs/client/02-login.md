@@ -7,8 +7,8 @@ organisation's admin or SecurityBoat sends you an invitation.
 
 | If you are... | What happens |
 |---------------|--------------|
-| **New to your organisation** | Your Client Admin or SecurityBoat CSM sends you an invitation email. |
 | **Your organisation is new to SecurityBoat** | Click **Contact sales** on the sign-in screen to submit an onboarding request. |
+| **New to your organisation** | Your Client Admin or SecurityBoat CSM sends you an invitation email. |
 
 Once invited, check your inbox for the invitation email and follow its link to set
 up your account.

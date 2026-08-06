@@ -46,7 +46,7 @@ Select **up to 3 types** that represent the asset. Picking a type dynamically un
 
 #### Section 3 — Scope Details (The Scope Contract)
 
-This section acts as a "contract" between you and the security testers. **Testers will only test targets explicitly listed here.** Any unlisted infrastructure or endpoints are considered out-of-scope.
+This section acts as a "contract" between you and the security Researchers. **Researchers will only test targets explicitly listed here.** Any unlisted infrastructure or endpoints are considered out-of-scope.
 
 Depending on the types selected in Section 2, provide the following details:
 
