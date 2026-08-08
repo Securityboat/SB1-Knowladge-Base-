@@ -1,6 +1,6 @@
 # Researcher & Lead Researcher Guide
 
-> **Version 4.1 — August 2026** · Production guide for live users · en-GB
+> **Version 4.2 — August 2026** · Production guide for live users · en-GB
 
 This guide is for **Researchers** and **Lead Researchers** — the people who perform
 the security testing: joining engagements, hunting vulnerabilities, and authoring

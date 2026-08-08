@@ -1,6 +1,6 @@
 # Client Organisation Guide — Client Admin · Client TPM · Client Viewer
 
-> **Version 4.1 — August 2026** · Production guide for live end users · en-GB
+> **Version 4.2 — August 2026** · Production guide for live end users · en-GB
 > **Applies to the three client roles:** Client Admin, Client TPM, Client Viewer.
 
 This guide is for client users — the people at your organisation who consume

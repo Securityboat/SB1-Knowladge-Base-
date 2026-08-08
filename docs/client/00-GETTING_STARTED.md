@@ -1,6 +1,6 @@
 # Client Organisation — Getting Started
 
-> **Version 4.1 — August 2026** · Production guide for live end users · en-GB
+> **Version 4.2 — August 2026** · Production guide for live end users · en-GB
 > **Applies to client roles:** Client Admin, Client TPM, Client Viewer.
 
 Welcome to **Tri-Netra**. This Getting Started guide helps client users quickly understand their workspace, navigation, role permissions, and key workflows.

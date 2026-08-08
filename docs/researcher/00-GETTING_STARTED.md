@@ -1,6 +1,6 @@
 # Security Researcher — Getting Started
 
-> **Version 4.1 — August 2026** · Production guide for live researchers · en-GB
+> **Version 4.2 — August 2026** · Production guide for live researchers · en-GB
 
 Welcome to the **Security Researcher** guide. As a researcher on Tri-Netra, you participate in penetration testing engagements and bug bounty programs to discover, document, and report security vulnerabilities.
 

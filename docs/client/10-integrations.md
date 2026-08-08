@@ -101,7 +101,7 @@ stop when something looks out of sync.
 
 ![Slack Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integration_Slack.png)
 
-Alongside Jira, SecurityBoat can mirror your **pentest engagement chat** into your
+Alongside Jira, TriNetra can mirror your **pentest engagement chat** into your
 **Slack** workspace, so your team can follow and reply to engagement conversations
 without leaving Slack.
 
@@ -111,7 +111,7 @@ Slack channel** created automatically. Your engagement team members are auto-inv
 to it, and messages relay **both ways** — platform ↔ Slack. Internal notes are never relayed to Slack.
 
 **Who sets it up.** Unlike Jira, the Slack
-**workspace connection is configured by your SecurityBoat team** (CSM / account admin)
+**workspace connection is configured by your TriNetra team** (CSM / account admin)
 on your organisation's behalf — it isn't a self-service control in your client Integrations area. If you'd like Slack mirroring for your engagements, ask your CSM to connect your workspace and to select **Slack** as the communication channel when creating the engagement.
 
 **What you'll see.** When it's active, an engagement's conversation appears in a
