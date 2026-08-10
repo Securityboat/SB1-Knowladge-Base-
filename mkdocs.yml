@@ -95,6 +95,7 @@ nav:
       - Engagements:
           - Overview: client/engagements/overview.md
           - Create Engagement: client/engagements/create-engagement.md
+          - Edit Engagement: client/engagements/edit-engagement.md
           - Engagement Detail:
               - Overview: client/engagements/engagement-details/engagement-detail.md
               - Brief: client/engagements/engagement-details/brief.md
