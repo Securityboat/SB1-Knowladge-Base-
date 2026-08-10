@@ -106,7 +106,6 @@ nav:
               - Reports: client/engagements/engagement-details/reports.md
               - Chat: client/engagements/engagement-details/chat.md
               - Integrations: client/engagements/engagement-details/integrations.md
-          - Edit Engagement: client/engagements/edit-engagement.md
       - My Requests: client/07-my-requests.md
       - Compliance Reports: client/08-compliance-reports.md
       - User Administration: client/09-admin.md
