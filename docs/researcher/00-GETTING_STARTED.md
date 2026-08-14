@@ -49,7 +49,7 @@ For complete step-by-step instructions, see the chapters below:
 10. [Bug Bounty](bug-bounty/overview.md) — Continuous testing programs and VDP participation
 11. [Hacktivity](17-hacktivity.md) — Public feed of disclosed vulnerability reports
 12. [Disclosure Requests](16-disclosure-requests.md) — Submit and track public disclosure requests
-13. [AI Assistant](12-ai-assistant.md) — Data-aware chat scoped to researcher data
+13. [AI Assistant (Ish)](12-ai-assistant.md) — Data-aware chat powered by Ish scoped to researcher data
 14. [Feedback](18-feedback.md) — Submit platform bug reports and feature requests
 15. [Settings](13-settings.md) — Account, bank details, MFA, and notifications
 

@@ -66,3 +66,13 @@ No. Ish cannot execute changes on your behalf. If you ask Ish to fix something, 
 
 **Is our data used to train public LLMs?**
 No. All queries and tenant data analyzed by Ish are kept strictly isolated within your organization's secure tenant boundary.
+
+---
+
+## Role Guides
+
+For detailed role-specific usage instructions, workflows, and query examples:
+
+* [:material-domain: **Client Organisation Guide — AI Assistant (Ish)**](../client/13-ai-assistant.md) — How Client Admins, TPMs, and Viewers query organizational risk, findings, ASM drift, and compliance.
+* [:material-shield-search: **Security Researcher Guide — AI Assistant (Ish)**](../researcher/12-ai-assistant.md) — How Researchers query engagement scope, coverage checklists, finding verification statuses, and payouts.
+

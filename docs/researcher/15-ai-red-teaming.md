@@ -175,4 +175,4 @@ Cross-tenant check results are recorded as Pass or Fail and aggregated on the da
 
 ---
 
-← Previous: [Agentic Pentest](14-agentic-pentest.md) | Next: [AI Assistant →](12-ai-assistant.md)
+← Previous: [Agentic Pentest](14-agentic-pentest.md) | Next: [AI Assistant (Ish) →](12-ai-assistant.md)

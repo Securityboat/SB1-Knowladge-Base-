@@ -27,7 +27,7 @@ your pay.
 | 13 | [Disclosure Requests](16-disclosure-requests.md) | Submit and track public disclosure requests. |
 | 14 | [Agentic Pentest](14-agentic-pentest.md) | Direct and validate AI-driven recon & exploit swarms. |
 | 15 | [AI Red Teaming](15-ai-red-teaming.md) | Assess LLM safety, prompt injection, and cross-tenant isolation. |
-| 16 | [AI Assistant](12-ai-assistant.md) | Ask about your engagements, scope, and findings. |
+| 16 | [AI Assistant (Ish)](12-ai-assistant.md) | Ask Ish about your engagements, scope, and findings. |
 | 17 | [Feedback](18-feedback.md) | Submit platform bug reports and feature requests. |
 | 18 | [Settings](13-settings.md) | Account, bank details, MFA, and notifications. |
 

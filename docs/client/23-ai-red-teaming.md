@@ -271,7 +271,7 @@ remediated through the same workflow as any pentest or ASM finding:
   complete picture of your AI security testing posture.
 - **Feedback** — if a finding lacks sufficient evidence or you believe it
   requires re-evaluation, use the Feedback module to flag it with details.
-- **AI Assistant** — you can ask the AI Assistant questions like "show me all
+- **AI Assistant (Ish)** — you can ask Ish questions like "show me all
   Critical AI Red Teaming findings" or "what is our MITRE ATLAS coverage
   across AI engagements?" and it will query your live data.
 

@@ -80,4 +80,4 @@ categories on/off to tune the noise to your role.
 
 ---
 
-← Previous: [AI Assistant](13-ai-assistant.md) | Back to [Full Client Guide](CLIENT_Guide.md)
+← Previous: [AI Assistant (Ish)](13-ai-assistant.md) | Back to [Full Client Guide](CLIENT_Guide.md)

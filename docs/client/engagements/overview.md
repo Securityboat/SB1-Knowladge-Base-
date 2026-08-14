@@ -2,7 +2,7 @@
 
 ### 1. What an engagement is and how the PTaaS model works
 
-An **engagement** is a scheduled penetration test of one of your assets, run by SecurityBoat's testing team. "PTaaS" (Penetration Testing as a Service) means the whole lifecycle — requesting, scoping, testing, reporting, and retesting — happens on this platform instead of over email and PDFs.
+An **engagement** is a scheduled penetration test of one of your assets, run by SecurityBoat's Security team. "PTaaS" (Penetration Testing as a Service) means the whole lifecycle — requesting, scoping, testing, reporting, and retesting — happens on this platform instead of over email and PDFs.
 
 Every engagement moves through a series of states. You won't see all of them (some are internal to SecurityBoat's team), but understanding the arc helps you know where your test stands:
 

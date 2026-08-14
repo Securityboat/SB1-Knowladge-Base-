@@ -25,7 +25,7 @@ from start to verified fix.
 - **Attack Surface (ASM)** — continuous monitoring of your exposed surface *(if subscribed)*.
 - **Bug Bounty** — crowd-sourced testing programs *(if subscribed)*.
 - **Integrations** — sync findings to Jira *(Client Admin only)*.
-- **AI Assistant** — plain-language questions about your security data.
+- **AI Assistant (Ish)** — plain-language questions about your security data powered by Ish.
 - **Settings** — your account, MFA, and notification preferences.
 
 > Some modules are **platform-gated** — they appear only if your organisation
@@ -65,5 +65,5 @@ For complete step-by-step documentation on each module, see the chapters below:
 10. [Integrations — Jira](10-integrations.md) *(Client Admin only)*
 11. [Attack Surface (ASM)](11-asm.md)
 12. [Bug Bounty](bug-bounty/overview.md)
-13. [AI Assistant](13-ai-assistant.md)
+13. [AI Assistant (Ish)](13-ai-assistant.md)
 14. [Settings](14-settings.md)

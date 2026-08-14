@@ -133,7 +133,7 @@ nav:
       - Trust Center: client/22-trust-center.md
       - Hacktivity: client/17-hacktivity.md
       - Disclosure Requests: client/18-disclosure-requests.md
-      - AI Assistant: client/13-ai-assistant.md
+      - AI Assistant (Ish): client/13-ai-assistant.md
       - Feedback: client/16-feedback.md
       - Settings: client/14-settings.md
       - Full Client Guide Index: client/CLIENT_Guide.md
@@ -177,7 +177,7 @@ nav:
       - AI Red Teaming: researcher/15-ai-red-teaming.md
       - Hacktivity: researcher/17-hacktivity.md
       - Disclosure Requests: researcher/16-disclosure-requests.md
-      - AI Assistant: researcher/12-ai-assistant.md
+      - AI Assistant (Ish): researcher/12-ai-assistant.md
       - Feedback: researcher/18-feedback.md
       - Settings: researcher/13-settings.md
       - Full Researcher Guide Index: researcher/RESEARCHER_Guide.md

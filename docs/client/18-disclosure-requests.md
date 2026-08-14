@@ -69,4 +69,4 @@ Click **Reject** and provide a reason. Common rejection scenarios:
 
 ---
 
-← Previous: [Hacktivity](17-hacktivity.md) | Next: [AI Assistant →](13-ai-assistant.md)
+← Previous: [Hacktivity](17-hacktivity.md) | Next: [AI Assistant (Ish) →](13-ai-assistant.md)

@@ -1,60 +1,102 @@
-## AI Assistant
+# AI Assistant (Ish)
 
-### 1. What it is
+> **Client Organisation Guide** · Client Admin · Client TPM · Client Viewer
 
-The **AI Assistant** is a data-aware chat built into the platform. Unlike a
-general chatbot, it can "see" the SecurityBoat data **you are allowed to see** and
-answer questions grounded in it — your findings, engagements, assets, ASM posture,
-and the page you're currently on.
-
-Two important properties:
-
-- **Permission-scoped.** The assistant only reasons over data your role and org
-  can access. It cannot reveal another tenant's data, and it respects the same
-  visibility rules as the rest of the platform (e.g. it won't surface a finding
-  that isn't yet verified for you).
-- **Page-aware.** Many screens report their headline metrics to the assistant, so
-  you can ask "what does this number mean?" on the page you're viewing and get a
-  grounded answer.
-
-### 2. Availability
-
-Available to all client roles (Client Admin, Client TPM, Client Viewer).
-
-### Navigation
-
-Click **AI Assistant** in the main sidebar menu.
+The **AI Assistant** (powered by **Ish**, TriNetra's agentic AI assistant layer) is a data-aware, conversational reasoning assistant built directly into the platform. Unlike generic chatbots, Ish "sees" only the live TriNetra security data **your role and organisation are permitted to access**, answering high-level questions grounded in your live posture.
 
 ---
 
-### 3. Using it
+## 1. What is Ish?
+
+In modern security operations, answering questions like *"Are we more exposed than we were last month?"* or *"Which critical findings are blocking our SOC 2 audit?"* traditionally requires exporting spreadsheets across multiple dashboards.
+
+Ish unifies this by reading across your organization's active modules — Attack Surface Management (ASM), Digital Risk Protection (DRP), Bug Bounty, PTaaS engagements, Continuous Testing, AI Red Teaming, and Compliance.
+
+```mermaid
+graph TD
+    A[Your Question] --> B(Ish AI Layer)
+    C[Active Page Context] --> B
+    D[Live Tenant Data] --> B
+    E[Product & Security Knowledge] --> B
+    B --> F[Grounded Answer + Guided Screen Links]
+```
+
+### Core Architecture & Guarantees
+
+* **Three-Layer Grounding Engine:** Ish grounds every response in:
+  1. **Your Tenant Data:** Live verified findings, assets, scan telemetry, and engagement reports.
+  2. **Product Knowledge:** Security standards (CVSS v4.0, OWASP Top 10, MITRE ATLAS, NIST AI RMF) and platform workflows.
+  3. **Page Context:** Awareness of the active screen and filters you are currently viewing.
+* **Strict Tenant & Role Scoping:** Ish strictly enforces role-based access controls (RBAC). It only accesses data permitted to your role (Client Admin, Client TPM, or Client Viewer) and never reveals cross-tenant data or unverified drafts.
+* **Non-Actionable by Design:** To prevent unintended or unauthorized changes, Ish never runs destructive commands, modifies code, or closes tickets directly. It explains remediation steps and directs you to the exact screen where your team can review and approve changes.
+* **Model Transparency:** Answers display a **Model Badge** and **Token Count** directly in the interface, providing an auditable record of the model that resolved your query.
+* **Privacy & Isolation:** Your organization's queries and security telemetry are never used to train public LLM models.
+
+---
+
+## 2. Access & Interaction Modes
+
+Ish is accessible in two ways across the platform:
+
+1. **Dedicated AI Assistant Portal:** Click **AI Assistant** in the main sidebar menu to access the full-screen conversational interface with complete history and multi-turn deep dives.
+2. **Floating Dashboard Widget:** Click the persistent **Ask Ish** widget in the lower corner of any product screen. The widget automatically inherits the context of the page you are on.
 
 ![AI Assistant — a chat interface with a message box and conversation history.](../images/client_ai_chat.png)
 
-- **Ask in plain language.** Type a question and send. Examples:
-  - "How many critical findings are still open?"
-  - "Summarise the findings from my last engagement."
-  - "What is Coverage SLA on my attack-surface dashboard?"
-  - "Which of my assets have the most findings?"
-- **Conversation history** is kept in the panel so you can follow up ("and of
-  those, which are web apps?").
-- **Grounded answers.** Responses are based on your live, permission-scoped data —
-  not guesses.
+### Role Availability
 
-### Best practices
-
-- **Be specific** — name the engagement, asset, or severity you care about.
-- **Use it as a starting point**, then click through to the underlying module
-  (Findings, ASM, Engagements) to act on what it surfaces.
-- **Don't paste secrets** into the chat — treat it like any shared work tool.
-
-### Troubleshooting
-
-| Symptom | Cause / Fix |
-|---------|-------------|
-| **"I can't find that data"** | The item may be outside your permission scope (e.g. an unverified finding), or doesn't exist for your org. |
-| **Answer seems out of date** | Ask it to re-check, or open the module directly — the module list is always the live source of truth. |
+Available to all client roles:
+* **Client Admin** — Full query access across all subscribed modules, user admin context, and integrations.
+* **Client TPM** — Full query access across assets, findings, engagements, ASM, DRP, and compliance data.
+* **Client Viewer** — Read-only query access scoped to published reports and verified findings.
 
 ---
 
-← Previous: [Disclosure Requests](18-disclosure-requests.md) | Next: [Settings →](14-settings.md)
+## 3. Example Queries by Module
+
+Ish can synthesize cross-module information and answer domain-specific questions in plain language:
+
+### Findings & Remediation
+* *"How many critical and high severity findings are currently open across our assets?"*
+* *"Summarise the remediation guidance for the SQL injection finding on our payment gateway."*
+* *"Which of our verified findings are past their remediation SLA?"*
+
+### Attack Surface (ASM) & Digital Risk Protection (DRP)
+* *"What is our current Coverage SLA on the ASM dashboard?"*
+* *"Are there any active phishing clones or typosquatted domains targeting our brand right now?"*
+* *"Which external IP addresses have newly opened ports since the last scan?"*
+
+### Engagements & Pentests (PTaaS)
+* *"Summarise the key findings from our most recent mobile app penetration test."*
+* *"What is the testing status of the Q3 Cloud Security engagement?"*
+
+### Continuous Testing & AI Red Teaming
+* *"How many exploit-confirmed findings were identified in this week's CI/CD pipeline runs?"*
+* *"What is our current MITRE ATLAS tactic coverage across our LLM applications?"*
+
+### Compliance & Trust Center
+* *"Which compliance reports are approved and ready for regulator download?"*
+* *"How many external access requests are currently pending review in the Trust Center?"*
+
+---
+
+## 4. Best Practices
+
+- **Be specific:** Include asset names, engagement titles, severity levels, or timeframes for more precise answers.
+- **Use page-level context:** Open the floating widget while viewing a finding or target to ask *"What does this drift score indicate?"*
+- **Click through to take action:** Use Ish's responses as an initial triage step, then follow the provided screen links to transition findings or approve requests.
+- **Maintain confidentiality:** Do not paste production API keys, master passwords, or sensitive client personal data into the chat.
+
+---
+
+## 5. Troubleshooting
+
+| Symptom | Probable Cause | Recommended Fix |
+|---|---|---|
+| **"I cannot find that data"** | The item may be outside your role's permission scope (e.g. an unverified finding) or not present in your tenant. | Confirm your role permissions or check if the finding has completed TPM triage. |
+| **Response seems outdated** | Data was updated in another tab after the conversation started. | Ask Ish to refresh its query context, or navigate directly to the respective module list. |
+| **Module data missing** | Your organization may not be subscribed to that platform-gated module. | Check your subscription with your Customer Success Manager (CSM). |
+
+---
+
+← Previous: [Disclosure Requests](18-disclosure-requests.md) | Next: [Feedback →](16-feedback.md)

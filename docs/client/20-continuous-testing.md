@@ -210,7 +210,7 @@ Continuous Testing is integrated into the broader TriNetra security ecosystem:
 - **Compliance Reports** — Continuous Testing findings are included in your
   compliance reporting alongside findings from other testing sources, with the
   added weight that every included finding is exploit-proven.
-- **AI Assistant** — you can ask the AI Assistant questions such as "how many
+- **AI Assistant (Ish)** — you can ask Ish questions such as "how many
   confirmed findings do we have this week?" or "show me the exploit attempt log
   for the last 7 days" and it will query your live Continuous Testing data.
 

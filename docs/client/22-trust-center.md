@@ -259,4 +259,4 @@ security ecosystem:
 
 ---
 
-← Previous: [Digital Risk Protection (DRP)](21-drp.md) | Next: [AI Assistant →](13-ai-assistant.md)
+← Previous: [Digital Risk Protection (DRP)](21-drp.md) | Next: [AI Assistant (Ish) →](13-ai-assistant.md)

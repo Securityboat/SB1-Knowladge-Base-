@@ -35,7 +35,7 @@ testing team on an engagement (a slightly richer dashboard and team view).
 | **Payouts** | Your earnings and payout history (your scope only). | View |
 | **Identity Verification** | Complete background/identity verification to unlock work. | Complete |
 | **Bug Bounty** | Programs you participate in — submit and track reports. | View / submit |
-| **AI Assistant** | Ask questions about your engagements and findings. | Use |
+| **AI Assistant (Ish)** | Ask questions about your engagements and findings powered by Ish. | Use |
 | **Notifications** | Your alerts and updates. | View |
 | **Settings** | Your account, MFA, and notification preferences. | Manage own |
 

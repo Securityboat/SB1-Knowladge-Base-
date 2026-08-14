@@ -206,7 +206,7 @@ DRP is not an island — it feeds into the broader TriNetra security ecosystem:
   typosquatted domains and phishing hosts against your known ASM inventory,
   flagging cases where an external threat overlaps with an owned-but-forgotten
   asset.
-- **AI Assistant** — you can ask the AI Assistant questions like "show me all
+- **AI Assistant (Ish)** — you can ask Ish questions like "show me all
   Critical DRP alerts from the last 7 days" or "what is the status of the
   takedown for phishing-clone-example.com?" and it will query your live DRP data.
 - **Pentest engagements** — a pattern of DRP alerts (e.g., repeated credential

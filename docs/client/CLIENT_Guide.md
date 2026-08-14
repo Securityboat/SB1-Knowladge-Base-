@@ -29,7 +29,7 @@ throughout (e.g. "Client Admin only").
 | 15 | [AI Red Teaming](23-ai-red-teaming.md) | Adversarial testing for LLM-powered applications *(if subscribed)*. |
 | 16 | [Digital Risk Protection (DRP)](21-drp.md) | Phishing detection, credential leaks, brand impersonation monitoring *(if subscribed)*. |
 | 17 | [Trust Center](22-trust-center.md) | Governed access to security and compliance documentation *(if subscribed)*. |
-| 18 | [AI Assistant](13-ai-assistant.md) | Ask about your security data in plain language. |
+| 18 | [AI Assistant (Ish)](13-ai-assistant.md) | Ask Ish about your security posture and data in plain language. |
 | 19 | [Feedback](16-feedback.md) | Report bugs or request features directly from the platform. |
 | 20 | [Settings](14-settings.md) | Account, MFA, and notifications. |
 

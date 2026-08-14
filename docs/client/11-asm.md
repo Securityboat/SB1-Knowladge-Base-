@@ -76,7 +76,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
   surface, logging scores, and how they changed since the last scan.
 - **Scan Activity** — a 14-day scan histogram.
 
-> The AI Assistant is "aware" of this dashboard — you can ask it things like
+> The AI Assistant (Ish) is "aware" of this dashboard — you can ask it things like
 > "what is Coverage SLA?" or "why is my threat score high?" and it will explain
 > using your live numbers.
 

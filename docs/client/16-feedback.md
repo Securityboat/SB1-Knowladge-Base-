@@ -118,4 +118,4 @@ A good bug report saves the engineering team hours of investigation. Include:
 
 ---
 
-← Previous: [AI Assistant](13-ai-assistant.md) | Back to [Full Client Guide](CLIENT_Guide.md)
+← Previous: [AI Assistant (Ish)](13-ai-assistant.md) | Back to [Full Client Guide](CLIENT_Guide.md)

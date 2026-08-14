@@ -115,4 +115,4 @@ The poor report gives the engineering team nothing to work with. Always include 
 
 ---
 
-← Previous: [AI Assistant](12-ai-assistant.md) | Next: [Settings →](13-settings.md)
+← Previous: [AI Assistant (Ish)](12-ai-assistant.md) | Next: [Settings →](13-settings.md)

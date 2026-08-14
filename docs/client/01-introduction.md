@@ -34,7 +34,7 @@ Throughout this guide, actions restricted to a specific role are labelled (e.g.
 | **Attack Surface (ASM)** | Continuous monitoring of your exposed surface *(if subscribed)*. |
 | **Bug Bounty** | Crowd-sourced testing programs *(if subscribed)*. |
 | **Integrations** | Sync findings to Jira *(Client Admin)*. |
-| **AI Assistant** | Ask questions about your security data in plain language. |
+| **AI Assistant (Ish)** | Ask questions about your security data in plain language powered by Ish. |
 | **Settings** | Your account, MFA, and notifications. |
 
 > Some modules (ASM, Bug Bounty, Compliance) are **platform-gated** — they appear
