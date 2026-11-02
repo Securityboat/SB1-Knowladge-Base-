@@ -5,16 +5,16 @@
 **Identity verification** confirms you are a real, named person before SecurityBoat
 entrusts you with sensitive work and payments. It is an **admin-initiated** check:
 a SecurityBoat administrator requests it against your researcher profile, you
-complete a short document + face-match flow on your phone, and — once it passes —
+complete a short document + face match flow on your phone, and once it passes
 your profile shows a **Verified** status to both you and SecurityBoat staff.
 
 Verification is what **unlocks platform capabilities such as payouts and premium
-work opportunities**. You cannot start it yourself out of the blue; it becomes
+work opportunities**. You cannot start it yourself,it becomes
 available after an administrator requests it.
 
-**Data privacy & security:** Verification is powered by SecurityBoat's identity
+**Data privacy & security:** Verification is powered by third party identity
 provider, which performs the actual **ID-document check** and **face match**.
-SecurityBoat never sees or stores your raw documents — it receives only the
+SecurityBoat never sees or stores your raw documents it receives only the
 provider's structured result (document type, name, date of birth, a masked document
 number, face-match score, and the decision).
 
@@ -55,8 +55,8 @@ sequenceDiagram
 As soon as an administrator requests your verification, two things happen:
 
 1. You receive a **notification** (bell icon + email).
-2. An **Identity verification** prompt appears in two places — on your **Dashboard**
-   and on the dedicated **Identity Verification** page — each with a **Verification
+2. An **Identity verification** prompt appears in two places on your **Dashboard**
+   and on the dedicated **Identity Verification** page each with a **Verification
    requested** badge and a **Verify Identity** button.
 
 **On your Dashboard:**
@@ -73,7 +73,7 @@ As soon as an administrator requests your verification, two things happen:
 ### 4. Starting the check — the verification popup
 
 Click **Verify Identity** (on either surface). SecurityBoat creates a secure
-verification session and opens a **popup** titled *"Verification for My Application —
+verification session and opens a **popup** titled *"Verification for My Application
 Complete these steps to verify your identity."* It lists the required steps and
 displays a **QR code**; the badge status switches to **In progress**.
 
