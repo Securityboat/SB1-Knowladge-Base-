@@ -24,8 +24,14 @@ When sending a message, use the **Visible to** dropdown to control who sees it:
 
 | Visibility | Who can read it |
 |------------|----------------|
-| **Everyone** | The full engagement team — SecurityBoat testers, TPM, and your organization's members. Use this for general questions, scope clarifications, and status updates. |
-| **Client only** | Only members of your organization on this engagement thread. Use this for internal notes or discussions you don't need the testing team to see. |
+| **Everyone** | Everyone in this chat — the testers, your TPM and SecurityBoat staff, and your organisation's members. Use this for general questions, scope clarifications, and status updates. |
+| **Client only** | Your organisation's members plus SecurityBoat staff (SB Admin, CSM, TPM). The testers (researchers) cannot see it. Use this for discussions with SecurityBoat that the testers don't need to see. |
+
+Each message shows a badge with its audience. You always see your own messages.
+
+#### Mentioning people
+
+Type **@** in the composer to mention someone on the engagement. Only people who can read the message (based on the audience you chose) can be mentioned, and they receive a notification.
 
 ---
 
@@ -63,14 +69,15 @@ If no messages have been sent yet, the tab shows "No messages yet. Start the con
 - **Use Chat instead of email** — messages stay attached to the engagement record and are visible to anyone on the team who needs context later.
 - **Provide credentials in Chat** — test accounts, VPN access, or API keys shared here are visible to the testing team immediately.
 - **Be specific** — instead of "can you check something?", say "the login page at /auth returns a 500 error with test account user@test.com."
-- **Use Client-only visibility for internal notes** — if you're discussing remediation priorities internally, keep it visible only to your organization.
+- **Use Client only for discussions with SecurityBoat** that the testers don't need to see. Remember that SecurityBoat staff can read Client only messages.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
 | **Can't send messages** | You're a **Client Viewer** (read-only). Ask a Client Admin or TPM in your organization to send on your behalf. |
-| **Message I sent isn't visible to the testing team** | You may have selected "Client only" visibility. Delete and resend with "Everyone" if it should be visible to SecurityBoat. |
+| **Message I sent isn't visible to the testers** | You selected **Client only**. Resend with **Everyone** if the testers need to see it. |
+| **I can't @mention someone** | They can't read a message with the audience you selected. |
 | **Chat shows "0 of 0 messages"** | No messages have been sent yet. This is normal for new engagements. |
 | **Formatting isn't applying** | Switch to **Preview** tab to check how your message will render, or toggle to Rich text mode for WYSIWYG formatting. |
 

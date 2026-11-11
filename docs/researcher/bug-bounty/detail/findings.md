@@ -1,82 +1,94 @@
 # Findings
 
-The **Findings** tab contains your history of submissions to this program. It is also where you launch the **Submit Finding** drawer to report new vulnerabilities.
+The **Findings** tab lists your own submissions to this program. It is also where you open the **Submit finding** drawer.
 
 ---
 
 ![Findings Tab](../../../images/res_bb_detail_findings.png)
 
-## Your Submissions Tracker
+## Your submissions
 
-The findings table displays a list of your submissions:
+Four tiles summarise your reports: **Total findings**, **Awaiting triage**, **In remediation**, and **Resolved**. Use the **All Findings** and **Triage (n)** sub-tabs to switch between everything and reports still awaiting triage.
 
 | Column | Description |
 | :--- | :--- |
-| **Finding ID** | Unique identifier (e.g., `BBP-ACM-02`). |
-| **Title** | Summary of the vulnerability. |
-| **Severity** | The calculated severity rating (Critical, High, Medium, Low, Informational). |
-| **State** | The current lifecycle status (Draft, New, Verified, Resolved, Duplicate, Discarded). |
-| **Submitted** | The timestamp of submission. |
+| **Finding** | Title and finding ID. |
+| **Severity** | Critical, High, Medium, Low, or Informational. |
+| **State** | Current lifecycle state, plus a closure label (e.g. Duplicate, Not Applicable) when one applies. |
+| **Researcher** | You. |
+| **Jira** | The client's linked Jira issue, if any. |
+| **Submitted** | Submission date. |
+| **Actions** | **Request Publish** for disclosure-eligible findings, or the disclosure status. |
 
-Click on any finding in the list to open its detail page and review the submission writeup, view triager comments, or update draft fields.
+Click a row to open the finding's detail page.
 
 ---
 
-## How to Submit a Finding
+## How to submit a finding
 
-To report a vulnerability, click the **Submit finding** button on the top right of the Findings tab. A drawer will open, prompting you to complete the structured finding form across seven sections:
+The **Submit finding** button appears only while the program is **Active**.
 
-### 1. Title & Classification
+1. Click **Submit finding**. A drawer opens — *"Report a vulnerability to (program name)"*.
+2. Fill in the form (the same form used for pentests; see [Findings → Submitting a finding](../../07-findings.md#4-submitting-a-finding)). Required fields include the title, vulnerability type, VRT category, CWE, all 11 CVSS v4.0 metrics, the writeup sections, CIA impact, OWASP likelihood and impact, the endpoint (for web, API, and mobile assets), and at least one reference URL.
+3. Click **Create finding**. The finding is saved as a **Draft** — the footer reads *"Saved as Draft. Promote to NEW for triage from the detail page."*
+4. Open the draft and use **State actions → Submit report for triage** to send it.
 
-| Form Field | Description |
+!!! warning "Submitted reports are locked"
+    You can edit a Bug Bounty report only while it is a **Draft**. Once you submit it for triage, you can no longer change its content. Add clarifications as comments instead.
+
+---
+
+## The report lifecycle
+
+```mermaid
+flowchart LR
+    DR([Draft]) -->|you submit| N([New])
+    N --> T([Triaged])
+    T -->|SB-Managed only| P([Pending Client Validation])
+    P --> V([Verified])
+    T --> V
+    V --> F([Fix in Progress])
+    F --> R([Retesting])
+    R --> D([Resolved])
+    R -->|retest failed| F
+```
+
+A report can also be closed from any open state as **Duplicate** or **Not Applicable**, and may end as **Informative** or **Spam**.
+
+| State | Meaning for you |
 | :--- | :--- |
-| **Title** | Enter a concise summary of the bug (e.g., *Reflected Cross-Site Scripting on Search Page*). |
-| **Asset Type** | Select the target type (Web Application, API, Mobile, Cloud, Network, etc.). |
-| **Vulnerability Type (OWASP)** | Select the relevant OWASP category. |
-| **VRT Category** | Search and select the Bugcrowd Vulnerability Rating Taxonomy category. This automatically sets the **CWE** ID. |
-| **CWE / CVE** | Optional standard identifiers. |
-| **Environment Details** | Specify the testing OS, browser, or environment context. |
+| **Draft** | Only you can see it. Edit freely, then submit. |
+| **New** | Submitted and awaiting initial review. |
+| **Triaged** | Initial review done; detailed validation in progress. |
+| **Pending Client Validation** | *SB-Managed programs:* referred to the client to confirm. |
+| **Verified** | Confirmed as a legitimate, reproducible issue. Rewards are based on this. |
+| **Fix in Progress** | The client is fixing it. |
+| **Retesting** | The fix is being verified by the triage team. |
+| **Resolved** | Fixed and retested. You can now request disclosure. |
+| **Duplicate** / **Not Applicable** / **Informative** / **Spam** | Closed without a reward. Check the comments for the reason. |
 
-### 2. Severity & CVSS v4.0 Calculator
+Triage is done by SecurityBoat on **SB-Managed** programs and by the client's team on **Self-Managed** programs. If the triager asks for more information, use **Provide requested information** in the State actions panel.
 
-The platform uses the CVSS v4.0 standard to determine finding severity. You must select the metrics for all 11 fields:
+On a **Resolved** report, comments are locked for researchers.
 
-| CVSS Metric Group | Metrics to Configure |
-| :--- | :--- |
-| **Base Metrics** | Attack Vector (AV), Attack Complexity (AC), Attack Requirements (AT), Privileges Required (PR), User Interaction (UI). |
-| **System Impact** | Vulnerability Confidentiality (VC), Vulnerability Integrity (VI), Vulnerability Availability (VA). |
-| **Subsequent System Impact** | Subsequent Confidentiality (SC), Subsequent Integrity (SI), Subsequent Availability (SA). |
+---
 
-The severity level (Critical, High, Medium, Low, Informational) is automatically derived from the calculated score and locked.
+## Requesting disclosure
 
-### 3. Writeup (Markdown Editor)
+When your finding is **Resolved** (or closed as **Not Applicable**), a **Request Publish** button appears in the Actions column.
 
-| Writeup Section | Content Requirements |
-| :--- | :--- |
-| **Background** | General context and definition of the vulnerability class. |
-| **Description** | Detailed explanation of the flaw in the target application. |
-| **Steps to Reproduce** | Numbered, step-by-step reproduction instructions. |
-| **Impact** | Clear business and technical risk framed for the client. |
-| **Remediation** | Recommended patching or configuration guidance. |
-| **Attachments** | Drag and drop images, videos, or PoC files directly into the editor. |
+```mermaid
+flowchart LR
+    A[Request Publish] --> B([Requested])
+    B -->|TPM, then client approves| C([Published])
+    B -->|rejected| A
+```
 
-### 4. CIA Triad Impact & OWASP Risk
+- **Requested** — your request is under review: first by the TPM, then by the client.
+- **Published** — the disclosure is live on Hacktivity. Click it to open the public page.
+- If a request is rejected, you can request again.
 
-| Metric | Purpose |
-| :--- | :--- |
-| **CIA Impact** | Set impact (**None**, **Low**, **High**) and write a brief description for Confidentiality, Integrity, and Availability. |
-| **OWASP Risk Rating** | Enter Likelihood (0-9) and Impact (0-9) to position this finding on the executive report's Risk Heat Matrix. |
-
-### 5. Technical & Endpoint Details
-
-| Endpoint Field | Description |
-| :--- | :--- |
-| **HTTP Method** | GET, POST, PUT, DELETE, etc. |
-| **Endpoint URL / Path** | The exact path containing the vulnerability. |
-| **Affected Parameter** | The vulnerable query or post parameter. |
-| **Raw Request / Response** | Paste the HTTP request and response logs to allow triagers to verify your PoC immediately. |
-
-Click **Save as Draft** to refine the report later, or **Submit Finding** to send it directly to the SecurityBoat TPM team for triage.
+You are notified when your request is reviewed.
 
 ---
 

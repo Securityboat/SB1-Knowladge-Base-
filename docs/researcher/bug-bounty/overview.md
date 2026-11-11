@@ -1,93 +1,102 @@
 # Bug Bounty & VDP Overview
 
-Welcome to the **Bug Bounty & VDP** module on the Tri-Netra platform. This guide helps you navigate, participate in, and submit vulnerability reports to continuous, rewarded security programs.
+Welcome to the **Bug Bounty & VDP** module on the Tri-Netra platform. This guide helps you find programs, test within scope, and submit vulnerability reports.
 
-Bug Bounty testing on Tri-Netra is self-directed and continuous, complementing scheduled, team-based pentest engagements. As a researcher, you can browse programs, review their policies, test targets within scope, submit findings, and earn payouts or reputation points.
+Bug Bounty testing is self-directed and continuous, complementing scheduled, team-based pentest engagements. You browse programs, review their policies, test in-scope targets, submit reports, and earn rewards or reputation points.
+
+> **Access:** the **BB Program**, **My Credentials**, and **Hacktivity** entries appear in your sidebar when Bug Bounty is enabled for your account.
 
 ---
 
-## Testing Workflow
-
-The diagram below maps the typical lifecycle of a bug bounty or VDP submission on Tri-Netra:
+## Testing workflow
 
 ```mermaid
-graph TD
-    A[Browse Programs] --> B{Program Visibility?}
-    B -->|Public| C[Start Testing Directly]
-    B -->|Private| D[Awaiting Invitation]
-    D -->|Accept Invite| C
-    C --> E[Discover Vulnerability]
-    E --> F[Submit Finding via Drawer]
-    F --> G[TPM Triage & Verification]
-    G -->|Accepted/Verified| H{Program Type?}
-    H -->|Bug Bounty| I[Monetary Payout + Reputation Points]
-    H -->|VDP| J[Swag/Hall of Fame + Reputation Points]
+flowchart TD
+    A[Browse BB Program list] --> B{Program visibility}
+    B -->|Public| C[Read scope and rules]
+    B -->|Private| D[Accept the invitation on Invites]
+    D --> C
+    C --> E[Optional: request test credentials]
+    E --> F[Test in-scope assets]
+    C --> F
+    F --> G[Submit finding: saved as Draft]
+    G --> H[Submit report for triage]
+    H --> I[Triage by SecurityBoat or the client team]
+    I -->|Verified| J{Program type}
+    J -->|Bug Bounty| K[Cash reward + reputation points]
+    J -->|VDP| L[Swag / Hall of Fame + reputation points]
 ```
 
 ---
 
-## Program Types
+## Program types
 
-Tri-Netra supports two types of crowdsourced security testing programs:
+### Bug Bounty
+- **Incentives:** severity-tiered cash rewards (P1–P5) plus reputation points.
 
-### 1. Bug Bounty
-*   **Target Scope**: Critical enterprise production and staging environments.
-*   **Incentives**: Tiered monetary payouts based on finding severity (P1–P5) plus reputation points.
-*   **Verification**: Managed by SecurityBoat TPMs or client security leads.
+### VDP (Vulnerability Disclosure Program)
+- **Incentives:** recognition — swag, Hall of Fame placement, and reputation points. No cash reward.
 
-### 2. VDP (Vulnerability Disclosure Program)
-*   **Target Scope**: Responsible disclosure targets for safe harbor testing.
-*   **Incentives**: Recognition-based rewards including swag, Hall of Fame placements, certificates of appreciation, and reputation points.
-*   **Verification**: Self-managed by clients or SecurityBoat triage teams.
+### Who triages: the management badge
 
----
+Every program shows a **management badge**. Hover over it to read what it means.
 
-## Program Visibility & Access
-
-Programs are categorized by visibility, which determines how you can access them:
-
-*   **Public Programs**: 
-    *   **Access**: Open to all registered and identity-verified researchers on the Tri-Netra platform.
-    *   **Action**: You can begin testing in-scope assets immediately without requiring an invitation.
-*   **Private Programs**: 
-    *   **Access**: Invite-only programs based on reputation scores or custom skills.
-    *   **Action**: Invitations appear under your **Invites** sidebar menu. Accepting a private invite grants you access to the program details and target scope.
+| Badge | Who reviews your reports |
+|-------|--------------------------|
+| **SB-Managed** | SecurityBoat's team reviews and manages the findings. |
+| **Self-Managed** | The client's own team reviews and manages the findings. SecurityBoat is not involved in triage. |
 
 ---
 
-## Program Statuses
+## Program visibility and access
 
-Each program display card lists its current status, which dictates the activities you can perform:
+- **Public programs:** open to all eligible researchers. You can start testing in-scope assets without an invitation.
+- **Private programs:** invite-only. Invitations appear on your **Invites** page with the status **Pending**. Once you accept, the program opens for you.
 
-*   **Active**: Testing is live. You can review the scope, perform testing, and submit findings via the Findings drawer.
-*   **Inactive**: The program is temporarily paused. You can read policy details and view past findings, but target testing is paused, and finding submission is disabled.
-*   **Closed**: The program has officially ended. All details are read-only, and no further submissions are accepted.
+If you are removed from a private program, you lose access to the program and can no longer submit findings to it.
 
 ---
 
-## Browsing Programs
+## Program states
 
-To view the programs list, click **BB Program** in the main sidebar.
+| State | What you can do |
+|-------|-----------------|
+| **Active** | Testing is live. Review the scope, test, and submit findings. |
+| **Scheduled** | Approved and going live on its start date. Submissions open when it becomes Active. |
+| **Deactivated** | Paused. You can read the program and your past findings, but new findings are not accepted. |
+| **Ended** | The program has finished. Read-only. |
 
-![Bug Bounty Programs List](../../images/res_bb_programs_01.png)
+Only **Active** programs accept new findings.
 
-The listing page displays:
+---
 
-*   **Summary Metrics**: Quick counts of all programs, active programs, and total findings you have submitted.
-*   **Program Cards**: Each card displays the organization avatar, program name, reference code, visibility (Public/Private), program type (Bug Bounty/VDP), active findings count, and status badge.
-*   **Search & Filters**: Search by program name or filter by type (Bug Bounty, VDP) and visibility.
+## Browsing programs
+
+Click **BB Program** in the main sidebar.
+
+![Bug Bounty Programs list](../../images/res_bb_programs_01.png)
+
+| Element | What it shows |
+|---------|---------------|
+| **KPI tiles** | Total programs, Active, and Awaiting review |
+| **Type tabs** | **All Programs**, **VDP**, **Bug Bounty** |
+| **State filter** | **All States** plus one pill per state |
+| **Search** | *Search by program name…* |
+| **Table** | Program, Client, Type, Management, Visibility, Status, Findings |
+
+Your filters and page are kept in the page address, so **Back** returns you to the same view.
 
 !!! note
-    Click on any active program card to open the **Program Detail** view and access the individual testing tabs.
+    Click a program to open its **Program Detail** view and its tabs.
 
 ---
 
-## Researcher Best Practices
+## Best practices
 
-*   **Always Verify Verification**: Ensure your profile status in the **Identity Verification** tab is green or in progress. Verified researchers receive priority and are eligible for monetary payouts.
-*   **Review Scope Carefully**: Double-check the **Scope** tab before testing. Out-of-scope targets will not receive rewards or reputation points.
-*   **Check Hacktivity & Leaderboard**: Inspect the **Hacktivity** feed and the program's **Leaderboard** to understand the common vulnerability classes found on the target and avoid duplicate submissions.
-*   **Monitor Program Updates**: Read the **Updates** tab regularly to stay informed about scope shifts or reward boosts.
+- **Complete Identity Verification** early. It is required for paid work and payouts.
+- **Read the Scope tab carefully**, including the **In scope** and **Out of scope** notes. Out-of-scope reports earn no reward or points.
+- **Check Hacktivity and the program Leaderboard** to avoid duplicates.
+- **Read the Updates tab** for scope changes or reward announcements.
 
 ---
 
@@ -95,9 +104,9 @@ The listing page displays:
 
 | Symptom | Cause / Solution |
 | :--- | :--- |
-| **Cannot see a specific program** | The program may be Private and you have not been invited, or the invite has expired. Check your **Invites** page. |
-| **Finding submission button is disabled** | The program is currently **Inactive** or **Closed**. Submissions are only permitted on **Active** programs. |
-| **No monetary rewards shown for accepted findings** | The program is a **VDP** (Vulnerability Disclosure Program). Rewards are limited to swag, reputation points, and Hall of Fame recognition. |
+| **Cannot see a specific program** | It is Private and you have not been invited, your invitation is still Pending, or you were removed. Check **Invites**. |
+| **No Submit finding button** | The program is not **Active** (Scheduled, Deactivated, or Ended). |
+| **No monetary reward shown** | The program is a **VDP**. Rewards are swag, points, and Hall of Fame. |
 
 ---
 

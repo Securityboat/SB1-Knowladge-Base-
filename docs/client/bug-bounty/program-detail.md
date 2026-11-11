@@ -1,163 +1,157 @@
 # Program Detail
 
-The program detail page is your command centre for a Bug Bounty program. It gives you a complete picture of the program's health, configuration, findings, financials, and team — all in one place.
+The program detail page is your command centre for a Bug Bounty or VDP program. It shows the program's lifecycle, configuration, findings, rewards, and team in one place.
 
-To open a program, go to **BB Program** in the sidebar and click any program name in the list.
+To open a program, go to **BB Program** in the sidebar and click any program in the list. You can also click **Open** next to an approved request under [My Program Requests](my-program-requests.md).
 
 ---
 
-## Page Header
+## Page header
 
-At the top of every program detail page you will find a header bar that identifies the program at a glance:
+![Program detail Overview tab showing the program header with badges, lifecycle stepper, KPI tiles, program details, and the management model card.](../../images/client_bb_detail_overview.png)
 
-- **Program code** — a short reference code (e.g., `BB-ACM-01`) displayed in a pill badge on the top-left.
-- **Status badge** — **Active**, **Inactive**, or **Closed**.
-- **Visibility badge** — **Public** (blue) or **Private** (purple).
-- **Type label** — VDP or Bug Bounty.
-- **Program name** — the full program name as set during creation.
-- **Management badge** — whether the program is **SB-Managed** or **Self-Managed**.
-- **Organisation** — the owning organisation name with its initials avatar.
-- **Edit button** — visible only when the program is **Inactive**. Takes you to the [Edit Program](edit-bug-bounty.md) page.
+The header identifies the program at a glance:
 
-### KPI Tiles
+| Element | What it shows |
+|---------|---------------|
+| **Program code** | A short reference code in a pill badge (e.g. `BB-ACS-01` or `VDP-ACS-01`). |
+| **Status** | The current state: Requested, Approved, Scheduled, Active, Deactivated, Ended, or Rejected. |
+| **Visibility** | **Public** or **Private**. |
+| **Type** | **VDP** (shield icon) or **Bug Bounty** (lightning icon). |
+| **Management badge** | **SB-Managed** or **Self-Managed**. Hover or focus the badge to read what it means. |
+| **Safe Harbor badge** | Shown when the program displays a safe-harbor policy. |
+| **Program name** and **Organisation** | The full program name and your organisation. |
 
-Below the header, three tiles give you an at-a-glance summary:
+> There is no **Edit** button for client roles. Program settings are edited by SecurityBoat — see [Changing a Program](edit-bug-bounty.md).
+
+### Lifecycle stepper
+
+Below the header, a full-width stepper shows where the program is in its lifecycle:
+
+```mermaid
+flowchart LR
+    R([Requested]) --> A([Approved]) --> S([Scheduled]) --> L([Active]) --> E([Ended])
+```
+
+- Completed steps are checked and the current step is highlighted.
+- If the request was declined, the first step reads **Rejected**, and a **Request declined** box under the stepper shows who declined it and why.
+- If the program is paused, the Active step reads **Deactivated** and is shown in amber.
+
+### Deactivated or ended programs
+
+When a program is **Deactivated** or **Ended**, a notice appears under the header:
+
+> *This program is deactivated.* (or *This program is closed.*) *New findings are not being accepted. Existing findings, scope and updates remain available.*
+
+### KPI tiles
 
 | Tile | Bug Bounty shows | VDP shows |
 |------|-----------------|-----------|
-| Total bounties paid / Recognition | Cumulative cash paid out | Recognition status — swag + Hall of Fame |
-| Reports received | Total findings submitted to this program | Same |
-| Active since | Program launch date | Same |
+| **Total bounties paid** | Cumulative amount paid out | **Recognition** — VDP — swag + HoF |
+| **Reports received** | Total findings submitted to this program | Same |
+| **Active since** | Program start date | Same |
 
 ---
 
-## Tab Navigation
+## Tab navigation
 
-The program detail page is organised into eleven tabs. Click any tab to switch views. Your position is preserved in the URL so you can share direct links to specific tabs.
+Click any tab to switch views. The selected tab is kept in the page address, so you can share a direct link to it.
 
-| Tab | Who sees it | Deeper guide |
-|-----|------------|-------------|
-| **Overview** | All roles | This page (see below) |
-| **Scope** | All roles | [Scope guide →](detail/scope.md) |
-| **Rewards** | All roles | [Rewards guide →](detail/rewards.md) |
-| **Findings** | All roles | [Findings guide →](detail/findings.md) |
-| **Team** | Private programs only | [Team guide →](detail/team.md) |
-| **Payouts** | All roles | [Payouts guide →](detail/payouts.md) |
-| **Activity** | All roles | This page (see below) |
-| **Leaderboard** | All roles | [Leaderboard guide →](detail/leaderboard.md) |
-| **Collaborators** | All roles | [Collaborators guide →](detail/collaborators.md) |
-| **Updates** | All roles | This page (see below) |
-| **Chat** | All roles | [Chat guide →](detail/chat.md) |
-| **Integrations** | All roles | This page (see below) |
+| Tab | Who sees it | Guide |
+|-----|------------|-------|
+| **Overview** | All client roles | This page |
+| **Scope** | All client roles | [Scope →](detail/scope.md) |
+| **Credential requests** | All client roles (actions only on Self-Managed programs) | [Scope → Test credentials](detail/scope.md#test-credentials-and-credential-requests) |
+| **Rewards** | All client roles | [Rewards →](detail/rewards.md) |
+| **Findings** | All client roles | [Findings →](detail/findings.md) |
+| **Team** | Private programs only | [Team →](detail/team.md) |
+| **Payouts** | All client roles | [Payouts →](detail/payouts.md) |
+| **Activity** | All client roles | This page |
+| **Leaderboard** | All client roles | [Leaderboard →](detail/leaderboard.md) |
+| **Collaborators** | All client roles | [Collaborators →](detail/collaborators.md) |
+| **Updates** | All client roles | This page |
+| **Chat** | All client roles | [Chat →](detail/chat.md) |
+| **Integrations** | All client roles (Jira setup: Client Admin) | This page |
 
 ---
 
-## Overview Tab
+## Overview tab
 
-![Program detail Overview tab showing the program header with badges (status, visibility, type), KPI tiles (bounties paid, reports received, active since), two-column layout with program details and configuration summary, program stats grid, and Hall of Fame podium.](../../images/client_bb_detail_overview.png)
-
-The Overview tab has a two-column layout that surfaces the most important program information at a glance.
-
-### Left column — Program details
+### Program details
 
 | Field | Description |
 |-------|-------------|
-| Program ID | Unique short reference code (e.g., `BBP-ACM`) |
-| Type | VDP or Bug Bounty |
-| Status | Active / Inactive / Closed |
-| Visibility | Public or Private |
-| Managed by | SB-Managed or Self-Managed |
-| Organisation | Your organisation name |
-| Start date | When the program opened |
-| End date | Close date, or "Continuous" if open-ended |
-| Hall of Fame | Enabled or Disabled |
+| **Program ID** | The program's reference code |
+| **Type** | VDP or Bug Bounty |
+| **Status** | The current state |
+| **Visibility** | Public or Private |
+| **Organisation** | Your organisation name |
+| **Managed by** | SB-Managed or Self-Managed |
+| **Start date** | When the program opens |
+| **End date** | Close date, or **Continuous** if open-ended |
+| **Hall of Fame** | Enabled or Disabled |
+| **Reward structure** | P1–P5 reward chips (Bug Bounty), or *VDP — swag & Hall of Fame recognition* |
 
-### Right column — Configuration & Reward structure
+### Management model
 
-Shows a summary of:
+A card repeats the management badge with a one-line explanation:
 
-- The program's **type**, **visibility**, and **management model**
-- **Start and end dates** with a visual timeline
-- **Hall of Fame** status
-- **Reward structure** — the P1 through P5 payout amounts and currency (Bug Bounty), or a recognition note (VDP)
-
-### Scope & Policy review
-
-A section below the two columns displays:
-
-- **Organisation** name
-- **Description** — the program description as entered during creation
-- **In-scope assets** — count of assets linked to this program
+- **SB-Managed** — *SecurityBoat's team reviews and manages the findings for this program.*
+- **Self-Managed** — *The client's own team reviews and manages the findings. SecurityBoat is not involved in triage.*
 
 ### Program stats
 
-A five-cell grid at the bottom of the Overview tab shows your finding breakdown by state:
+A five-cell grid counts the program's findings:
 
 | Cell | What it counts |
 |------|---------------|
-| Total | All findings ever submitted |
-| Triage | New findings awaiting review |
-| Accepted | Findings confirmed valid and in progress |
-| Resolved | Findings that have been fixed |
-| Discarded | Findings rejected as invalid, duplicate, or not applicable |
+| **Total** | All findings submitted |
+| **Triage** | Findings awaiting review |
+| **Accepted** | Findings confirmed valid and being remediated |
+| **Resolved** | Findings that have been fixed |
+| **Discarded** | Findings closed as invalid, duplicate, or not applicable |
 
 ### Hall of Fame *(if enabled)*
 
-When Hall of Fame is enabled, the top three researchers are shown as podium cards directly in the Overview. You can filter the leaderboard by:
-
-- **Today** — today's top contributors
-- **This Week** — this week's top contributors
-- **All Time** — all-time top contributors
-
-If no researchers have had findings accepted yet, a friendly placeholder message is shown: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
+The top three researchers appear as podium cards. Filter by **Today**, **This Week**, or **All Time**. Until findings are accepted, the section reads: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
 
 ---
 
-## Activity Tab
+## Activity tab
 
-![Program Activity tab showing a chronological log of program events with timestamps and actor names — including program state changes, scope changes, team invitations, finding submissions, and payout approvals.](../../images/client_bb_detail_activity.png)
+![Program Activity tab showing a chronological log of program events.](../../images/client_bb_detail_activity.png)
 
-The **Activity** tab is a chronological log of everything that has happened on this program. Each entry is timestamped and attributed to the user who performed the action.
+The **Activity** tab is a chronological log of everything that happens on the program, with the time and the person who did it. Events include:
 
-Events recorded include:
-
-- Program state changes (created, activated, deactivated)
-- Scope changes (assets added or removed)
+- The request being submitted, approved, or declined
+- State changes (scheduled, activated, deactivated, ended)
+- Scope changes
 - Team invitations and removals
-- Finding submissions and state transitions
-- Payout approvals and disbursements
+- Finding submissions and state changes
+- Payout approvals
 
-This is your audit trail — useful for compliance reviews or understanding the history of a program. When no activity exists yet, the tab shows: *"No activity yet. Events will appear here as the program is managed."*
-
----
-
-## Updates Tab
-
-![Program Updates tab showing a list of program announcements with titles, author names, dates, and full formatted content — including scope changes, reward updates, and policy announcements.](../../images/client_bb_detail_updates.png)
-
-The **Updates** tab contains program announcements posted by SecurityBoat staff. Updates are used to inform researchers of:
-
-- Scope changes (new assets added or removed)
-- Reward structure changes
-- Testing window restrictions
-- Policy updates
-
-Each update shows the title, author name, date, and full formatted content.
-
-> As a client, you can **read** updates but cannot post them. Updates are authored by SecurityBoat's CSM team. Contact your CSM if there is an announcement you would like them to post.
+When there is no activity yet, the tab reads: *"No activity yet. Events will appear here as the program is managed."*
 
 ---
 
-## Integrations Tab
+## Updates tab
 
-![Program Integrations tab showing Jira integration connection status, with the option to connect a Jira account for automatic finding sync.](../../images/client_bb_detail_integrations.png)
+![Program Updates tab showing program announcements.](../../images/client_bb_detail_updates.png)
 
-If your organisation has connected a third-party tool (such as Jira), the **Integrations** tab lets you map this program to a Jira project. When configured, findings from this program can be automatically synced as Jira issues.
+The **Updates** tab holds program announcements posted by SecurityBoat — scope changes, reward changes, testing-window restrictions, and policy updates. Each update shows its title, author, date, and content.
 
-If Jira is not yet connected, the tab shows: *"Jira not connected — Connect your Jira account in Settings → Integrations to enable automatic finding sync for this program."*
-
-See the [Integrations guide](../10-integrations.md) for full setup instructions.
+> Clients can read updates but not post them. Ask your CSM if you want an announcement posted.
 
 ---
 
-← Previous: [Create a Program](create-bug-bounty.md) | Next: [Scope →](detail/scope.md)
+## Integrations tab
+
+![Program Integrations tab showing the Jira integration status.](../../images/client_bb_detail_integrations.png)
+
+If your organisation has connected Jira, a **Client Admin** can map this program to a Jira project (**Set up Jira**) and then sync selected findings from the Findings tab.
+
+If Jira is not connected yet, connect it first under **Integrations** in the sidebar. See the [Integrations guide](../10-integrations.md).
+
+---
+
+← Previous: [My Program Requests](my-program-requests.md) | Next: [Scope →](detail/scope.md)

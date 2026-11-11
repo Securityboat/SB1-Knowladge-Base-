@@ -2,54 +2,64 @@
 
 ### 1. What Invites are
 
-**Invites** are direct invitations from program managers to join a **Bug Bounty
-program** or a **pentest engagement** — as opposed to the open **Opportunities**
-marketplace where you bid. If someone wants *you* specifically, it shows up here.
+**Invites** are direct invitations to join a private **Bug Bounty / VDP program** or a **pentest engagement** — as opposed to the open **Opportunities** marketplace where you apply. If someone wants *you* specifically, it shows up here.
+
+The page is titled **Program & Engagement Invites** — *"View and manage your invitations to bug bounty programs and pentest engagements."*
 
 ### Navigation
 
-Click **Invites** in the sidebar. (Researcher / Lead Researcher only.)
+Click **Invites** in the sidebar (Researcher / Lead Researcher only). Invitation notifications also open this page.
 
 ---
 
 ### 2. The Invites list
 
-![Invites — a list of program/engagement invitations with source (BB/PTaaS), organisation, who invited you, date, and status. (1 of 2)](../images/res_invites_01.png)
+![Invites — a list of program and engagement invitations with source, organisation, inviter, date, and status. (1 of 2)](../images/res_invites_01.png)
 
-![Invites — a list of program/engagement invitations with source (BB/PTaaS), organisation, who invited you, date, and status. (2 of 2)](../images/res_invites_02.png)
+![Invites — a list of program and engagement invitations with source, organisation, inviter, date, and status. (2 of 2)](../images/res_invites_02.png)
 
 **Filters:**
 
-- **Status Filter:** `All`, `Accepted`, `Rejected`
-- **Source Filter:** `All Sources`, `Bug Bounty`, `Pentest`
+- **Status:** `All`, `Pending`, `Accepted`, `Rejected`
+- **Source:** `All Sources`, `Bug Bounty`, `Pentest`
 
-Each invite card displays:
+Each invite shows:
 
 | Field | Meaning |
 |-------|---------|
-| **Name** | The program title or engagement name you are invited to join. |
-| **Source Badge** | **BB** (Bug Bounty) or **PTaaS** (Pentest engagement). |
-| **Organisation** | The customer or tenant organization issuing the invitation. |
-| **Invited by & Date** | The platform user (e.g. CSM/TPM) who issued the invite, along with the timestamp. |
-| **Status** | **Pending** (Amber badge; awaiting your response), **Accepted** (Green badge), or **Rejected** (Red badge). |
+| **Name** | The program or engagement you are invited to. |
+| **Source badge** | **BB** (Bug Bounty / VDP) or **PTaaS** (pentest engagement). |
+| **Organisation** | The organisation the program or engagement belongs to. |
+| **Invited by & date** | Who invited you — a SecurityBoat team member, or a client admin for a client-run private program — and when. Shown for pentest invites too. |
+| **Status** | **Pending** (amber; awaiting your response), **Accepted** (green), or **Rejected** (red). |
 
 ---
 
-### 3. Responding to Invitations
+### 3. Responding to invitations
 
-For **pending Bug Bounty invites**, you get action buttons:
+For **Pending Bug Bounty** invitations you get two actions:
 
-- **Accept** — Opens a dialog where you can enter an optional note (e.g. *"Looking forward to contributing..."*) and confirm acceptance to join the program roster immediately.
-- **Reject** — Opens a dialog where you can provide an optional reason for declining (e.g. *"Schedule conflict"*).
+- **Accept** — opens the **Accept Invite** dialog, where you can add an optional note for the program manager. Once accepted, the program opens for you.
+- **Reject** — opens the **Reject Invite** dialog, where you can give an optional reason (e.g. *"Schedule conflict"*).
 
-> **Pentest invites** are informational records — pentest engagement participation is managed through **Opportunities** bids and explicit team seating by the CSM/TPM, so accept/reject buttons are disabled for PTaaS source rows in this view.
+> **Pentest invites** are informational. Your place on a pentest team is confirmed by SecurityBoat (usually through an application on **Opportunities**), so pentest rows have no Accept / Reject buttons.
+
+```mermaid
+flowchart LR
+    I[Invitation received] --> P([Pending])
+    P -->|Accept| A([Accepted])
+    P -->|Reject| R([Rejected])
+    A --> O[Program or engagement opens for you]
+```
+
+> If you are later removed from a private program, you lose access to it.
 
 ---
 
 ### Best practices
 
-- **Respond promptly** — program managers rely on confirmation to lock in roster availability.
-- **Provide context when rejecting** — adding a polite note helps CSMs keep you in mind for future engagements.
+- **Respond promptly** — program teams rely on your confirmation.
+- **Add a short note when rejecting** — it helps the team keep you in mind for future work.
 
 ---
 
@@ -57,10 +67,10 @@ For **pending Bug Bounty invites**, you get action buttons:
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **"No invites found"** | You have no pending or past invites matching the selected filters. Switch filters to **All**. |
-| **No Accept/Reject buttons on PTaaS invite** | Expected behavior; pentest engagement membership is managed via **Opportunities** bids. |
+| **"No invites found"** | No invites match the selected filters. Switch both filters to **All**. |
+| **I accepted but can't see the program** | The program may not be Active yet, or you were removed later. Check the program's status in **BB Program**. |
+| **No Accept / Reject on a pentest invite** | Expected — pentest team membership is managed by SecurityBoat. |
 
 ---
 
 ← Previous: [Opportunities](04-opportunities.md) | Next: [Engagements →](engagements/overview.md)
-

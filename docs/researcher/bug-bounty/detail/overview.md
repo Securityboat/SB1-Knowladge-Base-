@@ -1,108 +1,100 @@
 # Program Detail Overview
 
-When you select a Bug Bounty or VDP program, you land on the **Program Detail** view. This interface acts as your primary portal for testing and tracking submissions for a specific target organization.
+When you open a Bug Bounty or VDP program, you land on the **Program Detail** view — your portal for testing and tracking submissions for that program.
 
 ---
 
 ![Program Detail Overview](../../../images/res_bb_detail_overview.png)
 
-## Page Layout & Tab Structure
-
-The diagram below outlines the structural layout of the Program Detail view:
+## Page layout
 
 ```mermaid
-graph TD
-    ProgramDetail[Program Detail Page] --> Header[Header: Status, Visibility, Type badges]
-    ProgramDetail --> KPI[KPIs: Bounties paid, Reports received, Active since]
-    ProgramDetail --> Tabs[Tab Navigation]
-    Tabs --> TabOverview[Overview Tab]
-    Tabs --> TabOther[Other Tabs: Scope, Rewards, Findings...]
-    TabOverview --> LeftCol[Left/Main: Details, Policy Description]
-    TabOverview --> RightCol[Right/Sidebar: Reward structure summary]
-    TabOverview --> Stats[Stats Grid: Lifecycle status counts]
-    TabOverview --> HoF[Hall of Fame: Top 3 Podium]
+flowchart TD
+    P[Program Detail page] --> H[Header: status, visibility, type, management and Safe Harbor badges]
+    P --> S[Lifecycle stepper]
+    P --> K[KPI tiles]
+    P --> T[Tabs]
+    T --> O[Overview: details, management model, stats, Hall of Fame]
+    T --> X[Scope, Rewards, Findings, Activity, Leaderboard, Collaborators, Updates, Chat, Integrations]
 ```
 
 ---
 
-## Page Header & KPIs
+## Header
 
-At the top of the program detail page, the header bar identifies the target at a glance:
-
-| Header Element | Description |
+| Element | Description |
 | :--- | :--- |
-| **Program Code** | A unique reference (e.g., `BBP-ACM`) displayed in a pill badge. |
-| **Status Badge** | Indicates whether the program is **Active**, **Inactive**, or **Closed**. |
-| **Visibility Badge** | Indicates **Public** (blue) or **Private** (purple) access. |
-| **Type Label** | Indicates whether the program is a **VDP** or a **Bug Bounty**. |
-| **Program Name** | The full program name. |
-| **Management Badge** | Shows whether the program is **SB-Managed** (triaged by SecurityBoat) or **Self-Managed** (triaged by Organization). |
+| **Program code** | A short reference in a pill badge (e.g. `BB-ACS-01`). |
+| **Status** | **Active**, **Scheduled**, **Deactivated**, or **Ended**. |
+| **Visibility** | **Public** or **Private**. |
+| **Type** | **VDP** or **Bug Bounty**. |
+| **Management badge** | **SB-Managed** (triaged by SecurityBoat) or **Self-Managed** (triaged by the client's team). Hover for the explanation. |
+| **Safe Harbor badge** | Shown when the program publishes a safe-harbor policy. The policy text is on the Scope tab. |
+| **Program name** and **organisation** | The full name and the owning organisation. |
 
-### Summary KPI Tiles
+Below the header, a **lifecycle stepper** shows the program's progress (Approved → Scheduled → Active → Ended).
 
-Directly below the header are three metrics that summarize your or the program's history:
+If the program is **Deactivated** or **Ended**, a notice explains that new findings are not being accepted, while existing findings, scope, and updates remain available.
 
-| KPI Tile | Description |
+### KPI tiles
+
+| Tile | Description |
 | :--- | :--- |
-| **Total Bounties Paid / Recognition** | Cumulative cash paid out (Bug Bounty) or recognition summary (VDP). |
-| **Reports Received** | Total findings submitted by all researchers to this program. |
-| **Active Since** | The launch date of the program. |
+| **Total bounties paid** | Cumulative cash paid out (Bug Bounty), or **Recognition** — VDP — swag + HoF. |
+| **Reports received** | Total findings submitted to the program by all researchers. |
+| **Active since** | The program's start date. |
 
 ---
 
-## Tab Navigation
+## Tabs
 
-The program detail view is structured into eleven tabs. Click a tab to switch views; your position is preserved in the URL.
+Your selected tab is kept in the page address.
 
-| Tab | What It Contains |
+| Tab | What it contains |
 | :--- | :--- |
-| **Overview** | Program rules, target info, finding status counts, and the Hall of Fame podium. |
-| **Scope** | Explicit lists of in-scope and out-of-scope assets. |
-| **Rewards** | Payout ranges (P1–P5) or recognition rules. |
-| **Findings** | List of findings you submitted to this program + the submission button. |
-| **Payouts** | Tracking for your approved bounties on this program. |
-| **Activity** | Chronological log of program milestones (scope updates, status changes). |
-| **Leaderboard** | Rankings of top researchers on this program based on accepted bugs. |
-| **Collaborators** | Fellow researchers participating in the program. |
-| **Updates** | Official policy or target updates posted by the security team. |
-| **Chat** | Read-only general channel or interactive messaging (program dependent). |
-| **Integrations** | Reference list of connected third-party integrations (e.g., Jira). |
+| **Overview** | Program details, management model, stats, and the Hall of Fame. |
+| **Scope** | In-scope assets, scope notes, rules of engagement, safe harbor, and **test credential** requests. |
+| **Rewards** | Reward ranges (P1–P5) or recognition rules. |
+| **Findings** | Your submissions to this program and the **Submit finding** button. |
+| **Activity** | Program milestones (scope updates, state changes). |
+| **Leaderboard** | Top researchers on this program. |
+| **Collaborators** | Researchers who have submitted findings to the program. |
+| **Updates** | Official announcements from the program team. |
+| **Chat** | *Private programs only.* Messaging with the program team. |
+| **Integrations** | Connected integrations such as Jira (information only). |
+
+> Researchers do not see the **Team** or **Payouts** tabs. Track your rewards under **My Payouts** in the sidebar.
 
 ---
 
-## Overview Tab Content
+## Overview tab
 
-The **Overview** tab provides a dual-column summary:
+### Program details
 
-### Left Column: Program Details & Policy
-
-| Section | Description |
+| Field | Description |
 | :--- | :--- |
-| **Program Metadata** | Key fields showing Start Date, End Date ("Continuous" if open-ended), and Hall of Fame settings. |
-| **Description** | Background information about the organization and any high-level testing policies. |
+| **Program ID**, **Type**, **Status**, **Visibility**, **Organisation**, **Managed by** | Identification of the program. |
+| **Start date** / **End date** | The program window. End date reads **Continuous** if open-ended. |
+| **Hall of Fame** | Enabled or Disabled. |
+| **Reward structure** | P1–P5 reward chips, or the VDP recognition note. |
 
-### Right Column: Configuration & Rewards Summary
+### Management model
 
-*   A summary card displaying the current P1 through P5 reward tiers (monetary or point-based).
+A card repeats the badge with a one-line explanation of who triages your reports.
 
-### Program Finding Stats
+### Program stats
 
-A grid showing your finding counts on this program, split by lifecycle states:
-
-| State | Description |
+| Cell | Description |
 | :--- | :--- |
-| **Total** | All findings you submitted to this program. |
-| **Triage** | New findings awaiting TPM review. |
-| **Accepted** | Confirmed vulnerabilities currently in remediation. |
-| **Resolved** | Findings that have been patched. |
-| **Discarded** | Submissions rejected as duplicates, out-of-scope, or invalid. |
+| **Total** | All findings submitted to the program. |
+| **Triage** | Findings awaiting review. |
+| **Accepted** | Confirmed vulnerabilities being remediated. |
+| **Resolved** | Fixed findings. |
+| **Discarded** | Reports closed as duplicate, not applicable, or invalid. |
 
-### Hall of Fame Podium
+### Hall of Fame
 
-If the Hall of Fame is enabled, a podium displays the top three contributing researchers for the program (based on reputation points).
-
-*   Filters allow viewing rankings for **Today**, **This Week**, or **All Time**.
-*   If no accepted findings exist yet, a placeholder message is displayed: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
+If enabled, a podium shows the top three researchers. Filter by **Today**, **This Week**, or **All Time**. Until findings are accepted, it reads: *"No researchers on the leaderboard yet. Top contributors will appear once findings are accepted."*
 
 ---
 

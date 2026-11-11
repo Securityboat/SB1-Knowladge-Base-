@@ -41,6 +41,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/extra.js
+  - javascripts/mermaid-init.js
 
 extra:
   generator: false
@@ -114,7 +115,8 @@ nav:
       - Attack Surface (ASM): client/11-asm.md
       - Bug Bounty:
           - Overview: client/bug-bounty/overview.md
-          - Create Program: client/bug-bounty/create-bug-bounty.md
+          - Request a Program: client/bug-bounty/create-bug-bounty.md
+          - My Program Requests: client/bug-bounty/my-program-requests.md
           - Program Detail:
               - Overview: client/bug-bounty/program-detail.md
               - Scope: client/bug-bounty/detail/scope.md
@@ -125,7 +127,7 @@ nav:
               - Leaderboard: client/bug-bounty/detail/leaderboard.md
               - Collaborators: client/bug-bounty/detail/collaborators.md
               - Chat: client/bug-bounty/detail/chat.md
-          - Edit Program: client/bug-bounty/edit-bug-bounty.md
+          - Changing a Program: client/bug-bounty/edit-bug-bounty.md
       - Agentic Pentest: client/19-agentic-pentest.md
       - Continuous Testing: client/20-continuous-testing.md
       - AI Red Teaming: client/23-ai-red-teaming.md
@@ -133,6 +135,7 @@ nav:
       - Trust Center: client/22-trust-center.md
       - Hacktivity: client/17-hacktivity.md
       - Disclosure Requests: client/18-disclosure-requests.md
+      - Researchers: client/24-researchers.md
       - AI Assistant (Ish): client/13-ai-assistant.md
       - Feedback: client/16-feedback.md
       - Settings: client/14-settings.md
@@ -173,12 +176,14 @@ nav:
               - Updates: researcher/bug-bounty/detail/updates.md
               - Chat: researcher/bug-bounty/detail/chat.md
               - Integrations: researcher/bug-bounty/detail/integrations.md
+          - My Credentials: researcher/bug-bounty/my-credentials.md
       - Agentic Pentest: researcher/14-agentic-pentest.md
       - AI Red Teaming: researcher/15-ai-red-teaming.md
       - Hacktivity: researcher/17-hacktivity.md
       - Disclosure Requests: researcher/16-disclosure-requests.md
       - AI Assistant (Ish): researcher/12-ai-assistant.md
       - Feedback: researcher/18-feedback.md
+      - Team Feedback: researcher/19-team-feedback.md
       - Settings: researcher/13-settings.md
       - Full Researcher Guide Index: researcher/RESEARCHER_Guide.md
 

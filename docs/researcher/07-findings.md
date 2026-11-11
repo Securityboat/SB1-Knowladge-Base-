@@ -2,133 +2,181 @@
 
 ### 1. Findings are your deliverable
 
-A **finding** is a documented vulnerability you discover. As a researcher, findings are your primary deliverable and what drives payout eligibility. You author findings within an engagement (or bug bounty program), provide clear proof-of-concept evidence, and submit them for TPM verification.
+A **finding** is a documented vulnerability you discover. Findings are your primary deliverable and what drives rewards and payouts. You author them inside a pentest engagement or a Bug Bounty program, provide clear proof-of-concept evidence, and submit them for triage.
 
 ![Researcher Findings — all findings across engagements and bug bounty programs.](../images/res_all_findings.png)
 
-> **Note:** Findings are created directly from within the target engagement or bug bounty program page, ensuring your submission is automatically linked to the correct scope.
+> **Note:** There is no "New finding" button on the Findings page. Findings are created from the engagement's or program's **Findings** tab, so each one is automatically linked to the right scope.
 
 ---
 
 ### 2. What a researcher can do
 
-| Action | Researcher | Lead Researcher | TPM / Staff |
-|--------|:---:|:---:|:---:|
-| Submit new findings on assigned engagements | ✅ | ✅ | ✅ |
-| Edit your own finding while in Draft or New state | ✅ | ✅ | ✅ |
-| Delete unsubmitted draft findings | ✅ | ✅ | ✅ |
-| View findings on your engagements | ✅ | ✅ | ✅ |
-| Verify findings, change status, or override official severity | ❌ | ❌ | ✅ (TPM) |
+| Action | Researcher | Lead Researcher |
+|--------|:---:|:---:|
+| Submit findings on your engagements and on Active Bug Bounty programs | ✅ | ✅ |
+| See your own **Draft** findings | ✅ | ✅ (plus drafts on engagements you lead) |
+| Edit your own **pentest** findings (until Resolved) | ✅ | ✅ (any finding on engagements you lead) |
+| Edit a **Bug Bounty** report after you submit it | ❌ | ❌ |
+| Verify pentest findings on engagements you lead | ❌ | ✅ |
+| Confirm a pentest fix after retest | ✅ (your own findings) | ✅ |
+| Change Bug Bounty triage states | ❌ | ❌ |
 
 ### Navigation
 
-Click **Findings** in the main sidebar menu to browse all findings across your assigned engagements. To see only your own submissions, use the **My Findings** filter or view within an engagement's **Findings** tab.
+Click **Findings** in the main sidebar to browse findings across your engagements and programs. To see one engagement or program, use its **Findings** tab.
 
 ---
 
-### 3. Your personal findings tracker
+### 3. Your findings list
 
-![My Findings — the researcher's own submissions with severity, state, and source.](../images/res_findings_list_01.png)
+![My Findings — the researcher's submissions with severity, state, and source.](../images/res_findings_list_01.png)
 
-The findings list shows all findings on engagements you're assigned to. Filter or search to focus on your own submissions. For each finding, track:
+| Control / Column | Meaning |
+|------------------|---------|
+| **Summary counts** | Findings, Critical, High, Open, Resolved. |
+| **Search** | *Search by title or finding ID…* |
+| **Filters** | **All states** (including **Draft**), **All severity**, **All sources** — saved in the page address. |
+| **ID**, **Title**, **Severity**, **State**, **Source**, **Submitted** | One row per finding. Click to open it. |
+| **Export CSV** | Choose the columns and download the findings you can see. |
 
-| Column | Why it matters to you |
-|--------|-----------------------|
-| **Title** | Short summary of the vulnerability. Click to open the full detail. |
-| **Severity + CVSS** | Your proposed rating (the TPM may adjust it at triage). |
-| **State** | Where it is in the pipeline (see below). |
-| **Source** | Which engagement/program it came from. |
-| **Created** | When you filed it. |
-
----
-
-### 4. Submitting a finding — Form structure & fields
-
-When you click **Submit finding**, a structured form opens with seven dedicated cards:
-
-#### 1. Title & Classification
-- **Title**: Short, specific summary (e.g. *"Stored XSS in User Profile Bio"*).
-- **Asset Type**: Defines target surface (Web Application, API & Web Services, Mobile iOS, Mobile Android, Cloud Infrastructure, External/Internal Network, Source Code, AI/LLM Model).
-- **Vulnerability Type (OWASP)**: Select from context-aware OWASP categories (OWASP Top 10 2021, OWASP API Top 10 2023, OWASP Mobile 2024, or specify *Other*).
-- **VRT Category (Bugcrowd Taxonomy)**: Required taxonomy classification; selecting a category automatically pre-fills the standard CWE ID.
-- **CWE / CVE / MITRE ATT&CK**: Standard identifiers (e.g. CWE-79, CVE-2026-1234, T1059.004).
-- **Tool Used & Environment Details**: Optional fields for scanner tool name or OS/browser context.
-
-#### 2. Severity & CVSS v4.0
-- **CVSS v4.0 Calculator**: Complete all 11 CVSS v4.0 metrics (Attack Vector, Complexity, Requirements, Privileges, User Interaction, VC/VI/VA, SC/SI/SA).
-- **Severity Rating**: Derived automatically from the calculated CVSS v4.0 score (Critical, High, Medium, Low, Informational) and locked.
-
-#### 3. Writeup (Rich Text + Media Attachments)
-- **Background**: Contextual explanation of the vulnerability class.
-- **Description**: Detailed explanation of the flaw in the target application.
-- **Steps to Reproduce**: Numbered, step-by-step reproduction instructions.
-- **Impact**: Business risk framed clearly for the customer.
-- **Remediation**: Recommended fix and patching guidance.
-- **Attachments**: Drag-and-drop screenshots or PoC files directly into rich text editors.
-
-#### 4. CIA Triad Impact
-- Select impact level (**None**, **Low**, **High**) and provide a description for **Confidentiality**, **Integrity**, and **Availability**.
-
-#### 5. OWASP Risk Rating (Report Heat Matrix)
-- **Likelihood (0–9)** & **Impact (0–9)**: Scores that position the finding on Section 7 of the executive report's Risk Heat Matrix.
-
-#### 6. References
-- One or more reference URLs (e.g. vendor advisories, OWASP guides).
-
-#### 7. Endpoint Details (Required for Web, API, Mobile)
-- **HTTP Method**: GET, POST, PUT, DELETE, PATCH, etc.
-- **Endpoint URL / Path**: Exact vulnerable URL target.
-- **Affected Parameter**: Specific parameter or header name.
-- **Raw Request & HTTP Request/Response**: Paste full HTTP requests and responses for immediate triage verification.
+When you filter by **New**, a popover explains the difference: for pentests the state is shown as **Triaging**; for Bug Bounty and VDP it is shown as **New** (awaiting initial review).
 
 ---
 
-### 5. Finding lifecycle states
+### 4. Submitting a finding
+
+Click **Submit finding** on the engagement's or program's **Findings** tab. A drawer opens with the finding form.
+
+#### Title & classification
+- **Title** — short, specific summary (up to 255 characters). *Required.*
+- **Asset type** — Web Application, API & Web Services, Mobile iOS / Android, Cloud, Network, Source Code, AI/LLM, and more. It decides whether endpoint fields are required.
+- **Vulnerability type (OWASP)** — pick the OWASP category, or **Other** and describe it. *Required.*
+- **VRT category (Bugcrowd taxonomy)** — *required*. Selecting one pre-fills the CWE.
+- **CWE** — format `CWE-79`. *Required.*
+- **CVE (optional)** and **MITRE ATT&CK (optional)**.
+
+#### Severity & CVSS v4.0
+- Complete **all 11 CVSS v4.0 metrics**. Severity is derived from the score and cannot be set by hand.
+
+#### Writeup
+- **Background**, **Description**, **Steps to reproduce**, **Impact**, **Remediation** — each at least 20 characters. Drag screenshots or PoC files into the editor.
+
+#### CIA triad impact
+- Impact level and a description (at least 10 characters) for **Confidentiality**, **Integrity**, and **Availability**.
+
+#### OWASP risk rating
+- **Likelihood (0-9)** and **Impact (0-9)** — *required*. They place the finding on the report's risk heat matrix.
+
+#### References
+- At least one reference URL (vendor advisory, OWASP page, etc.). *Required.*
+
+#### Endpoint and evidence
+- **Method** and **URL** — *required for web, API, and mobile assets*; otherwise the form shows "Not required for the selected asset type".
+- **Parameter (optional)**, **Raw request (optional)** (Burp / curl format), **Request** and **Response**.
+- **Tool used (optional)** and **Environment (optional)** (browser, OS, device, region).
+
+#### Saving and submitting
+
+1. Click **Create finding**. The finding is saved as a **Draft** — *"Saved as Draft. Promote to NEW for triage from the detail page."* If anything is missing, the form lists it under *"Please fix the following before submitting:"*.
+2. Open the draft, choose the submit action in the **State actions** panel, and click **Confirm transition**:
+    - Pentest: **Submit DRAFT for triage**
+    - Bug Bounty: **Submit report for triage**
+
+---
+
+### 5. Editing a finding
+
+| Source | When you can edit | Notes |
+|--------|-------------------|-------|
+| **Pentest (PTaaS)** | From Draft until the finding is **Resolved** | Use **Edit finding** on the detail page. Severity and CVSS are locked once the finding is **Verified**. A Researcher edits only their own findings; a Lead Researcher can edit any finding on engagements they lead. |
+| **Bug Bounty / VDP** | Only while it is a **Draft** | Once submitted, the report is locked. Add clarifications as comments. |
+
+---
+
+### 6. Finding lifecycles
+
+#### Pentest (PTaaS) findings
 
 ```mermaid
-graph LR
-    A[Draft] -->|you submit| B[New]
-    B -->|TPM verifies| C[Verified]
-    C -->|client sees it| D[Fix in Progress]
-    D --> E[Ready for Retest]
-    E -->|retested| F[Resolved]
+flowchart LR
+    DR([Draft]) -->|you submit| TR([Triaging])
+    TR -->|lead or TPM verifies| V([Verified])
+    V -->|client starts fixing| F([Fix in progress])
+    F -->|client submits fix| R([Ready for retest])
+    R -->|you confirm fix| D([Resolved])
+    R -->|retest failed| F
+    V -.->|client accepts risk| AR([Accepted risk])
 ```
 
-| State | Meaning for the researcher |
-|-------|----------------------------|
-| **Draft** | Saved locally or as a draft record; full editing allowed. |
-| **New** | Submitted for TPM verification; editable by author until triaged. |
-| **Verified** | Confirmed valid by TPM; visible to client. This is the milestone that makes it count. |
-| **Fix in progress / Ready for retest** | Client is remediating; you may be asked to retest. |
-| **Resolved** | Closed — typically the trigger for payout eligibility. |
-| **Duplicate / Rejected** | Not counted — check the comments for why. |
+| State | Meaning for you |
+|-------|-----------------|
+| **Draft** | Only you, your lead, and SecurityBoat can see it. |
+| **Triaging** | Submitted; the lead researcher or TPM is validating severity, reproducibility, and scope. They may **Request more information**, or mark it as declined, duplicate, or out of scope with a reason. |
+| **Verified** | Confirmed valid and now visible to the client. |
+| **Fix in progress** | The client is fixing it. |
+| **Ready for retest** | The client says the fix is deployed. Re-test it. |
+| **Resolved** | You (or your lead) confirmed the fix with **Confirm fix verified**. |
+| **Accepted risk** | The client formally accepted the risk instead of fixing it. |
+
+#### Bug Bounty findings
+
+```mermaid
+flowchart LR
+    DR([Draft]) -->|you submit| N([New])
+    N --> T([Triaged])
+    T -->|SB-Managed only| P([Pending Client Validation])
+    P --> V([Verified])
+    T --> V
+    V --> F([Fix in Progress])
+    F --> R([Retesting])
+    R --> D([Resolved])
+    R -->|retest failed| F
+```
+
+Bug Bounty reports can also be closed as **Duplicate**, **Not Applicable**, **Informative**, or **Spam**. Triage and retesting are done by SecurityBoat (SB-Managed programs) or the client's team (Self-Managed programs), not by researchers. See [Bug Bounty Findings](bug-bounty/detail/findings.md).
 
 ---
 
-### 6. From finding to payout
+### 7. The finding detail page
 
-A finding that reaches **Verified/Resolved** on a paid program or engagement becomes eligible for a **payout**. Track the money side under [Payouts](09-payouts.md).
+- **Header and stepper** — severity, CVSS, state, source, and a stepper showing the current stage with a description.
+- **Main column** — Background, Description, Affected endpoint, Business impact, Remediation, HTTP request / response, Proof of concept, **Comments**, and the **Timeline** of state changes (10 per page, newest first).
+- **Right column** — **State actions**, the engagement or program card, Dates, Retest SLA, CVSS score, Classification, Risk assessment, OWASP Risk Rating, References, and Test context.
+
+#### Comments
+- Your comments are visible to **Everyone** on the finding.
+- Type **@** to mention a participant.
+- You can edit your own comment for 15 minutes after posting, and delete it.
+- On a **Resolved** Bug Bounty finding, comments are locked for researchers.
+
+---
+
+### 8. From finding to payout
+
+A finding that is **Verified** on a paid program, or a completed pentest engagement, leads to a payout. Track it under [Payouts](09-payouts.md).
 
 ---
 
 ### Best practices
 
-- **Provide clear HTTP requests/responses** — raw request logs speed up TPM verification.
-- **Complete all 11 CVSS metrics** — ensuring accurate score derivation prevents triage delays.
-- **Check for duplicates** — search existing engagement findings before filing to avoid duplicate rejections.
-- **Chase your NEW items** politely via comments if verification stalls.
-- **Learn from adjustments** — if the TPM re-scores or bounces a finding, the history tells you how to write a stronger one next time.
+- **Provide clear HTTP requests and responses** — they speed up verification.
+- **Complete all 11 CVSS metrics** carefully — severity follows from them.
+- **Double-check Bug Bounty reports before submitting** — you cannot edit them afterwards.
+- **Check for duplicates** in the program's findings and Hacktivity before filing.
+- **Retest promptly** when a pentest finding reaches Ready for retest.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **Submit finding drawer won't open** | Verify the engagement status is active (Live). |
-| **Server validation error on submit** | Check minimum character length requirements for writeup and impact fields. |
-| **Severity field disabled** | Intentional; severity is derived automatically from the 11 CVSS v4.0 metrics. |
-| **My finding is stuck at New** | Awaiting TPM verification — ping via comments if it's been a while. |
-| **Marked duplicate** | Someone reported it first; check the linked original in the comments. |
-| **No payout yet** | Payout usually follows Verified/Resolved + any hold period — see Payouts. |
+| **No Submit finding button** | The engagement is not in a testing state, or the Bug Bounty program is not **Active**. |
+| **"Please fix the following before submitting"** | A required field is missing or too short. The list names each one. |
+| **Severity field disabled** | Intentional; severity comes from the CVSS v4.0 metrics. |
+| **No Edit finding button** | Bug Bounty reports lock once submitted; pentest findings lock once Resolved. |
+| **Can't change severity on a pentest finding** | Severity and CVSS lock once the finding is Verified. |
+| **My finding is stuck at New / Triaging** | Awaiting triage — add a polite comment if it has been a while. |
+| **Marked duplicate** | Someone reported it first; check the comments. |
 
 ---
 

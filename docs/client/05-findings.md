@@ -10,44 +10,45 @@ came from:
 | Source | Where it originates |
 |--------|---------------------|
 | **PTaaS** | A scheduled penetration-test engagement. |
-| **Bug Bounty** | A researcher submission against a bug-bounty program. |
+| **Bug Bounty** | A researcher report on one of your Bug Bounty or VDP programs. |
 | **ASM** | Attack-surface monitoring scans. |
 | **DRP** | Digital-risk / incident detections. |
 | **Compliance** | Issues raised during a compliance audit. |
 
-Unifying them means you triage and remediate in one place instead of chasing five
-different tools.
+The page description sums it up: *"Every finding from PTaaS engagements, bug-bounty
+programs, ASM scans, DRP incidents, and compliance audits — one unified list."*
 
-**The single most important rule for clients — visibility:**
+**When findings become visible to you depends on the source:**
 
-> You only see a finding **after it has been verified** by SecurityBoat's testing
-> team. A finding that is still a `DRAFT` or `NEW` (submitted but not yet
-> quality-checked) is **invisible** to every client role. This is deliberate:
-> raw, unverified submissions can contain false positives or mis-scored severity.
-> Showing them to you before a TPM validates them would create noise and false
-> alarms. The states you can see are: **Verified, Fix in progress, Ready for
-> retest, Accepted risk, Resolved.**
+| Source | When you first see it | States you can see |
+|--------|----------------------|--------------------|
+| **PTaaS** | After the testing team **verifies** it | Verified, Fix in progress, Ready for retest, Accepted risk, Resolved |
+| **Bug Bounty** | As soon as the researcher **submits** it | New onward — Triaged, Pending client validation, Verified, Fix in progress, Ready for retest, Resolved, Informative, Spam |
 
-This is why your list may show fewer findings than testers are actively working
-on — the pre-verification ones simply aren't surfaced yet.
+You never see a **Draft**. Drafts are visible only to their author, the lead
+researcher, and SecurityBoat. For pentests, unverified submissions are also held
+back, because raw submissions can contain false positives or mis-scored severity.
 
 ### 2. What each client role can do
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
-| View / search verified findings | ✅ | ✅ | ✅ |
+| View / search findings | ✅ | ✅ | ✅ |
 | Open a finding's detail | ✅ | ✅ | ✅ |
 | Export findings to CSV | ✅ | ✅ | ✅ |
-| Add comments | ✅ | ✅ | ❌ |
-| Mark **Fix in progress** / **Ready for retest** | ✅ | ✅ | ❌ |
-| **Accept risk** (formally accept without fixing) | ✅ | ❌ | ❌ |
+| Read comments | ✅ | ✅ | ✅ |
+| Add comments and @mention people | ✅ | ✅ | ❌ |
+| Move to **Fix in progress** / submit for retest | ✅ | ✅ | ❌ |
+| **Accept risk** on a pentest finding | ✅ | ❌ | ❌ |
+| Confirm a Bug Bounty finding referred for client validation | ✅ | ✅ | ❌ |
+| Triage Bug Bounty findings on a **Self-Managed** program | ✅ | ✅ | ❌ |
+| Edit a finding's content | ❌ | ❌ | ❌ |
 | Create a finding | ❌ | ❌ | ❌ |
 
-> **Why clients can't create findings:** a finding must be tied to a real source
-> (an engagement, a program, a scan) so its provenance can't be forged. Creation
-> is therefore anchored to that source resource and performed by the testing team,
-> not from a free-form form. There is intentionally **no "New finding" button** on
-> this page.
+> **Why clients can't create or edit findings:** a finding must be tied to a real
+> source (an engagement, a program, a scan) and written by the tester who found it,
+> so its provenance and evidence can't be altered. There is intentionally **no
+> "New finding" button** on this page.
 
 ### Navigation
 
@@ -57,163 +58,192 @@ Click **Findings** in the main sidebar menu.
 
 ### 3. The Findings list — every control explained
 
-![Findings list — metrics tallies, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/client_findings_list.png)
+![Findings list — summary counts, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/client_findings_list.png)
 
-#### Summary metrics row (top)
-
-A flat count strip that respects your active filters:
+#### Summary counts (top)
 
 | Tally | Meaning |
 |-------|---------|
 | **Findings** | Total findings visible to you. |
-| **Critical** | Count at Critical severity (red when > 0). |
+| **Critical** | Count at Critical severity. |
 | **High** | Count at High severity. |
 | **Open** | Everything not yet Resolved. |
 | **Resolved** | Fixed and closed. |
 
-#### Toolbar
+#### Filters (saved in the page address)
 
-| Control | Type | Behaviour |
-|---------|------|-----------|
-| **Export CSV** | Button | Downloads `findings-export-<date>.csv` containing finding records (Finding ID, Title, Severity Rating, Status, Category, CVSS Score, CWE/CVE Reference, Affected Endpoint, Description, Impact, Remediation, Submitter Name, Created Date). Disabled when empty. |
-| **Density toggle** | Toggle | Compact vs comfortable rows. |
+Filters are written to the page address, so a filtered view can be bookmarked or shared.
 
-#### Filters (saved in the URL)
+| Filter | Values / use case |
+|--------|-------------------|
+| **Search** | *Search by title or finding ID…* — paste an ID from an email to jump to it. |
+| **All states** | Lifecycle states such as New, Triaged, Pending Client Validation, Verified, Fix In Progress, Ready For Retest, Accepted Risk, Resolved. |
+| **All severity** | Critical / High / Medium / Low / Informational. |
+| **All sources** | PTaaS, Bug Bounty, ASM, DRP, Compliance. |
+| **Clear** | Resets all filters. |
 
-Unlike the Assets filters, these are written to the URL, so a filtered view is
-shareable/bookmarkable.
+When you filter by **New**, an info popover — **What "New" means** — explains that
+the word means different things per source:
 
-| Filter | Type | Values / use case |
-|--------|------|-------------------|
-| **Search** | Text | Matches **title** or **finding ID** (e.g. paste an ID from an email). |
-| **State** | Dropdown | Verified, Fix in progress, Ready for retest, Accepted risk, Resolved. |
-| **Severity** | Dropdown | Critical / High / Medium / Low / Informational. |
-| **Source** | Dropdown | PTaaS / Bug Bounty / ASM / DRP / Compliance. |
-| **Clear** | Button | Resets all filters. |
+- **Pentest (PTaaS)**, shown as **Triaging**: the finding has been submitted and a triager is reviewing it. Next step: Verified.
+- **Bug bounty / VDP program**, shown as **New**: the report is awaiting initial review. Next step: Triaged.
 
 #### Columns
 
 | Column | Meaning |
 |--------|---------|
-| **ID** | The human finding ID (click the pill to copy it). |
-| **Title** | Short name of the issue + the submitter (researcher/tester). |
-| **Severity** | Colour-coded pill with the **CVSS score** shown alongside. |
-| **State** | Main state badge, plus a "side-state" pill (e.g. duplicate) when relevant. |
+| **ID** | The finding ID (click the pill to copy it). |
+| **Title** | Short name of the issue. |
+| **Severity** | Colour-coded pill with the **CVSS score**. |
+| **State** | Main state badge, plus a closure label (e.g. Duplicate, Not Applicable, Needs info) when relevant. |
 | **Source** | Which module the finding came from. |
 | **Submitted** | Relative time (e.g. "3d ago"). |
 
-Paginated at **10 per page**. Click a row to open the finding.
+The list shows **10 per page**, has a density toggle (compact / comfortable), and an
+**Export CSV** button. Click a row to open the finding.
 
 ---
 
-### 4. Understanding severity and CVSS
+### 4. Exporting findings to CSV
 
-Every finding carries a **severity** and a **CVSS v4.0** score/vector. Severity is
-the at-a-glance priority; the CVSS vector is the precise, standardised breakdown
-of *why* it scored that way (attack vector, complexity, impact on
-confidentiality/integrity/availability, etc.).
+**Export CSV** opens the **Export findings to CSV** dialog, so you can choose
+exactly what goes into the file:
 
-| Severity | Typical meaning |
-|----------|-----------------|
-| **Critical** | Immediate, severe risk — remediate now. |
-| **High** | Serious; schedule promptly. |
-| **Medium** | Meaningful but bounded. |
-| **Low** | Minor. |
-| **Informational** | No direct risk; awareness only. |
+1. Pick which findings to include with the state drop-down (default **All states**).
+   Your current search and filters also apply.
+2. Tick the **fields** (columns) you want. The default selection is: Finding ID,
+   Title, Severity, State, Vulnerability type, CVSS score, CWE ID, CVE ID, Endpoint
+   URL, Description, Impact, Remediation, Submitter, Created at.
+3. Download the file.
 
-> The platform standardises on **CVSS v4.0** (not the older v3.1). If severity ever
-> looks off, the detail page shows the full vector so you can see the reasoning —
-> and you can discuss it via comments before accepting or remediating.
+Fields you can add include source, asset type, VRT category, the CVSS vector and its
+individual metrics, OWASP likelihood and impact, MITRE technique, endpoint method,
+parameter and raw request, HTTP request and response, background, steps to reproduce,
+the CIA (confidentiality, integrity, availability) levels and descriptions, tool
+used, environment details, references, submitter email, and updated date.
+
+The export includes **all** matching findings, not only the current page (up to
+10,000 rows). The **State** and **Source** columns contain the system values (for
+example `READY_FOR_RETEST`, `BUG_BOUNTY`) rather than the display labels.
+
+The same dialog is available on a pentest engagement's **Findings** tab.
 
 ---
 
-### 5. The finding detail page — fields and the remediation workflow
+### 5. The finding detail page
 
 Click any finding to open it.
 
-![Finding detail — title, severity/CVSS, description/impact/remediation, evidence, the State actions panel, comments, and state history. (1 of 2)](../images/client_finding_detail_01.png)
+![Finding detail — header, lifecycle stepper, description, impact, remediation, evidence, comments, and the right-hand cards. (1 of 2)](../images/client_finding_detail_01.png)
 
-![Finding detail — title, severity/CVSS, description/impact/remediation, evidence, the State actions panel, comments, and state history. (2 of 2)](../images/client_finding_detail_02.png)
+![Finding detail — State actions panel, timeline, and side cards. (2 of 2)](../images/client_finding_detail_02.png)
 
-#### What each field means
+#### Header and stepper
 
-| Field | Type | Meaning / how to use it |
-|-------|------|-------------------------|
-| **Title** | Text | Short label for the issue. |
-| **Severity + CVSS** | Enum + score/vector | Priority and its standardised justification. |
-| **Vulnerability type** | Text | The class of issue (e.g. "SQL Injection"). |
-| **CWE / CVE** | IDs | Links to the industry taxonomy / known-vuln database, where applicable. |
-| **Endpoint / URL** | Text | Exactly where the issue was found. |
-| **Description** | Rich text | What the issue is. |
-| **Impact** | Rich text | What an attacker could achieve — the business risk. |
-| **Remediation** | Rich text | How to fix it. This is your action plan. |
-| **Evidence** | Attachments | Screenshots, request/response captures, PoC steps. |
-| **Submitter** | User | The tester/researcher who reported it. |
-| **State history** | Timeline | Every state change, who made it, and the note they left. |
+- **Title**, **severity** with CVSS score, **state** badge, closure label (if any), and **source**.
+- For Bug Bounty findings, the **SB-Managed** / **Self-Managed** badge of the program. Hover for its meaning.
+- CWE link and a copy-ID pill.
+- A **lifecycle stepper** showing the current stage with a short description.
 
-#### The state lifecycle you drive
+#### Main column
 
-Once a finding is **Verified** (visible to you), remediation is a shared workflow.
-Use the **State actions** panel on the detail page:
+| Section | Meaning |
+|---------|---------|
+| **Background** | Context for the vulnerability class. |
+| **Description** | What the issue is. |
+| **Affected endpoint** | Exactly where it was found (method, URL, parameter). |
+| **Business impact** | What an attacker could achieve. |
+| **Remediation** | How to fix it. This is your action plan. |
+| **HTTP request / response** | Raw evidence. |
+| **Proof of concept** | Reproduction steps and screenshots. |
+| **Comments** | The discussion thread (see below). |
+| **Timeline** | Every state change, who made it, and the note left — newest first, **10 per page** with page buttons (e.g. *1–10 of 23 transitions*). |
+
+#### Right column
+
+| Card | What it shows |
+|------|---------------|
+| **State actions** | The actions your role can take now (see below). |
+| **Researcher** | Who reported the finding, with a link to their profile. |
+| **Engagement** / **BB Program** | The pentest or program it belongs to. Bug Bounty findings show a program card. |
+| **Reward** | *Paid Bug Bounty programs:* the reward for this finding. |
+| **Affected asset** | *Pentests:* the asset under test. |
+| **Dates** | Submitted, verified, resolved dates. |
+| **Retest SLA** | A countdown while the finding is awaiting retest; otherwise *"No retest currently scheduled."* |
+| **CVSS score**, **Classification**, **Risk assessment**, **OWASP Risk Rating**, **References**, **Test context** | Scoring and classification details. |
+
+#### The State actions panel
+
+1. Open the **Pick a state action…** drop-down. It lists only the actions your role can take in the current state.
+2. Check the **From → To** preview.
+3. Enter the note. Some actions need a comment (the panel shows the minimum length); for others the note is optional and is recorded on the timeline.
+4. Click **Confirm transition**.
+
+#### Pentest (PTaaS) finding lifecycle
 
 ```mermaid
-graph TD
-    VERIFIED[VERIFIED] --> FIP[FIX IN PROGRESS]
-    FIP --> RFR[READY FOR RETEST]
-    RFR -->|tester retests| RESOLVED[RESOLVED]
-    VERIFIED -->|Client Admin only| AR[ACCEPTED RISK]
+flowchart LR
+    V([Verified]) -->|client starts fixing| F([Fix in progress])
+    F -->|client submits fix| R([Ready for retest])
+    R -->|tester confirms fix| D([Resolved])
+    R -->|retest failed| F
+    V -.->|Client Admin| AR([Accepted risk])
+    F -.->|Client Admin| AR
+    R -.->|Client Admin| AR
 ```
 
-| Transition | Who | When to use it | Input required |
-|------------|-----|----------------|----------------|
-| **Verified → Fix in progress** | Client Admin / Client TPM | You've started remediating. | Optional/required note (the dialog tells you the minimum length). |
-| **Fix in progress → Ready for retest** | Client Admin / Client TPM | Your fix is deployed; ask the tester to re-verify. | Note (often required). |
-| **→ Accepted risk** | Client Admin **only** | You've decided to formally accept the risk instead of fixing (business decision). | A justification note. |
-| **Ready for retest → Resolved** | Tester (not you) | The tester confirms the fix works. | — |
+| Action | Who | When to use it | Input required |
+|--------|-----|----------------|----------------|
+| **Acknowledge and start fixing** (Verified → Fix in progress) | Client Admin / Client TPM | You have started remediating. | Optional note |
+| **Submit fix for retest** (Fix in progress → Ready for retest) | Client Admin / Client TPM | Your fix is deployed; ask the tester to re-verify. | Optional note |
+| **Accept risk formally** (→ Accepted risk) | Client Admin **only** | You formally accept the risk instead of fixing it. Available from Verified, Fix in progress, or Ready for retest. | Justification, at least 20 characters |
+| **Clear NEEDS_INFO (info provided)** | Client Admin / Client TPM | The tester asked for more information and you have provided it. | At least 10 characters |
+| **Confirm fix verified** / **Retest failed — send back to fix** | The tester (not you) | The tester re-tests your fix. | — |
 
-To move a finding: pick the target in the **"Move to"** dropdown, review the
-From → To preview, click **Move**, and enter the note when prompted. The note is
-saved on both the state-history timeline and the comments thread, so there's an
-auditable record of every decision.
+#### Bug Bounty finding lifecycle
 
-> **Why the required comments?** Each transition is a contractual event. Requiring
-> a reason keeps a defensible audit trail — essential for compliance and for the
-> retest tester to know exactly what changed.
+Bug Bounty findings follow a different path, including triage and an optional client-validation step on SB-Managed programs. See
+[Program Findings](bug-bounty/detail/findings.md) for the diagram and who does what.
 
 #### Comments
 
-Use the comments thread to ask the tester questions ("is this exploitable behind
-our WAF?"), attach remediation notes, or dispute severity. **Client Viewer** can read
-but not post.
+Use the comments thread to ask the tester questions, attach remediation notes, or
+discuss severity.
 
----
+- **@mentions:** type **@** to open **Mention a participant** and notify someone on the finding.
+- **Visibility:** client roles choose who can see a comment:
 
-### 6. Export to CSV
+| Option | Who can see it |
+|--------|----------------|
+| **Everyone** | All participants on the finding, including researchers. |
+| **Internal** | Your team and SecurityBoat staff. Researchers cannot see it. |
 
-**Export CSV** produces a full snapshot of the currently filtered findings — ideal
-for sharing a remediation backlog with your engineering team or handing evidence
-to auditors. Available to all client roles.
+  SecurityBoat staff can also post comments marked **Visible to Client**, which only your team and SecurityBoat see.
+- Every comment shows a **Visible to …** pill.
+- You can edit your own comment for a short time after posting (15 minutes) and delete your own comments.
+- **Client Viewer** can read comments but cannot post.
 
 ---
 
 ### Best practices
 
-- **Work Critical/High first** — the metrics tallies make the backlog obvious.
-- **Move findings through the states honestly.** Marking "Ready for retest" before
-  the fix is deployed just wastes a retest cycle.
-- **Use comments, don't email.** Keeping the discussion on the finding preserves
-  context for the retest and the final report.
-- **Accept risk deliberately.** Only a Client Admin can, and it should carry a
-  clear business justification in the note.
+- **Work Critical/High first** — the summary counts make the backlog obvious.
+- **Move findings through the states honestly.** Submitting for retest before the
+  fix is deployed wastes a retest cycle.
+- **Use comments, not email.** Use **Internal** when the discussion should not reach the researcher.
+- **Accept risk deliberately.** Only a Client Admin can, and it needs a clear business justification.
+- **Export only the columns you need** for each audience.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **A finding I was told about isn't in my list** | It hasn't been **Verified** yet — pre-verification findings are hidden from clients by design. It'll appear once the TPM verifies it. |
-| **No State-actions available** | You're **Client Viewer** (read-only), or the finding is in a state you can't transition from (e.g. already Resolved). |
-| **Can't "Accept risk"** | Only **Client Admin** can accept risk; **Client TPM** cannot. |
-| **"Move" button disabled** | You haven't picked a target state yet, or a required note is too short — the dialog shows the minimum length. |
+| **A pentest finding I was told about isn't in my list** | It hasn't been **verified** yet. It appears once the testing team verifies it. |
+| **A Bug Bounty finding a researcher mentioned isn't in my list** | It is still a **Draft** on the researcher's side. |
+| **No State actions available** | You're **Client Viewer**, or no action is open to your role in the current state. |
+| **Can't "Accept risk"** | Only **Client Admin** can accept risk, and only on pentest findings. |
+| **Confirm transition is disabled** | You haven't picked an action yet, or the required comment is too short. |
+| **CSV shows codes like `FIX_IN_PROGRESS`** | Expected — the export uses system values for State and Source. |
 
 ---
 

@@ -99,4 +99,4 @@ Ish can synthesize cross-module information and answer domain-specific questions
 
 ---
 
-← Previous: [Disclosure Requests](18-disclosure-requests.md) | Next: [Feedback →](16-feedback.md)
+← Previous: [Researchers](24-researchers.md) | Next: [Feedback →](16-feedback.md)

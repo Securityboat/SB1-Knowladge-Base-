@@ -1,82 +1,71 @@
 # Findings
 
-The **Findings** tab displays all security issues identified during the engagement. It is the primary workspace for managing finding reports and submitting new findings.
+The **Findings** tab shows the security issues found during the engagement. It is your workspace for submitting new findings and tracking existing ones.
 
 ---
 
 ![Findings Tab](../../../images/res_engagement_findings.png)
 
-## Findings List
+## Findings list
 
-The page lists the findings submitted for this engagement:
+| Column | Description |
+| :--- | :--- |
+| **Finding ID** | Reference ID (e.g. `PT-ACME-01`). |
+| **Title** | Vulnerability summary. |
+| **Severity** | Derived from the CVSS v4.0 score. |
+| **State** | Draft, Triaging, Verified, Fix in progress, Ready for retest, Accepted risk, or Resolved. |
+| **Asset** | The asset where the issue was found. |
 
-*   **Finding ID**: Reference ID (e.g., `PT-ACME-01`).
-*   **Title**: Vulnerability summary.
-*   **Severity**: Triaged CVSS v4.0 rating.
-*   **State**: Current state in the remediation flow (Draft, New, Verified, resolved, duplicate, etc.).
-*   **Target Asset**: The specific target asset where the bug was found.
+Use the **severity** and **state** filters to narrow the list (for example, state = Ready for retest to see what you need to re-test). **Export CSV** lets you choose the columns to download.
 
-Clicking any row opens the finding details page. Here, you can review client comments, view TPM feedback, or edit unsubmitted drafts.
+Click a row to open the finding's detail page to read comments, see triage feedback, or edit the finding.
 
 ---
 
-## Submitting a Finding
+## Submitting a finding
 
-During the **Live** phase, click the **Submit finding** button on the top right of the Findings tab. A drawer opens with the structured finding form:
+While the engagement is **Live**, click **Submit finding** at the top right of the tab. A drawer opens with the finding form.
 
 ![Submit Finding Drawer — Top](../../../images/res_engagement_submit_finding_top.png)
 
-Complete the form across the following sections:
-
-### 1. Title & Classification
-*   **Title**: Write a descriptive title (e.g., *"SQL Injection in Search API"*).
-*   **Asset**: Select the target asset from the dropdown list of linked in-scope assets.
-*   **VRT Category**: Search the Bugcrowd taxonomy database. Selecting the category pre-fills the standard **CWE** ID.
-*   **CVE / MITRE ATT&CK**: Add standard identifiers if applicable.
-
-### 2. Severity & CVSS v4.0 Calculator
-Compute the CVSS v4.0 score by filling out the 11 metrics. The platform will automatically calculate the score (0.0 to 10.0) and lock the corresponding severity level.
-
-### 3. Writeup (Markdown)
-*   **Background**: General context on the vulnerability class.
-*   **Description**: Technical details of the vulnerability.
-*   **Steps to Reproduce**: Detailed, numbered instructions to trigger the vulnerability.
-*   **Impact**: Business and technical risk.
-*   **Remediation**: Patches or configuration fixes.
-*   **Attachments**: Drag and drop screenshots or video files to illustrate the proof-of-concept.
-
-### 4. CIA Impact & OWASP Risk Rating
-*   **CIA Impact**: Set Confidentiality, Integrity, and Availability impact to None, Low, or High.
-*   **OWASP Risk Rating**: Set Likelihood (0-9) and Impact (0-9) to populate the executive report heat matrix.
-
-### 5. Technical Details & Endpoints
+The form covers title and classification (asset type, OWASP vulnerability type, VRT category, CWE, optional CVE and MITRE ATT&CK), the 11 CVSS v4.0 metrics, the writeup (Background, Description, Steps to reproduce, Impact, Remediation), CIA impact, OWASP likelihood and impact, references, and the endpoint and HTTP evidence.
 
 ![Submit Finding Drawer — Bottom](../../../images/res_engagement_submit_finding_bottom.png)
 
-*   **HTTP Method**: GET, POST, PUT, DELETE, etc.
-*   **Endpoint Path / Affected Parameter**: Specific target variables.
-*   **Raw HTTP Request & Response**: Paste the raw HTTP requests and responses to speed up verification.
+1. Click **Create finding**. The finding is saved as a **Draft**.
+2. Open it and use **State actions → Submit DRAFT for triage** → **Confirm transition**.
 
-Click **Save as Draft** or **Submit Finding**.
+See [Findings → Submitting a finding](../../07-findings.md#4-submitting-a-finding) for every field and its rules.
 
 ---
 
-## Retesting & Verification
+## Editing a finding
 
-Once the client remediates a vulnerability, they will transition the state to **Ready for Retest**. The workflow follows the diagram below:
+Pentest findings stay editable after submission. Open the finding and click **Edit finding**.
+
+- A **Researcher** can edit findings they submitted. A **Lead Researcher** can edit any finding on the engagement.
+- Editing is possible until the finding is **Resolved**.
+- **Severity and CVSS are locked** once the finding is **Verified**.
+
+---
+
+## Lifecycle and retesting
 
 ```mermaid
-graph TD
-    Ready[Status: Ready for Retest] --> Assign[Retest Assigned to Researcher]
-    Assign --> Test[Re-run Reproduction Steps]
-    Test --> Verified{Is Vulnerability Fixed?}
-    Verified -->|Yes| Resolved[Mark Status: Resolved]
-    Verified -->|No| Progress[Mark Status: Fix in Progress]
+flowchart LR
+    DR([Draft]) -->|submit| TR([Triaging])
+    TR -->|lead or TPM verifies| V([Verified])
+    V -->|client| F([Fix in progress])
+    F -->|client| R([Ready for retest])
+    R -->|Confirm fix verified| D([Resolved])
+    R -->|Retest failed| F
 ```
 
-*   **Retest Assignment**: The TPM or Lead Researcher will assign the retest to a team member.
-*   **Performing the Retest**: Re-run the reproduction steps using the original PoC.
-*   **Documenting the Result**: Add a comment detailing the retest outcome and transition the status to **Resolved** (if fixed) or back to **Fix in Progress** (if still vulnerable).
+- **Triage:** the Lead Researcher or TPM uses **Verify finding (disclose to client)**, or declines it, marks it as a duplicate, or marks it out of scope with a reason. They can also **Request more information**.
+- **Retest:** when the client moves a finding to **Ready for retest**, the original researcher or the Lead Researcher re-runs the reproduction steps:
+    - Fixed → **Confirm fix verified** → **Resolved**.
+    - Still vulnerable → **Retest failed — send back to fix** with a comment (at least 20 characters) → **Fix in progress**.
+- The **Retest SLA** card on the finding shows the time left while a retest is pending.
 
 ---
 

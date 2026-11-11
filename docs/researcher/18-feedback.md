@@ -2,7 +2,7 @@
 
 ### 1. What Feedback is for
 
-The **Feedback** module is a platform-wide dialog that lets you submit bug reports and feature requests directly to the SecurityBoatOne issue tracker. It is available to all roles and serves as the primary channel for reporting platform issues or suggesting improvements.
+The **Feedback** module is a platform-wide dialog that lets you submit bug reports and feature requests directly to the Tri-Netra issue tracker. It is available to all roles and serves as the primary channel for reporting platform issues or suggesting improvements.
 
 **The Feedback module is not a live support channel.** For urgent blockers — such as an engagement that will not load or a payout that has stalled — contact your TPM or Lead Researcher directly.
 
@@ -110,9 +110,9 @@ The poor report gives the engineering team nothing to work with. Always include 
 | **Submit button stays disabled** | At least one required field (Kind, Title, Description) is empty. Fill all three to enable the button. |
 | **Not sure whether to submit a Bug or Feature Request** | Refer to the table in section 3. If still unsure, default to Bug — the triage team can reclassify it. |
 | **Issue is blocking your work right now** | Feedback is not a live support channel. Submit the bug report for tracking, then contact your TPM or Lead Researcher for immediate help. |
-| **Need to follow up on a previous submission** | Feedback submissions go to the SecurityBoatOne issue tracker. Your TPM can look up the status of your ticket. |
+| **Need to follow up on a previous submission** | Feedback submissions go to the Tri-Netra issue tracker. Your TPM can look up the status of your ticket. |
 | **Not sure what to put in Console excerpt** | Open DevTools (F12), click the Console tab, and look for red error lines. Copy those — even a partial stack trace is helpful. If the console is clean, leave the field empty. |
 
 ---
 
-← Previous: [AI Assistant (Ish)](12-ai-assistant.md) | Next: [Settings →](13-settings.md)
+← Previous: [AI Assistant (Ish)](12-ai-assistant.md) | Next: [Team Feedback →](19-team-feedback.md)

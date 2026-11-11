@@ -19,7 +19,7 @@ For paid Bug Bounty programs, rewards are structured into a tier-based grid matc
 | **P5 — Informational** | 0.0 | Swag / Points Only |
 
 !!! tip
-    Individual program reward ranges are set by the client and may vary. Always refer to the live grid on the Rewards tab.
+    The amounts above are only an example. Each program's reward amounts (a single amount or a range per severity) are set by SecurityBoat for that program. Always refer to the live grid on the Rewards tab.
 
 ---
 
@@ -35,25 +35,15 @@ VDPs do not offer cash payouts. Instead, they reward valid contributions through
 
 ## Reputation Points System
 
-All valid findings (on both Bug Bounty and VDP programs) award **Reputation Points** upon transitioning to the **Verified** state. Reputation points determine your overall ranking on the leaderboard and eligibility for exclusive, high-paying private program invites.
-
-The diagram below outlines the reputation points assigned based on finding severity:
+Accepted findings award **Reputation Points** based on severity: P1 Critical earns the most and P5 Informational the least. The points per severity are set platform-wide by SecurityBoat and are the same on every program; the program's **Rewards** tab shows the current values. Reputation points decide your ranking on the program **Leaderboard**.
 
 ```mermaid
-graph TD
-    Finding[Accepted Finding] --> Sev{Severity Level?}
-    Sev -->|P1 - Critical| P1[40 Points]
-    Sev -->|P2 - High| P2[30 Points]
-    Sev -->|P3 - Medium| P3[20 Points]
-    Sev -->|P4 - Low| P4[10 Points]
-    Sev -->|P5 - Informational| P5[5 Points]
+flowchart LR
+    F[Accepted finding] --> S{Severity}
+    S --> P1[P1 Critical: most points]
+    S --> P3[P2–P4: fewer points]
+    S --> P5[P5 Informational: fewest points]
 ```
-
-### Reputation Deductions
-To maintain high-quality submissions, the platform enforces deductions for poor-quality reports:
-
-*   **Spam / Malicious reports**: -10 points.
-*   **Repeated invalid out-of-scope submissions**: -5 points.
 
 ---
 

@@ -54,4 +54,4 @@ graph LR
 
 ---
 
-← Previous: [Edit a Program](bug-bounty/edit-bug-bounty.md) | Next: [Disclosure Requests →](18-disclosure-requests.md)
+← Previous: [Changing a Program](bug-bounty/edit-bug-bounty.md) | Next: [Disclosure Requests →](18-disclosure-requests.md)

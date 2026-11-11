@@ -29,4 +29,4 @@ graph LR
 
 ---
 
-← Previous: [Chat](chat.md) | Back to: [Bug Bounty Overview](../overview.md)
+← Previous: [Chat](chat.md) | Next: [My Credentials →](../my-credentials.md)

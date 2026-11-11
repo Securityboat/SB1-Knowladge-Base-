@@ -25,7 +25,7 @@ The top section shows four metric chips summarizing the engagement's configurati
 |------|----------------|-------------------|
 | **Engagement types** | Web Application, API/Web Services, Mobile, Network Infrastructure, Cloud, Hardware, IoT, Other | What kind of system is being tested. An engagement can have multiple types. |
 | **Testing approach** | Black box, Grey box, White box | How much knowledge the testers have about the system internals. |
-| **Environment** | Production, Staging, QA, Development | Where the testing is being conducted. |
+| **Environment** | Production, UAT, Staging, QA, Development | Where the testing is being conducted. |
 | **Source-code access** | Granted, Not granted | Whether the testing team has access to the application source code. |
 
 Below the chips is the **Description** you provided when submitting the request. If it shows "No description added," this means the request was submitted with minimal context — not necessarily a problem, but richer descriptions reduce back-and-forth during scoping.
@@ -38,6 +38,8 @@ Defines what the testing team is authorized to test:
 
 - **In-scope** — systems, URLs, IP ranges, and paths the testers can probe. If this shows "No in-scope added," the scope is still being finalized by the SecurityBoat team.
 - **Out-of-scope** — explicitly excluded targets (e.g., third-party integrations, production data endpoints). Review this to confirm it matches your expectations.
+
+The in-scope and out-of-scope notes you enter in the request form are carried over here. SecurityBoat may refine them during scoping.
 
 > **If scope looks wrong:** use the engagement **Chat** to flag it to your TPM before testing begins. Changes after Live testing has started may require a scope amendment.
 

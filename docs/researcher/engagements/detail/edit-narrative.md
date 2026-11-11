@@ -16,7 +16,7 @@ Edit capability is strictly delegated to ensure quality control and clear segreg
 | **Technical Project Manager** | **Authorized** | Can edit the narrative during drafting or review to refine language, format structure, or fix description errors. |
 | **Customer Success Manager** | **Authorized** | Can edit sections to align executive summaries and business contexts with customer expectations. |
 | **Platform Administrator** | **Authorized** | Holds complete editing permissions and serves as the final arbiter for formatting and scope details. |
-| **Client / Customer** | **None** | Completely locked out of editing. Clients can only view approved final reports. |
+| **Client / Customer** | **None** | Cannot edit. The client previews the report, then approves it or requests changes once it is submitted for review. |
 | **Standard Researcher** | **None** | Excluded from editing and report preview access. Standard testing team members focus strictly on findings and coverage logs. |
 
 ---
@@ -26,7 +26,7 @@ Edit capability is strictly delegated to ensure quality control and clear segreg
 Authorized authors use a rich-text editor to configure five core sections:
 
 ### 1. Title Page Configuration
-*   **Report Title**: A custom text field to overwrite the default title. If left blank, the platform automatically generates a title using the engagement details.
+*   **Report Title** *(required)*: The title printed on the report cover. The scheduled month and year are added automatically (for example *"— Oct — 2026"*), so enter the title without a date. You cannot save the narrative without a title — the save button shows *"Enter a report title before saving"* and the form shows *"A report title is required."*
 
 ### 2. Executive Summary
 *   **Purpose**: A brief, high-level summary of the assessment goals, timeline, and results.
@@ -62,8 +62,8 @@ To accelerate report drafting, the platform automatically generates prefill temp
 
 ## Saving vs. Submitting
 
-*   **Saving Progress**: Clicking **Save Progress** writes the latest narrative updates to the system. This action does not change the report status and keeps the document in a draft state, allowing the author to continue refinement.
-*   **Submitting for Review**: Once drafting is finished, the Lead Researcher submits the report. This locks the narrative inputs and notifies the technical review team to begin approval workflows.
+*   **Saving Progress**: Clicking **Save Progress** writes the latest narrative updates. It does not change the report status. Editing and saving are possible only while the engagement is **Live** or in **Report drafting**.
+*   **Submitting for Review**: Once drafting is finished, the Lead Researcher clicks **Submit for review**. This works only when the engagement is in **Report drafting** and methodology coverage is 100%. The report then goes to the client for sign-off, followed by SecurityBoat's final review. See [Reports](reports.md).
 
 ---
 

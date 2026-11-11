@@ -23,7 +23,10 @@ throughout (e.g. "Client Admin only").
 | 9 | [Admin — Users](09-admin.md) | Team/user management — **Client Admin only**. |
 | 10 | [Integrations — Jira](10-integrations.md) | Sync findings to Jira — **Client Admin only**. |
 | 11 | [Attack Surface (ASM)](11-asm.md) | Continuous exposure monitoring *(if subscribed)*. |
-| 12 | [Bug Bounty](bug-bounty/overview.md) | Crowd-sourced testing programs *(if subscribed)*. |
+| 12 | [Bug Bounty](bug-bounty/overview.md) | Crowd-sourced testing programs — request, track, triage, and reward *(if subscribed)*. |
+| 12a | [My Program Requests](bug-bounty/my-program-requests.md) | Track Bug Bounty / VDP program requests and review outcomes *(if subscribed)*. |
+| 12b | [Disclosure Requests](18-disclosure-requests.md) | Approve or reject researcher disclosure requests *(if subscribed)*. |
+| 12c | [Researchers](24-researchers.md) | Browse researchers with public profiles and search by skill. |
 | 13 | [Agentic Pentest](19-agentic-pentest.md) | AI-driven penetration testing with human-validated findings *(if subscribed)*. |
 | 14 | [Continuous Testing](20-continuous-testing.md) | Exploit-confirmed vulnerability detection in every commit *(if subscribed)*. |
 | 15 | [AI Red Teaming](23-ai-red-teaming.md) | Adversarial testing for LLM-powered applications *(if subscribed)*. |
@@ -40,6 +43,9 @@ throughout (e.g. "Client Admin only").
 | View dashboard, assets, engagements, findings, compliance | ✅ | ✅ | ✅ (read-only) |
 | Acknowledge / transition findings | ✅ | ✅ | ❌ |
 | Submit engagement requests | ✅ | ✅ | ❌ |
+| Approve engagement reports / request changes | ✅ | ✅ | ❌ |
+| Request a Bug Bounty / VDP program | ✅ | ❌ | ❌ |
+| Approve disclosure requests | ✅ | ❌ | ❌ |
 | Manage users (Admin → Users) | ✅ | ❌ | ❌ |
 | Configure Jira integration | ✅ | ❌ | ❌ |
 
