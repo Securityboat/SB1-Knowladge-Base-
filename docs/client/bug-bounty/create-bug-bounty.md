@@ -21,7 +21,7 @@ flowchart LR
 
 Go to **BB Program** in the sidebar and click **New program** (or **Request a program** on the **My Program Requests** page).
 
-![New program — type selection screen showing two cards: VDP and Bug Bounty.](../../images/client_bb_create_step1.png)
+![New program — type selection screen showing two cards: VDP and Bug Bounty.](../../images/V2_Images/client_bb_create_step1.png)
 
 | Card | Choose when… |
 |------|-------------|
@@ -38,7 +38,7 @@ The program type cannot be changed after the request is submitted.
 
 The page is titled **Request Bug Bounty program** (or **Request VDP program**). Fields marked with a red asterisk (`*`) are required.
 
-![Program request form — Organisation & Basics and Scope & Policy sections.](../../images/client_bb_create_step2_top.png)
+![Program request form — Organisation & Basics and Scope & Policy sections.](../../images/V2_Images/client_bb_create_step2_top.png)
 
 ### Organisation & Basics
 
@@ -64,7 +64,7 @@ The page is titled **Request Bug Bounty program** (or **Request VDP program**). 
 
 ### Schedule & Visibility
 
-![Program request form — Schedule & Visibility and Management Model sections.](../../images/client_bb_create_step2_mid.png)
+![Program request form — Schedule & Visibility and Management Model sections.](../../images/V2_Images/client_bb_create_step2_mid.png)
 
 | Field | Required | What to enter |
 |-------|:--------:|--------------|
@@ -82,7 +82,7 @@ The page is titled **Request Bug Bounty program** (or **Request VDP program**). 
 
 ### Rewards
 
-![Program request form — reward information banner.](../../images/client_bb_create_step2_bottom.png)
+![Program request form — reward information banner.](../../images/V2_Images/client_bb_create_step2_bottom.png)
 
 - **Bug Bounty:** you do not enter reward amounts. A banner explains that bounty amounts are set by your SecurityBoat CSM, who prices each severity tier (P1–P5) before the program goes live.
 - **VDP:** a banner explains that VDP programs are recognition-based — valid reports earn swag and Hall of Fame placement, with no monetary reward table.

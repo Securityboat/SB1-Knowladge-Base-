@@ -16,7 +16,7 @@ A researcher's score on this program is the sum of the points from all their acc
 
 ## What the leaderboard shows
 
-![Program Leaderboard tab showing researcher rankings with podium medals for the top three, displaying researcher name, reputation points, rewards earned, and accepted vulnerabilities count.](../../../images/client_bb_detail_leaderboard.png)
+![Program Leaderboard tab showing researcher rankings with podium medals for the top three, displaying researcher name, reputation points, rewards earned, and accepted vulnerabilities count.](../../../images/V2_Images/client_bb_detail_leaderboard.png)
 
 Each researcher row displays:
 

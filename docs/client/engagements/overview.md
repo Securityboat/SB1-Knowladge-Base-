@@ -66,7 +66,7 @@ Click **Pentest Engagements** in the main sidebar menu.
 
 ### 3. The Engagements list
 
-![Engagements list — summary tiles, state filter pills, search, and the engagements table.](../../images/client_engagements_list_01.png)
+![Engagements list — summary tiles, state filter pills, search, and the engagements table.](../../images/V2_Images/client_engagements_list_01.png)
 
 The page is titled **Pentest Engagements** — *"Request, scope, schedule, deliver — every PTaaS engagement on the platform."*
 

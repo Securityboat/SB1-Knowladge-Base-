@@ -8,7 +8,7 @@ The **Payouts** tab tracks the reward for every payable finding on the program. 
 
 ## Bug Bounty programs
 
-![Program Payouts tab showing the payout records table.](../../../images/client_bb_detail_payouts.png)
+![Program Payouts tab showing the payout records table.](../../../images/V2_Images/client_bb_detail_payouts.png)
 
 The tab header reads **Payouts for *program name*** with a running **Total**. A line underneath explains who approves on this program.
 

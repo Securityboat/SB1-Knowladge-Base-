@@ -49,7 +49,7 @@ Click **Compliance Reports** in the main sidebar menu.
 
 ### 4. Reading the list
 
-![Compliance Reports — a card per approved report with framework, engagement count, audit period, a published/pending badge, and Review / View / Download actions.](../images/client_compliance_reports.png)
+![Compliance Reports — a card per approved report with framework, engagement count, audit period, a published/pending badge, and Review / View / Download actions.](../images/V2_Images/client_compliance_reports.png)
 
 Each report is a card showing:
 

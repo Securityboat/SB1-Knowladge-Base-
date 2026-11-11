@@ -10,7 +10,7 @@ The **Chat** tab is a messaging channel for this program. Your team, SecurityBoa
 
 ## Choosing who sees a message
 
-![Program Chat tab showing the messaging interface with the audience selector.](../../../images/client_bb_detail_chat.png)
+![Program Chat tab showing the messaging interface with the audience selector.](../../../images/V2_Images/client_bb_detail_chat.png)
 
 Before sending, pick the audience. As a client you can choose:
 

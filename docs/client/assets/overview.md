@@ -40,7 +40,7 @@ Click **Assets** in the left sidebar menu.
 
 The list is your inventory dashboard: what exists, how risky it is, and whether it's actively being tested.
 
-![Assets list showing a paginated inventory of assets for Acme Financial Services — columns: Name, Type (colour-coded badges), Criticality, State, Owner, Engagements, and Created. Toolbar shows Export CSV, Import CSV and New asset buttons.](../../images/client_assets_list.png)
+![Assets list showing a paginated inventory of assets for Acme Financial Services — columns: Name, Type (colour-coded badges), Criticality, State, Owner, Engagements, and Created. Toolbar shows Export CSV, Import CSV and New asset buttons.](../../images/V2_Images/client_asset_lists.png)
 
 #### Toolbar (top-right)
 

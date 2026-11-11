@@ -2,7 +2,9 @@
 
 The Analytics tab is a read-only visual dashboard that gives you an at-a-glance view of engagement health — how many findings, how severe, how old, and how much testing is complete.
 
-![Analytics tab — KPI strip, severity breakdown, state funnel, methodology coverage, findings by age, and discovery trend.](../../../images/client_engagement_analytics.png)
+![Analytics tab — KPI strip, severity breakdown, state funnel, methodology coverage, findings by age, and discovery trend. (1 of 2)](../../../images/V2_Images/client_engagement_analytics_01.png)
+
+![Analytics tab — KPI strip, severity breakdown, state funnel, methodology coverage, findings by age, and discovery trend. (2 of 2)](../../../images/V2_Images/client_engagement_analytics_02.png)
 
 > **Who can view:** all client roles. This tab is read-only.
 

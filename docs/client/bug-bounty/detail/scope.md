@@ -8,7 +8,7 @@ The **Scope** tab defines exactly what researchers are authorised to test under 
 
 ## What you will see
 
-![Program Scope tab showing in-scope assets as expandable cards.](../../../images/client_bb_detail_scope.png)
+![Program Scope tab showing in-scope assets as expandable cards.](../../../images/V2_Images/client_bb_detail_scope.png)
 
 ### In-scope assets
 
@@ -26,7 +26,7 @@ If no assets are linked, the tab reads *"No assets in scope."*
 
 > Only assets registered in the **Assets** module can be in scope. Testing anything outside these assets is out of scope.
 
-![Program Scope tab — scope definition and program overview.](../../../images/client_bb_detail_scope_2.png)
+![Program Scope tab — scope definition and program overview.](../../../images/V2_Images/client_bb_detail_scope_2.png)
 
 ### Scope definition
 

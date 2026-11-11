@@ -23,7 +23,7 @@ Click **Admin** in the left sidebar menu (visible only to Client Admins), then *
 
 ### 2. The Users list
 
-![Admin Users — your organisation's users with name, email, role, status, and joined date; role filter, search, and an Invite button.](../images/client_admin_users.png)
+![Admin Users — your organisation's users with name, email, role, status, and joined date; role filter, search, and an Invite button.](../images/V2_Images/client_admin_users.png)
 
 **Toolbar:** a **Density toggle** and the **Invite** button (see §9.2).
 
@@ -56,7 +56,7 @@ LinkedIn/GitHub/website, etc.).
 
 Click **Invite** to open the invite dialog.
 
-![Invite user dialog — email, first/last name, and a role dropdown limited to client roles; organisation is auto-filled to your own.](../images/client_admin_invite.png)
+![Invite user dialog — email, first/last name, and a role dropdown limited to client roles; organisation is auto-filled to your own.](../images/V2_Images/client_admin_invite.png)
 
 **Fields:**
 

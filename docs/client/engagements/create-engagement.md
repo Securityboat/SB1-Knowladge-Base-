@@ -4,9 +4,9 @@ From **Pentest Engagements** (or **My Requests**) click **New engagement** to op
 
 > *"Pick the asset, scope, and preferred dates. The SecurityBoat team will review your request and either approve it or reject it with a reason."*
 
-![Request a pentest — asset, engagement type, title, and description, with the "What happens next" panel.](../../images/client_request_form_01.png)
+![Request a pentest — asset, engagement type, title, and description, with the "What happens next" panel.](../../images/V2_Images/client_request_form_01.png)
 
-![Request a pentest — rules of engagement and preferred dates.](../../images/client_request_form_02.png)
+![Request a pentest — rules of engagement and preferred dates.](../../images/V2_Images/client_request_form_02.png)
 
 ---
 

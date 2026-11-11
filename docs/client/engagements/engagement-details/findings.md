@@ -2,7 +2,7 @@
 
 The Findings tab lists every verified finding raised on this engagement — the same data you'd see in the platform-wide **Findings** module, pre-filtered to this engagement.
 
-![Findings tab — filterable table of engagement findings with severity, state, and export options.](../../../images/client_engagement_findings.png)
+![Findings tab — filterable table of engagement findings with severity, state, and export options.](../../../images/V2_Images/client_engagement_findings.png)
 
 > **Who can view:** all client roles. Clients cannot create or edit findings; Client Admin and Client TPM move findings through remediation from the finding's detail page.
 

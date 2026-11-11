@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -4623,11 +4623,7 @@ auto-scoped to your org); staff review and approve before any scan runs.</p>
 <strong>Targets</strong>, <strong>Scans</strong>, <strong>Subdomains</strong>.</p>
 <hr />
 <h3 id="3-the-dashboard-exposure-posture-console">3. The Dashboard (Exposure Posture Console)</h3>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (1 of 3)" src="../../images/client_asm_dashboard_01.png" /></p>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (2 of 3)" src="../../images/client_asm_dashboard_02.png" /></p>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)" src="../../images/client_asm_dashboard_03.png" /></p>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)" src="../../images/client_asm_dashboard_04.png" /></p>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)" src="../../images/client_asm_dashboard_05.png" /></p>
+<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map." src="../images/V2_images/V2_Images/client_asm_dashboard_01.png" /></p>
 <p><strong>Metrics summary — what each number means:</strong></p>
 <table>
 <thead>
@@ -4689,13 +4685,13 @@ using your live numbers.</p>
 </blockquote>
 <hr />
 <h3 id="4-targets">4. Targets</h3>
-<p><img alt="ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status." src="../../images/client_asm_targets.png" /></p>
+<p><img alt="ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status." src="../images/V2_images/V2_Images/client_asm_targets.png" /></p>
 <p>A <strong>target</strong> is a domain, IP, or ASN registered for scanning. The list shows each
 target's type, monitoring cadence, last scan, and status. Click a target to see
 its scan history and details.</p>
 <h4 id="how-to-request-a-scan">How to Request a Scan</h4>
 <p>Only a <strong>Client Admin</strong> can submit new targets for scanning. To add a target, navigate to <strong>Attack Surface → Targets</strong>, click the <strong>Request Scan</strong> button, and choose one of the two onboarding flows:</p>
-<p><img alt="ASM targets — request new target" src="../../images/client_asm_request_scan.png" /></p>
+<p><img alt="ASM targets — request new target" src="../images/V2_images/V2_Images/client_asm_targets_request_scan.png" /></p>
 <p><strong>Option 1: Network &amp; Infrastructure Targets</strong> (Domain, IP, or ASN)</p>
 <ul>
 <li><strong>Target Type</strong>: Choose from <code>Domain</code> (e.g., apex domain names), <code>IP</code> (specific IP addresses or ranges), or <code>ASN</code> (Autonomous System Numbers).</li>
@@ -4705,6 +4701,7 @@ its scan history and details.</p>
 <li><strong>Note for the Reviewer</strong>: An optional field to provide context or special instructions to the SecurityBoat operations team.</li>
 </ul>
 <p><strong>Option 2: Cloud Integration Targets</strong></p>
+<p><img alt="ASM targets — request new cloud target" src="../images/V2_images/V2_Images/client_asm_targets_request_scan_cloud.png" /></p>
 <ul>
 <li><strong>Provider Selection</strong>: Select your cloud service provider (e.g., AWS, Azure, GCP).</li>
 <li><strong>Account Details</strong>: Choose the target organization and enter your account identifier.</li>
@@ -4723,7 +4720,7 @@ its scan history and details.</p>
 <hr />
 <h3 id="5-scans">5. Scans</h3>
 <p>The <strong>Scans</strong> tab displays a chronological registry of all automated and manual scans executed against your targets.</p>
-<p><img alt="ASM scans — chronological list of completed, running, and queued scans for your targets." src="../../images/client_asm_scans.png" /></p>
+<p><img alt="ASM scans — chronological list of completed, running, and queued scans for your targets." src="../../images/V2_Images/client_asm_scans.png" /></p>
 <h4 id="scans-list-columns">Scans List Columns</h4>
 <ul>
 <li><strong>Target</strong>: The domain name, IP, ASN, or cloud integration target being scanned.</li>
@@ -4745,7 +4742,7 @@ its scan history and details.</p>
 <hr />
 <h3 id="6-subdomain-inventory">6. Subdomain Inventory</h3>
 <p>The <strong>Subdomains</strong> tab lists a deduplicated, organization-wide inventory of every subdomain discovered across all active targets. This module allows you to track and selectively audit your web perimeter.</p>
-<p><img alt="ASM subdomains" src="../../images/client_asm_subdomain.png" /></p>
+<p><img alt="ASM subdomains" src="../../images/V2_Images/client_asm_subdomain.png" /></p>
 <h4 id="subdomains-inventory-details">Subdomains Inventory Details</h4>
 <ul>
 <li><strong>Liveness Status</strong>: Shows whether a subdomain is resolving and active (<code>Live</code> along with the HTTP response code, e.g., <code>Live · 200</code>) or offline (<code>Not Live</code>).</li>
@@ -4771,7 +4768,7 @@ its scan history and details.</p>
 <li>Paste the subdomains (separated by spaces, commas, or lines) in the text area.</li>
 <li>Click <strong>Scan these</strong> to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.</li>
 </ol>
-<p><img alt="ASM ad-hoc scan" src="../../images/client_asm_subdomain_scan_ad_doc.png" /></p>
+<p><img alt="ASM ad-hoc scan" src="../../images/V2_Images/client_asm_subdomain_scan_ad_doc.png" /></p>
 <h3 id="7-how-asm-connects-to-the-rest-of-the-platform">7. How ASM connects to the rest of the platform</h3>
 <p>ASM findings flow into the unified <strong>Findings</strong> module (source = <code>ASM</code>), so a
 perimeter exposure is triaged the same way as a pentest finding. If an ASM finding
@@ -4867,7 +4864,7 @@ warrants a deeper look, it can inform a new <strong>pentest engagement request</
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

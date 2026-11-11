@@ -30,7 +30,7 @@ Submissions go to the Tri-Netra issue tracker, where the engineering team triage
 
 Click the **Feedback** button at the bottom of the left sidebar (below all module links, above **Settings**). It opens as a dialog overlay — you can dismiss it without losing any work on the page behind it.
 
-![Feedback dialog — submit bug reports and feature requests directly from the platform.](../images/client_feedback_dialog.png)
+![Feedback dialog — submit bug reports and feature requests directly from the platform.](../images/V2_Images/client_feedback_dialog.png)
 
 ---
 

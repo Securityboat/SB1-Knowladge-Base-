@@ -2,7 +2,9 @@
 
 The Coverage tab shows the methodology checklist — the set of test items being exercised on your engagement, grouped by security category. This gives you visibility into testing progress without needing to wait for the final report.
 
-![Coverage tab — methodology checklist showing test items grouped by category with status indicators.](../../../images/client_engagement_coverage.png)
+![Coverage tab — methodology checklist showing test items grouped by category with status indicators. (1 of 2)](../../../images/V2_Images/client_engagement_coverage_01.png)
+
+![Coverage tab — methodology checklist showing test items grouped by category with status indicators. (2 of 2)](../../../images/V2_Images/client_engagement_coverage_02.png)
 
 > **Who can view:** all client roles. This tab is **read-only** — status updates are managed by the testing team.
 

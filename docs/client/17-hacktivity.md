@@ -28,6 +28,8 @@ Each published disclosure includes:
 
 ## Browsing the Feed
 
+![Hacktivity — feed of disclosed vulnerabilities.](../images/V2_Images/client_hacktivity.png)
+
 The Hacktivity page lists all published disclosures in reverse chronological order. Click **View** on any entry to read the full technical write-up.
 
 ---

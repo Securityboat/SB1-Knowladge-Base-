@@ -10,6 +10,8 @@ To open it, click **My Program Requests** in the sidebar.
 
 ## The requests table
 
+![My Program Requests — table of submitted Bug Bounty and VDP program requests with their status.](../../images/V2_Images/client_my_program_requests.png)
+
 | Column | What it shows |
 |--------|---------------|
 | **Program** | The program name, with **VDP** or **Bug Bounty** underneath. |

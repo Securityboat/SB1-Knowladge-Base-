@@ -70,7 +70,7 @@ Click **AI Red Teaming** in the main sidebar menu. The module opens on the
 **Dashboard** tab. Two additional tabs are available: **Engagements** and
 **Findings**.
 
-![AI Red Teaming — dashboard metrics and engagements overview.](../images/client_ai_red_teaming.png)
+![AI Red Teaming — dashboard metrics and engagements overview.](../images/V2_Images/client_ai_red_teaming.png)
 
 ---
 

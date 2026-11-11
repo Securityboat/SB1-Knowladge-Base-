@@ -12,9 +12,9 @@ A sticky footer at the bottom tracks your progress, displaying a count of comple
 
 > **Scope Isolation:** The form is automatically scoped to your organisation; you cannot accidentally assign assets to a different business entity.
 
-![New asset form — Section 1: Basic Information with asset name ('Acme Financial Services production customer portal'), Criticality set to 'Critical', and a filled description.](../../images/client_assets_new_01.png)
-![New asset form — Section 2: Asset type picker with 'Web Application' and 'API / Web Services' selected; Section 3: Scope Details showing the Web Application URL input (https://portal.acmefs.example.com) and file upload areas for Architecture diagram and Auth-flow document.](../../images/client_assets_new_02.png)
-![New asset form — Section 3 continued: API/Web Services base URL (https://api.acmefs.example.com/v2), Postman collection & OpenAPI upload areas; Section 4: Credentials with a filled 'Standard User' row including username, masked secret, and notes.](../../images/client_assets_new_03.png)
+![New asset form — Section 1: Basic Information with asset name ('Acme Financial Services production customer portal'), Criticality set to 'Critical', and a filled description.](../../images/V2_Images/client_assets_new_01.png)
+![New asset form — Section 2: Asset type picker with 'Web Application' and 'API / Web Services' selected; Section 3: Scope Details showing the Web Application URL input (https://portal.acmefs.example.com) and file upload areas for Architecture diagram and Auth-flow document.](../../images/V2_Images/client_assets_new_02.png)
+![New asset form — Section 3 continued: API/Web Services base URL (https://api.acmefs.example.com/v2), Postman collection & OpenAPI upload areas; Section 4: Credentials with a filled 'Standard User' row including username, masked secret, and notes.](../../images/V2_Images/client_assets_new_03.png)
 
 #### Section 1 — Basic Information
 

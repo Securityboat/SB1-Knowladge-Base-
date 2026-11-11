@@ -10,7 +10,7 @@ The **Findings** tab lists every report submitted to this program, across every 
 
 ## KPI overview and sub-tabs
 
-![Program Findings tab showing KPI tiles and the findings table.](../../../images/client_bb_detail_findings.png)
+![Program Findings tab showing KPI tiles and the findings table.](../../../images/V2_Images/client_bb_detail_findings.png)
 
 | Tile | What it counts |
 |------|---------------|

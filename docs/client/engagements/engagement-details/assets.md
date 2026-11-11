@@ -2,7 +2,9 @@
 
 The Assets tab shows the asset under test for this engagement — its full scope contract including URLs, IP ranges, credentials, and attachments. This tab is **read-only** for all client roles; asset data is managed by the SecurityBoat team based on the scoping call.
 
-![Assets tab — asset detail with Overview, Scope, Credentials, and Attachments sections.](../../../images/client_engagement_assets.png)
+![Assets tab — asset detail with Overview, Scope, Credentials, and Attachments sections. (1 of 2)](../../../images/V2_Images/client_engagement_assets_01.png)
+
+![Assets tab — asset detail with Overview, Scope, Credentials, and Attachments sections. (2 of 2)](../../../images/V2_Images/client_engagement_assets_02.png)
 
 ---
 

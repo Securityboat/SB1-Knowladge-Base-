@@ -8,7 +8,7 @@ To open a program, go to **BB Program** in the sidebar and click any program in 
 
 ## Page header
 
-![Program detail Overview tab showing the program header with badges, lifecycle stepper, KPI tiles, program details, and the management model card.](../../images/client_bb_detail_overview.png)
+![Program detail Overview tab showing the program header with badges, lifecycle stepper, KPI tiles, program details, and the management model card.](../../images/V2_Images/client_bb_detail_overview.png)
 
 The header identifies the program at a glance:
 
@@ -119,7 +119,7 @@ The top three researchers appear as podium cards. Filter by **Today**, **This We
 
 ## Activity tab
 
-![Program Activity tab showing a chronological log of program events.](../../images/client_bb_detail_activity.png)
+![Program Activity tab showing a chronological log of program events.](../../images/V2_Images/client_bb_detail_activity.png)
 
 The **Activity** tab is a chronological log of everything that happens on the program, with the time and the person who did it. Events include:
 
@@ -136,7 +136,7 @@ When there is no activity yet, the tab reads: *"No activity yet. Events will app
 
 ## Updates tab
 
-![Program Updates tab showing program announcements.](../../images/client_bb_detail_updates.png)
+![Program Updates tab showing program announcements.](../../images/V2_Images/client_bb_detail_updates.png)
 
 The **Updates** tab holds program announcements posted by SecurityBoat — scope changes, reward changes, testing-window restrictions, and policy updates. Each update shows its title, author, date, and content.
 
@@ -146,7 +146,7 @@ The **Updates** tab holds program announcements posted by SecurityBoat — scope
 
 ## Integrations tab
 
-![Program Integrations tab showing the Jira integration status.](../../images/client_bb_detail_integrations.png)
+![Program Integrations tab showing the Jira integration status.](../../images/V2_Images/client_bb_detail_integrations.png)
 
 If your organisation has connected Jira, a **Client Admin** can map this program to a Jira project (**Set up Jira**) and then sync selected findings from the Findings tab.
 

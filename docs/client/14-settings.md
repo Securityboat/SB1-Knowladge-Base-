@@ -15,7 +15,7 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 
 ### 2. Account
 
-![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle.](../images/client_settings_account_01.png)
+![Account settings — avatar, editable name, read-only administered identity (email/role/org/2FA), and theme toggle.](../images/V2_Images/client_settings_account.png)
 
 | Section | What you can do |
 |---------|-----------------|
@@ -30,7 +30,7 @@ Click **Settings** at the bottom of the sidebar. It opens on the **Account** tab
 
 ### 3. MFA Setup
 
-![MFA Setup — configure multi-factor authentication for your account.](../images/client_settings_mfa.png)
+![MFA Setup — configure multi-factor authentication for your account.](../images/V2_Images/client_settings_mfa.png)
 
 Manage multi-factor authentication (MFA) to secure your account. Because your profile grants access to organization assets, vulnerability reports, and project tracking dashboards, maintaining active MFA is strongly recommended. Your current two-factor setup status also appears on the **Account** tab.
 

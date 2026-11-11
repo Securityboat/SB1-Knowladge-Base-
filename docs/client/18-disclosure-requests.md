@@ -16,6 +16,8 @@ The researcher sends the request with the **Request Publish** button on the prog
 
 ## Accessing Disclosure Requests
 
+![Disclosure Requests — researcher requests to publicly disclose findings.](../images/V2_Images/client_disclosure_req.png)
+
 In the sidebar, under **OPERATIONS**, click **Disclosure Requests**. Notification links open the page with the relevant request highlighted.
 
 ---

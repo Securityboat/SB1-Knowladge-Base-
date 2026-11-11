@@ -1,6 +1,6 @@
 ## Reports
 
-![Reports tab — engagement report with its status badge and review actions.](../../../images/client_engagement_reports.png)
+![Reports tab — engagement report with its status badge and review actions.](../../../images/V2_Images/client_engagement_reports.png)
 
 ---
 

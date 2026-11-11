@@ -61,7 +61,7 @@ single-page dashboard — there are no sub-tabs. All metrics, the exploit pipeli
 visualisation, the Confirmed vs. Theoretical breakdown, and the Exploit Attempt
 Log are presented on one scrollable page.
 
-![Continuous Testing — exploit-confirmed findings, key metrics, and validation pipeline.](../images/client_continuous_testing.png)
+![Continuous Testing — exploit-confirmed findings, key metrics, and validation pipeline.](../images/V2_Images/client_continuous_testing.png)
 
 The dashboard is organised into five sections, top to bottom:
 

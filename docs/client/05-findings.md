@@ -58,7 +58,7 @@ Click **Findings** in the main sidebar menu.
 
 ### 3. The Findings list — every control explained
 
-![Findings list — summary counts, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/client_findings_list.png)
+![Findings list — summary counts, filter bar (state, severity, source), and a paginated table with severity, state, and source pills.](../images/V2_Images/client_findings_list.png)
 
 #### Summary counts (top)
 
@@ -134,9 +134,11 @@ The same dialog is available on a pentest engagement's **Findings** tab.
 
 Click any finding to open it.
 
-![Finding detail — header, lifecycle stepper, description, impact, remediation, evidence, comments, and the right-hand cards. (1 of 2)](../images/client_finding_detail_01.png)
+![Finding detail — header, lifecycle stepper, description, impact, remediation, evidence, comments, and the right-hand cards. (1 of 3)](../images/V2_Images/client_finding_detail_01.png)
 
-![Finding detail — State actions panel, timeline, and side cards. (2 of 2)](../images/client_finding_detail_02.png)
+![Finding detail — State actions panel, timeline, and side cards. (2 of 3)](../images/V2_Images/client_finding_detail_02.png)
+
+![Finding detail — additional detail. (3 of 3)](../images/V2_Images/client_finding_detail_03.png)
 
 #### Header and stepper
 

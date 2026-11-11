@@ -41,7 +41,7 @@ Ish is accessible in two ways across the platform:
 1. **Dedicated AI Assistant Portal:** Click **AI Assistant** in the main sidebar menu to access the full-screen conversational interface with complete history and multi-turn deep dives.
 2. **Floating Dashboard Widget:** Click the persistent **Ask Ish** widget in the lower corner of any product screen. The widget automatically inherits the context of the page you are on.
 
-![AI Assistant — a chat interface with a message box and conversation history.](../images/client_ai_chat.png)
+![AI Assistant — a chat interface with a message box and conversation history.](../images/V2_Images/client_ai_chat.png)
 
 ### Role Availability
 

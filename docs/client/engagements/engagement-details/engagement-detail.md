@@ -2,7 +2,7 @@
 
 Opening an engagement from the list takes you to its detail page — the central workspace for tracking your pentest from approval through to final report delivery. The page has a header (identity, state, and key metrics) followed by a row of nine tabs.
 
-![Engagement detail — hero header with project ID, state badge, lifecycle stepper, and KPI tiles, followed by the tab bar.](../../../images/client_engagement_brief.png)
+![Engagement detail — hero header with project ID, state badge, lifecycle stepper, and KPI tiles, followed by the tab bar.](../../../images/V2_Images/client_engagements_detail.png)
 
 ---
 

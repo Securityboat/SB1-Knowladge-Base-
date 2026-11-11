@@ -8,7 +8,7 @@ The **Collaborators** tab lists every researcher who has contributed to this pro
 
 ## What you will see
 
-![Program Collaborators tab listing researchers who have contributed to the program, showing their reputation points and contribution breakdown (reports vs. collaborations).](../../../images/client_bb_detail_collaborators.png)
+![Program Collaborators tab listing researchers who have contributed to the program, showing their reputation points and contribution breakdown (reports vs. collaborations).](../../../images/V2_Images/client_bb_detail_collaborators.png)
 
 Each collaborator row displays:
 

@@ -8,7 +8,7 @@ The **Rewards** tab shows what researchers earn for valid reports. The content d
 
 ## Bug Bounty programs
 
-![Program Rewards tab showing the severity-tiered reward table.](../../../images/client_bb_detail_rewards.png)
+![Program Rewards tab showing the severity-tiered reward table.](../../../images/V2_Images/client_bb_detail_rewards.png)
 
 The Rewards tab shows a severity-tiered reward table:
 

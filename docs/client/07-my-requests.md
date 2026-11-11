@@ -32,7 +32,7 @@ Click **My Requests** in the main sidebar. The page is titled **My pentest reque
 
 ### 3. Reading the page
 
-![My requests — a card per submitted request, each with a coloured status badge, project ID, title, asset, and preferred dates.](../images/client_my_requests.png)
+![My requests — a card per submitted request, each with a coloured status badge, project ID, title, asset, and preferred dates.](../images/V2_Images/client_my_requests.png)
 
 Each request is a card with:
 

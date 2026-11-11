@@ -43,7 +43,7 @@ takedowns; you consume the alerts, evidence, and takedown status.
 Click **Digital Risk Protection** in the main sidebar menu. It has four tabs:
 **Overview**, **Watchlist**, **Alerts**, **Takedowns**.
 
-![Digital Risk Protection — Overview tab with alert metrics and severity-scored alert stream.](../images/client_drp_overview.png)
+![Digital Risk Protection — Overview tab with alert metrics and severity-scored alert stream.](../images/V2_Images/client_drp_overview.png)
 
 ---
 

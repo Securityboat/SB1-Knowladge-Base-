@@ -38,15 +38,8 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ### 3. The Dashboard (Exposure Posture Console)
 
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (1 of 3)](../images/client_asm_dashboard_01.png)
+![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map.](../images/V2_images/V2_Images/client_asm_dashboard_01.png)
 
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (2 of 3)](../images/client_asm_dashboard_02.png)
-
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)](../images/client_asm_dashboard_03.png)
-
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)](../images/client_asm_dashboard_04.png)
-
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map. (3 of 3)](../images/client_asm_dashboard_05.png)
 
 
 **Metrics summary — what each number means:**
@@ -84,7 +77,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ### 4. Targets
 
-![ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status.](../images/client_asm_targets.png)
+![ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status.](../images/V2_images/V2_Images/client_asm_targets.png)
 
 A **target** is a domain, IP, or ASN registered for scanning. The list shows each
 target's type, monitoring cadence, last scan, and status. Click a target to see
@@ -94,7 +87,7 @@ its scan history and details.
 #### How to Request a Scan
 Only a **Client Admin** can submit new targets for scanning. To add a target, navigate to **Attack Surface → Targets**, click the **Request Scan** button, and choose one of the two onboarding flows:
 
-![ASM targets — request new target](../images/client_asm_request_scan.png)
+![ASM targets — request new target](../images/V2_images/V2_Images/client_asm_targets_request_scan.png)
 
 **Option 1: Network & Infrastructure Targets** (Domain, IP, or ASN)
 
@@ -105,6 +98,8 @@ Only a **Client Admin** can submit new targets for scanning. To add a target, na
 * **Note for the Reviewer**: An optional field to provide context or special instructions to the SecurityBoat operations team.
 
 **Option 2: Cloud Integration Targets**
+
+![ASM targets — request new cloud target](../images/V2_images/V2_Images/client_asm_targets_request_scan_cloud.png)
 
 * **Provider Selection**: Select your cloud service provider (e.g., AWS, Azure, GCP).
 * **Account Details**: Choose the target organization and enter your account identifier.
@@ -124,7 +119,7 @@ Only a **Client Admin** can submit new targets for scanning. To add a target, na
 
 The **Scans** tab displays a chronological registry of all automated and manual scans executed against your targets.
 
-![ASM scans — chronological list of completed, running, and queued scans for your targets.](../images/client_asm_scans.png)
+![ASM scans — chronological list of completed, running, and queued scans for your targets.](../images/V2_Images/client_asm_scans.png)
 
 #### Scans List Columns
 
@@ -151,7 +146,7 @@ Clicking on any scan opens a comprehensive dashboard dedicated to that specific 
 
 The **Subdomains** tab lists a deduplicated, organization-wide inventory of every subdomain discovered across all active targets. This module allows you to track and selectively audit your web perimeter.
 
-![ASM subdomains](../images/client_asm_subdomain.png)
+![ASM subdomains](../images/V2_Images/client_asm_subdomain.png)
 
 #### Subdomains Inventory Details
 
@@ -179,7 +174,7 @@ To actively probe subdomains outside of the global target schedule:
 3. Paste the subdomains (separated by spaces, commas, or lines) in the text area.
 4. Click **Scan these** to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.
 
-![ASM ad-hoc scan](../images/client_asm_subdomain_scan_ad_doc.png)
+![ASM ad-hoc scan](../images/V2_Images/client_asm_subdomain_scan_ad_doc.png)
 
 ### 7. How ASM connects to the rest of the platform
 

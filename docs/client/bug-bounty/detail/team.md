@@ -10,6 +10,8 @@ The **Team** tab shows which researchers have been invited to this private progr
 
 ## The team list
 
+![Program Team tab — researchers invited to this private program.](../../../images/V2_Images/client_bb_detail_team.png)
+
 | Column | Description |
 |--------|-------------|
 | **Researcher** | Name and email |

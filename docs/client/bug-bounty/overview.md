@@ -117,7 +117,7 @@ flowchart LR
 
 Click **BB Program** in the sidebar to open the **Programs** list.
 
-![Bug Bounty programs list showing KPI tiles, type filter tabs, state filters, search bar, and the programs table.](../../images/client_bb_programs_list.png)
+![Bug Bounty programs list showing KPI tiles, type filter tabs, state filters, search bar, and the programs table.](../../images/V2_Images/client_bb_programs_list.png)
 
 | Element | What it shows |
 |---------|---------------|
