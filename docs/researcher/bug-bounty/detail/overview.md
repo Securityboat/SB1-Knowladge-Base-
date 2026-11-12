@@ -4,7 +4,7 @@ When you open a Bug Bounty or VDP program, you land on the **Program Detail** vi
 
 ---
 
-![Program Detail Overview](../../../images/res_bb_detail_overview.png)
+![Program Detail Overview](../../../images/V2_Images/res_bb_detail_overview.png)
 
 ## Page layout
 

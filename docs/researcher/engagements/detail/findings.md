@@ -4,7 +4,7 @@ The **Findings** tab shows the security issues found during the engagement. It i
 
 ---
 
-![Findings Tab](../../../images/res_engagement_findings.png)
+![Findings Tab](../../../images/V2_Images/res_engagement_findings.png)
 
 ## Findings list
 
@@ -26,11 +26,11 @@ Click a row to open the finding's detail page to read comments, see triage feedb
 
 While the engagement is **Live**, click **Submit finding** at the top right of the tab. A drawer opens with the finding form.
 
-![Submit Finding Drawer — Top](../../../images/res_engagement_submit_finding_top.png)
+![Submit Finding Drawer — Top](../../../images/V2_Images/res_engagement_submit_finding_top.png)
 
 The form covers title and classification (asset type, OWASP vulnerability type, VRT category, CWE, optional CVE and MITRE ATT&CK), the 11 CVSS v4.0 metrics, the writeup (Background, Description, Steps to reproduce, Impact, Remediation), CIA impact, OWASP likelihood and impact, references, and the endpoint and HTTP evidence.
 
-![Submit Finding Drawer — Bottom](../../../images/res_engagement_submit_finding_bottom.png)
+![Submit Finding Drawer — Bottom](../../../images/V2_Images/res_engagement_submit_finding_bottom.png)
 
 1. Click **Create finding**. The finding is saved as a **Draft**.
 2. Open it and use **State actions → Submit DRAFT for triage** → **Confirm transition**.

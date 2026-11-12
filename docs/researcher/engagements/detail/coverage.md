@@ -6,7 +6,7 @@ Completing the coverage checklist is a critical requirement of the penetration t
 
 ---
 
-![Coverage Tab](../../../images/res_engagement_coverage.png)
+![Coverage Tab](../../../images/V2_Images/res_engagement_coverage.png)
 
 ## Logging Coverage Workflow
 

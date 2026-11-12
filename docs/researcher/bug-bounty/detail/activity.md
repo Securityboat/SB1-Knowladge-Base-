@@ -4,7 +4,7 @@ The **Activity** tab provides a read-only, chronological log of events related t
 
 ---
 
-![Activity Tab](../../../images/res_bb_detail_activity.png)
+![Activity Tab](../../../images/V2_Images/res_bb_detail_activity.png)
 
 ## Logged Events
 

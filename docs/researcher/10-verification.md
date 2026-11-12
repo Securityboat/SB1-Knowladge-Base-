@@ -61,12 +61,12 @@ As soon as an administrator requests your verification, two things happen:
 
 **On your Dashboard:**
 
-![Researcher dashboard — the Identity verification card: "An administrator has requested identity verification. Complete it to unlock future platform capabilities." with a Verify Identity button and a "Verification requested" badge. (1 of 2)](../images/res_verify_dashboard.png)
+![Researcher dashboard — the Identity verification card: "An administrator has requested identity verification. Complete it to unlock future platform capabilities." with a Verify Identity button and a "Verification requested" badge. (1 of 2)](../images/V2_Images/res_verify_dashboard.png)
 
 
 **On the Identity Verification page** (sidebar → **Identity Verification**):
 
-![Identity Verification page — "Verify your identity to unlock future platform capabilities such as payouts and premium studios." with the Verify Identity button.](../images/res_verify_module.png)
+![Identity Verification page — "Verify your identity to unlock future platform capabilities such as payouts and premium studios." with the Verify Identity button.](../images/V2_Images/res_verify_module.png)
 
 ---
 
@@ -109,7 +109,7 @@ SecurityBoat reconciles the signed outcome from the identity provider. Your stat
 #### Verified State
 Once approved, your **Identity verification** card displays a green **Verified** indicator (with approval date), and the **Verify Identity** button is removed. Staff can see your verified status on your profile.
 
-![Researcher — the verified state: "Your identity has been verified." on the Identity Verification page.](../images/res_verify_verified.png)
+![Researcher — the verified state: "Your identity has been verified." on the Identity Verification page.](../images/V2_Images/res_verify_verified.png)
 
 #### Handling Non-Passing Statuses
 

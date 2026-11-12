@@ -55,7 +55,7 @@ If you lose access to your authenticator app, you can reset your MFA using the s
 
 ### 4. Notifications
 
-![Notification preferences — per-event toggles and delivery channels.](../images/client_settings_notifications.png)
+![Notification preferences — per-event toggles and delivery channels.](../images/V2_Images/client_settings_notifications.png)
 
 Choose **which** notifications reach you and **how** (the delivery channels). Toggle
 categories on/off to tune the noise to your role.

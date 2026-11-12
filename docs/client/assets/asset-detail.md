@@ -49,7 +49,7 @@ Provides a high-level summary of the asset's metadata and description.
 
 #### b. Scope Tab
 
-![Scope tab showing Web Application URLs (https://portal.acmefs.example.com) and API/Web Services base URL (https://api.acmefs.example.com/v2).](../../images/client_assets_detail_scope.png)
+![Scope tab showing the scope details per type — API / Web Services base URLs (https://api.aecmcorp.example/v1 and https://api-staging.aecmcorp.example/v1).](../../images/V2_Images/client_assets_detail_scope.png)
 
 Displays the type-specific targets set in the scope contract:
 

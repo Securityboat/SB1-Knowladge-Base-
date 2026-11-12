@@ -2,9 +2,7 @@
 
 The Brief tab is the default landing view when you open an engagement. It gives you a complete snapshot of scope, schedule, and team in a single scroll — no clicking through other tabs required.
 
-![Brief tab — two-column layout with engagement details, rules of engagement, schedule, testing team, and state history. (1 of 2)](../../../images/V2_Images/client_engagement_brief_01.png)
-
-![Brief tab — continued. (2 of 2)](../../../images/V2_Images/client_engagement_brief_02.png)
+![Brief tab — two-column layout with engagement details, rules of engagement, schedule, testing team, and state history.](../../../images/V2_Images/client_engagement_brief.png)
 
 ---
 

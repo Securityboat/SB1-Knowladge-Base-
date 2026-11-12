@@ -8,6 +8,8 @@ To open it, click **My Credentials** in the sidebar. You request credentials fro
 
 ## Assignments
 
+![My Credentials — test accounts assigned to you and the status of your requests.](../../images/V2_Images/res_my_credentials.png)
+
 | Column | What it shows |
 |--------|---------------|
 | **Program / asset** | The program (linked) and the asset the credentials belong to |

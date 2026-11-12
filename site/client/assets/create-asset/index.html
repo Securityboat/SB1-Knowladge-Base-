@@ -4012,24 +4012,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../researcher/14-agentic-pentest/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Agentic Pentest
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
   
 
               
@@ -4462,10 +4444,8 @@
 <blockquote>
 <p><strong>Scope Isolation:</strong> The form is automatically scoped to your organisation; you cannot accidentally assign assets to a different business entity.</p>
 </blockquote>
-<p><img alt="New asset form — Section 1: Basic Information with asset name ('Acme Financial Services production customer portal'), Criticality set to 'Critical', and a filled description." src="../../../images/V2_Images/client_assets_new_01.png" />
-<img alt="New asset form — Section 2: Asset type picker with 'Web Application' and 'API / Web Services' selected; Section 3: Scope Details showing the Web Application URL input (https://portal.acmefs.example.com) and file upload areas for Architecture diagram and Auth-flow document." src="../../../images/V2_Images/client_assets_new_02.png" />
-<img alt="New asset form — Section 3 continued: API/Web Services base URL (https://api.acmefs.example.com/v2), Postman collection &amp; OpenAPI upload areas; Section 4: Credentials with a filled 'Standard User' row including username, masked secret, and notes." src="../../../images/V2_Images/client_assets_new_03.png" /></p>
 <h4 id="section-1-basic-information">Section 1 — Basic Information</h4>
+<p><img alt="New asset form — Section 1: Basic information with the Asset name field, Criticality selector (Critical, High, Medium, Low, Informational), and the Description rich-text editor." src="../../../images/V2_Images/client_assets_new_01.png" /></p>
 <p>Configure the identifier and business value of the asset.</p>
 <table>
 <thead>
@@ -4540,6 +4520,7 @@
 </tbody>
 </table>
 <h4 id="section-2-asset-type-picker">Section 2 — Asset Type Picker</h4>
+<p><img alt="New asset form — Section 2: Asset type picker with Web Application selected, and Section 3: Scope details showing the Web application URLs field, Add URL / Import CSV, and the architecture diagram and auth-flow upload areas." src="../../../images/V2_Images/client_assets_new_02.png" /></p>
 <p>Select <strong>up to 3 types</strong> that represent the asset. Picking a type dynamically unlocks its corresponding <strong>Scope Details</strong> input fields in Section 3.</p>
 <blockquote>
 <p><strong>Why support multiple types?</strong> Real-world products often span multiple layers. For example, a single product might consist of a Web Application interface, a backing API, and a Mobile App. Grouping them under a single asset keeps the security posture and findings cohesive rather than fragmenting them across separate records.</p>
@@ -4558,6 +4539,7 @@
 <p><strong>Behind the Scenes:</strong> The details are compiled into a structured JSON scope contract (maximum 2 MB). Files are staged locally in your browser and uploaded to the platform's secure storage when you submit the form.</p>
 </blockquote>
 <h4 id="section-4-credentials-optional">Section 4 — Credentials (Optional)</h4>
+<p><img alt="New asset form — Section 4: Credentials with Upload file / Add manually options, Sample CSV and Sample TXT downloads, the file picker, and the footer showing required fields ready with the Create asset button." src="../../../images/V2_Images/client_assets_new_03.png" /></p>
 <p>Provide test account details to allow authenticated security testing.</p>
 <table>
 <thead>
@@ -4603,7 +4585,7 @@
 <hr />
 <h3 id="2-bulk-creation-via-csv-import">2. Bulk Creation via CSV Import</h3>
 <p>When onboarding a large inventory of assets, use the bulk import feature.</p>
-<p><img alt="Import assets page — CSV format instructions (column names, max rows, scope format), a 'Download template' button, and the CSV file picker with 'Upload + import' button." src="../../../images/client_assets_import.png" /></p>
+<p><img alt="Import assets page — CSV format instructions (column names, max rows, scope format), a 'Download template' button, and the CSV file picker with 'Upload + import' button." src="../../../images/V2_Images/client_assets_import.png" /></p>
 <h4 id="csv-file-schema">CSV File Schema</h4>
 <p>To avoid parsing errors, download the layout structure using the <strong>Download template</strong> button.</p>
 <table>

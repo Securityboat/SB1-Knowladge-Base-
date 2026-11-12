@@ -4,7 +4,7 @@ The **Updates** tab is the official communication board for the program. It is m
 
 ---
 
-![Updates Tab](../../../images/res_bb_detail_updates.png)
+![Updates Tab](../../../images/V2_Images/res_bb_detail_updates.png)
 
 ## What is Posted in Updates?
 

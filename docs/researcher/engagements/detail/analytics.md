@@ -4,7 +4,7 @@ The **Analytics** tab provides visual representations and charts summarizing the
 
 ---
 
-![Analytics Tab](../../../images/res_engagement_analytics.png)
+![Analytics Tab](../../../images/V2_Images/res_engagement_analytics.png)
 
 ## Visual Dashboards
 

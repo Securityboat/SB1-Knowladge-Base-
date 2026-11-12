@@ -4,7 +4,7 @@ The **Rewards** tab defines the incentive structure of the program. Depending on
 
 ---
 
-![Rewards Tab](../../../images/res_bb_detail_rewards.png)
+![Rewards Tab](../../../images/V2_Images/res_bb_detail_rewards.png)
 
 ## Monetary Payout Grid (Bug Bounty)
 

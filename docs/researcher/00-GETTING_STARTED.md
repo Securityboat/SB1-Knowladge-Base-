@@ -17,7 +17,7 @@ Welcome to the **Security Researcher** guide. As a researcher on Tri-Netra, you 
 
 ## 2. Key Workflows
 
-![Researcher dashboard — your home screen with engagements, findings, and KPIs.](../images/researcher_dashboard.png)
+![Researcher dashboard — your home screen with engagements, findings, and KPIs.](../images/V2_Images/researcher_dashboard.png)
 
 ---
 

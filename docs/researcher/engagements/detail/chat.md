@@ -4,7 +4,7 @@ The **Chat** tab is a secure, real-time messaging workspace built into the engag
 
 ---
 
-![Chat Tab](../../../images/res_engagement_chat.png)
+![Chat Tab](../../../images/V2_Images/res_engagement_chat.png)
 
 ## Channels & Scope
 

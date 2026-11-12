@@ -38,7 +38,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ### 3. The Dashboard (Exposure Posture Console)
 
-![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map.](../images/V2_images/V2_Images/client_asm_dashboard_01.png)
+![ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map.](../images/V2_Images/client_asm_dashboard_01.png)
 
 
 
@@ -77,7 +77,7 @@ Click **Attack Surface** in the main sidebar menu. It has tabs: **Dashboard**,
 
 ### 4. Targets
 
-![ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status.](../images/V2_images/V2_Images/client_asm_targets.png)
+![ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status.](../images/V2_Images/client_asm_targets.png)
 
 A **target** is a domain, IP, or ASN registered for scanning. The list shows each
 target's type, monitoring cadence, last scan, and status. Click a target to see
@@ -87,7 +87,7 @@ its scan history and details.
 #### How to Request a Scan
 Only a **Client Admin** can submit new targets for scanning. To add a target, navigate to **Attack Surface → Targets**, click the **Request Scan** button, and choose one of the two onboarding flows:
 
-![ASM targets — request new target](../images/V2_images/V2_Images/client_asm_targets_request_scan.png)
+![ASM targets — request new target](../images/V2_Images/client_asm_targets_request_scan.png)
 
 **Option 1: Network & Infrastructure Targets** (Domain, IP, or ASN)
 
@@ -99,7 +99,7 @@ Only a **Client Admin** can submit new targets for scanning. To add a target, na
 
 **Option 2: Cloud Integration Targets**
 
-![ASM targets — request new cloud target](../images/V2_images/V2_Images/client_asm_targets_request_scan_cloud.png)
+![ASM targets — request new cloud target](../images/V2_Images/client_asm_targets_request_scan_cloud.png)
 
 * **Provider Selection**: Select your cloud service provider (e.g., AWS, Azure, GCP).
 * **Account Details**: Choose the target organization and enter your account identifier.

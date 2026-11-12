@@ -4,7 +4,7 @@ The **Collaborators** tab lists the registered researchers who are actively part
 
 ---
 
-![Collaborators Tab](../../../images/res_bb_detail_collaborators.png)
+![Collaborators Tab](../../../images/V2_Images/res_bb_detail_collaborators.png)
 
 ## Collaborator List
 

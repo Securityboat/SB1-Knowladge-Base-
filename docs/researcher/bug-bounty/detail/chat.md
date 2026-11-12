@@ -6,7 +6,7 @@ The **Chat** tab is a messaging channel between you, the client's team, and Secu
 
 ---
 
-![Chat Tab](../../../images/res_bb_detail_chat.png)
+![Chat Tab](../../../images/V2_Images/res_bb_detail_chat.png)
 
 ## Sending messages
 

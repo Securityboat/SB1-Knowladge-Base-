@@ -4,7 +4,7 @@ The **Leaderboard** tab highlights the top-performing researchers who have succe
 
 ---
 
-![Leaderboard Tab](../../../images/res_bb_detail_leaderboard.png)
+![Leaderboard Tab](../../../images/V2_Images/res_bb_detail_leaderboard.png)
 
 ## Leaderboard Rankings
 

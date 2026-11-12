@@ -177,7 +177,9 @@ nav:
               - Chat: researcher/bug-bounty/detail/chat.md
               - Integrations: researcher/bug-bounty/detail/integrations.md
           - My Credentials: researcher/bug-bounty/my-credentials.md
-      - Agentic Pentest: researcher/14-agentic-pentest.md
+      # Hidden for now: Agentic Pentest is not currently available on TriNetra.
+      # Page kept at docs/researcher/14-agentic-pentest.md; uncomment to restore.
+      # - Agentic Pentest: researcher/14-agentic-pentest.md
       - AI Red Teaming: researcher/15-ai-red-teaming.md
       - Hacktivity: researcher/17-hacktivity.md
       - Disclosure Requests: researcher/16-disclosure-requests.md

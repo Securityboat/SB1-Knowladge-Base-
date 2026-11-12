@@ -17,7 +17,7 @@ Every card links into the module where you act.
 
 ### 3. The Dashboard, top to bottom
 
-![Researcher dashboard — greeting, KPI tiles, quick status, performance, recent engagements, programs, and findings.](../images/researcher_dashboard.png)
+![Researcher dashboard — greeting, KPI tiles, quick status, performance, recent engagements, programs, and findings.](../images/V2_Images/researcher_dashboard.png)
 
 #### a. Greeting banner
 

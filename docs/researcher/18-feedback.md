@@ -12,7 +12,7 @@ The **Feedback** module is a platform-wide dialog that lets you submit bug repor
 
 The **Feedback** button sits at the bottom of the sidebar, below all other navigation items. It is always visible regardless of which page you are viewing.
 
-![Feedback dialog — submit platform bug reports and feature requests.](../images/res_feedback_dialog.png)
+![Feedback dialog — submit platform bug reports and feature requests.](../images/V2_Images/res_feedback_dialog.png)
 
 ---
 

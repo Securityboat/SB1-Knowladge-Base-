@@ -2,9 +2,7 @@
 
 The Chat tab is a dedicated message thread scoped to this engagement — the fastest way to ask a question, provide credentials, or clarify scope without leaving the platform. Messages stay permanently attached to the engagement record.
 
-![Chat tab — rich-text messaging with visibility selector and formatting toolbar. (1 of 2)](../../../images/V2_Images/client_engagement_chat_01.png)
-
-![Chat tab — rich-text messaging with visibility selector and formatting toolbar. (2 of 2)](../../../images/V2_Images/client_engagement_chat_02.png)
+![Chat tab — rich-text messaging with visibility selector and formatting toolbar.](../../../images/V2_Images/client_engagement_chat.png)
 
 ---
 

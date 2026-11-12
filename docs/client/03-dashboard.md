@@ -22,12 +22,7 @@ you can act.
 
 ### 3. The Client Admin dashboard, top to bottom
 
-![Client dashboard — greeting, KPI tiles, security posture, and recent findings.](../images/V2_Images/client_dashboard_01.png)
-![Client dashboard — security posture and bug bounty programs.](../images/V2_Images/client_dashboard_02.png)
-![Client dashboard — remediation funnel and SLA risk.](../images/V2_Images/client_dashboard_03.png)
-![Client dashboard — vulnerability intelligence.](../images/V2_Images/client_dashboard_04.png)
-![Client dashboard — engagements and report delivery.](../images/V2_Images/client_dashboard_05.png)
-![Client dashboard — attack surface.](../images/V2_Images/client_dashboard_06.png)
+![Client dashboard — greeting, KPI tiles, security posture, bug bounty programs, remediation funnel, vulnerability intelligence, engagements, and attack surface.](../images/V2_Images/client_dashboard.png)
 
 #### a. Greeting banner
 

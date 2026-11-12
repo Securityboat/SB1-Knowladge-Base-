@@ -4,7 +4,7 @@ The **Integrations** tab lists third-party tools that have been linked to this p
 
 ---
 
-![Integrations Tab](../../../images/res_bb_detail_integrations.png)
+![Integrations Tab](../../../images/V2_Images/res_bb_detail_integrations.png)
 
 ## Active Integrations
 

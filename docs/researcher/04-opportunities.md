@@ -20,7 +20,7 @@ Click **Opportunities** in the sidebar. (Researcher / Lead Researcher only.)
 
 ### 2. Browsing open engagements
 
-![Opportunities marketplace — collapsible engagement cards with project ID, title, and an expandable detail panel.](../images/res_opportunities.png)
+![Opportunities marketplace — collapsible engagement cards with project ID, title, and an expandable detail panel.](../images/V2_Images/res_opportunities.png)
 
 Each opportunity is a collapsible card displaying its **Project ID badge** (e.g. `SB-PTEST-ACM-05`) and **Title**. Click any card to expand its detail panel:
 

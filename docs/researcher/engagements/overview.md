@@ -47,7 +47,7 @@ Your permissions and responsibilities depend on your assigned role:
 
 To browse your assigned engagements, click **Pentest Engagements** in the main sidebar.
 
-![Engagements List](../../images/res_engagements_list_01.png)
+![Engagements List](../../images/V2_Images/res_engagements_list.png)
 
 The listing page includes:
 

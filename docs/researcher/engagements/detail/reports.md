@@ -7,7 +7,7 @@ The **Reports** tab is the workspace for the engagement report. It is visible to
 
 ---
 
-![Reports Tab](../../../images/res_engagement_reports.png)
+![Reports Tab](../../../images/V2_Images/res_engagement_reports.png)
 
 ## Report lifecycle
 
@@ -58,7 +58,7 @@ Outside Live and Report drafting, **Edit narrative** and **Submit for review** a
 
 ---
 
-![Report Content — Scrolled](../../../images/res_engagement_reports_scroll.png)
+![Report Content — Scrolled](../../../images/V2_Images/res_engagement_reports_scroll.png)
 
 ## Narrative sections
 

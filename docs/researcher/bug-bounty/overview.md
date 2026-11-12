@@ -74,7 +74,7 @@ Only **Active** programs accept new findings.
 
 Click **BB Program** in the main sidebar.
 
-![Bug Bounty Programs list](../../images/res_bb_programs_01.png)
+![Bug Bounty Programs list](../../images/V2_Images/res_bb_programs_01.png)
 
 | Element | What it shows |
 |---------|---------------|

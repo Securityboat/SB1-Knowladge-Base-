@@ -4,7 +4,7 @@ The **Findings** tab lists your own submissions to this program. It is also wher
 
 ---
 
-![Findings Tab](../../../images/res_bb_detail_findings.png)
+![Findings Tab](../../../images/V2_Images/res_bb_detail_findings.png)
 
 ## Your submissions
 

@@ -18,6 +18,8 @@ To edit an asset:
 
 The page is titled **Edit *asset name*** and is organised into numbered sections, the same way as the asset creation form:
 
+![Edit asset page — Section 1: Basic information with the asset name, Criticality selector, and Description editor; Section 2: Asset type picker; and the sticky footer with Cancel and Save changes.](../../images/V2_Images/client_assets_edit.png)
+
 | Section | What you can update |
 |---|---|
 | **1. Basic information** | The asset name (must remain unique), the criticality level, and the rich-text **Description** (what the asset is, who uses it, and any special context testers should know). |

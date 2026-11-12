@@ -134,11 +134,7 @@ The same dialog is available on a pentest engagement's **Findings** tab.
 
 Click any finding to open it.
 
-![Finding detail — header, lifecycle stepper, description, impact, remediation, evidence, comments, and the right-hand cards. (1 of 3)](../images/V2_Images/client_finding_detail_01.png)
-
-![Finding detail — State actions panel, timeline, and side cards. (2 of 3)](../images/V2_Images/client_finding_detail_02.png)
-
-![Finding detail — additional detail. (3 of 3)](../images/V2_Images/client_finding_detail_03.png)
+![Finding detail — header with severity and state badges, lifecycle stepper, background, description, affected endpoint, business impact, remediation, HTTP request/response, proof of concept, comments, and timeline, with the right-hand cards (researcher, engagement, affected asset, dates, retest SLA, CVSS score, classification, risk assessment, OWASP risk rating, references, and test context).](../images/V2_Images/client_finding_detail.png)
 
 #### Header and stepper
 

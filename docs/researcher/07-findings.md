@@ -4,7 +4,7 @@
 
 A **finding** is a documented vulnerability you discover. Findings are your primary deliverable and what drives rewards and payouts. You author them inside a pentest engagement or a Bug Bounty program, provide clear proof-of-concept evidence, and submit them for triage.
 
-![Researcher Findings — all findings across engagements and bug bounty programs.](../images/res_all_findings.png)
+![Researcher Findings — all findings across engagements and bug bounty programs.](../images/V2_Images/res_all_findings.png)
 
 > **Note:** There is no "New finding" button on the Findings page. Findings are created from the engagement's or program's **Findings** tab, so each one is automatically linked to the right scope.
 
@@ -30,7 +30,7 @@ Click **Findings** in the main sidebar to browse findings across your engagement
 
 ### 3. Your findings list
 
-![My Findings — the researcher's submissions with severity, state, and source.](../images/res_findings_list_01.png)
+![My Findings — the researcher's submissions with severity, state, and source.](../images/V2_Images/res_findings_list.png)
 
 | Control / Column | Meaning |
 |------------------|---------|
