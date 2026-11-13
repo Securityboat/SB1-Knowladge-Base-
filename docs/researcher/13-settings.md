@@ -14,13 +14,7 @@ Click **Settings** (bottom of the sidebar) → opens on **Account**.
 
 ### 2. Account (researcher-specific)
 
-![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme. (1 of 4)](../images/res_settings_account_01.png)
-
-![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme. (2 of 4)](../images/res_settings_account_02.png)
-
-![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme. (3 of 4)](../images/res_settings_account_03.png)
-
-![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme. (4 of 4)](../images/res_settings_account_04.png)
+![Researcher Account settings — avatar, identity, professional profile, bank details, agreement/contract, and theme.](../images/V2_Images/res_settings_account.png)
 
 | Section | What you can do |
 |---------|-----------------|

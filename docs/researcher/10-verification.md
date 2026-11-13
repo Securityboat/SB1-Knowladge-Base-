@@ -77,7 +77,7 @@ verification session and opens a **popup** titled *"Verification for My Applicat
 Complete these steps to verify your identity."* It lists the required steps and
 displays a **QR code**; the badge status switches to **In progress**.
 
-![Verification popup — the two steps (ID verification, Face verification) and a "Scan QR code" panel to continue on your phone.](../images/res_verify_qr.png)
+![Verification popup — the two steps (ID verification, Face verification) and a "Scan QR code" panel to continue on your phone.](../images/V2_Images/res_verify_qr.png)
 
 The verification process consists of two primary steps:
 

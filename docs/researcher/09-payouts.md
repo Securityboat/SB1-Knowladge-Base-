@@ -17,9 +17,7 @@ Click **My Payouts** in the sidebar (or **Settings → Payouts**).
 
 ### 2. Earnings summary
 
-![Payouts — Total Earned / Pending / Total Payouts tiles above the payouts table. (1 of 2)](../images/res_payouts_01.png)
-
-![Payouts — Total Earned / Pending / Total Payouts tiles above the payouts table. (2 of 2)](../images/res_payouts_02.png)
+![Payouts — Total Earned / Pending / Total Payouts tiles above the payouts table.](../images/V2_Images/res_payouts.png)
 
 | Tile | Meaning |
 |------|---------|

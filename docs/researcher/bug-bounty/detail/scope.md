@@ -4,7 +4,7 @@ The **Scope** tab is the formal contract between you and the client organisation
 
 ---
 
-![Scope Tab](../../../images/res_bb_detail_scope.png)
+![Scope Tab](../../../images/V2_Images/res_bb_detail_scope.png)
 
 ## In-scope assets
 

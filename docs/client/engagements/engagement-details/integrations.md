@@ -64,4 +64,4 @@ Only **Client Admin** can see and manage the Integrations tab. If you're a Clien
 
 ---
 
-← Previous: [Chat](chat.md) | Next: [Reports →](reports.md)
+← Previous: [Chat](chat.md) | Next: [My Requests →](../../07-my-requests.md)

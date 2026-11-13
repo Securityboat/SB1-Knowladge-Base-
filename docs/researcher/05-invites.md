@@ -14,9 +14,7 @@ Click **Invites** in the sidebar (Researcher / Lead Researcher only). Invitation
 
 ### 2. The Invites list
 
-![Invites — a list of program and engagement invitations with source, organisation, inviter, date, and status. (1 of 2)](../images/res_invites_01.png)
-
-![Invites — a list of program and engagement invitations with source, organisation, inviter, date, and status. (2 of 2)](../images/res_invites_02.png)
+![Invites — a list of program and engagement invitations with source, organisation, inviter, date, and status.](../images/V2_Images/res_invites.png)
 
 **Filters:**
 
