@@ -203,4 +203,4 @@ flowchart TD
 
 ---
 
-← Previous: [Attack Surface (ASM)](../11-asm.md) | Next: [Request a Program →](create-bug-bounty.md)
+← Previous: [ASM Subdomains](../asm/subdomains.md) | Next: [Request a Program →](create-bug-bounty.md)

@@ -22,7 +22,11 @@ throughout (e.g. "Client Admin only").
 | 8 | [Compliance Reports](08-compliance-reports.md) | Regulator-ready reports and management responses. |
 | 9 | [Admin — Users](09-admin.md) | Team/user management — **Client Admin only**. |
 | 10 | [Integrations — Jira](10-integrations.md) | Sync findings to Jira — **Client Admin only**. |
-| 11 | [Attack Surface (ASM)](11-asm.md) | Continuous exposure monitoring *(if subscribed)*. |
+| 11 | [Attack Surface (ASM)](11-asm.md) | Continuous exposure monitoring — overview, roles, and how requests and scans work *(if subscribed)*. |
+| 11a | [ASM Dashboard](asm/dashboard.md) | Exposure posture, key metrics, coverage SLA, and trends *(if subscribed)*. |
+| 11b | [ASM Targets](asm/targets.md) | Request and manage the domains, IPs, ASNs, and cloud accounts monitored *(if subscribed)*. |
+| 11c | [ASM Scans](asm/scans.md) | Scan stages and the full results of each scan *(if subscribed)*. |
+| 11d | [ASM Subdomains](asm/subdomains.md) | The discovered subdomain inventory, monitoring, and tags *(if subscribed)*. |
 | 12 | [Bug Bounty](bug-bounty/overview.md) | Crowd-sourced testing programs — request, track, triage, and reward *(if subscribed)*. |
 | 12a | [My Program Requests](bug-bounty/my-program-requests.md) | Track Bug Bounty / VDP program requests and review outcomes *(if subscribed)*. |
 | 12b | [Disclosure Requests](18-disclosure-requests.md) | Approve or reject researcher disclosure requests *(if subscribed)*. |
@@ -44,6 +48,7 @@ throughout (e.g. "Client Admin only").
 | Acknowledge / transition findings | ✅ | ✅ | ❌ |
 | Submit engagement requests | ✅ | ✅ | ❌ |
 | Approve engagement reports / request changes | ✅ | ✅ | ❌ |
+| Request an ASM target / edit its monitoring schedule | ✅ | ❌ | ❌ |
 | Request a Bug Bounty / VDP program | ✅ | ❌ | ❌ |
 | Approve disclosure requests | ✅ | ❌ | ❌ |
 | Manage users (Admin → Users) | ✅ | ❌ | ❌ |

@@ -1776,9 +1776,28 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../11-asm/" class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
@@ -1792,7 +1811,163 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Attack Surface (ASM)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-asm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Targets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/scans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/subdomains/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subdomains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -3891,16 +4066,6 @@
   
   
   
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../researcher/15-ai-red-teaming/" class="md-nav__link">
         
@@ -4263,7 +4428,27 @@ throughout (e.g. "Client Admin only").</p>
 <tr>
 <td>11</td>
 <td><a href="../11-asm/">Attack Surface (ASM)</a></td>
-<td>Continuous exposure monitoring <em>(if subscribed)</em>.</td>
+<td>Continuous exposure monitoring — overview, roles, and how requests and scans work <em>(if subscribed)</em>.</td>
+</tr>
+<tr>
+<td>11a</td>
+<td><a href="../asm/dashboard/">ASM Dashboard</a></td>
+<td>Exposure posture, key metrics, coverage SLA, and trends <em>(if subscribed)</em>.</td>
+</tr>
+<tr>
+<td>11b</td>
+<td><a href="../asm/targets/">ASM Targets</a></td>
+<td>Request and manage the domains, IPs, ASNs, and cloud accounts monitored <em>(if subscribed)</em>.</td>
+</tr>
+<tr>
+<td>11c</td>
+<td><a href="../asm/scans/">ASM Scans</a></td>
+<td>Scan stages and the full results of each scan <em>(if subscribed)</em>.</td>
+</tr>
+<tr>
+<td>11d</td>
+<td><a href="../asm/subdomains/">ASM Subdomains</a></td>
+<td>The discovered subdomain inventory, monitoring, and tags <em>(if subscribed)</em>.</td>
 </tr>
 <tr>
 <td>12</td>
@@ -4360,6 +4545,12 @@ throughout (e.g. "Client Admin only").</p>
 <td>Approve engagement reports / request changes</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Request an ASM target / edit its monitoring schedule</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 </tr>
 <tr>

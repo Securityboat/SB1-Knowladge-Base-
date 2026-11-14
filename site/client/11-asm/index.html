@@ -16,7 +16,7 @@
         <link rel="prev" href="../10-integrations/">
       
       
-        <link rel="next" href="../bug-bounty/overview/">
+        <link rel="next" href="../asm/dashboard/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Attack Surface (ASM) - SecurityBoat Documentation</title>
+        <title>Overview - SecurityBoat Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#attack-surface-asm" class="md-skip">
+        <a href="#attack-surface-management-asm-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Attack Surface (ASM)
+              Overview
             
           </span>
         </div>
@@ -1778,10 +1778,69 @@
   
   
   
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Attack Surface (ASM)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Attack Surface (ASM)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1791,7 +1850,7 @@
   <span class="md-ellipsis">
     
   
-    Attack Surface (ASM)
+    Overview
   
 
     
@@ -1809,7 +1868,7 @@
   <span class="md-ellipsis">
     
   
-    Attack Surface (ASM)
+    Overview
   
 
     
@@ -1825,6 +1884,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1833,179 +1894,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#attack-surface-asm" class="md-nav__link">
+  <a href="#what-is-asm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Attack Surface (ASM)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Surface (ASM)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-what-asm-is-and-why-it-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. What ASM is and why it matters
+        What is ASM?
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-what-each-client-role-can-do" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. What each client role can do
+        What you can do
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#navigation" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#how-asm-works-end-to-end" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Navigation
+        How ASM works end to end
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-the-dashboard-exposure-posture-console" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#the-asm-section" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Dashboard (Exposure Posture Console)
+        The ASM section
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-targets" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#asm-results-and-the-findings-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Targets
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Targets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-request-a-scan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Request a Scan
+        ASM results and the Findings list
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-scans" class="md-nav__link">
-    <span class="md-ellipsis">
       
-        5. Scans
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Scans">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scans-list-columns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scans List Columns
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detailed-scan-results-view" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Detailed Scan Results View
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-subdomain-inventory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Subdomain Inventory
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Subdomain Inventory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#subdomains-inventory-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subdomains Inventory Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-initiate-subdomain-scans" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Initiate Subdomain Scans
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-how-asm-connects-to-the-rest-of-the-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. How ASM connects to the rest of the platform
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+        <li class="md-nav__item">
   <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2015,8 +1958,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2026,15 +1969,130 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
     </ul>
   
 </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Targets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/scans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asm/subdomains/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subdomains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -4065,16 +4123,6 @@
   
   
   
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
       <a href="../../researcher/15-ai-red-teaming/" class="md-nav__link">
         
@@ -4317,6 +4365,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4325,179 +4375,61 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#attack-surface-asm" class="md-nav__link">
+  <a href="#what-is-asm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Attack Surface (ASM)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Attack Surface (ASM)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-what-asm-is-and-why-it-matters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. What ASM is and why it matters
+        What is ASM?
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2-what-each-client-role-can-do" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#what-you-can-do" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. What each client role can do
+        What you can do
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#navigation" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#how-asm-works-end-to-end" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Navigation
+        How ASM works end to end
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3-the-dashboard-exposure-posture-console" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#the-asm-section" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Dashboard (Exposure Posture Console)
+        The ASM section
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#4-targets" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#asm-results-and-the-findings-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Targets
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Targets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-request-a-scan" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Request a Scan
+        ASM results and the Findings list
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-scans" class="md-nav__link">
-    <span class="md-ellipsis">
       
-        5. Scans
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Scans">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#scans-list-columns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Scans List Columns
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#detailed-scan-results-view" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Detailed Scan Results View
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-subdomain-inventory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Subdomain Inventory
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="6. Subdomain Inventory">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#subdomains-inventory-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Subdomains Inventory Details
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-initiate-subdomain-scans" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Initiate Subdomain Scans
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-how-asm-connects-to-the-rest-of-the-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. How ASM connects to the rest of the platform
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
+        <li class="md-nav__item">
   <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4507,8 +4439,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#troubleshooting" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4516,11 +4448,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -4541,53 +4468,59 @@
 
 
 
-  <h1>Attack Surface (ASM)</h1>
-
-<h2 id="attack-surface-asm">Attack Surface (ASM)</h2>
+<h1 id="attack-surface-management-asm-overview">Attack Surface Management (ASM) — Overview</h1>
 <blockquote>
-<p><strong>Availability:</strong> ASM is a <strong>platform-gated</strong> module. You'll only see <strong>Attack
-Surface</strong> in the sidebar if your organisation is onboarded for ASM. If it's not
-there, your org isn't subscribed to ASM — talk to your CSM.</p>
+<p><strong>Availability:</strong> ASM is a <strong>platform-gated</strong> module. <strong>Attack Surface</strong> appears in your sidebar only if your organisation has been onboarded for ASM. If it is missing, or you see an <strong>ASM Module Not Enabled</strong> message, ask your Customer Success Manager (CSM) to enable it.</p>
 </blockquote>
-<h3 id="1-what-asm-is-and-why-it-matters">1. What ASM is and why it matters</h3>
-<p><strong>Attack Surface Management (ASM)</strong> continuously discovers and monitors everything
-your organisation exposes to the internet — domains, subdomains, IPs, open ports,
-technologies, cloud resources — and flags weaknesses before an attacker finds
-them. Where a <strong>pentest engagement</strong> is a point-in-time deep test, <strong>ASM is
-always-on breadth</strong>: it watches your perimeter between engagements.</p>
-<p>For a client, ASM is a <strong>read-only exposure console</strong> scoped to your own
-organisation. SecurityBoat runs the scanners; you consume the results.</p>
-<h3 id="2-what-each-client-role-can-do">2. What each client role can do</h3>
+<hr />
+<h2 id="what-is-asm">What is ASM?</h2>
+<p><strong>Attack Surface Management (ASM)</strong> continuously discovers and monitors everything your organisation exposes to the internet — domains, subdomains, IP addresses, open ports, technologies, and cloud resources — and flags weaknesses before an attacker finds them.</p>
+<p>A pentest engagement is a deep, point-in-time test. ASM is <strong>always-on breadth</strong>: it watches your perimeter between engagements.</p>
+<p>For a client, ASM is an <strong>exposure console scoped to your own organisation</strong>. SecurityBoat runs the scanners; you choose what to watch, and you read the results.</p>
+<hr />
+<h2 id="what-you-can-do">What you can do</h2>
 <table>
 <thead>
 <tr>
 <th>Action</th>
-<th style="text-align: center;">Client Admin</th>
-<th style="text-align: center;">Client TPM</th>
-<th style="text-align: center;">Client Viewer</th>
+<th style="text-align: center;"><strong>Client Admin</strong></th>
+<th style="text-align: center;"><strong>Client TPM</strong></th>
+<th style="text-align: center;"><strong>Client Viewer</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>View the ASM dashboard, targets, scans, subdomains</td>
+<td>View the Dashboard, Targets, Scans, and Subdomains</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 </tr>
 <tr>
-<td><strong>Request</strong> a new target to be scanned</td>
+<td><strong>Request</strong> a new target (domain, IP, ASN, or cloud account)</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 </tr>
 <tr>
-<td>Set a target's <strong>monitoring cadence / SLA</strong></td>
+<td>Edit a target's monitoring schedule, freshness SLA, label, and note</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 </tr>
 <tr>
-<td>Create/delete targets, trigger scans directly</td>
+<td>Mark a subdomain as monitored and tag it</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Start, stop, or delete a scan</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Approve or reject target requests</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
@@ -4595,176 +4528,78 @@ organisation. SecurityBoat runs the scanners; you consume the results.</p>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Why clients don't run scans directly:</strong> scanning is an active operation with
-real-world impact, so SecurityBoat staff own the "arm the scanner" step. A
-<strong>Client Admin</strong> can <strong>request</strong> a target (it's created in a <code>Requested</code> state,
-auto-scoped to your org); staff review and approve before any scan runs.</p>
+<p><strong>Why clients don't start scans:</strong> scanning is an active operation with real-world impact, so SecurityBoat owns the step of arming the scanner. You request a target, SecurityBoat reviews and approves it, and scans then run on the schedule you chose or when SecurityBoat starts them.</p>
 </blockquote>
-<h3 id="navigation">Navigation</h3>
-<p>Click <strong>Attack Surface</strong> in the main sidebar menu. It has tabs: <strong>Dashboard</strong>,
-<strong>Targets</strong>, <strong>Scans</strong>, <strong>Subdomains</strong>.</p>
 <hr />
-<h3 id="3-the-dashboard-exposure-posture-console">3. The Dashboard (Exposure Posture Console)</h3>
-<p><img alt="ASM dashboard — posture band, metrics summary (open findings, subdomain takeovers, at-risk targets, monitored, assets), exposed targets, threat posture, recent vulnerabilities, and asset coverage map." src="../../images/V2_Images/client_asm_dashboard_01.png" /></p>
-<p><strong>Metrics summary — what each number means:</strong></p>
+<h2 id="how-asm-works-end-to-end">How ASM works end to end</h2>
+<pre class="mermaid"><code>flowchart TD
+    A[Client Admin requests a target] --&gt; B([Pending review])
+    B --&gt; C{SecurityBoat review}
+    C --&gt;|Approved| D([Active])
+    C --&gt;|Rejected with a reason| E([Rejected])
+    D --&gt; F{Monitoring schedule}
+    F --&gt;|Daily, Weekly or Monthly| G[Scans run automatically]
+    F --&gt;|None| H[Scanned on demand by SecurityBoat]
+    G --&gt; I[Scan results]
+    H --&gt; I
+    I --&gt; J[Dashboard, Scans and Subdomains update]
+    E --&gt; K[Read the reason and submit a new request]
+    K --&gt; A</code></pre>
+<ol>
+<li><strong>Request</strong> — a Client Admin submits a target and picks a monitoring schedule.</li>
+<li><strong>Review</strong> — SecurityBoat checks the request. Nothing is scanned and no schedule runs until the target is approved.</li>
+<li><strong>Monitor</strong> — an <strong>Active</strong> target is scanned on its schedule. Each scan discovers assets and looks for exposures.</li>
+<li><strong>Read results</strong> — the Dashboard, Scans, and Subdomains tabs show what was found.</li>
+</ol>
+<hr />
+<h2 id="the-asm-section">The ASM section</h2>
+<p>Click <strong>Attack Surface</strong> in the sidebar. It has four tabs:</p>
 <table>
 <thead>
 <tr>
-<th>Card / Metric</th>
-<th>Meaning</th>
-<th>Why it matters</th>
+<th>Tab</th>
+<th>What it is for</th>
+<th>Guide</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Open Findings</strong></td>
-<td>Total open exposures + cloud findings, from the newest completed scan per target.</td>
-<td>Your outstanding perimeter risk.</td>
+<td><strong>Dashboard</strong></td>
+<td>Your exposure posture at a glance — threat levels, open findings, coverage, and trends</td>
+<td><a href="../asm/dashboard/">Dashboard →</a></td>
 </tr>
 <tr>
-<td><strong>Subdomain Takeovers</strong></td>
-<td>Dangling DNS records pointing to deprovisioned services.</td>
-<td>High-severity — an attacker could claim the subdomain.</td>
+<td><strong>Targets</strong></td>
+<td>The domains, IPs, ASNs, and cloud accounts being monitored, and how to request new ones</td>
+<td><a href="../asm/targets/">Targets →</a></td>
 </tr>
 <tr>
-<td><strong>At-Risk Targets</strong></td>
-<td>Targets whose latest scan scores "At Risk" (threat score &gt; 60).</td>
-<td>Where to focus first.</td>
+<td><strong>Scans</strong></td>
+<td>Every scan run against your targets, and the full results of each</td>
+<td><a href="../asm/scans/">Scans →</a></td>
 </tr>
 <tr>
-<td><strong>Targets Monitored</strong></td>
-<td>Targets on a recurring schedule vs total.</td>
-<td>Coverage — unmonitored targets are scanned on demand only.</td>
-</tr>
-<tr>
-<td><strong>Assets Discovered</strong></td>
-<td>Subdomains, IPs, ports, technologies found.</td>
-<td>The true size of your exposed surface.</td>
+<td><strong>Subdomains</strong></td>
+<td>A deduplicated inventory of every subdomain discovered across your targets</td>
+<td><a href="../asm/subdomains/">Subdomains →</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Panels below the metrics:</strong></p>
-<ul>
-<li><strong>Posture band / Threat posture donut</strong> — targets classified At Risk / Needs
-  Attention / Secure / Unrated.</li>
-<li><strong>Most Exposed Targets</strong> — ranked by finding count; click through to the scan.</li>
-<li><strong>Recent Vulnerabilities</strong> — newest Critical/High/Medium findings, highest
-  severity first.</li>
-<li><strong>Asset Coverage map</strong> — geographic spread of discovered IP assets.</li>
-<li><strong>Coverage SLA</strong> — how fresh your monitoring is against the target freshness SLA.</li>
-<li><strong>Monitoring Coverage / Surface Composition</strong> — watched vs unwatched, and a
-  breakdown by target type.</li>
-<li><strong>Compliance Posture</strong> (cloud scans) or <strong>Exposure Highlights</strong> (takeovers,
-  exposed secrets, weak TLS, hotspots) when there's no cloud scan.</li>
-<li><strong>Security Posture Dimensions &amp; Drift</strong> (cloud) — IAM, encryption, attack
-  surface, logging scores, and how they changed since the last scan.</li>
-<li><strong>Scan Activity</strong> — a 14-day scan histogram.</li>
-</ul>
-<blockquote>
-<p>The AI Assistant (Ish) is "aware" of this dashboard — you can ask it things like
-"what is Coverage SLA?" or "why is my threat score high?" and it will explain
-using your live numbers.</p>
-</blockquote>
 <hr />
-<h3 id="4-targets">4. Targets</h3>
-<p><img alt="ASM targets — your organisation's scanned domains/IPs with type, monitoring cadence, and status." src="../../images/V2_Images/client_asm_targets.png" /></p>
-<p>A <strong>target</strong> is a domain, IP, or ASN registered for scanning. The list shows each
-target's type, monitoring cadence, last scan, and status. Click a target to see
-its scan history and details.</p>
-<h4 id="how-to-request-a-scan">How to Request a Scan</h4>
-<p>Only a <strong>Client Admin</strong> can submit new targets for scanning. To add a target, navigate to <strong>Attack Surface → Targets</strong>, click the <strong>Request Scan</strong> button, and choose one of the two onboarding flows:</p>
-<p><img alt="ASM targets — request new target" src="../../images/V2_Images/client_asm_targets_request_scan.png" /></p>
-<p><strong>Option 1: Network &amp; Infrastructure Targets</strong> (Domain, IP, or ASN)</p>
+<h2 id="asm-results-and-the-findings-list">ASM results and the Findings list</h2>
+<p>ASM results are shown <strong>inside ASM</strong> — on the Dashboard under <strong>Recent Vulnerabilities</strong>, and on each scan's <strong>Vulnerabilities</strong> and <strong>TLS</strong> tabs.</p>
+<p>Raw scan exposures are <strong>not</strong> copied into your unified <strong>Findings</strong> list automatically. When SecurityBoat judges that an exposure needs formal tracking, it creates a finding from it (source <strong>ASM</strong>). That finding then follows the normal <a href="../05-findings/">Findings</a> workflow. If an exposure needs a deeper look, you can also raise a <a href="../engagements/create-engagement/">pentest request</a>.</p>
+<hr />
+<h2 id="best-practices">Best practices</h2>
 <ul>
-<li><strong>Target Type</strong>: Choose from <code>Domain</code> (e.g., apex domain names), <code>IP</code> (specific IP addresses or ranges), or <code>ASN</code> (Autonomous System Numbers).</li>
-<li><strong>Target Value</strong>: Enter the corresponding domain name, IP address, CIDR block, or ASN.</li>
-<li><strong>Monitoring Schedule</strong>: Select a recurring scan cadence: <code>Daily</code>, <code>Weekly</code>, <code>Monthly</code>, or <code>Manual</code> (on-demand).</li>
-<li><strong>Freshness SLA Override (days)</strong>: Define the maximum age of the scan results before they are flagged as stale on your dashboard.</li>
-<li><strong>Note for the Reviewer</strong>: An optional field to provide context or special instructions to the SecurityBoat operations team.</li>
-</ul>
-<p><strong>Option 2: Cloud Integration Targets</strong></p>
-<p><img alt="ASM targets — request new cloud target" src="../../images/V2_Images/client_asm_targets_request_scan_cloud.png" /></p>
-<ul>
-<li><strong>Provider Selection</strong>: Select your cloud service provider (e.g., AWS, Azure, GCP).</li>
-<li><strong>Account Details</strong>: Choose the target organization and enter your account identifier.</li>
-<li><strong>Credentials Configuration</strong>: Select a credential setup method (e.g., AWS AssumeRole role ARN, access keys, or credential files) and input the security parameters.</li>
-<li><strong>Credential Validation</strong>: Click <strong>Validate</strong> to run an automated check confirming the credentials work correctly before final submission.</li>
-<li><strong>Review</strong>: Set a descriptive <strong>Scan Name</strong> (defaults to "Provider - Organization Name") and add optional notes for the reviewer.</li>
-</ul>
-<div class="admonition important">
-<p class="admonition-title">Staff Approval Requirement</p>
-<p>All newly requested targets enter a <code>Requested</code> state. Scans will not run, and configured schedules will remain dormant, until a SecurityBoat staff member (CSM or TPM) reviews and <strong>approves</strong> the request.</p>
-</div>
-<ul>
-<li><strong>Client Admin</strong> can request new targets and adjust existing targets' <strong>monitoring cadence</strong> and freshness <strong>SLA</strong>.</li>
-<li><strong>Client TPM / Client Viewer</strong> view targets read-only.</li>
+<li><strong>Raise your monitoring coverage.</strong> A target with no schedule is only scanned on demand, so gaps hide there. Daily or weekly cadence on your important targets keeps results fresh.</li>
+<li><strong>Treat subdomain takeovers as urgent.</strong> They are cheap for attackers to exploit and are called out on the Dashboard.</li>
+<li><strong>Give the reviewer context.</strong> The <strong>Note for the reviewer</strong> on a request helps SecurityBoat approve it faster.</li>
+<li><strong>Watch drift after changes.</strong> For cloud targets, the Dashboard shows new failures and regressions since the last scan.</li>
+<li><strong>Ask Ish.</strong> The <a href="../13-ai-assistant/">AI Assistant</a> can explain Dashboard numbers such as Coverage SLA or why a threat score is high.</li>
 </ul>
 <hr />
-<h3 id="5-scans">5. Scans</h3>
-<p>The <strong>Scans</strong> tab displays a chronological registry of all automated and manual scans executed against your targets.</p>
-<p><img alt="ASM scans — chronological list of completed, running, and queued scans for your targets." src="../../images/V2_Images/client_asm_scans.png" /></p>
-<h4 id="scans-list-columns">Scans List Columns</h4>
-<ul>
-<li><strong>Target</strong>: The domain name, IP, ASN, or cloud integration target being scanned.</li>
-<li><strong>State</strong>: The real-time status of the scan execution (<code>Queued</code>, <code>Running</code>, <code>Complete</code>, or <code>Failed</code>).</li>
-<li><strong>Trigger</strong>: Indicates whether the scan was initiated by a recurring <code>Scheduled</code> job or triggered <code>Manual</code>ly by a platform operator.</li>
-<li><strong>Started</strong>: The timestamp of when the scanning pipeline commenced.</li>
-<li><strong>Scan ID</strong>: The unique system identifier for auditing and referencing the scan.</li>
-</ul>
-<h4 id="detailed-scan-results-view">Detailed Scan Results View</h4>
-<p>Clicking on any scan opens a comprehensive dashboard dedicated to that specific run:</p>
-<ul>
-<li><strong>Overview (Home)</strong>: Displays key metrics (threat score, open findings count, assets discovered) alongside scan timeline metadata.</li>
-<li><strong>Compliance</strong>: For cloud targets, lists the passed/failed security controls mapped to standard frameworks.</li>
-<li><strong>Vulnerabilities (Exposures)</strong>: Lists verified vulnerabilities and exposures (e.g., open ports, TLS certificate issues, exposed keys) sorted by severity (Critical, High, Medium, Low, Info) with full request/response templates and Jira sync buttons.</li>
-<li><strong>Subdomain Takeovers</strong>: High-severity dangling DNS records pointing to deprovisioned or abandoned third-party services.</li>
-<li><strong>Discovered Assets</strong>: Lists all discovered entities grouped by category (e.g., subdomains, technologies, open ports).</li>
-<li><strong>Scanning Selected Subdomains</strong>: In the subdomains sub-view, users can check boxes next to discovered subdomains and click <strong>Scan Selected</strong> to trigger a targeted rescan focused strictly on those hosts.</li>
-</ul>
-<hr />
-<h3 id="6-subdomain-inventory">6. Subdomain Inventory</h3>
-<p>The <strong>Subdomains</strong> tab lists a deduplicated, organization-wide inventory of every subdomain discovered across all active targets. This module allows you to track and selectively audit your web perimeter.</p>
-<p><img alt="ASM subdomains" src="../../images/V2_Images/client_asm_subdomain.png" /></p>
-<h4 id="subdomains-inventory-details">Subdomains Inventory Details</h4>
-<ul>
-<li><strong>Liveness Status</strong>: Shows whether a subdomain is resolving and active (<code>Live</code> along with the HTTP response code, e.g., <code>Live · 200</code>) or offline (<code>Not Live</code>).</li>
-<li><strong>Classification</strong>: Color-coded categorization indicating the function or nature of the host (e.g., <code>web</code>, <code>api</code>, <code>admin</code>, <code>dev</code>, <code>infra</code>, <code>cloud</code>).</li>
-<li><strong>Source</strong>: Identifies how the subdomain was discovered (e.g., passive DNS, certificate transparency logs, active brute force).</li>
-<li><strong>Scan Status</strong>: Shows real-time in-flight status (<code>queued</code> with a pulsating indicator, <code>running</code> with a loading spinner) or the terminal status of the last scan (<code>complete</code>, <code>no live hosts</code>, <code>failed</code>, <code>aborted</code>).</li>
-<li><strong>Risk Score</strong>: The calculated numeric threat indicator based on discovered exposures.</li>
-<li><strong>Monitoring Toggle</strong>: Click the bell icon to toggle whether that specific subdomain is on a recurring monitoring cadence.</li>
-<li><strong>Inline Tags</strong>: Add custom labels (e.g., "production", "testing") directly to subdomains to categorize and filter them.</li>
-</ul>
-<h4 id="how-to-initiate-subdomain-scans">How to Initiate Subdomain Scans</h4>
-<p>To actively probe subdomains outside of the global target schedule:</p>
-<p><strong>Method 1: Scan Selected (Bulk Scan)</strong></p>
-<ol>
-<li>Navigate to the <strong>Subdomains</strong> tab.</li>
-<li>Check the boxes next to one or more subdomains in the inventory table.</li>
-<li>Click the <strong>Scan Selected</strong> button in the toolbar that appears. This triggers a scan scoped strictly to the chosen hosts under their parent targets.</li>
-</ol>
-<p><strong>Method 2: Scan Ad-hoc</strong></p>
-<ol>
-<li>Navigate to the <strong>Subdomains</strong> tab and click the <strong>Scan Ad-hoc</strong> button in the top-right corner.</li>
-<li>Choose a registered target domain from the dropdown.</li>
-<li>Paste the subdomains (separated by spaces, commas, or lines) in the text area.</li>
-<li>Click <strong>Scan these</strong> to queue the job. The system automatically validates that all pasted domains are children of the selected apex domain before executing.</li>
-</ol>
-<p><img alt="ASM ad-hoc scan" src="../../images/V2_Images/client_asm_subdomain_scan_ad_doc.png" /></p>
-<h3 id="7-how-asm-connects-to-the-rest-of-the-platform">7. How ASM connects to the rest of the platform</h3>
-<p>ASM findings flow into the unified <strong>Findings</strong> module (source = <code>ASM</code>), so a
-perimeter exposure is triaged the same way as a pentest finding. If an ASM finding
-warrants a deeper look, it can inform a new <strong>pentest engagement request</strong>.</p>
-<hr />
-<h3 id="best-practices">Best practices</h3>
-<ul>
-<li><strong>Aim for high monitoring coverage</strong> — unmonitored targets only get scanned on
-  demand, so gaps hide there. (Client Admin: raise cadence on important targets.)</li>
-<li><strong>Treat subdomain takeovers as urgent</strong> — they're cheap for attackers to exploit.</li>
-<li><strong>Watch the drift panel</strong> after changes — new failures/regressions tell you if a
-  deploy widened your surface.</li>
-</ul>
-<h3 id="troubleshooting">Troubleshooting</h3>
+<h2 id="troubleshooting">Troubleshooting</h2>
 <table>
 <thead>
 <tr>
@@ -4775,24 +4610,32 @@ warrants a deeper look, it can inform a new <strong>pentest engagement request</
 <tbody>
 <tr>
 <td><strong>No "Attack Surface" in the sidebar</strong></td>
-<td>Your org isn't onboarded for ASM. Contact your CSM.</td>
+<td>Your organisation is not onboarded for ASM. Contact your CSM.</td>
 </tr>
 <tr>
-<td><strong>Can't request a target / change monitoring</strong></td>
-<td>You're <strong>Client TPM</strong>/<strong>Client Viewer</strong> (read-only). Ask a Client Admin.</td>
+<td><strong>"ASM Module Not Enabled" message</strong></td>
+<td>ASM is not enabled for your organisation. Ask your CSM to enable it.</td>
 </tr>
 <tr>
-<td><strong>My requested target isn't being scanned</strong></td>
-<td>It's awaiting SecurityBoat approval — scans run only after a staff member approves the target.</td>
+<td><strong>"No attack surface yet" on the Dashboard</strong></td>
+<td>No target has been scanned yet. Results appear after your first target is approved and scanned.</td>
 </tr>
 <tr>
-<td><strong>Dashboard looks empty</strong></td>
-<td>No completed scans yet for your targets — results populate after the first scan finishes.</td>
+<td><strong>I can't request a target or edit one</strong></td>
+<td>Only Client Admin can. Client TPM and Client Viewer have read-only access.</td>
+</tr>
+<tr>
+<td><strong>My target shows "Pending review"</strong></td>
+<td>SecurityBoat has not approved it yet. Scans and schedules start only after approval.</td>
+</tr>
+<tr>
+<td><strong>My target shows "Rejected"</strong></td>
+<td>Hover over the badge to read the reason, then submit a new request.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p>← Previous: <a href="../10-integrations/">Integrations</a> | Next: <a href="../bug-bounty/overview/">Bug Bounty →</a></p>
+<p>← Previous: <a href="../10-integrations/">Integrations</a> | Next: <a href="../asm/dashboard/">Dashboard →</a></p>
 
 
 

@@ -11,7 +11,7 @@ came from:
 |--------|---------------------|
 | **PTaaS** | A scheduled penetration-test engagement. |
 | **Bug Bounty** | A researcher report on one of your Bug Bounty or VDP programs. |
-| **ASM** | Attack-surface monitoring scans. |
+| **ASM** | Attack-surface monitoring scans. Scan results are read inside [ASM](11-asm.md); SecurityBoat adds an exposure here as a finding when it needs formal tracking. |
 | **DRP** | Digital-risk / incident detections. |
 | **Compliance** | Issues raised during a compliance audit. |
 
