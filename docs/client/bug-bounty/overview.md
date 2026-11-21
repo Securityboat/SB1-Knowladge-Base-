@@ -1,6 +1,6 @@
 # Bug Bounty — Overview
 
-> **Availability:** The Bug Bounty module is **subscription-gated**. The **BB Program**, **Hacktivity**, and **Disclosure Requests** entries appear in your sidebar only if your organisation has been onboarded for Bug Bounty. If they are missing, contact your Customer Success Manager (CSM).
+> **Availability:** The Bug Bounty module is **subscription-gated**. The **BB Program**, **My Program Requests**, **Hacktivity**, and **Disclosure Requests** entries appear in your sidebar only if your organisation has been onboarded for Bug Bounty. If they are missing, contact your Customer Success Manager (CSM).
 
 ---
 
@@ -8,25 +8,44 @@
 
 A **Bug Bounty program** invites SecurityBoat's vetted community of security researchers to continuously test your assets and submit discovered vulnerabilities — typically in exchange for a reward.
 
-Unlike a scheduled pentest where a fixed team tests within a defined window, a Bug Bounty program is **ongoing and crowd-sourced**: many researchers, working continuously, are paid or recognised per valid finding. Think of it as having hundreds of specialist security eyes on your applications at the same time, around the clock — rather than a single team that tests for two weeks and stops.
+Unlike a scheduled pentest where a fixed team tests within a defined window, a Bug Bounty program is **ongoing and crowd-sourced**: many researchers, working continuously, are paid or recognised per valid finding.
 
-### Program Types
-
-SecurityBoat supports two program types, suited to different stages of your security maturity:
+### Program types
 
 | Type | What it means for you | Researcher incentive |
 |------|----------------------|---------------------|
-| **VDP** — Vulnerability Disclosure Program | Opens a responsible-disclosure channel so researchers can report issues. Great for organisations starting out with crowd-sourced security. | Recognition only — swag and Hall of Fame listing. No monetary reward. |
-| **Bug Bounty** | A paid program with defined scope and severity-tiered monetary rewards. Attracts more active researcher engagement and deeper testing. | Cash payout per accepted finding, scaled to severity (P1–P5). |
+| **VDP** — Vulnerability Disclosure Program | Opens a responsible-disclosure channel so researchers can report issues. A good starting point for crowd-sourced security. | Recognition only — swag, Hall of Fame listing, and reputation points. No monetary reward. |
+| **Bug Bounty** | A paid program with defined scope and severity-tiered monetary rewards. Attracts deeper testing. | Cash reward per valid finding, scaled to severity (P1–P5). |
 
-### Program Visibility
-
-Each program also has a **visibility** setting that controls who can participate:
+### Program visibility
 
 | Visibility | Who can find and join |
 |------------|----------------------|
-| **Public** | Any eligible researcher on the platform can see and participate. Maximum coverage. |
-| **Private** | Only researchers you explicitly invite can see and participate. Better for sensitive assets or early-stage programs. |
+| **Public** | Any eligible researcher on the platform can see and participate. |
+| **Private** | Only invited researchers can see and participate. Better for sensitive assets or early-stage programs. |
+
+### Management model
+
+Every program shows a **management badge** in the program list, on the program page, and on each finding. Hover over the badge to read what it means.
+
+| Badge | Who triages findings |
+|-------|---------------------|
+| **SB-Managed** | SecurityBoat's team reviews and manages the findings for this program. A SecurityBoat TPM is assigned. |
+| **Self-Managed** | Your own team reviews and manages the findings. SecurityBoat is not involved in triage. |
+
+### Plan: Paid vs Free
+
+What you can request depends on your organisation's plan:
+
+| | Paid plan | Free plan |
+|---|:---:|:---:|
+| VDP programs | ✅ | ✅ |
+| Bug Bounty (paid reward) programs | ✅ | ❌ |
+| Public and Private visibility | ✅ | ✅ |
+| SB-Managed programs | ✅ | ❌ |
+| Self-Managed programs | ✅ | ✅ |
+
+On the Free plan the **Bug Bounty** card is still shown when you create a program, but it is disabled with a note that Bug Bounty is a Paid-plan capability. Contact your CSM to upgrade.
 
 ---
 
@@ -37,10 +56,10 @@ Each program also has a **visibility** setting that controls who can participate
 | **Duration** | Fixed window (e.g., 2 weeks) | Ongoing — no end date required |
 | **Researchers** | Assigned team | Open or invited crowd |
 | **Scope** | Defined per engagement | Defined per program |
-| **Findings flow** | All verified findings visible to you | Same — verified-only visibility rule applies |
+| **When you see findings** | After SecurityBoat verifies them | As soon as a researcher submits them (from **New** onward) |
 | **Cost model** | Engagement fee | Per valid finding (or recognition-based) |
 
-> Bug Bounty findings appear in your unified **Findings** list with source `Bug Bounty`, subject to the same verified-only visibility rule as pentest findings.
+> Bug Bounty findings also appear in your unified **Findings** list with the source **BUG BOUNTY**.
 
 ---
 
@@ -48,58 +67,107 @@ Each program also has a **visibility** setting that controls who can participate
 
 | Action | **Client Admin** | **Client TPM** | **Client Viewer** |
 |--------|:---:|:---:|:---:|
-| View programs, Hacktivity, Disclosure Requests | ✅ | ✅ | ✅ |
-| View all program detail tabs | ✅ | ✅ | ✅ |
-| Create a new program | ✅ | ❌ | ❌ |
-| Configure / edit a program | ✅ | ❌ | ❌ |
-| Approve bounty payouts | ✅ | ❌ | ❌ |
+| View programs, program detail tabs, and Hacktivity | ✅ | ✅ | ✅ |
+| View **My Program Requests** | ✅ | ✅ | ✅ |
+| **Request** a new program | ✅ | ❌ | ❌ |
+| Invite / remove researchers on a **Self-Managed Private** program | ✅ | ❌ | ❌ |
+| Act on findings (confirm, start fixing, submit for retest) | ✅ | ✅ | ❌ |
+| Triage findings on a **Self-Managed** program | ✅ | ✅ | ❌ |
+| Approve rewards on a **Self-Managed** Bug Bounty program | ✅ | ❌ | ❌ |
+| View **Disclosure Requests** | ✅ | ✅ | ❌ |
+| Approve or reject a disclosure request | ✅ | ❌ | ❌ |
+| Send messages in program Chat | ✅ | ✅ | ❌ |
 
-> **Client TPM** and **Client Viewer** have read-only access to Bug Bounty — they can view all program information but cannot create or modify programs. Only a **Client Admin** has write access.
+> **Program settings are managed by SecurityBoat.** Clients request a program and SecurityBoat reviews, approves, schedules, and edits it. If a live program needs a change (scope, dates, rewards), ask your CSM.
+
+---
+
+## The program lifecycle
+
+A program you request moves through these states. The same lifecycle applies to Bug Bounty and VDP programs.
+
+```mermaid
+flowchart LR
+    R([Requested]) -->|SecurityBoat approves| A([Approved])
+    R -->|SecurityBoat declines| X([Rejected])
+    A --> S([Scheduled])
+    A --> L([Active])
+    S -->|start date reached| L
+    L -->|paused| D([Deactivated])
+    D -->|re-activated| L
+    L -->|end date or closed| E([Ended])
+    D --> E
+```
+
+| State | What it means for you |
+|-------|----------------------|
+| **Requested** | You submitted the request. SecurityBoat is reviewing it. |
+| **Rejected** | The request was declined. The reviewer's reason is shown under **My Program Requests**. |
+| **Approved** | SecurityBoat approved the request. The program exists but is not accepting submissions yet. |
+| **Scheduled** | The program goes live automatically on its start date. |
+| **Active** | Live. Researchers can test and submit findings. |
+| **Deactivated** | Paused. Existing findings, scope, and updates stay readable, but new findings are not accepted. |
+| **Ended** | The program has finished (on its end date, or closed by SecurityBoat). Read-only. |
+
+> Only **Active** programs accept new findings. Only **Active Public** programs are listed in the public program directory.
 
 ---
 
 ## Bug Bounty Programs list
 
-The programs list page is your central hub for managing all your bug bounty programs. From here, you can view all your programs, filter them by type, and access each program's detail page.
+Click **BB Program** in the sidebar to open the **Programs** list.
 
-![Bug Bounty programs list showing KPI tiles (Total, Active, Inactive), type filter tabs (All Programs, VDP, Bug Bounty), search bar, and the programs table with columns for Program, Client, Type, Visibility, Status, and Findings.](../../images/client_bb_programs_list.png)
+![Bug Bounty programs list showing KPI tiles, type filter tabs, state filters, search bar, and the programs table.](../../images/V2_Images/client_bb_programs_list.png)
 
-- **BB Program** — your programs list and each program's detail page (all 11 tabs)
-- **Hacktivity** — the public activity feed of disclosed, resolved reports
-- **Disclosure Requests** — researcher requests to publicly disclose a finding
+| Element | What it shows |
+|---------|---------------|
+| **KPI tiles** | **Total programs**, **Active**, and **Awaiting review** (requests still being reviewed). |
+| **Type tabs** | **All Programs**, **VDP**, **Bug Bounty**. |
+| **State filter** | **All States** plus one pill per state (Requested, Rejected, Approved, Scheduled, Active, Deactivated, Ended). |
+| **Search** | Search by program name. |
+| **Table columns** | Program, Client, Type, **Management** (SB-Managed / Self-Managed), Visibility, Status, Findings. |
+| **New program** | Client Admin only. Opens the program request form. |
 
-> The **Leaderboard** is a platform-level view visible only to SecurityBoat staff; it is not shown in the client sidebar. The program-level leaderboard is available within each program's detail page.
+Your filters and page number are kept in the page address, so opening a program and pressing **Back** returns you to the same filtered page. The list shows 10 programs per page.
+
+Other Bug Bounty pages in the sidebar:
+
+- **My Program Requests** — every program your organisation has requested and where it stands. See [My Program Requests](my-program-requests.md).
+- **Hacktivity** — the public feed of disclosed, resolved reports.
+- **Disclosure Requests** — researcher requests to publicly disclose a finding (Client Admin and Client TPM).
 
 ---
 
 ## How it all fits together
 
-```
-You create a program (VDP or Bug Bounty, Public or Private)
-        ↓
-Researchers discover and test your in-scope assets
-        ↓
-Researchers submit findings → SecurityBoat verifies them
-        ↓
-Verified findings appear in your Findings module (source = Bug Bounty)
-        ↓
-You fix the issue → finding moves to Resolved
-        ↓
-Researcher requests public disclosure (optional)
-        ↓
-You review and approve → finding appears in Hacktivity
+```mermaid
+flowchart TD
+    A[Client Admin requests a program] --> B[SecurityBoat reviews the request]
+    B -->|Approved| C[Program is scheduled or activated]
+    B -->|Rejected| Z[Reason shown in My Program Requests]
+    C --> D[Researchers test in-scope assets]
+    D --> E[Researcher submits a report]
+    E --> F{Management model}
+    F -->|SB-Managed| G[SecurityBoat triages]
+    F -->|Self-Managed| H[Your team triages]
+    G --> I[Finding verified]
+    H --> I
+    I --> J[Your team fixes it and submits for retest]
+    J --> K[Fix confirmed: Resolved]
+    K --> L[Optional: researcher requests disclosure]
+    L --> M[TPM review, then your approval]
+    M --> N[Published on Hacktivity]
 ```
 
 ---
 
-## Best practices for getting started
+## Best practices
 
-- **Start with a VDP** if you are new to crowd-sourced security. It creates a responsible-disclosure channel without monetary commitments while you learn the workflow.
-- **Use Private visibility** for new programs or sensitive assets, so you can invite and vet researchers before opening up.
-- **Define scope clearly** — be specific about which URLs, APIs, or systems are in-scope and which are explicitly out of scope to minimise noise.
-- **Set realistic reward tiers** that reflect the severity and complexity of your assets. SecurityBoat defaults are a sensible starting point.
-- **Review disclosure requests promptly** — timely, sanitised public disclosure builds researcher trust and community goodwill.
-- **Monitor the Findings and Payouts tabs regularly** — keeping on top of submissions and approvals maintains a healthy program.
+- **Start with a VDP** if you are new to crowd-sourced security. It opens a disclosure channel without monetary commitments.
+- **Use Private visibility** for new programs or sensitive assets.
+- **Define scope clearly** — fill in the **In scope** and **Out of scope** fields so researchers know what qualifies.
+- **Act on verified findings promptly** — move them to **Fix in Progress** and then submit them for retest.
+- **Review disclosure requests promptly** — timely disclosure builds researcher trust.
 
 ---
 
@@ -107,10 +175,12 @@ You review and approve → finding appears in Hacktivity
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **No Bug Bounty entries in the sidebar** | Your org is not onboarded for Bug Bounty. Contact your CSM. |
-| **No "New program" button on the Programs page** | You are **Client TPM** or **Client Viewer**. Only Client Admins can create programs. |
-| **A bug-bounty finding I heard about is not in my Findings** | It has not been **verified** yet — the verified-only visibility rule applies. |
-| **Edit button is missing on the program detail page** | Editing is only available when the program is **Inactive**. Active programs must be deactivated first (contact your CSM). |
+| **No Bug Bounty entries in the sidebar** | Your organisation is not onboarded for Bug Bounty. Contact your CSM. |
+| **No "New program" button** | Only **Client Admin** can request programs. |
+| **The Bug Bounty card is disabled when creating a program** | Your organisation is on the Free plan, which supports VDP programs only. Contact your CSM to upgrade. |
+| **My requested program has no page to open** | A program page opens only after the request is approved. Track it under **My Program Requests**. |
+| **There is no Edit button on the program** | Program settings are edited by SecurityBoat. Contact your CSM with the change you need. |
+| **Researchers say they cannot submit findings** | The program is not **Active** (it may be Approved, Scheduled, Deactivated, or Ended). |
 
 ---
 
@@ -118,18 +188,19 @@ You review and approve → finding appears in Hacktivity
 
 | Guide | What it covers |
 |-------|---------------|
-| [Create a Program](create-bug-bounty.md) | Step-by-step guide to creating a VDP or Bug Bounty program |
-| [Program Detail](program-detail.md) | Header, KPIs, tab navigation, and the Overview tab |
-| [Scope](detail/scope.md) | In-scope assets, rules of engagement, and safe harbor |
-| [Rewards](detail/rewards.md) | Severity-tiered payout structure and recognition model |
-| [Findings](detail/findings.md) | All findings submitted to this program and their lifecycle |
+| [Request a Program](create-bug-bounty.md) | Step-by-step guide to requesting a VDP or Bug Bounty program |
+| [My Program Requests](my-program-requests.md) | Tracking your requests and reading review outcomes |
+| [Program Detail](program-detail.md) | Header, lifecycle stepper, KPIs, tab navigation, and the Overview tab |
+| [Scope](detail/scope.md) | In-scope assets, scope notes, rules of engagement, safe harbor, and test credentials |
+| [Rewards](detail/rewards.md) | Severity-tiered reward structure and recognition model |
+| [Findings](detail/findings.md) | Findings submitted to this program and their lifecycle |
 | [Team](detail/team.md) | Invited researchers on Private programs |
-| [Payouts](detail/payouts.md) | Bounty approvals, invoices, and disbursement tracking |
-| [Leaderboard](detail/leaderboard.md) | Researcher ranking by reputation and rewards |
+| [Payouts](detail/payouts.md) | Reward approvals, statuses, and invoices |
+| [Leaderboard](detail/leaderboard.md) | Researcher ranking by reputation |
 | [Collaborators](detail/collaborators.md) | Every researcher who has contributed to this program |
-| [Chat](detail/chat.md) | Real-time messaging channel for program communication |
-| [Edit a Program](edit-bug-bounty.md) | How to update program settings |
+| [Chat](detail/chat.md) | Messaging channel for program communication |
+| [Changing a Program](edit-bug-bounty.md) | How program changes are handled |
 
 ---
 
-← Previous: [Attack Surface (ASM)](../11-asm.md) | Next: [Create a Program →](create-bug-bounty.md)
+← Previous: [ASM Subdomains](../asm/subdomains.md) | Next: [Request a Program →](create-bug-bounty.md)

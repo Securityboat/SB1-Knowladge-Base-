@@ -1,58 +1,74 @@
 # Program Team
 
-> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who can manage:** SecurityBoat staff only (SB Admin / CSM / TPM).
+> **Visibility:** This tab appears on **Private** programs only. Public programs are open to every eligible researcher, so no invitations are needed.
 >
-> **Visibility:** This tab only appears on **Private** programs. Public programs do not have a Team tab since any eligible researcher can participate.
+> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who can invite and remove researchers:** Client Admin on a **Self-Managed** Private program. On an **SB-Managed** program, SecurityBoat manages the team.
 
-The **Team** tab shows which researchers have been granted access to participate in this private program.
+The **Team** tab shows which researchers have been invited to this private program and whether they have accepted.
 
 ---
 
-## What you will see
+## The team list
 
-Each team member is displayed in a row showing:
+![Program Team tab — researchers invited to this private program.](../../../images/V2_Images/client_bb_detail_team.png)
 
 | Column | Description |
 |--------|-------------|
-| **Name** | The researcher's display name |
-| **Email** | The researcher's registered email address |
+| **Researcher** | Name and email |
 | **Role** | Researcher or Lead Researcher |
-| **Invited by** | The SecurityBoat staff member who sent the invitation |
+| **Status** | **Pending** (invitation sent, not yet accepted) or **Accepted** |
+| **Invited by** | Who sent the invitation |
 | **Invited** | Date the invitation was sent |
 
----
-
-## How researchers join a Private program
-
-1. Your CSM or SecurityBoat admin identifies suitable researchers from the vetted pool.
-2. An invitation is sent to each researcher from within the platform.
-3. The researcher accepts and appears on the Team tab.
-4. The researcher can now see and participate in this private program.
+Researchers see the program and can submit findings once they accept the invitation. If nobody has been invited yet, the tab reads: *"No researchers invited yet. Invite researchers to give them access to this private program."*
 
 ---
 
-## Managing the team
+## Inviting researchers (Client Admin, Self-Managed programs)
 
-> As a **Client Admin**, you can **view** the team list but cannot add or remove researchers yourself. Team management is handled by SecurityBoat staff.
+The **Invite researchers** card sits at the top of the tab.
 
-If you need a researcher added or removed:
+1. Open the **Select researchers to invite…** list.
+2. Type in the search box to find researchers **by name or email**.
+3. Tick one or more researchers. You can invite several at once. Researchers already on the program are not listed.
+4. Click **Invite** (the button shows the count, e.g. **Invite (3)**, when several are selected).
 
-1. Contact your CSM with the researcher's details.
-2. For removals, provide the reason (e.g., researcher is no longer active, conflict of interest).
-3. Your CSM will process the change and the Team tab will update automatically.
+Each invited researcher receives an invitation and appears in the list with the status **Pending** until they accept it from their **Invites** page.
+
+```mermaid
+flowchart LR
+    A[Client Admin selects researchers] --> B[Invite]
+    B --> C([Pending])
+    C -->|researcher accepts| D([Accepted])
+    D --> E[Researcher can view the program and submit findings]
+```
+
+## Removing a researcher
+
+1. Click **Remove** on the researcher's row.
+2. A **Remove researcher?** dialog explains that the researcher will lose access to submit findings and view program details. You can re-invite them later if needed.
+3. Click **Remove** to confirm, or **Cancel**.
+
+A removed researcher can no longer open the program. Findings they already submitted stay on the program.
 
 ---
 
 ## Team vs. Collaborators
 
-Do not confuse the **Team** tab with the **Collaborators** tab:
-
 | Tab | Shows |
 |-----|-------|
-| **Team** | Researchers who have been **invited** to participate (Private programs only) |
-| **Collaborators** | Researchers who have actually **submitted** a finding (all programs) |
+| **Team** | Researchers **invited** to a Private program, whether or not they have submitted anything |
+| **Collaborators** | Researchers who have actually **submitted** findings (all programs) |
 
-A researcher can be on the Team without having submitted any findings yet. Conversely, a collaborator on a Public program was never explicitly invited — they discovered and joined the program on their own.
+---
+
+## Troubleshooting
+
+| Symptom | Cause / Fix |
+|---------|-------------|
+| **No Invite researchers card** | You are not Client Admin, or the program is SB-Managed. Ask your CSM to invite researchers on SB-Managed programs. |
+| **A researcher stays Pending** | They have not accepted the invitation yet. |
+| **A researcher is missing from the picker** | They are already on the program, or their account is inactive. |
 
 ---
 

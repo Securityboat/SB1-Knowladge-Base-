@@ -2,7 +2,7 @@
 
 The Team tab shows you who SecurityBoat has assigned to work on your engagement. As a client user, this tab is **read-only** — you can see the roster but team composition is managed by SecurityBoat.
 
-![Team tab — list of assigned team members showing avatar, name, role badge, and email.](../../../images/client_engagement_team.png)
+![Team tab — list of assigned team members showing avatar, name, role badge, and email.](../../../images/V2_Images/client_engagement_team.png)
 
 ---
 

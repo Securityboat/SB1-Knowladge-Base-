@@ -1,6 +1,6 @@
 # Introduction
 
-![Researcher dashboard overview.](../images/researcher_dashboard.png)
+![Researcher dashboard overview.](../images/V2_Images/researcher_dashboard.png)
 
 ---
 

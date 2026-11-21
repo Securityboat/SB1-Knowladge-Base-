@@ -1,72 +1,52 @@
 # Disclosure Requests (Researcher View)
 
-**Disclosure Requests** is where you manage the process of publicly disclosing vulnerabilities you have discovered and had resolved. It appears under **Bug Bounty** in the sidebar.
+A **disclosure request** asks for one of your resolved Bug Bounty or VDP findings to be published on the public **Hacktivity** feed.
+
+> Researchers do not have a Disclosure Requests page in the sidebar. You request disclosure from the program's **Findings** tab, and you are notified when your request is reviewed. The review itself is handled by the TPM and the client.
 
 ---
 
-## Accessing Disclosure Requests
+## Which findings can be disclosed
 
-![Researcher Disclosure Requests — manage requests to publish resolved vulnerabilities.](../images/res_disclosure_requests.png)
-
----
-
-1. Sign in as a Researcher
-2. In the sidebar, under **OPERATIONS**, click **Disclosure Requests**
+- Only **your own** findings.
+- Only findings that are **Resolved** (or closed as **Not Applicable**). Open, verified, or in-progress findings cannot be disclosed.
+- Only one active request per finding. If a request is rejected, you can request again.
 
 ---
 
-## The Request Lifecycle
+## Requesting disclosure
 
-Each disclosure request moves through four stages:
+1. Open the program and go to its **Findings** tab.
+2. Find your resolved finding. In the **Actions** column, click **Request Publish**.
+3. You'll see *"Publish request submitted — awaiting review"*, and the column changes to **Requested**.
+
+---
+
+## The request lifecycle
 
 ```mermaid
-graph LR
-    A[You submit] --> B[Pending TPM]
-    B -->|TPM approves| C[Pending Client]
-    B -->|TPM rejects| D[Rejected]
-    C -->|Client approves| E[Published]
-    C -->|Client rejects| D
+flowchart LR
+    A[Request Publish] --> B([Awaiting TPM Review])
+    B -->|TPM approves| C([Awaiting Client Approval])
+    B -->|TPM rejects| D([Rejected])
+    C -->|client approves| E([Published])
+    C -->|client rejects| D
+    D -.->|request again| A
 ```
 
-| State | Description |
+| Status | What you see in the Actions column |
 |---|---|
-| Pending TPM | You submitted the request; it is awaiting review by the TriNetra Program Manager |
-| Pending Client | TPM has approved the technical accuracy; awaiting client authorisation |
-| Published | The client approved — the disclosure is now live on Hacktivity |
-| Rejected | The request was denied (by TPM or client) |
-
-Use the filter tabs at the top of the page — **All**, **Pending TPM**, **Pending Client**, **Published**, **Rejected** — to track requests at each stage.
+| **Awaiting TPM Review** / **Awaiting Client Approval** | **Requested** |
+| **Published** | **Published** — click it to open the public disclosure page |
+| **Rejected** | **Request Publish** appears again so you can resubmit |
 
 ---
 
-## Submitting a Disclosure Request
+## Tips
 
-1. Navigate to **Disclosure Requests** from the sidebar
-2. Click the button to create a new request
-3. Select the resolved finding you wish to disclose
-4. Write a public-facing summary:
-   - **Title** — a clear, descriptive name for the vulnerability
-   - **Description** — technical details of the finding, impact, and remediation
-   - Keep it professional and educational — focus on the vulnerability, not the affected organisation
-5. Submit for TPM review
-
----
-
-## What Happens After Submission
-
-1. **TPM Review** — the Platform Manager validates the technical accuracy of your disclosure and checks for policy compliance
-2. **Client Authorisation** — the affected client reviews and decides whether to allow public release
-3. **Publication** — once approved, the disclosure appears on Hacktivity under your name
-
----
-
-## Tips for Successful Disclosures
-
-- **Write for a technical audience** — clear reproduction steps, real impact, and actionable remediation advice make for stronger disclosures
-- **Be patient** — the review process involves multiple parties; response times vary
-- **Check the status** — use the filter tabs to track where each request is in the pipeline
-- **Don't take rejection personally** — clients may have legitimate confidentiality or regulatory reasons for denying a disclosure
-- **Redact sensitive details** — never include client names, internal hostnames, or proprietary information unless explicitly authorised
+- **Be patient** — the request is reviewed by two parties.
+- **Don't take rejection personally** — clients may have confidentiality or regulatory reasons.
+- **Check Hacktivity** to see your published disclosures.
 
 ---
 

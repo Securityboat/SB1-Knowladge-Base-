@@ -3,15 +3,12 @@
 ### 1. Why this page exists
 
 When you submit a pentest request, it becomes an engagement in the **Requested**
-state, and SecurityBoat then works it through several **internal** states
-(Scoping, Team formed, Scheduled) before it goes **Live**. Those internal states
-are deliberately hidden from the main **Engagements** list (they'd be noise, and
-they contain tester/scheduling details that aren't yours to see).
+state. SecurityBoat then works it through preparation (Draft, Scoping, Open to
+assign, Team formed, Scheduled) before it goes **Live**.
 
-**My Requests** closes that visibility gap. It's a client-friendly tracker that
-shows every request you've submitted and a **simplified status** across the whole
-lifecycle — from submission through go-live and completion — without exposing the
-internal machinery.
+**My Requests** is a client-friendly tracker that shows every request you've
+submitted, its current state, and a plain-language explanation of what that stage
+means — from submission through go-live and completion.
 
 > In short: **Engagements** = the full workspace for live/delivered tests;
 > **My Requests** = the status board for everything you've asked for, especially
@@ -21,18 +18,21 @@ internal machinery.
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
-| View my org's requests | ✅ | ✅ | ✅ (read-only) |
+| View my org's requests | ✅ | ✅ | ❌ |
 | Submit a new request | ✅ | ✅ | ❌ |
+
+> Client Viewers don't have **My Requests** in the sidebar; they can follow engagements from **Pentest Engagements**.
 
 ### Navigation
 
-Navigate to **Pentest Engagements → My requests** via the main sidebar.
+Click **My Requests** in the main sidebar. The page is titled **My pentest requests** —
+*"Track the requests you've submitted from request through go-live and completion."*
 
 ---
 
 ### 3. Reading the page
 
-![My requests — a card per submitted request, each with a coloured status badge, project ID, title, asset, and preferred dates.](../images/client_my_requests.png)
+![My requests — a card per submitted request, each with a coloured status badge, project ID, title, asset, and preferred dates.](../images/V2_Images/client_my_requests.png)
 
 Each request is a card with:
 
@@ -40,27 +40,29 @@ Each request is a card with:
   `SB-PTEST-…`).
 - The request **title** and the **asset** under test.
 - Three dates: **Submitted**, **Preferred start**, **Preferred end**.
-- An **Open engagement** button — appears once the request is far enough along
-  (typically Live or later) that the full engagement workspace is available to you.
+- An **Open engagement** button — appears once the request is approved and the
+  engagement page is available to you.
 
 **The status values and what they mean:**
 
-| Status | Colour | Meaning | What to do |
-|--------|--------|---------|------------|
-| **Submitted** | Neutral | Received; Tri-Netra will review shortly. | Wait for the review (usually ~1 business day). |
-| **Approved — preparing** | Amber | Approved; scope and testers are being arranged. | Expect a scoping call; it'll go Live soon. |
-| **Live** | Green | Testing is in progress. | Click **Open engagement** to see findings, chat, and reports. |
-| **Completed** | Grey | Engagement is closed. | Findings and reports remain available on the engagement. |
-| **Closed** | Red | Closed before testing began. | Contact your account team for next steps. |
+The badge shows the same engagement state you see on the Engagements list (for
+example **Requested**, **Draft**, **Scoping**, **Scheduled**, **Live**, **Closed**).
+Under it, a one-line explanation tells you what that stage means for you:
 
-Each card also carries a one-line description explaining the current status in
-plain language.
+| Stage | Badge examples | Explanation shown | What to do |
+|-------|----------------|-------------------|------------|
+| **Received** | Requested | We've received your request. Our team will review it shortly. | Wait for the review (usually about 1 business day). |
+| **Approved, preparing** | Draft, Scoping, Open to assign, Team formed, Scheduled | Your pentest has been approved. The team is preparing scope and assigning testers — it will be live soon. | Expect a scoping call. |
+| **Testing** | Live, Report drafting, Report review, Delivered, Remediation | Testing is in progress. Open the engagement to see findings, chat, and reports. | Click **Open engagement**. |
+| **Completed** | Closed | The engagement is closed. Past findings and reports remain available. | Open the engagement for its findings and report. |
+| **Closed before testing** | Closed | This request was closed before testing started. Contact your account team for next steps. | Contact your account team. |
 
 ---
 
 ### 4. Submitting a new request
 
-Click **New request** (top-right) to open the request form. This is the same form
+Click **New engagement** on the Pentest Engagements page (or **Request a pentest** when
+you have no requests yet) to open the request form. This is the same form
 described in the [Create Engagement](engagements/create-engagement.md) guide
 for the field-by-field breakdown (asset, engagement type, title, description,
 preferred dates) and the review → scoping → approval → delivery flow.
@@ -79,9 +81,9 @@ preferred dates) and the review → scoping → approval → delivery flow.
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **"No requests yet"** | You haven't submitted any, or they were created directly by Tri-Netra staff (those appear under Engagements once Live). |
-| **No Open engagement button** | The request hasn't reached a client-openable state yet (still preparing). It appears at Live. |
-| **No New request button** | You're **Client Viewer** (read-only). |
+| **"No requests yet"** | You haven't submitted any, or the engagement was created directly by SecurityBoat (it appears under Pentest Engagements). |
+| **No Open engagement button** | The request is still **Requested** (not yet approved), or it was closed before testing. |
+| **No My Requests in the sidebar** | You're **Client Viewer**, or your organisation isn't onboarded for PTaaS. |
 
 ---
 

@@ -23,7 +23,8 @@ Once the engagement moves past Draft into active preparation or Live testing, th
 - **Title and description** — set at request time.
 - **Engagement type and testing approach** — confirmed during the scoping call.
 - **Schedule** — finalized by SecurityBoat after the scoping call.
-- **Rules of engagement** (in-scope / out-of-scope) — locked once testing begins.
+- **Rules of engagement** (in-scope / out-of-scope) — you provide these in the request form; SecurityBoat confirms them during scoping and they are locked once testing begins.
+- **Environment** (Production, UAT, Staging, QA, or Development) — confirmed during scoping.
 
 You can always **view** all of these on the [Brief tab](engagement-details/engagement-detail.md) of the engagement detail page.
 

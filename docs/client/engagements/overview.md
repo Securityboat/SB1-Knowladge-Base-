@@ -2,27 +2,44 @@
 
 ### 1. What an engagement is and how the PTaaS model works
 
-An **engagement** is a scheduled penetration test of one of your assets, run by SecurityBoat's Security team. "PTaaS" (Penetration Testing as a Service) means the whole lifecycle — requesting, scoping, testing, reporting, and retesting — happens on this platform instead of over email and PDFs.
+An **engagement** is a scheduled penetration test of one of your assets, run by SecurityBoat's security team. "PTaaS" (Penetration Testing as a Service) means the whole lifecycle — requesting, scoping, testing, reporting, and retesting — happens on this platform instead of over email and PDFs.
 
-Every engagement moves through a series of states. You won't see all of them (some are internal to SecurityBoat's team), but understanding the arc helps you know where your test stands:
+Every engagement moves through the states below. The **lifecycle stepper** on each engagement shows where it stands.
 
-```
-Requested → Draft → (internal preparation) → Live → Report drafting
-    → Report review → Delivered → Remediation → Closed
+```mermaid
+flowchart LR
+    RQ([Requested]) -->|approved| DR([Draft])
+    RQ -->|rejected| CL([Closed])
+    DR --> SC([Scoping])
+    SC --> OA([Open to assign])
+    OA --> TF([Team formed])
+    TF --> SH([Scheduled])
+    SC --> SH
+    SH --> LV([Live])
+    LV --> RD([Report drafting])
+    RD --> RR([Report review])
+    RR --> DL([Delivered])
+    DL --> RM([Remediation])
+    RM --> CL2([Closed])
+    DL --> CL2
 ```
 
 | State | What's happening |
 |-------|------------------|
-| **Requested** | You submitted a pentest request; awaiting SecurityBoat review. |
-| **Draft** | Your request was approved; you can still refine scoping details. |
-| **Live** | Active testing is underway — findings appear in real time. |
+| **Requested** | You submitted a pentest request; SecurityBoat is reviewing it. |
+| **Draft** | Your request was approved and became an engagement. |
+| **Scoping** | SecurityBoat is confirming scope, environment, access, and dates with you. |
+| **Open to assign** | SecurityBoat is assembling the testing team. |
+| **Team formed** | The testers are confirmed. |
+| **Scheduled** | Testing dates are locked. |
+| **Live** | Active testing is underway — verified findings appear as they are confirmed. |
 | **Report drafting** | The testing team is writing the engagement report. |
-| **Report review** | The report is being reviewed before final delivery. |
+| **Report review** | The report is with your team for sign-off, then SecurityBoat's final review. |
 | **Delivered** | The final report has been issued to you. |
 | **Remediation** | You're fixing issues; retests may follow. |
-| **Closed** | The engagement is complete. |
+| **Closed** | The engagement is complete (or a request was closed before testing). |
 
-> **Why some states are hidden:** between Draft and Live, SecurityBoat runs internal preparation (confirming testers, locking scope, scheduling). These steps don't require action from you and would add unnecessary noise. Track your request during this window using **My Requests** — it shows a simplified status without exposing the internal machinery.
+> Engagement states are moved by SecurityBoat. Your part is to submit the request, provide access and context, review and approve the report, and fix and retest findings. Track requests that have not gone Live yet under **My Requests**.
 
 ---
 
@@ -30,15 +47,16 @@ Requested → Draft → (internal preparation) → Live → Report drafting
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
-| View your organization's engagements | ✅ | ✅ | ✅ |
+| View your organisation's engagements | ✅ | ✅ | ✅ |
 | Open engagement detail (Brief, Findings, Reports…) | ✅ | ✅ | ✅ |
 | Submit a new pentest **request** | ✅ | ✅ | ❌ |
-| Refine scoping details while in **Draft** | ✅ | ✅ | ❌ |
 | Send messages in engagement Chat | ✅ | ✅ | ❌ |
+| **Approve the report** or **Request changes** | ✅ | ✅ | ❌ |
 | Download the final report PDF | ✅ | ✅ | ✅ |
+| Export findings to CSV | ✅ | ✅ | ✅ |
 | Configure Jira integration on an engagement | ✅ | ❌ | ❌ |
 
-> **Why you "request" rather than "create":** you can't spin up a live engagement directly — scope, testers, and scheduling all need SecurityBoat review. So you file a **request**; once approved, it becomes a tracked engagement that progresses through to delivery.
+> **Why you "request" rather than "create":** scope, testers, and scheduling all need SecurityBoat review. You file a **request**; once approved, it becomes a tracked engagement that progresses through to delivery.
 
 ### Navigation
 
@@ -48,25 +66,27 @@ Click **Pentest Engagements** in the main sidebar menu.
 
 ### 3. The Engagements list
 
-![Engagements list — Summary metrics bar, state-bucket filter pills, search, and a table with state, TPM, findings, and schedule.](../../images/client_engagements_list_01.png)
+![Engagements list — summary tiles, state filter pills, search, and the engagements table.](../../images/V2_Images/client_engagements_list_01.png)
 
-**Summary metrics bar:** Total engagements · Active · Completed — computed from your organization's visible engagements.
+The page is titled **Pentest Engagements** — *"Request, scope, schedule, deliver — every PTaaS engagement on the platform."*
 
-**Filter pills (state buckets):** the lifecycle states are grouped into friendly buckets so you can filter quickly:
+**Summary tiles:** **Total engagements** · **Live** · **Completed** (Delivered plus Closed).
 
-| Bucket | What it shows |
-|--------|----------|
-| **All** | Every engagement visible to your organization. |
-| **Active** | Everything currently in flight (Draft through Report review). |
+**Filter pills:** each pill shows a live count.
+
+| Pill | What it shows |
+|------|---------------|
+| **All** | Every engagement visible to your organisation. |
 | **Live** | Engagements where testing is actively happening. |
-| **Scheduled** | Engagements with confirmed dates, awaiting the Live testing start. |
-| **Delivered** | Delivered + Remediation — report issued, fixes in progress. |
+| **Scheduled** | Engagements with confirmed dates, waiting to start. |
+| **Delivered** | Report issued; includes engagements in Remediation. |
 | **Closed** | Completed engagements. |
-| **Requested** | Pending requests you or your colleagues submitted. |
+| **Requested** | Requests you or your colleagues submitted that are still being reviewed. |
+| **Archived** | Engagements SecurityBoat has archived. Their chat becomes read-only. |
 
-Each pill shows a live count. There's also a **search** box that matches on Project ID or title.
+There's also a **search** box — *Search by project ID or title…*
 
-**Table columns:** Engagement (title + Project ID + testing type) · Client · State · TPM (your SecurityBoat project manager) · Findings (count) · Scheduled (start → end). Click any row to open it. The list paginates at 10 rows per page.
+**Table columns:** Engagement (title + Project ID + testing type) · Client · State · TPM (your SecurityBoat project manager) · Findings (count) · Scheduled (start → end). Click any row to open it. The list shows 10 rows per page.
 
 **New engagement button** (Client Admin / Client TPM only): opens the pentest request form — see [Create Engagement](create-engagement.md).
 
@@ -74,17 +94,17 @@ Each pill shows a live count. There's also a **search** box that matches on Proj
 
 ### Best practices
 
-- **Use the filter pills** to find "what needs attention right now" — Active and Requested are the fastest way to spot work in flight.
-- **Keep your asset inventory current** before requesting a pentest so there's nothing to clarify during scoping.
-- **Use the engagement Chat** for questions during testing instead of email — it keeps the full conversation attached to the engagement record.
+- **Use the filter pills** to find what needs attention — **Live** and **Requested** show work in flight.
+- **Keep your asset inventory current** before requesting a pentest.
+- **Use the engagement Chat** for questions during testing instead of email.
+- **Review the report promptly** when it reaches you — you are reminded if it waits more than 3 days.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **My engagement disappeared from the list** | It moved into internal preparation (between Draft and Live). Track it under **My Requests** until it reaches Live. |
+| **I can't find an engagement** | Check the **Archived** or **Closed** pill, or clear the search. Pre-Live requests are also listed under **My Requests**. |
 | **No "New engagement" button** | You're a **Client Viewer** (read-only). Ask a Client Admin or Client TPM to submit the request. |
-| **Can't find an old engagement** | Check the **Closed** bucket or clear any active search filter. |
 
 ---
 

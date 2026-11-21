@@ -33,9 +33,11 @@ Click **Integrations → Jira** in the main sidebar menu.
 
 ### 3. The page, section by section
 
-![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integrations_jira.png)
-![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integrations_jira_2.png)
-![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integrations_jira_3.png)
+![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/V2_Images/client_integrations_jira.png)
+![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/V2_Images/client_integrations_jira_2.png)
+![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs. (1 of 2)](../images/V2_Images/client_integrations_jira_3.png)
+
+![Jira Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs. (2 of 2)](../images/V2_Images/client_integrations_jira_4.png)
 
 **1. Connection card.** Shows whether Jira is **Connected** or not. A Client Admin
 connects via the OAuth flow (authorise SecurityBoat against your Jira Cloud site).
@@ -99,7 +101,7 @@ stop when something looks out of sync.
 
 ## 5. Slack (engagement chat mirrored to Slack)
 
-![Slack Integration — connection card, manual setup, and (once connected) project mappings, transition mappings, and sync logs.](../images/client_integration_Slack.png)
+![Slack Integration — Slack Workspace Connection card with the Connect Slack Workspace button and connection status, and the How It Works steps (channel auto-creation, team sync, bi-directional chat).](../images/V2_Images/client_integration_Slack.png)
 
 Alongside Jira, TriNetra can mirror your **pentest engagement chat** into your
 **Slack** workspace, so your team can follow and reply to engagement conversations

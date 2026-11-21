@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://securityboat.github.io/SB1-Knowladge-Base-/client/bug-bounty/overview/">
       
       
-        <link rel="prev" href="../../11-asm/">
+        <link rel="prev" href="../../asm/subdomains/">
       
       
         <link rel="next" href="../create-bug-bounty/">
@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1776,9 +1776,28 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../11-asm/" class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_12" id="__nav_3_12_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
@@ -1792,7 +1811,163 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Attack Surface (ASM)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../11-asm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../asm/dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../asm/targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Targets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../asm/scans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../asm/subdomains/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Subdomains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1937,7 +2112,7 @@
   <a href="#program-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Program Types
+        Program types
       
     </span>
   </a>
@@ -1948,7 +2123,29 @@
   <a href="#program-visibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Program Visibility
+        Program visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#management-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Management model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-paid-vs-free" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan: Paid vs Free
       
     </span>
   </a>
@@ -1983,6 +2180,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-program-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The program lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bug-bounty-programs-list" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2005,10 +2213,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices-for-getting-started" class="md-nav__link">
+  <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Best practices for getting started
+        Best practices
       
     </span>
   </a>
@@ -2060,7 +2268,35 @@
   <span class="md-ellipsis">
     
   
-    Create Program
+    Request a Program
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../my-program-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    My Program Requests
   
 
     
@@ -2094,10 +2330,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_13_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_13_3" id="__nav_3_13_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_13_4" id="__nav_3_13_4_label" tabindex="0">
             
   
   
@@ -2115,8 +2351,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_13_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_13_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_13_4">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2400,7 +2636,7 @@
   <span class="md-ellipsis">
     
   
-    Edit Program
+    Changing a Program
   
 
     
@@ -2605,6 +2841,34 @@
     
   
     Disclosure Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../24-researchers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Researchers
   
 
     
@@ -3889,14 +4153,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
               
                 
   
@@ -3904,14 +4160,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../researcher/14-agentic-pentest/" class="md-nav__link">
+      <a href="../../../researcher/bug-bounty/my-credentials/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Agentic Pentest
+    My Credentials
   
 
     
@@ -3920,6 +4176,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -4072,6 +4336,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../researcher/19-team-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team Feedback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../researcher/13-settings/" class="md-nav__link">
         
   
@@ -4170,7 +4462,7 @@
   <a href="#program-types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Program Types
+        Program types
       
     </span>
   </a>
@@ -4181,7 +4473,29 @@
   <a href="#program-visibility" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Program Visibility
+        Program visibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#management-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Management model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-paid-vs-free" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Plan: Paid vs Free
       
     </span>
   </a>
@@ -4216,6 +4530,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#the-program-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The program lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bug-bounty-programs-list" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4238,10 +4563,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices-for-getting-started" class="md-nav__link">
+  <a href="#best-practices" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Best practices for getting started
+        Best practices
       
     </span>
   </a>
@@ -4289,14 +4614,13 @@
 
 <h1 id="bug-bounty-overview">Bug Bounty — Overview</h1>
 <blockquote>
-<p><strong>Availability:</strong> The Bug Bounty module is <strong>subscription-gated</strong>. The <strong>BB Program</strong>, <strong>Hacktivity</strong>, and <strong>Disclosure Requests</strong> entries appear in your sidebar only if your organisation has been onboarded for Bug Bounty. If they are missing, contact your Customer Success Manager (CSM).</p>
+<p><strong>Availability:</strong> The Bug Bounty module is <strong>subscription-gated</strong>. The <strong>BB Program</strong>, <strong>My Program Requests</strong>, <strong>Hacktivity</strong>, and <strong>Disclosure Requests</strong> entries appear in your sidebar only if your organisation has been onboarded for Bug Bounty. If they are missing, contact your Customer Success Manager (CSM).</p>
 </blockquote>
 <hr />
 <h2 id="what-is-bug-bounty">What is Bug Bounty?</h2>
 <p>A <strong>Bug Bounty program</strong> invites SecurityBoat's vetted community of security researchers to continuously test your assets and submit discovered vulnerabilities — typically in exchange for a reward.</p>
-<p>Unlike a scheduled pentest where a fixed team tests within a defined window, a Bug Bounty program is <strong>ongoing and crowd-sourced</strong>: many researchers, working continuously, are paid or recognised per valid finding. Think of it as having hundreds of specialist security eyes on your applications at the same time, around the clock — rather than a single team that tests for two weeks and stops.</p>
-<h3 id="program-types">Program Types</h3>
-<p>SecurityBoat supports two program types, suited to different stages of your security maturity:</p>
+<p>Unlike a scheduled pentest where a fixed team tests within a defined window, a Bug Bounty program is <strong>ongoing and crowd-sourced</strong>: many researchers, working continuously, are paid or recognised per valid finding.</p>
+<h3 id="program-types">Program types</h3>
 <table>
 <thead>
 <tr>
@@ -4308,18 +4632,17 @@
 <tbody>
 <tr>
 <td><strong>VDP</strong> — Vulnerability Disclosure Program</td>
-<td>Opens a responsible-disclosure channel so researchers can report issues. Great for organisations starting out with crowd-sourced security.</td>
-<td>Recognition only — swag and Hall of Fame listing. No monetary reward.</td>
+<td>Opens a responsible-disclosure channel so researchers can report issues. A good starting point for crowd-sourced security.</td>
+<td>Recognition only — swag, Hall of Fame listing, and reputation points. No monetary reward.</td>
 </tr>
 <tr>
 <td><strong>Bug Bounty</strong></td>
-<td>A paid program with defined scope and severity-tiered monetary rewards. Attracts more active researcher engagement and deeper testing.</td>
-<td>Cash payout per accepted finding, scaled to severity (P1–P5).</td>
+<td>A paid program with defined scope and severity-tiered monetary rewards. Attracts deeper testing.</td>
+<td>Cash reward per valid finding, scaled to severity (P1–P5).</td>
 </tr>
 </tbody>
 </table>
-<h3 id="program-visibility">Program Visibility</h3>
-<p>Each program also has a <strong>visibility</strong> setting that controls who can participate:</p>
+<h3 id="program-visibility">Program visibility</h3>
 <table>
 <thead>
 <tr>
@@ -4330,14 +4653,73 @@
 <tbody>
 <tr>
 <td><strong>Public</strong></td>
-<td>Any eligible researcher on the platform can see and participate. Maximum coverage.</td>
+<td>Any eligible researcher on the platform can see and participate.</td>
 </tr>
 <tr>
 <td><strong>Private</strong></td>
-<td>Only researchers you explicitly invite can see and participate. Better for sensitive assets or early-stage programs.</td>
+<td>Only invited researchers can see and participate. Better for sensitive assets or early-stage programs.</td>
 </tr>
 </tbody>
 </table>
+<h3 id="management-model">Management model</h3>
+<p>Every program shows a <strong>management badge</strong> in the program list, on the program page, and on each finding. Hover over the badge to read what it means.</p>
+<table>
+<thead>
+<tr>
+<th>Badge</th>
+<th>Who triages findings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SB-Managed</strong></td>
+<td>SecurityBoat's team reviews and manages the findings for this program. A SecurityBoat TPM is assigned.</td>
+</tr>
+<tr>
+<td><strong>Self-Managed</strong></td>
+<td>Your own team reviews and manages the findings. SecurityBoat is not involved in triage.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plan-paid-vs-free">Plan: Paid vs Free</h3>
+<p>What you can request depends on your organisation's plan:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center;">Paid plan</th>
+<th style="text-align: center;">Free plan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VDP programs</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Bug Bounty (paid reward) programs</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Public and Private visibility</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>SB-Managed programs</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Self-Managed programs</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+</tbody>
+</table>
+<p>On the Free plan the <strong>Bug Bounty</strong> card is still shown when you create a program, but it is disabled with a note that Bug Bounty is a Paid-plan capability. Contact your CSM to upgrade.</p>
 <hr />
 <h2 id="how-it-differs-from-a-pentest">How it differs from a Pentest</h2>
 <table>
@@ -4365,9 +4747,9 @@
 <td>Defined per program</td>
 </tr>
 <tr>
-<td><strong>Findings flow</strong></td>
-<td>All verified findings visible to you</td>
-<td>Same — verified-only visibility rule applies</td>
+<td><strong>When you see findings</strong></td>
+<td>After SecurityBoat verifies them</td>
+<td>As soon as a researcher submits them (from <strong>New</strong> onward)</td>
 </tr>
 <tr>
 <td><strong>Cost model</strong></td>
@@ -4377,7 +4759,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>Bug Bounty findings appear in your unified <strong>Findings</strong> list with source <code>Bug Bounty</code>, subject to the same verified-only visibility rule as pentest findings.</p>
+<p>Bug Bounty findings also appear in your unified <strong>Findings</strong> list with the source <strong>BUG BOUNTY</strong>.</p>
 </blockquote>
 <hr />
 <h2 id="what-each-client-role-can-do">What each client role can do</h2>
@@ -4392,77 +4774,195 @@
 </thead>
 <tbody>
 <tr>
-<td>View programs, Hacktivity, Disclosure Requests</td>
+<td>View programs, program detail tabs, and Hacktivity</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 </tr>
 <tr>
-<td>View all program detail tabs</td>
+<td>View <strong>My Program Requests</strong></td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 </tr>
 <tr>
-<td>Create a new program</td>
+<td><strong>Request</strong> a new program</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 </tr>
 <tr>
-<td>Configure / edit a program</td>
+<td>Invite / remove researchers on a <strong>Self-Managed Private</strong> program</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
 <td style="text-align: center;">❌</td>
 </tr>
 <tr>
-<td>Approve bounty payouts</td>
+<td>Act on findings (confirm, start fixing, submit for retest)</td>
+<td style="text-align: center;">✅</td>
 <td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Triage findings on a <strong>Self-Managed</strong> program</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Approve rewards on a <strong>Self-Managed</strong> Bug Bounty program</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>View <strong>Disclosure Requests</strong></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Approve or reject a disclosure request</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Send messages in program Chat</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
 <td style="text-align: center;">❌</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p><strong>Client TPM</strong> and <strong>Client Viewer</strong> have read-only access to Bug Bounty — they can view all program information but cannot create or modify programs. Only a <strong>Client Admin</strong> has write access.</p>
+<p><strong>Program settings are managed by SecurityBoat.</strong> Clients request a program and SecurityBoat reviews, approves, schedules, and edits it. If a live program needs a change (scope, dates, rewards), ask your CSM.</p>
+</blockquote>
+<hr />
+<h2 id="the-program-lifecycle">The program lifecycle</h2>
+<p>A program you request moves through these states. The same lifecycle applies to Bug Bounty and VDP programs.</p>
+<pre class="mermaid"><code>flowchart LR
+    R([Requested]) --&gt;|SecurityBoat approves| A([Approved])
+    R --&gt;|SecurityBoat declines| X([Rejected])
+    A --&gt; S([Scheduled])
+    A --&gt; L([Active])
+    S --&gt;|start date reached| L
+    L --&gt;|paused| D([Deactivated])
+    D --&gt;|re-activated| L
+    L --&gt;|end date or closed| E([Ended])
+    D --&gt; E</code></pre>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>What it means for you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Requested</strong></td>
+<td>You submitted the request. SecurityBoat is reviewing it.</td>
+</tr>
+<tr>
+<td><strong>Rejected</strong></td>
+<td>The request was declined. The reviewer's reason is shown under <strong>My Program Requests</strong>.</td>
+</tr>
+<tr>
+<td><strong>Approved</strong></td>
+<td>SecurityBoat approved the request. The program exists but is not accepting submissions yet.</td>
+</tr>
+<tr>
+<td><strong>Scheduled</strong></td>
+<td>The program goes live automatically on its start date.</td>
+</tr>
+<tr>
+<td><strong>Active</strong></td>
+<td>Live. Researchers can test and submit findings.</td>
+</tr>
+<tr>
+<td><strong>Deactivated</strong></td>
+<td>Paused. Existing findings, scope, and updates stay readable, but new findings are not accepted.</td>
+</tr>
+<tr>
+<td><strong>Ended</strong></td>
+<td>The program has finished (on its end date, or closed by SecurityBoat). Read-only.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Only <strong>Active</strong> programs accept new findings. Only <strong>Active Public</strong> programs are listed in the public program directory.</p>
 </blockquote>
 <hr />
 <h2 id="bug-bounty-programs-list">Bug Bounty Programs list</h2>
-<p>The programs list page is your central hub for managing all your bug bounty programs. From here, you can view all your programs, filter them by type, and access each program's detail page.</p>
-<p><img alt="Bug Bounty programs list showing KPI tiles (Total, Active, Inactive), type filter tabs (All Programs, VDP, Bug Bounty), search bar, and the programs table with columns for Program, Client, Type, Visibility, Status, and Findings." src="../../../images/client_bb_programs_list.png" /></p>
+<p>Click <strong>BB Program</strong> in the sidebar to open the <strong>Programs</strong> list.</p>
+<p><img alt="Bug Bounty programs list showing KPI tiles, type filter tabs, state filters, search bar, and the programs table." src="../../../images/V2_Images/client_bb_programs_list.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KPI tiles</strong></td>
+<td><strong>Total programs</strong>, <strong>Active</strong>, and <strong>Awaiting review</strong> (requests still being reviewed).</td>
+</tr>
+<tr>
+<td><strong>Type tabs</strong></td>
+<td><strong>All Programs</strong>, <strong>VDP</strong>, <strong>Bug Bounty</strong>.</td>
+</tr>
+<tr>
+<td><strong>State filter</strong></td>
+<td><strong>All States</strong> plus one pill per state (Requested, Rejected, Approved, Scheduled, Active, Deactivated, Ended).</td>
+</tr>
+<tr>
+<td><strong>Search</strong></td>
+<td>Search by program name.</td>
+</tr>
+<tr>
+<td><strong>Table columns</strong></td>
+<td>Program, Client, Type, <strong>Management</strong> (SB-Managed / Self-Managed), Visibility, Status, Findings.</td>
+</tr>
+<tr>
+<td><strong>New program</strong></td>
+<td>Client Admin only. Opens the program request form.</td>
+</tr>
+</tbody>
+</table>
+<p>Your filters and page number are kept in the page address, so opening a program and pressing <strong>Back</strong> returns you to the same filtered page. The list shows 10 programs per page.</p>
+<p>Other Bug Bounty pages in the sidebar:</p>
 <ul>
-<li><strong>BB Program</strong> — your programs list and each program's detail page (all 11 tabs)</li>
-<li><strong>Hacktivity</strong> — the public activity feed of disclosed, resolved reports</li>
-<li><strong>Disclosure Requests</strong> — researcher requests to publicly disclose a finding</li>
+<li><strong>My Program Requests</strong> — every program your organisation has requested and where it stands. See <a href="../my-program-requests/">My Program Requests</a>.</li>
+<li><strong>Hacktivity</strong> — the public feed of disclosed, resolved reports.</li>
+<li><strong>Disclosure Requests</strong> — researcher requests to publicly disclose a finding (Client Admin and Client TPM).</li>
 </ul>
-<blockquote>
-<p>The <strong>Leaderboard</strong> is a platform-level view visible only to SecurityBoat staff; it is not shown in the client sidebar. The program-level leaderboard is available within each program's detail page.</p>
-</blockquote>
 <hr />
 <h2 id="how-it-all-fits-together">How it all fits together</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>You create a program (VDP or Bug Bounty, Public or Private)
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        ↓
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Researchers discover and test your in-scope assets
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        ↓
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Researchers submit findings → SecurityBoat verifies them
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        ↓
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Verified findings appear in your Findings module (source = Bug Bounty)
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        ↓
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>You fix the issue → finding moves to Resolved
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        ↓
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Researcher requests public disclosure (optional)
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        ↓
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>You review and approve → finding appears in Hacktivity
-</code></pre></div>
+<pre class="mermaid"><code>flowchart TD
+    A[Client Admin requests a program] --&gt; B[SecurityBoat reviews the request]
+    B --&gt;|Approved| C[Program is scheduled or activated]
+    B --&gt;|Rejected| Z[Reason shown in My Program Requests]
+    C --&gt; D[Researchers test in-scope assets]
+    D --&gt; E[Researcher submits a report]
+    E --&gt; F{Management model}
+    F --&gt;|SB-Managed| G[SecurityBoat triages]
+    F --&gt;|Self-Managed| H[Your team triages]
+    G --&gt; I[Finding verified]
+    H --&gt; I
+    I --&gt; J[Your team fixes it and submits for retest]
+    J --&gt; K[Fix confirmed: Resolved]
+    K --&gt; L[Optional: researcher requests disclosure]
+    L --&gt; M[TPM review, then your approval]
+    M --&gt; N[Published on Hacktivity]</code></pre>
 <hr />
-<h2 id="best-practices-for-getting-started">Best practices for getting started</h2>
+<h2 id="best-practices">Best practices</h2>
 <ul>
-<li><strong>Start with a VDP</strong> if you are new to crowd-sourced security. It creates a responsible-disclosure channel without monetary commitments while you learn the workflow.</li>
-<li><strong>Use Private visibility</strong> for new programs or sensitive assets, so you can invite and vet researchers before opening up.</li>
-<li><strong>Define scope clearly</strong> — be specific about which URLs, APIs, or systems are in-scope and which are explicitly out of scope to minimise noise.</li>
-<li><strong>Set realistic reward tiers</strong> that reflect the severity and complexity of your assets. SecurityBoat defaults are a sensible starting point.</li>
-<li><strong>Review disclosure requests promptly</strong> — timely, sanitised public disclosure builds researcher trust and community goodwill.</li>
-<li><strong>Monitor the Findings and Payouts tabs regularly</strong> — keeping on top of submissions and approvals maintains a healthy program.</li>
+<li><strong>Start with a VDP</strong> if you are new to crowd-sourced security. It opens a disclosure channel without monetary commitments.</li>
+<li><strong>Use Private visibility</strong> for new programs or sensitive assets.</li>
+<li><strong>Define scope clearly</strong> — fill in the <strong>In scope</strong> and <strong>Out of scope</strong> fields so researchers know what qualifies.</li>
+<li><strong>Act on verified findings promptly</strong> — move them to <strong>Fix in Progress</strong> and then submit them for retest.</li>
+<li><strong>Review disclosure requests promptly</strong> — timely disclosure builds researcher trust.</li>
 </ul>
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
@@ -4476,19 +4976,27 @@
 <tbody>
 <tr>
 <td><strong>No Bug Bounty entries in the sidebar</strong></td>
-<td>Your org is not onboarded for Bug Bounty. Contact your CSM.</td>
+<td>Your organisation is not onboarded for Bug Bounty. Contact your CSM.</td>
 </tr>
 <tr>
-<td><strong>No "New program" button on the Programs page</strong></td>
-<td>You are <strong>Client TPM</strong> or <strong>Client Viewer</strong>. Only Client Admins can create programs.</td>
+<td><strong>No "New program" button</strong></td>
+<td>Only <strong>Client Admin</strong> can request programs.</td>
 </tr>
 <tr>
-<td><strong>A bug-bounty finding I heard about is not in my Findings</strong></td>
-<td>It has not been <strong>verified</strong> yet — the verified-only visibility rule applies.</td>
+<td><strong>The Bug Bounty card is disabled when creating a program</strong></td>
+<td>Your organisation is on the Free plan, which supports VDP programs only. Contact your CSM to upgrade.</td>
 </tr>
 <tr>
-<td><strong>Edit button is missing on the program detail page</strong></td>
-<td>Editing is only available when the program is <strong>Inactive</strong>. Active programs must be deactivated first (contact your CSM).</td>
+<td><strong>My requested program has no page to open</strong></td>
+<td>A program page opens only after the request is approved. Track it under <strong>My Program Requests</strong>.</td>
+</tr>
+<tr>
+<td><strong>There is no Edit button on the program</strong></td>
+<td>Program settings are edited by SecurityBoat. Contact your CSM with the change you need.</td>
+</tr>
+<tr>
+<td><strong>Researchers say they cannot submit findings</strong></td>
+<td>The program is not <strong>Active</strong> (it may be Approved, Scheduled, Deactivated, or Ended).</td>
 </tr>
 </tbody>
 </table>
@@ -4503,24 +5011,28 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../create-bug-bounty/">Create a Program</a></td>
-<td>Step-by-step guide to creating a VDP or Bug Bounty program</td>
+<td><a href="../create-bug-bounty/">Request a Program</a></td>
+<td>Step-by-step guide to requesting a VDP or Bug Bounty program</td>
+</tr>
+<tr>
+<td><a href="../my-program-requests/">My Program Requests</a></td>
+<td>Tracking your requests and reading review outcomes</td>
 </tr>
 <tr>
 <td><a href="../program-detail/">Program Detail</a></td>
-<td>Header, KPIs, tab navigation, and the Overview tab</td>
+<td>Header, lifecycle stepper, KPIs, tab navigation, and the Overview tab</td>
 </tr>
 <tr>
 <td><a href="../detail/scope/">Scope</a></td>
-<td>In-scope assets, rules of engagement, and safe harbor</td>
+<td>In-scope assets, scope notes, rules of engagement, safe harbor, and test credentials</td>
 </tr>
 <tr>
 <td><a href="../detail/rewards/">Rewards</a></td>
-<td>Severity-tiered payout structure and recognition model</td>
+<td>Severity-tiered reward structure and recognition model</td>
 </tr>
 <tr>
 <td><a href="../detail/findings/">Findings</a></td>
-<td>All findings submitted to this program and their lifecycle</td>
+<td>Findings submitted to this program and their lifecycle</td>
 </tr>
 <tr>
 <td><a href="../detail/team/">Team</a></td>
@@ -4528,11 +5040,11 @@
 </tr>
 <tr>
 <td><a href="../detail/payouts/">Payouts</a></td>
-<td>Bounty approvals, invoices, and disbursement tracking</td>
+<td>Reward approvals, statuses, and invoices</td>
 </tr>
 <tr>
 <td><a href="../detail/leaderboard/">Leaderboard</a></td>
-<td>Researcher ranking by reputation and rewards</td>
+<td>Researcher ranking by reputation</td>
 </tr>
 <tr>
 <td><a href="../detail/collaborators/">Collaborators</a></td>
@@ -4540,16 +5052,16 @@
 </tr>
 <tr>
 <td><a href="../detail/chat/">Chat</a></td>
-<td>Real-time messaging channel for program communication</td>
+<td>Messaging channel for program communication</td>
 </tr>
 <tr>
-<td><a href="../edit-bug-bounty/">Edit a Program</a></td>
-<td>How to update program settings</td>
+<td><a href="../edit-bug-bounty/">Changing a Program</a></td>
+<td>How program changes are handled</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p>← Previous: <a href="../../11-asm/">Attack Surface (ASM)</a> | Next: <a href="../create-bug-bounty/">Create a Program →</a></p>
+<p>← Previous: <a href="../../asm/subdomains/">ASM Subdomains</a> | Next: <a href="../create-bug-bounty/">Request a Program →</a></p>
 
 
 
@@ -4600,12 +5112,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.instant", "navigation.tracking", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/mermaid-init.js"></script>
       
     
   </body>

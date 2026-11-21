@@ -6,7 +6,7 @@
 
 ## Accessing Hacktivity
 
-![Researcher Hacktivity — public feed of disclosed vulnerabilities.](../images/res_hacktivity.png)
+![Researcher Hacktivity — public feed of disclosed vulnerabilities.](../images/V2_Images/res_hacktivity.png)
 
 ---
 

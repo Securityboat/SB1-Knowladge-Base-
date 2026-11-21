@@ -8,23 +8,15 @@ The **Leaderboard** tab ranks researchers who have had findings accepted on this
 
 ## How points are earned
 
-Points are awarded per accepted vulnerability based on severity:
+Points are awarded per accepted vulnerability based on its severity (P1 Critical earns the most, P5 Informational the least). The points per severity are set platform-wide by SecurityBoat and are the same on every program.
 
-| Severity | Points |
-|----------|--------|
-| P1 — Critical | 40 |
-| P2 — High | 30 |
-| P3 — Medium | 20 |
-| P4 — Low | 10 |
-| P5 — Informational | 5 |
-
-A researcher who submits and has accepted one P1 finding (40 points) and two P3 findings (2 × 20 = 40 points) would have 80 reputation points on this program.
+A researcher's score on this program is the sum of the points from all their accepted findings here.
 
 ---
 
 ## What the leaderboard shows
 
-![Program Leaderboard tab showing researcher rankings with podium medals for the top three, displaying researcher name, reputation points, rewards earned, and accepted vulnerabilities count.](../../../images/client_bb_detail_leaderboard.png)
+![Program Leaderboard tab showing researcher rankings with podium medals for the top three, displaying researcher name, reputation points, rewards earned, and accepted vulnerabilities count.](../../../images/V2_Images/client_bb_detail_leaderboard.png)
 
 Each researcher row displays:
 

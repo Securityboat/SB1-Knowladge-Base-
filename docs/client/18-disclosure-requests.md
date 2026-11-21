@@ -1,72 +1,73 @@
 # Disclosure Requests
 
-**Disclosure Requests** let you manage researcher requests to publicly disclose resolved vulnerabilities. You have the final say on whether a finding is published to the Hacktivity feed.
+**Disclosure Requests** let you manage researcher requests to publicly disclose a finding from your Bug Bounty or VDP programs. You have the final say on whether a finding is published to the Hacktivity feed.
+
+> **Who can see this page:** Client Admin and Client TPM. **Who approves or rejects:** Client Admin.
+
+---
+
+## Which findings can be disclosed
+
+A researcher can request disclosure only for **their own** finding, and only once it is **Resolved** (or closed as **Not Applicable**). Findings that are still open, verified, or being fixed cannot be disclosed. Only one active request per finding is allowed; a rejected finding can be requested again.
+
+The researcher sends the request with the **Request Publish** button on the program's **Findings** tab.
 
 ---
 
 ## Accessing Disclosure Requests
 
-1. Sign in as a Client Admin
-2. In the sidebar, under **OPERATIONS**, click **Disclosure Requests**
+![Disclosure Requests — researcher requests to publicly disclose findings.](../images/V2_Images/client_disclosure_req.png)
+
+In the sidebar, under **OPERATIONS**, click **Disclosure Requests**. Notification links open the page with the relevant request highlighted.
 
 ---
 
-## The Request Workflow
+## The request workflow
 
 ```mermaid
-graph LR
-    A[Researcher submits] --> B[Pending TPM]
-    B -->|TPM approves| C[Pending Client]
-    B -->|TPM rejects| D[Rejected]
-    C -->|You approve| E[Published]
-    C -->|You reject| D
+flowchart LR
+    A[Researcher requests publish] --> B([Awaiting TPM Review])
+    B -->|TPM approves| C([Awaiting Client Approval])
+    B -->|TPM rejects| D([Rejected])
+    C -->|Client Admin approves| E([Published])
+    C -->|Client Admin rejects| D
 ```
 
-| State | Description |
+| Status | Description |
 |---|---|
-| Pending TPM | Researcher has submitted; awaiting TriNetra Program Manager review |
-| Pending Client | TPM has approved the technical accuracy; awaiting **your** authorisation |
-| Published | You approved the disclosure — it is now live on Hacktivity |
-| Rejected | Disclosure was denied |
+| **Awaiting TPM Review** | The researcher submitted the request. A SecurityBoat TPM checks it first. |
+| **Awaiting Client Approval** | The TPM approved it. It now needs **your** decision. |
+| **Published** | You approved it. The disclosure is live on Hacktivity, with a **View public** link. |
+| **Rejected** | The disclosure was denied by the TPM or by your team. |
 
-Use the filter tabs at the top of the page — **All**, **Pending TPM**, **Pending Client**, **Published**, **Rejected** — to focus on requests at each stage.
+Use the filter tabs at the top of the page — **All**, **Pending TPM**, **Pending Client**, **Published**, **Rejected** — to focus on one stage. The list shows 10 requests per page.
 
 ---
 
-## Reviewing and Deciding on a Request
+## Deciding on a request (Client Admin)
 
-### When a request is Pending Client:
+1. Filter by **Pending Client**.
+2. Open a request and review the finding title, severity, and the TPM's notes.
+3. Optionally add a **Comment** explaining your decision.
+4. Click **Approve** to publish, **Reject** to deny, or **Cancel** to decide later.
 
-1. Filter by **Pending Client** to see requests awaiting your decision
-2. Click a request to review:
-   - **Finding title and severity** — what was found and how critical it is
-   - **Technical description** — the proposed public write-up
-   - **TPM review notes** — the platform manager's assessment
+Common reasons to reject:
 
-### To Approve:
-
-Click **Approve**. The disclosure goes live on Hacktivity under the researcher's name.
-
-### To Reject:
-
-Click **Reject** and provide a reason. Common rejection scenarios:
-
-| Scenario | Reason to Reject |
+| Scenario | Reason to reject |
 |---|---|
-| Same vulnerability class exists in other systems still under remediation | Active risk |
-| Disclosure reveals proprietary business logic or architecture | Confidentiality |
-| Finding relates to a system under regulatory investigation | Legal/compliance |
-| Publication timeframe conflicts with an upcoming audit | Audit readiness |
+| The same vulnerability class exists in other systems still being fixed | Active risk |
+| The disclosure reveals proprietary business logic or architecture | Confidentiality |
+| The finding relates to a system under regulatory investigation | Legal / compliance |
+| Publication timing conflicts with an upcoming audit | Audit readiness |
 
 ---
 
-## Best Practices
+## Best practices
 
-- **Respond promptly** — researchers rely on timely publication for their professional reputation
-- **Provide a clear reason when rejecting** — vague rejections discourage future programme participation
-- **Coordinate with your TPM** — they can advise on disclosure strategy and risk
-- **Review the Hacktivity feed regularly** — ensure published disclosures still meet your standards
+- **Respond promptly** — researchers rely on timely publication for their reputation.
+- **Explain rejections** in the comment — vague rejections discourage future participation.
+- **Coordinate with your TPM** on disclosure strategy.
 
 ---
 
-← Previous: [Hacktivity](17-hacktivity.md) | Next: [AI Assistant (Ish) →](13-ai-assistant.md)
+← Previous: [Hacktivity](17-hacktivity.md) | Next: [Researchers →](24-researchers.md)

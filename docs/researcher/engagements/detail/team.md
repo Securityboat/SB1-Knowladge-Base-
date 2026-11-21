@@ -4,7 +4,7 @@ The **Team** tab lists the full security team roster assigned to the engagement,
 
 ---
 
-![Team Tab](../../../images/res_engagement_team.png)
+![Team Tab](../../../images/V2_Images/res_engagement_team.png)
 
 ## Communication & Collaboration Hierarchy
 

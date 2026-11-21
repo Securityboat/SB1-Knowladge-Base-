@@ -1,77 +1,77 @@
 # Program Payouts
 
-> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who can approve:** Client Admin only.
+> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who approves:** depends on the management model (see below).
 
-The **Payouts** tab tracks the financial status of every accepted finding. For Bug Bounty programs, this is where you approve and manage bounty payouts. For VDP programs, it tracks reputation points instead.
+The **Payouts** tab tracks the reward for every payable finding on the program. Findings appear here once they are verified. For VDP programs, the tab shows reputation points instead of money.
 
 ---
 
-## Bug Bounty Programs
+## Bug Bounty programs
 
-![Program Payouts tab showing the payout records table with columns for Finding, Researcher, Severity, Amount, Status (Pending/Approved/Disbursed), and Invoice download link.](../../../images/client_bb_detail_payouts.png)
+![Program Payouts tab showing the payout records table.](../../../images/V2_Images/client_bb_detail_payouts.png)
 
-### Payout lifecycle
+The tab header reads **Payouts for *program name*** with a running **Total**. A line underneath explains who approves on this program.
 
-Each accepted finding follows a payout lifecycle:
+### Who approves
 
-```
-PENDING → APPROVED → DISBURSED
+| Management model | How a reward is approved |
+|------------------|--------------------------|
+| **SB-Managed** | SecurityBoat sets the reward amount and approves it. Your team does not need to act. |
+| **Self-Managed** | Your team sets the reward amount when it verifies the finding, and a **Client Admin** approves first. SecurityBoat then gives the final approval. |
+
+### Reward status flow
+
+```mermaid
+flowchart LR
+    V([Verified]) -->|Self-Managed: Client Admin approves| C([Awaiting SB Admin Approval])
+    C --> A([Approved by SB Admin])
+    V -->|SB-Managed: SecurityBoat approves| A
+    A --> PI([Payment Initiated]) --> TA([Transaction Approved]) --> PD([Payment Done])
 ```
 
 | Status | What it means |
-|--------|--------------|
-| **Pending** | The finding has been accepted but the payout has not yet been approved by a Client Admin. |
-| **Approved** | A Client Admin has approved the payout. An invoice is generated. |
-| **Disbursed** | The funds have been transferred to the researcher. |
+|--------|---------------|
+| **Verified** | The finding is verified and the reward is waiting for approval. |
+| **Awaiting SB Admin Approval** | *Self-Managed only.* Your Client Admin approved the reward; SecurityBoat's final approval is pending. |
+| **Approved by SB Admin** | The reward is approved. The invoice becomes available. |
+| **Payment Initiated** | SecurityBoat has started the payment to the researcher. |
+| **Transaction Approved** | The payment transaction is approved. |
+| **Payment Done** | The researcher has been paid. |
+| **TDS** | Tax deducted at source has been recorded for the payment. |
+| **Needs review** | The payout needs attention from SecurityBoat. |
 
 ### Payouts table
 
-Each row represents one accepted finding:
-
 | Column | Description |
 |--------|-------------|
-| **Finding** | Finding title and reference ID |
-| **Researcher** | The researcher who submitted it |
-| **Severity** | P1–P5 badge |
-| **Amount** | Bounty amount based on the severity tier configured for this program |
-| **Status** | Pending / Approved / Disbursed |
-| **Invoice** | Download link once the payout is approved |
+| **Finding** | Finding title and ID |
+| **Researcher** | Who submitted it |
+| **Severity** | P1 Critical to P5 Info |
+| **Amount** | The reward amount |
+| **Status** | The current reward status (see above) |
+| **Invoice** | Invoice number with a download link, once the reward is approved |
+| **Action** | *Client Admin on Self-Managed programs:* an **Approve** button while the reward is awaiting your approval |
 
-### Approving a payout (Client Admin)
+### Approving a reward (Client Admin, Self-Managed programs)
 
-When you approve a pending payout:
-
-1. The payout amount is locked based on the severity tier.
-2. An invoice record is generated with a unique invoice number.
-3. The disbursement process is triggered automatically.
-
-### Reverting an approved payout
-
-If a correction is needed before disbursement, you can **revert** an approved payout back to Pending. This is only available while the payout is in Approved status — once it reaches Disbursed, it cannot be undone through the UI.
+1. Make sure the finding has a reward amount. A reward with no amount cannot be approved.
+2. Click **Approve** on the row.
+3. In the **Approve reward** dialog, check the amount and researcher, and enter a reason (10–500 characters). The reason is kept with the payout history.
+4. Click **Approve payout**. The status changes to **Awaiting SB Admin Approval**.
 
 ---
 
-## VDP Programs
+## VDP programs
 
-VDP programs do not involve monetary payouts. Instead, the Payouts tab shows **reputation points** awarded per accepted finding:
-
-| Severity | Points awarded |
-|----------|---------------|
-| P1 — Critical | 40 |
-| P2 — High | 30 |
-| P3 — Medium | 20 |
-| P4 — Low | 10 |
-| P5 — Informational | 5 |
-
-These points accumulate on the researcher's profile and contribute to their leaderboard ranking.
+VDP programs have no monetary payouts. The tab is titled **Points for *program name*** and shows the **reputation points** each accepted finding earned, with a total. Points per severity are set platform-wide by SecurityBoat.
 
 ---
 
 ## Best practices
 
-- **Review payouts regularly** — pending payouts that sit unapproved for too long can frustrate researchers and harm your program's reputation.
-- **Verify the severity** before approving — the payout amount is tied to the severity assigned during triage. If you believe a severity was mis-assigned, raise it with your CSM before approving.
-- **Keep invoice records** — download invoices for your own financial records and compliance.
+- **Approve rewards promptly** on Self-Managed programs. Rewards waiting too long frustrate researchers.
+- **Check the severity before approving** — the amount follows the program's reward table.
+- **Keep invoice records** for your finance and compliance needs.
 
 ---
 
@@ -79,9 +79,10 @@ These points accumulate on the researcher's profile and contribute to their lead
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **I cannot see the "Approve" button** | You are **Client TPM** or **Client Viewer**. Only Client Admins can approve payouts. |
-| **The payout amount seems wrong** | The amount is tied to the severity tier set in [Rewards](rewards.md). Check the Rewards tab first. If the severity itself is wrong, contact your CSM. |
-| **I accidentally approved the wrong payout** | If it is still in Approved status, you can revert it back to Pending. If it has been Disbursed, contact your CSM. |
+| **I cannot see the Approve button** | The program is SB-Managed (SecurityBoat approves), you are not Client Admin, or the reward is already past your approval step. |
+| **Approve is disabled** | The reward has no amount yet. Set it when verifying the finding, or contact your CSM. |
+| **"No payouts yet"** | No findings on this program are verified yet. |
+| **The amount seems wrong** | Check the [Rewards](rewards.md) tab and the finding's severity. Contact your CSM before approving if it needs correcting. |
 
 ---
 

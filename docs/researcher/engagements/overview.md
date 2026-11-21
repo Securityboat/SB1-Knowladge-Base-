@@ -26,8 +26,8 @@ graph LR
 | :--- | :--- |
 | **Scheduled** | The engagement dates are locked. You can review the scope and brief, but testing has not started yet. |
 | **Live** | Testing is actively underway. Perform security tests, collaborate in Chat, check off items on the Coverage checklist, and submit findings in real time. |
-| **Report Drafting** | The testing window has closed. The security team (primarily the Lead Researcher) compiles and formats the final report. |
-| **Report Review** | The compiled report undergoes peer review by SecurityBoat TPMs and QA staff. |
+| **Report Drafting** | The testing window has closed. The Lead Researcher writes the report and submits it for review (only possible in this state). |
+| **Report Review** | The client signs the report off, then SecurityBoat completes the final review and marks it Final. |
 | **Delivered** | The final report has been issued to the client. |
 | **Remediation** | The client is patching vulnerabilities. You may be requested to perform targeted retests on fixed assets. |
 | **Closed** | The engagement is complete. Details are preserved as read-only. |
@@ -47,18 +47,19 @@ Your permissions and responsibilities depend on your assigned role:
 
 To browse your assigned engagements, click **Pentest Engagements** in the main sidebar.
 
-![Engagements List](../../images/res_engagements_list_01.png)
+![Engagements List](../../images/V2_Images/res_engagements_list.png)
 
 The listing page includes:
 
-1.  **Summary Metrics**: Quick counters for Active Engagements, Open Findings, and Total Payouts.
-2.  **Filter Pills**: Filter engagements by lifecycle states:
+1.  **Summary tiles**: **Total engagements**, **Live**, and **Completed** (Delivered plus Closed).
+2.  **Filter pills** (each with a count):
     *   **All**: Every engagement you are assigned to.
-    *   **Active**: Engagements currently in progress (Scheduled through Report Review).
     *   **Live**: Engagements where active testing is underway.
-    *   **Delivered**: Completed tests in remediation or delivery states.
+    *   **Scheduled**: Dates confirmed, testing not started yet.
+    *   **Delivered**: Report issued, including engagements in Remediation.
     *   **Closed**: Finished engagements.
-3.  **Search & Table**: Search by Project ID or title. The table lists the Project ID, Title, Client Organization, State, Assigned TPM, and Scheduled Dates.
+    *   **Requested** and **Archived**: rarely used by researchers. Archived engagements have a read-only chat.
+3.  **Search & Table**: *Search by project ID or title…* The table lists the engagement (title, Project ID, testing type), Client, State, TPM, Findings, and Scheduled dates.
 
 !!! note
     Click on any row in the table to open the **Engagement Detail** view.
@@ -69,9 +70,10 @@ The listing page includes:
 
 | Issue | Cause / Solution |
 | :--- | :--- |
-| **An engagement is missing from my list** | You must be explicitly assigned to an engagement by a SecurityBoat administrator or invited via the **Invites** tab. Check for pending invites. |
+| **An engagement is missing from my list** | You must be on the engagement team — through an accepted application on **Opportunities** or an invitation on **Invites**. If you were removed from the team, the engagement is no longer listed, but findings you submitted stay visible under **Findings**. |
+| **No Pentest Engagements in the sidebar** | PTaaS is not enabled for your account. Contact SecurityBoat. |
 | **Testing target does not respond** | If target servers are down or blocking your IP, report it immediately in the engagement **Chat** tab to alert the TPM and Client. |
-| **Cannot submit a finding** | Ensure the engagement state is **Live**. Finding submissions are disabled once the testing window closes and the state transitions to Report Drafting. |
+| **Cannot submit a finding** | Ensure the engagement state is **Live**. The **Submit finding** button only appears while the engagement accepts findings. |
 
 ---
 

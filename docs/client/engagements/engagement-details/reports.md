@@ -1,26 +1,36 @@
 ## Reports
 
-![Reports tab — engagement report with state badge and View/Download actions.](../../../images/client_engagement_reports.png)
+![Reports tab — engagement report with its status badge and review actions.](../../../images/V2_Images/client_engagement_reports.png)
 
 ---
 
-The Reports tab is where you access the engagement's final deliverable — the penetration test report. You can preview the report as it progresses through internal review, and download the official PDF once it's finalized.
+The Reports tab is where you review and receive the engagement's deliverable — the penetration test report. Your team signs the report off first, then SecurityBoat completes a final review and releases it for download.
 
 ---
 
 ### 1. The report approval lifecycle
 
-The report goes through several internal states before reaching you as a final deliverable:
+```mermaid
+flowchart LR
+    D([Draft]) -->|testing team submits| IR([In review])
+    IR -->|you: Approve report| CA([Client Approved])
+    IR -->|you: Request changes| RJ([Rejected])
+    RJ -->|revised and resubmitted| IR
+    CA -->|SecurityBoat: Mark Final| F([✓ Final])
+    CA -->|SecurityBoat sends back| RJ
+    F -->|after retest| PR([✓ Post-Retest Final])
+```
 
-| State | What it means for you |
-|-------|------------------------|
-| **Draft** | The report is being written by the testing team. You can preview the current version but it's not yet reviewed. |
-| **In review** | The report has been submitted for internal quality review. |
-| **Pre-Final** | The report has passed initial review and is nearly finalized. |
-| **✓ Final** | The report is officially signed off — **you can now download the PDF**. |
-| **✓ Post-Retest Final** | The report has been reissued after a retest confirmed your fixes. Also downloadable. |
+| Status | What it means for you |
+|--------|------------------------|
+| **Draft** | The testing team is writing the report. You can preview the current version. |
+| **In review** | The report is ready for **your** review. Client Admin or Client TPM approves it or requests changes. |
+| **Rejected** | Changes were requested. The testing team revises and resubmits it. |
+| **Client Approved** | You approved the report. SecurityBoat is completing its final review. |
+| **✓ Final** | The report is released — **you can now download the PDF**. |
+| **✓ Post-Retest Final** | The report was re-issued after a retest confirmed your fixes. Also downloadable. |
 
-A colored badge at the top of the Reports tab always shows the current state so you know exactly where things stand.
+A coloured badge at the top of the Reports tab always shows the current status, and a banner tells you what happens next.
 
 ---
 
@@ -28,50 +38,60 @@ A colored badge at the top of the Reports tab always shows the current state so 
 
 | Action | Client Admin | Client TPM | Client Viewer |
 |--------|:---:|:---:|:---:|
-| **Preview the report** (read it inline on the platform) | ✅ | ✅ | ✅ |
-| **Download the final PDF** | ✅ (once Final) | ✅ (once Final) | ✅ (once Final) |
-
-> **Why the Download button is disabled before Final:** this prevents an unreviewed draft from being circulated as if it were the official deliverable. You can always *preview* the report to read its current content, but the downloadable PDF only becomes available once the SecurityBoat team has formally signed it off.
+| **Preview the report** | ✅ | ✅ | ✅ |
+| **Approve report** (while In review) | ✅ | ✅ | ❌ |
+| **Request changes** (while In review) | ✅ | ✅ | ❌ |
+| **Download the PDF** | ✅ (Final / Post-Retest Final) | ✅ (Final / Post-Retest Final) | ✅ (Final / Post-Retest Final) |
 
 ---
 
-### 3. Previewing the report
+### 3. Reviewing the report (Client Admin / Client TPM)
 
-Click into the Reports tab at any time to see an inline rendered preview of the engagement report. This lets you:
+When the report reaches **In review**, you are notified and the tab shows:
 
-- Read the executive summary, posture assessment, and recommendations as they're being written.
-- See findings data incorporated into the report format.
-- Verify that scope information, asset details, and contact names are accurate.
+> ⏳ *Ready for your review — sent (time). Approve the report or request changes.*
 
-If you spot anything that needs correction (wrong asset URL, outdated contact name, etc.), use the engagement **Chat** to flag it to your TPM before the report is finalized.
+1. Read the inline preview — executive summary, scope, findings, and recommendations.
+2. Choose one:
+    - **Approve report** — records your approval and sends the report for SecurityBoat's final review. The download unlocks once that review is complete.
+    - **Request changes** — sends the report back to the testing team with your feedback.
+3. In the dialog, enter a **Description of Changes** (at least 5 characters) — your approval note or the changes you want. It is recorded in the report's document-control history.
+
+After you approve, the tab reads:
+
+> ✓ *You approved this report. SecurityBoat is completing the final review — the download will unlock once that is done.*
+
+If a report waits for review for more than 3 days, your team and your TPM receive a reminder.
 
 ---
 
 ### 4. Downloading the final PDF
 
-Once the report reaches **✓ Final** or **✓ Post-Retest Final**:
+Once the report reaches **✓ Final** or **✓ Post-Retest Final**, the tab reads *"✓ Final (time) — the report is ready to download."*
 
 1. Open the **Reports** tab.
 2. Click **Download PDF**.
-3. The browser downloads the engagement report as a formatted PDF — ready to share with stakeholders, auditors, or compliance teams.
 
-> **Post-Retest Final:** if you remediated findings and requested retests, the SecurityBoat team may reissue the report as a Post-Retest Final. This updated version confirms which findings were successfully resolved and is the authoritative post-remediation record.
+> **Report title:** every report has a title, and the scheduled month and year are added to it automatically (for example *"— Oct — 2026"*).
+
+> **Post-Retest Final:** after you remediate findings and they are retested, SecurityBoat may re-issue the report as Post-Retest Final. It confirms which findings were resolved and is the authoritative post-remediation record.
 
 ---
 
 ### Best practices
 
-- **Wait for the "Final" badge** before sharing the report externally — anything before that is still subject to revision.
-- **Preview early, flag issues early** — if you notice incorrect information in the draft report (wrong scope URLs, outdated team contacts), flag it in Chat so it's corrected before final sign-off.
-- **Keep both versions** if a Post-Retest Final is issued — the original Final shows the "before" state, the Post-Retest Final shows "after remediation."
+- **Review promptly** — testing is not complete for you until the report is signed off.
+- **Request changes with specifics** — name the section and what is wrong (scope URL, contact name, severity wording).
+- **Wait for the Final badge** before sharing the report externally.
+- **Keep both versions** if a Post-Retest Final is issued.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **Download PDF button is greyed out** | The report hasn't been marked Final yet. Continue monitoring — you'll be able to download once it's signed off. |
-| **Report preview is empty or shows "no narrative"** | The testing team hasn't started writing the report narrative yet. This is normal during Live testing or early Report drafting. |
-| **Information in the preview is wrong** | Use the engagement **Chat** tab to flag the issue to your TPM before the report is finalized. |
+| **No Approve / Request changes buttons** | The report isn't **In review**, or you are Client Viewer. |
+| **Download PDF is greyed out after I approved** | SecurityBoat's final review is still pending. The download unlocks at **Final**. |
+| **Report preview is empty** | The testing team hasn't started the narrative yet. This is normal during Live testing. |
 
 ---
 

@@ -12,11 +12,9 @@ A sticky footer at the bottom tracks your progress, displaying a count of comple
 
 > **Scope Isolation:** The form is automatically scoped to your organisation; you cannot accidentally assign assets to a different business entity.
 
-![New asset form — Section 1: Basic Information with asset name ('Acme Financial Services production customer portal'), Criticality set to 'Critical', and a filled description.](../../images/client_assets_new_01.png)
-![New asset form — Section 2: Asset type picker with 'Web Application' and 'API / Web Services' selected; Section 3: Scope Details showing the Web Application URL input (https://portal.acmefs.example.com) and file upload areas for Architecture diagram and Auth-flow document.](../../images/client_assets_new_02.png)
-![New asset form — Section 3 continued: API/Web Services base URL (https://api.acmefs.example.com/v2), Postman collection & OpenAPI upload areas; Section 4: Credentials with a filled 'Standard User' row including username, masked secret, and notes.](../../images/client_assets_new_03.png)
-
 #### Section 1 — Basic Information
+
+![New asset form — Section 1: Basic information with the Asset name field, Criticality selector (Critical, High, Medium, Low, Informational), and the Description rich-text editor.](../../images/V2_Images/client_assets_new_01.png)
 
 Configure the identifier and business value of the asset.
 
@@ -40,6 +38,8 @@ Set asset criticality realistically. Over-inflating all assets to "Critical" dil
 
 #### Section 2 — Asset Type Picker
 
+![New asset form — Section 2: Asset type picker with Web Application selected, and Section 3: Scope details showing the Web application URLs field, Add URL / Import CSV, and the architecture diagram and auth-flow upload areas.](../../images/V2_Images/client_assets_new_02.png)
+
 Select **up to 3 types** that represent the asset. Picking a type dynamically unlocks its corresponding **Scope Details** input fields in Section 3.
 
 > **Why support multiple types?** Real-world products often span multiple layers. For example, a single product might consist of a Web Application interface, a backing API, and a Mobile App. Grouping them under a single asset keeps the security posture and findings cohesive rather than fragmenting them across separate records.
@@ -59,6 +59,8 @@ Depending on the types selected in Section 2, provide the following details:
 > **Behind the Scenes:** The details are compiled into a structured JSON scope contract (maximum 2 MB). Files are staged locally in your browser and uploaded to the platform's secure storage when you submit the form.
 
 #### Section 4 — Credentials (Optional)
+
+![New asset form — Section 4: Credentials with Upload file / Add manually options, Sample CSV and Sample TXT downloads, the file picker, and the footer showing required fields ready with the Create asset button.](../../images/V2_Images/client_assets_new_03.png)
 
 Provide test account details to allow authenticated security testing.
 
@@ -81,7 +83,7 @@ Click **Create asset**. If a file upload fails during submission, the asset reco
 
 When onboarding a large inventory of assets, use the bulk import feature.
 
-![Import assets page — CSV format instructions (column names, max rows, scope format), a 'Download template' button, and the CSV file picker with 'Upload + import' button.](../../images/client_assets_import.png)
+![Import assets page — CSV format instructions (column names, max rows, scope format), a 'Download template' button, and the CSV file picker with 'Upload + import' button.](../../images/V2_Images/client_assets_import.png)
 
 #### CSV File Schema
 

@@ -1,65 +1,53 @@
-# Edit a Bug Bounty Program
+# Changing a Bug Bounty Program
 
-> **Who can do this:** Client Admin only. **When:** Only when the program is **Inactive**. Active programs cannot be edited through the client UI — contact your CSM for changes to live programs.
+> **Who edits programs:** SecurityBoat (your CSM or assigned TPM). Client roles do not have an **Edit** button on the program page.
 
-Editing a program uses the same form as [creating a program](create-bug-bounty.md), pre-filled with the current values. You can modify any field except the **program type**, which is locked after creation.
-
----
-
-## Accessing the Edit page
-
-1. Navigate to **BB Program** in the sidebar.
-2. Click the program you want to edit to open its detail page.
-3. If the program is **Inactive**, an **Edit** button appears in the program header bar.
-4. Click **Edit** to open the configuration form.
-
-> If you do not see the Edit button, the program is Active or Closed. Contact your CSM if you need to make changes to a live program.
+Once a program request is submitted, its settings are managed by SecurityBoat. This keeps scope, rewards, and dates consistent with what researchers have been told, and every change is recorded in the program's **Activity** tab.
 
 ---
 
-## What you can edit
+## How to request a change
 
-All fields from the creation form are editable except the program type:
+1. Open the program and note what needs to change (for example, a new in-scope asset, an updated out-of-scope note, a new end date, or a reward change).
+2. Contact your CSM, or post the request in the program **Chat** with the **Client only** audience so only your team and SecurityBoat see it.
+3. SecurityBoat applies the change. It appears in the **Activity** tab, and scope or reward changes are usually announced to researchers in the **Updates** tab.
 
-| Section | Editable fields |
-|---------|----------------|
-| **Organisation & Basics** | Program name, Description |
-| **Scope & Policy** | In-scope assets, Rules of engagement, Safe-harbor policy |
-| **Schedule & Visibility** | Start date, End date, Visibility (Public/Private), Hall of Fame toggle |
-| **Management Model** | SB-Managed or Self-Managed |
-| **Reward Structure** | P1–P5 payout amounts, Reward currency |
+### What can be changed
 
-> **Program type** (VDP or Bug Bounty) is **locked** after creation and cannot be changed. If you need to switch from VDP to Bug Bounty or vice versa, you must create a new program.
+| Area | Examples |
+|------|----------|
+| **Basics** | Program name, description |
+| **Scope & policy** | In-scope assets, In scope / Out of scope notes, rules of engagement, safe-harbor display |
+| **Schedule & visibility** | Start date, end date, Public / Private, Hall of Fame |
+| **Rewards** *(Bug Bounty)* | P1–P5 amounts and currency |
+| **Lifecycle** | Activate, deactivate (pause), reactivate, or end the program |
+
+> **Program type** (VDP or Bug Bounty) cannot be changed. To switch type, request a new program.
 
 ---
 
-## Editing workflow
+## If your request was declined
 
-1. Open the Edit form from the program detail page.
-2. Modify any fields you need to change. All existing values are pre-filled.
-3. The form validates as you type — the save button becomes active when all required fields are filled.
-4. Click **Save changes** to apply your edits.
-5. You are returned to the program detail page, where you can review the updated configuration.
+A declined request cannot be edited. Read the reason under [My Program Requests](my-program-requests.md), adjust the details, and submit a new request.
+
+---
+
+## Things you can manage yourself
+
+| Task | Where |
+|------|-------|
+| Invite or remove researchers on a **Self-Managed Private** program (Client Admin) | [Team tab](detail/team.md) |
+| Triage findings on a **Self-Managed** program (Client Admin, Client TPM) | [Findings tab](detail/findings.md) |
+| Approve rewards on a **Self-Managed** Bug Bounty program (Client Admin) | [Payouts tab](detail/payouts.md) |
+| Map the program to Jira (Client Admin) | Integrations tab |
 
 ---
 
 ## Important notes
 
-- **Editing does not automatically activate the program** — the program remains Inactive until you activate it from the detail page.
-- **All changes are audited** — modifications appear in the [Activity tab](program-detail.md) log for full traceability.
-- **Visibility changes take effect immediately** — switching from Private to Public makes the program visible to all eligible researchers. Switching from Public to Private hides it from new researchers but does not remove existing collaborators.
-- **Scope changes** should be communicated to active researchers via the [Updates tab](program-detail.md) (posted by your CSM).
-
----
-
-## Troubleshooting
-
-| Symptom | Cause / Fix |
-|---------|-------------|
-| **The Edit button is missing** | The program is Active or Closed. Only Inactive programs can be edited by clients. Contact your CSM. |
-| **I changed the scope but researchers are still testing old targets** | Scope changes should be announced via a program update. Contact your CSM to post one. |
-| **I cannot change the program type** | Program type is locked after creation. Create a new program with the desired type. |
-| **My edits are not saving** | Check that all required fields are filled. The sticky footer validation counter shows how many fields are still incomplete. |
+- **Visibility changes take effect immediately.** Switching from Private to Public makes the program visible to all eligible researchers.
+- **Scope changes** should be announced to researchers through the **Updates** tab. Ask your CSM to post one.
+- **All changes are audited** in the [Activity tab](program-detail.md#activity-tab).
 
 ---
 

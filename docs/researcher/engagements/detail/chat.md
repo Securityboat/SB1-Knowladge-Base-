@@ -4,7 +4,7 @@ The **Chat** tab is a secure, real-time messaging workspace built into the engag
 
 ---
 
-![Chat Tab](../../../images/res_engagement_chat.png)
+![Chat Tab](../../../images/V2_Images/res_engagement_chat.png)
 
 ## Channels & Scope
 
@@ -14,7 +14,17 @@ The chat tab is structured as a multi-party group channel containing:
 | :--- | :--- |
 | **Testing Team** | Assigned Researchers and the Lead Researcher. |
 | **SecurityBoat Management** | The assigned Technical Project Manager (TPM) and Customer Success Manager (CSM). |
-| **Client Organization** | Client Administrators and Client TPMs. |
+| **Client Organization** | Client Administrators and Client TPMs (Client Viewers can read). |
+
+### Message audiences
+
+- Your messages are posted to **Everyone** — the testing team, SecurityBoat staff, and the client team.
+- SecurityBoat may post messages to the **Researchers** audience, which only the testing team and SecurityBoat can read.
+- The client and SecurityBoat also have audiences that researchers do not see, so you may not see every message in the thread.
+
+### Mentions
+
+Type **@** to mention a participant who can read the message. They receive a notification.
 
 ---
 

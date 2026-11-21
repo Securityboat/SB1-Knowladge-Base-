@@ -16,42 +16,33 @@ To edit an asset:
 
 ### 2. Editable Fields & Structure
 
-The edit form is structured similarly to the asset creation form, allowing you to update:
+The page is titled **Edit *asset name*** and is organised into numbered sections, the same way as the asset creation form:
 
-- **Basic Information**: Change the asset name (must remain unique) or adjust the criticality level.
-- **Description**: Expand on the rich-text context or paste updated diagrams.
-- **Asset Types**: Add or remove types (up to 3 total). Doing so will dynamically show or hide scope configuration modules.
-- **Scope Details**: Update URL lists, upload new OpenAPI specifications, replace Postman collections, or modify the network target IP/CIDR table.
+![Edit asset page — Section 1: Basic information with the asset name, Criticality selector, and Description editor; Section 2: Asset type picker; and the sticky footer with Cancel and Save changes.](../../images/V2_Images/client_assets_edit.png)
+
+| Section | What you can update |
+|---|---|
+| **1. Basic information** | The asset name (must remain unique), the criticality level, and the rich-text **Description** (what the asset is, who uses it, and any special context testers should know). |
+| **2. Asset type** | Add or remove types (pick up to 3). Deselecting a type removes its scope section. |
+| **3. Scope details** | The type-specific targets and optional file uploads: URL lists, Postman collections, OpenAPI / Swagger specs, APK / IPA files, diagrams, and the network target IP/CIDR table. |
+| **4. Credential sets** | Upload a credential file for bug bounty / VDP researchers. This section appears only if your role can manage this asset's credentials. |
 
 ---
 
-### 3. Key Differences from the Create Flow
+### 3. How Credentials Work on the Edit Page
 
-There are two major differences between the creation form and the edit form:
+Test credentials contain sensitive secrets that are encrypted at rest, so they are handled differently from the other fields:
 
-#### a. Credentials Management
-The **Credentials** section is **not present** on the Edit Asset page. Because credentials contain sensitive secrets that are encrypted at rest, they cannot be modified in a bulk form. Instead:
+- The **Credential sets** section (section 4) lets you upload a credential file. Uploads are **saved immediately** and are independent of the **Save changes** button.
+- Existing secrets are never shown back on the edit form. Viewing (revealing), adding, and deleting test accounts is managed under the **Credentials tab** on the **Asset Details** page.
 
-- All additions, views (reveals), and deletions of test accounts are managed directly under the **Credentials tab** on the **Asset Details** page.
-
-#### b. Rules of Engagement (Section 4)
-
-The Edit Asset form replaces the Credentials section with **Section 4: Rules of Engagement**. This section contains two critical rich-text fields that define how testers are allowed to interact with the asset:
-
-![Edit asset page — Section 4: Rules of Engagement, showing the 'In-scope details' editor (all production APIs in scope, keep scans to standard hours) and the 'Out-of-scope' editor (do not scan third-party auth providers or payment processor gateways).](../../images/client_assets_edit.png)
-
-| Field | Purpose | Industry Best Practice / Examples |
-|---|---|---|
-| **In-scope details** | Provides operational guidelines, constraints, and instructions for the testing team. | * "Please run aggressive scans only between 10:00 PM and 4:00 AM UTC."<br>* "Focus heavily on the user profile update API endpoints."<br>* "Rate limit scanning to a maximum of 5 requests per second to avoid triggering WAF blocks." |
-| **Out-of-scope** | Sets absolute boundaries, restricted areas, or actions that testers must not perform. | * "Do not perform testing on the payment gateway sandbox (`/api/v1/payments`)."<br>* "Do not attempt denial-of-service (DoS) testing."<br>* "Do not access or modify accounts other than those explicitly provided in the credentials tab." |
-
-> **Testers' Playbook:** SecurityBoat testers treat these rules as contractually binding. Clear rules of engagement prevent accidental downtime on fragile staging environments and ensure testing is focused exactly where you need it.
+> The Edit Asset page has no *Rules of engagement* fields. In-scope and out-of-scope notes are provided when you request a pentest engagement or a Bug Bounty / VDP program. See [Create Engagement](../engagements/create-engagement.md) and [Request a Program](../bug-bounty/create-bug-bounty.md).
 
 ---
 
 ### 4. Saving Changes
 
-Once updates are complete, click **Save changes** in the sticky footer. If any file uploads fail during the save process, you will receive a notification prompting you to retry uploading that specific file.
+Once updates are complete, click **Save changes** in the sticky footer, or **Cancel** to return to the Asset Details page without saving. If any file uploads fail during the save process, you will receive a notification prompting you to retry uploading that specific file.
 
 ---
 

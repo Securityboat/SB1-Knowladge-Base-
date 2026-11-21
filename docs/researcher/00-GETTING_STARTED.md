@@ -17,7 +17,7 @@ Welcome to the **Security Researcher** guide. As a researcher on Tri-Netra, you 
 
 ## 2. Key Workflows
 
-![Researcher dashboard — your home screen with engagements, findings, and KPIs.](../images/researcher_dashboard.png)
+![Researcher dashboard — your home screen with engagements, findings, and KPIs.](../images/V2_Images/researcher_dashboard.png)
 
 ---
 
@@ -44,7 +44,7 @@ For complete step-by-step instructions, see the chapters below:
 5. [Invites](05-invites.md) — Direct invitations and response workflows
 6. [Engagements](engagements/overview.md) — Brief, assets, coverage checklists, team chat, and reports
 7. [Findings](07-findings.md) — The 7-card finding submission form and CVSS v4.0 calculator
-8. [Payouts](09-payouts.md) — Earnings, hold period countdowns, and invoice downloads
+8. [Payouts](09-payouts.md) — Earnings, payout statuses, eligibility countdowns, and invoice downloads
 9. [Identity Verification](10-verification.md) — Passkey/ID document and liveness check flow
 10. [Bug Bounty](bug-bounty/overview.md) — Continuous testing programs and VDP participation
 11. [Hacktivity](17-hacktivity.md) — Public feed of disclosed vulnerability reports

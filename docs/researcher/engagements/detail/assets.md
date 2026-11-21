@@ -4,7 +4,7 @@ The **Assets** tab houses the detailed technical information for each target ite
 
 ---
 
-![Assets Tab](../../../images/res_engagement_assets.png)
+![Assets Tab](../../../images/V2_Images/res_engagement_assets.png)
 
 ## Assets Grid
 

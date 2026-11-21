@@ -52,7 +52,7 @@ Click **Trust Center** in the main sidebar menu. It has four tabs: **Trust
 Library**, **Access Requests**, **Audit Trail**, and **Analytics**. Four metric
 cards sit across the top, visible on every tab:
 
-![Trust Center — Trust Library tab showing document catalogue with compliance reports, pentest summaries, policies, and certifications.](../images/client_trust_center_library.png)
+![Trust Center — Trust Library tab showing document catalogue with compliance reports, pentest summaries, policies, and certifications.](../images/V2_Images/client_trust_center_library.png)
 
 | Metric | Description |
 |--------|-------------|

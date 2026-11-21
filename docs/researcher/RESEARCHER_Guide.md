@@ -24,12 +24,14 @@ your pay.
 | 10 | [Identity Verification](10-verification.md) | Complete verification to unlock paid work. |
 | 11 | [Bug Bounty](bug-bounty/overview.md) | Programs you participate in — submit and track reports. |
 | 12 | [Hacktivity](17-hacktivity.md) | Public feed of disclosed vulnerability reports. |
-| 13 | [Disclosure Requests](16-disclosure-requests.md) | Submit and track public disclosure requests. |
+| 11a | [My Credentials](bug-bounty/my-credentials.md) | Test credentials assigned to you and your credential requests. |
+| 13 | [Disclosure Requests](16-disclosure-requests.md) | Request publication of your resolved findings from a program's Findings tab. |
 | 14 | [Agentic Pentest](14-agentic-pentest.md) | Direct and validate AI-driven recon & exploit swarms. |
 | 15 | [AI Red Teaming](15-ai-red-teaming.md) | Assess LLM safety, prompt injection, and cross-tenant isolation. |
 | 16 | [AI Assistant (Ish)](12-ai-assistant.md) | Ask Ish about your engagements, scope, and findings. |
 | 17 | [Feedback](18-feedback.md) | Submit platform bug reports and feature requests. |
-| 18 | [Settings](13-settings.md) | Account, bank details, MFA, and notifications. |
+| 17a | [Team Feedback](19-team-feedback.md) | Rate teammates, the pentest process, and the scope on completed pentests. |
+| 18 | [Settings](13-settings.md) | Account, public profile, bank details, MFA, availability, and notifications. |
 
 > **Not available to Researchers:** Clients, Assets, ASM, Reports, Compliance,
 > Integrations, and Admin. **Pay is always your own scope** — never shared across

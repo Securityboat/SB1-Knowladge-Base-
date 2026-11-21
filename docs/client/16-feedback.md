@@ -11,7 +11,7 @@ The **Feedback** module is a direct line to the SecurityBoat engineering team. U
 - **Report a bug** — broken buttons, incorrect data, UI glitches, performance issues, integration failures, or anything that isn't working as expected.
 - **Request a feature** — missing functionality, workflow improvements, new module ideas, or enhancements that would make the platform more useful for your role.
 
-Submissions go to the SecurityBoatOne issue tracker, where the engineering team triages and prioritises them. You won't receive a personal reply to every submission, but every report is reviewed, and patterns across submissions influence the product roadmap.
+Submissions go to the Tri-Netra issue tracker, where the engineering team triages and prioritises them. You won't receive a personal reply to every submission, but every report is reviewed, and patterns across submissions influence the product roadmap.
 
 ---
 
@@ -30,7 +30,7 @@ Submissions go to the SecurityBoatOne issue tracker, where the engineering team 
 
 Click the **Feedback** button at the bottom of the left sidebar (below all module links, above **Settings**). It opens as a dialog overlay — you can dismiss it without losing any work on the page behind it.
 
-![Feedback dialog — submit bug reports and feature requests directly from the platform.](../images/client_feedback_dialog.png)
+![Feedback dialog — submit bug reports and feature requests directly from the platform.](../images/V2_Images/client_feedback_dialog.png)
 
 ---
 

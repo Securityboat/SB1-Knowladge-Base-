@@ -1,31 +1,29 @@
 # Chat
 
-The **Chat** tab provides a direct communication channel for the program.
+The **Chat** tab is a messaging channel between you, the client's team, and SecurityBoat.
+
+> **Private programs only.** Researchers see the Chat tab on **Private** programs they have joined. Public programs have no Chat tab for researchers — use the **Updates** tab for announcements.
 
 ---
 
-![Chat Tab](../../../images/res_bb_detail_chat.png)
+![Chat Tab](../../../images/V2_Images/res_bb_detail_chat.png)
 
-## Channel Structure
+## Sending messages
 
-Depending on the program's setup, the chat tab behaves in one of two ways:
-
-| Channel Type | Access Level | Purpose |
-| :--- | :--- | :--- |
-| **Read-Only Channel** | Public Programs | SecurityBoat triagers and client admins post alerts, scope announcements, or system downtime warnings. |
-| **Interactive Triage Chat** | Private Programs | Bidirectional conversation. Researchers can ask questions regarding scope, credentials, and speak with the TPM. |
+- Your messages are always posted to **Everyone** (everyone in this chat).
+- Type **@** to mention a participant. They get a notification.
+- The client and SecurityBoat can also post messages for their own audiences, which you do not see.
 
 ---
 
-## Chat Guidelines & Best Practices
+## Chat guidelines
 
-If interactive chat is enabled, please adhere to these guidelines:
-
-| Guideline | Rule / Policy |
+| Guideline | Rule |
 | :--- | :--- |
-| **Do Not Share Findings** | Do not paste vulnerability details, PoC code, or exploits in the general chat. Submissions must *only* be uploaded via the **Submit Finding** drawer. |
-| **Be Professional** | Maintain a polite and professional tone at all times. |
-| **No Spamming** | Keep questions concise and relevant to the scope of testing. |
+| **Do not share findings** | Never paste vulnerability details, PoC code, or exploits in chat. Submit them through **Submit finding**. |
+| **Use it for scope questions** | Ask before testing anything you are unsure about. |
+| **Be professional** | Keep a polite, professional tone. |
+| **Keep it relevant** | Short questions about the program's scope and testing. |
 
 ---
 

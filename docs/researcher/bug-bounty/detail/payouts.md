@@ -1,47 +1,24 @@
 # Payouts
 
-The **Payouts** tab tracks all financial earnings and rewards associated with the findings you have submitted to this specific program.
+Researchers do **not** have a **Payouts** tab on the program page. That tab is used by the client and SecurityBoat to approve rewards.
+
+Your rewards from every program appear in **My Payouts** in the sidebar (also under **Settings → Payouts**). See the [Payouts guide](../../09-payouts.md).
 
 ---
 
-![Payouts Tab](../../../images/res_bb_detail_payouts.png)
-
-## Payouts Table
-
-For each validated finding that qualifies for a reward, a payout entry is generated. The table displays:
-
-*   **Finding ID**: Links back to the original finding.
-*   **Title**: Brief description of the resolved vulnerability.
-*   **Severity**: Triage-confirmed severity level.
-*   **Amount**: The cash reward value (e.g., \$1,500.00).
-*   **Status**: Current settlement status.
-*   **Disbursement Date**: The date the funds were settled.
-
----
-
-## Payout Status Flow
-
-All payouts progress through a standard disbursement lifecycle as shown below:
+## How a Bug Bounty reward reaches you
 
 ```mermaid
-graph LR
-    Created[Created] --> Hold[Hold Period]
-    Hold --> Approved[Approved]
-    Approved --> Settled[Settled]
+flowchart LR
+    V([Verified]) --> A([Approved by SB Admin])
+    A --> PI([Payment Initiated]) --> TA([Transaction Approved]) --> PD([Payment Done])
 ```
 
-### Explanation of Lifecycle States
+- **Verified** — your finding is verified and the reward is waiting for approval. On a **Self-Managed** program, the client approves first and then SecurityBoat; on an **SB-Managed** program, SecurityBoat approves.
+- **Approved by SB Admin** — the reward is approved and your invoice can be downloaded.
+- **Payment Initiated** → **Transaction Approved** → **Payment Done** — the payment is being made and then completed.
 
-*   **Created**: The finding has been verified, and the reward is registered in the system.
-*   **Hold Period**: A temporary validation period (typically 7–14 days) to ensure client confirmation and check for duplicate disclosures.
-*   **Approved**: The payout has been verified and approved by the SecurityBoat billing department.
-*   **Settled**: The funds have been successfully transferred to your registered bank account or payout provider.
-
----
-
-## Managing Your Payout Details
-
-To configure your bank account or view the global payout history across all engagements and programs, click **My Payouts** in the main sidebar. For more detailed instructions on configuring your payment details, see the global [Payouts Guide](../../09-payouts.md).
+VDP programs award reputation points instead of money. They appear on the program's **Leaderboard**.
 
 ---
 

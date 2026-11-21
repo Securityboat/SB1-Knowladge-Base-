@@ -2,7 +2,7 @@
 
 The Integrations tab lets you connect this engagement to a **Jira project** so findings can be automatically pushed into your existing issue tracker.
 
-![Integrations tab — Jira connection status and project mapping.](../../../images/client_engagement_integrations.png)
+![Integrations tab — Jira connection status and project mapping.](../../../images/V2_Images/client_engagement_integrations.png)
 
 > **Who can view and configure:** **Client Admin** only. Client TPM and Client Viewer cannot see or manage this tab.
 
@@ -64,4 +64,4 @@ Only **Client Admin** can see and manage the Integrations tab. If you're a Clien
 
 ---
 
-← Previous: [Chat](chat.md) | Next: [Reports →](reports.md)
+← Previous: [Chat](chat.md) | Next: [My Requests →](../../07-my-requests.md)

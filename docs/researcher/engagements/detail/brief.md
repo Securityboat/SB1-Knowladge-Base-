@@ -4,7 +4,7 @@ The **Brief** tab is the default landing view when you open a pentest engagement
 
 ---
 
-![Brief Tab](../../../images/res_engagement_brief.png)
+![Brief Tab](../../../images/V2_Images/res_engagement_brief.png)
 
 ## Page Layout Diagram
 

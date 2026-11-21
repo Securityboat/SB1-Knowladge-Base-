@@ -2,73 +2,76 @@
 
 ### 1. Where you get paid
 
-**Payouts** is your personal earnings dashboard. It aggregates compensation from **both** revenue streams:
+**Payouts** is your personal earnings page. It combines both sources of income:
 
-- **Bug Bounty**: Bounty payouts per verified finding.
-- **Pentest Engagements**: Fixed researcher payouts per completed engagement.
+- **Bug Bounty** — a reward per verified finding on a paid program.
+- **Pentest engagements** — your researcher payout per engagement.
 
-It tracks each payment from pending through approval and payment, and provides downloadable invoices.
+It tracks each payout from verification to payment and lets you download invoices. Statuses are view-only for researchers.
 
 ### Navigation
 
-Click **My Payouts** in the sidebar (or navigate via **Settings → Payouts**).
+Click **My Payouts** in the sidebar (or **Settings → Payouts**).
 
 ---
 
 ### 2. Earnings summary
 
-![Payouts — Total Earned / Pending / Total Payouts summary tiles above a list of payout cards. (1 of 2)](../images/res_payouts_01.png)
+![Payouts — Total Earned / Pending / Total Payouts tiles above the payouts table.](../images/V2_Images/res_payouts.png)
 
-![Payouts — Total Earned / Pending / Total Payouts summary tiles above a list of payout cards. (2 of 2)](../images/res_payouts_02.png)
+| Tile | Meaning |
+|------|---------|
+| **Total Earned** | Sum of payouts that have been paid. |
+| **Pending** | Sum of payouts not yet paid (excluding rejected ones). |
+| **Total Payouts** | Number of payout records. |
 
-Three metric tiles appear at the top:
-
-| Tile | Calculation / Meaning |
-|------|-----------------------|
-| **Total Earned** | Sum of all payouts in Paid status (formatted in your currency e.g. INR / USD). |
-| **Pending** | Sum of payouts in Pending, Pending Approval, Approved, or Processing state (excluding rejected payouts). |
-| **Total Payouts** | Total count of recorded payout items. |
+Use the tabs **All**, **Bug Bounty**, and **PTaaS** (each with a count) to filter the table.
 
 ---
 
-### 3. The payout list & status indicators
+### 3. The payouts table
 
-Each payout card displays:
-
-| Element | Detail / Meaning |
-|---------|------------------|
-| **Source Badge** | **Bug Bounty** (orange badge; linked to finding title) or **Pentest** (blue badge; linked to engagement title). |
-| **Title & Subtitle** | Finding title / finding ID or engagement project ID (`SB-PTEST-ACM-05`). |
-| **Amount & Currency** | Formatted compensation value (e.g., `₹45,000` or `$1,500`). |
-| **Status Badge** | `Waiting for approval` (Amber), `Approved — payment pending` (Cyan), or `Paid` (Mint green). |
-| **Days Left & Eligible Date** | Countdown indicator (e.g. *"14 days left"*) and target date when the hold period expires. |
-| **Invoice Download** | Clickable invoice button (e.g. `INV-2026-0042`) when generated. |
-
-**Invoice Download Rules:**
-
-| Source | Invoice Availability |
-|--------|----------------------|
-| **Pentest Engagements** | Available when status reaches **Paid** AND invoice number exists. |
-| **Bug Bounty** | Available when status is **Approved or Paid** AND invoice number exists. |
+| Column | Meaning |
+|--------|---------|
+| **Source** | **BB** (Bug Bounty) or **PT** (pentest). |
+| **Description** | The finding title and ID (with severity and program), or the engagement title and Project ID. Click it for the payout detail page. |
+| **Amount** | The payout amount and currency. |
+| **Days Left** | For pentest payouts, the days until the payout becomes eligible, with the eligible date; **Eligible** once reached; "—" after payment. |
+| **Status** | The current status (see below), with the approval date once approved. |
+| **Invoice** | The invoice number with a download link once the payout is approved; **After approval** before that. |
 
 ---
 
-### 4. The payout lifecycle
+### 4. Payout statuses
 
+```mermaid
+flowchart LR
+    P([Verified / Pending approval]) --> A([Approved by SB Admin])
+    A --> PI([Payment Initiated])
+    PI --> TA([Transaction Approved])
+    TA --> PD([Payment Done])
+    PD --> T([TDS])
 ```
-Finding verified / engagement complete  →  payout record created (Pending)
-   →  Hold period countdown  →  Approved  →  Paid  →  Invoice downloadable
-```
 
-> **Unlocking Payouts:** Payments require complete **bank details** (securely encrypted) in **Settings → Account** and a completed **Identity Verification** check.
+| Status | Meaning |
+|--------|---------|
+| **Verified** *(Bug Bounty)* | Your finding is verified and the reward is waiting for approval. On Self-Managed programs the client approves first, then SecurityBoat. |
+| **Pending approval** *(Pentest)* | The payout is waiting for SecurityBoat's approval. Pentest payouts become eligible **30 days after the engagement went live**. |
+| **Approved by SB Admin** | Approved. Your invoice can be downloaded. |
+| **Payment Initiated** | SecurityBoat has started the payment. |
+| **Transaction Approved** | The bank transaction is approved. |
+| **Payment Done** | You have been paid. |
+| **TDS** | Tax deducted at source (10%) has been recorded. The row shows *"TDS will be credited"* — the TDS amount is credited to you on the date SecurityBoat communicates. |
+| **Rejected** | The payout was rejected. Check the payout detail page or contact SecurityBoat. |
 
+> **Before you can be paid:** complete your **bank details** in **Settings → Account** and finish **Identity Verification**.
 
 ---
 
 ### Best practices
 
-- **Complete Identity Verification early** — payouts cannot be released until your profile is verified.
-- **Save invoices for tax records** — download PDF invoices directly from payout rows as soon as they become available.
+- **Complete Identity Verification and bank details early.**
+- **Download invoices** for your tax records as soon as they are available.
 
 ---
 
@@ -76,11 +79,11 @@ Finding verified / engagement complete  →  payout record created (Pending)
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **"No payouts yet"** | No accepted bug bounty findings or completed pentest engagements recorded yet. |
-| **Invoice link missing** | Payout is still pending approval or hold period has not completed (see invoice download rules above). |
-| **Payment delay** | Verify bank details in Settings and check if your profile is in **Verified** status. |
+| **"No payouts yet"** | You have no verified paid findings or completed pentest payouts yet. |
+| **Invoice shows "After approval"** | The payout is not approved yet. |
+| **Pentest payout shows days left** | Pentest payouts become eligible 30 days after the engagement went live. |
+| **Payment delayed** | Check your bank details and that your identity is **Verified**. |
 
 ---
 
 ← Previous: [Findings](07-findings.md) | Next: [Identity Verification →](10-verification.md)
-

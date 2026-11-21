@@ -33,7 +33,7 @@ You work from a predefined set of adversarial test cases, execute multi-turn ses
 
 Click **AI Red Teaming** under **OPERATIONS** in the main sidebar menu.
 
-![AI Red Teaming — researcher view showing dashboard metrics and engagements.](../images/res_ai_red_teaming.png)
+![AI Red Teaming — researcher view showing dashboard metrics and engagements.](../images/V2_Images/res_ai_red_teaming.png)
 
 ---
 

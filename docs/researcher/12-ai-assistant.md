@@ -33,7 +33,7 @@ graph TD
 * **Sidebar Navigation:** Click **AI Assistant** in the main sidebar to open the dedicated conversational interface for multi-turn queries and history.
 * **Contextual Widget:** Click the floating **Ask Ish** widget on any engagement or finding screen to ask questions relevant to your active view.
 
-![Researcher AI Assistant — data-aware chat scoped to the researcher's work.](../images/res_ai_chat.png)
+![Researcher AI Assistant — data-aware chat scoped to the researcher's work.](../images/V2_Images/res_ai_chat.png)
 
 ### Security & Privacy Boundaries
 * **Strict Personal Scoping:** Ish strictly isolates researcher data. You can only query findings you authored, engagements you are seated on, and your own payouts. You can never see other researchers' earnings or private submissions.

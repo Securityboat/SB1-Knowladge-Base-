@@ -1,10 +1,10 @@
 ## Findings
 
-The Findings tab lists every verified finding raised on this engagement — the same data you'd see in the platform-wide **Findings** module, pre-filtered to this specific engagement.
+The Findings tab lists every verified finding raised on this engagement — the same data you'd see in the platform-wide **Findings** module, pre-filtered to this engagement.
 
-![Findings tab — filterable table of all engagement findings with severity, state, and export options.](../../../images/client_engagement_findings.png)
+![Findings tab — filterable table of engagement findings with severity, state, and export options.](../../../images/V2_Images/client_engagement_findings.png)
 
-> **Who can view:** all client roles. Findings are read-only for clients; only the testing team can create or update them.
+> **Who can view:** all client roles. Clients cannot create or edit findings; Client Admin and Client TPM move findings through remediation from the finding's detail page.
 
 ---
 
@@ -12,63 +12,58 @@ The Findings tab lists every verified finding raised on this engagement — the 
 
 | Column | Description |
 |--------|-------------|
-| **ID** | The finding's unique reference code (e.g., `PT-ACME-04`). Quote this when discussing a specific finding with your team. |
-| **Title** | A short description of the vulnerability. Click to open the full finding detail (evidence, CVSS score, remediation guidance). |
-| **Asset** | The asset the finding was discovered on. May show "—" if the finding isn't asset-scoped. |
-| **Severity** | The impact rating: Critical, High, Medium, Low, or Informational. Color-coded for quick scanning. |
-| **State** | Where the finding sits in its lifecycle: new, triaged, verified, fix in progress, resolved, etc. |
+| **ID** | The finding's reference code. Quote it when discussing a finding. |
+| **Title** | A short description. Click to open the full finding. |
+| **Asset** | The asset the finding was discovered on, or "—". |
+| **Severity** | Critical, High, Medium, Low, or Informational. |
+| **State** | Verified, Fix in progress, Ready for retest, Accepted risk, or Resolved. |
 | **Created** | When the finding was submitted. |
 
 ---
 
-### 2. Asset filter
+### 2. Filters
 
-A dropdown at the top of the table lets you filter findings by asset type:
-
-- **All assets** (default) — shows findings across all assets in the engagement.
-- **Specific asset types** (e.g., "Web Application") — narrows to findings discovered on that asset type only.
-
-This is useful for multi-asset engagements where you want to see what was found on each system separately.
+| Filter | Use |
+|--------|-----|
+| **Severity** | Show only Critical, High, etc. |
+| **State** | Show only findings in one state — for example everything awaiting retest. |
+| **Asset type** | Narrow multi-asset engagements to one asset type. |
 
 ---
 
 ### 3. Export CSV
 
-Click **Export CSV** to download the currently visible findings (respecting any active asset filter) as a spreadsheet. This is useful for:
-
-- Sharing findings with internal teams who don't have platform access.
-- Importing into your own issue tracker or GRC tool.
-- Preparing for remediation planning meetings.
+Click **Export CSV** to open the **Export findings to CSV** dialog. Choose which states to include and tick the columns you want. The default columns are Finding ID, Title, Severity, State, Vulnerability type, CVSS score, CWE ID, CVE ID, Endpoint URL, Description, Impact, Remediation, Submitter, and Created at. See [Exporting findings to CSV](../../05-findings.md#4-exporting-findings-to-csv) for the full list of fields.
 
 ---
 
-### 4. Finding detail
+### 4. Finding detail and remediation
 
-Click any finding row to open its full detail view, which includes:
+Click any finding row to open its detail page: description, evidence, CVSS score, remediation guidance, comments, and the state timeline.
 
-- **Description** — technical details of the vulnerability.
-- **Evidence** — screenshots, request/response logs, proof-of-concept steps.
-- **CVSS score** — the Common Vulnerability Scoring System rating with vector breakdown.
-- **Remediation guidance** — step-by-step instructions for fixing the issue.
-- **State history** — every lifecycle transition the finding has gone through.
+```mermaid
+flowchart LR
+    V([Verified]) --> F([Fix in progress]) --> R([Ready for retest]) --> D([Resolved])
+    R -->|retest failed| F
+```
 
-For the full finding lifecycle — severity levels, states, retest flow — see the [Findings guide](../../05-findings.md).
+From the **State actions** panel, Client Admin or Client TPM can **Acknowledge and start fixing** and then **Submit fix for retest**. The testing team confirms the fix. A Client Admin can also **Accept risk formally**. See the [Findings guide](../../05-findings.md) for the full lifecycle.
 
 ---
 
 ### Best practices
 
-- **Filter by severity** — scan Critical and High findings first. These are your priority remediation items.
-- **Export before meetings** — a CSV export gives you a portable summary for stakeholders who don't log into the platform.
-- **Click into findings** — the table gives you counts and severities, but the detail view gives you actionable remediation steps.
+- **Filter by severity** — handle Critical and High first.
+- **Filter by state = Ready for retest** to see what is waiting on the testers.
+- **Export before meetings** with only the columns your audience needs.
 
 ### Troubleshooting
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **Findings tab shows 0 results** | Testing may not have started yet, or no findings have been verified. Check the [Coverage](coverage.md) tab to see if testing is in progress. |
-| **Expected finding isn't visible** | Findings are only visible after they've been verified by the testing team. Draft or in-review findings won't appear here. |
-| **CSV export doesn't include a finding** | The export respects the active asset filter. Switch to "All assets" if a finding is missing. |
+| **Findings tab shows 0 results** | Testing may not have started, or nothing has been verified yet. Check the [Coverage](coverage.md) tab. |
+| **Expected finding isn't visible** | Pentest findings appear only after the testing team verifies them. |
+| **CSV export doesn't include a finding** | Check the state selection in the export dialog and your active filters. |
 
 ---
 

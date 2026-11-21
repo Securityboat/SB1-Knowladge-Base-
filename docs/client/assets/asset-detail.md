@@ -8,7 +8,7 @@ The Asset Details page provides a centralized, read-only view of a single asset'
 
 For users with **Client Admin** or **Client TPM** privileges, the header displays several management tools:
 
-![Asset detail page header — showing the Back, Archive, Clone and Edit action buttons for an asset named 'acme-customer-portal-prod'.](../../images/client_assets_detail.png)
+![Asset detail page header — showing the Back, Archive, Clone and Edit action buttons for an asset named 'acme-customer-portal-prod'.](../../images/V2_Images/client_assets_detail.png)
 
 | Action | Control Behaviour | Typical Use Case |
 |---|---|---|
@@ -34,7 +34,7 @@ The body of the details page is split into five tabs:
 
 #### a. Overview Tab
 
-![Asset detail page — Overview tab showing description, type badges (Web Application, API/Web Services), criticality (High), state (Active), owner, and timestamps.](../../images/client_assets_detail.png)
+![Asset detail page — Overview tab showing description, type badges (Web Application, API/Web Services), criticality (High), state (Active), owner, and timestamps.](../../images/V2_Images/client_assets_detail.png)
 
 Provides a high-level summary of the asset's metadata and description.
 
@@ -49,7 +49,7 @@ Provides a high-level summary of the asset's metadata and description.
 
 #### b. Scope Tab
 
-![Scope tab showing Web Application URLs (https://portal.acmefs.example.com) and API/Web Services base URL (https://api.acmefs.example.com/v2).](../../images/client_assets_detail_scope.png)
+![Scope tab showing the scope details per type — API / Web Services base URLs (https://api.aecmcorp.example/v1 and https://api-staging.aecmcorp.example/v1).](../../images/V2_Images/client_assets_detail_scope.png)
 
 Displays the type-specific targets set in the scope contract:
 
@@ -59,7 +59,7 @@ Displays the type-specific targets set in the scope contract:
 
 #### c. Credentials Tab
 
-![Credentials tab showing the 'Standard User' credential entry with a Reveal button, an Add credential button, and the audit note 'Encrypted at rest. Every reveal is audited (7-yr retention).'](../../images/client_assets_detail_credentials.png)
+![Credentials tab showing the 'Standard User' credential entry with a Reveal button, an Add credential button, and the audit note 'Encrypted at rest. Every reveal is audited (7-yr retention).'](../../images/V2_Images/client_assets_detail_credentials.png)
 
 Manages test credentials for the asset. Client Viewers can see that credentials exist but cannot view secrets.
 
@@ -81,7 +81,7 @@ Hosts files uploaded via the **Scope Details** section (architecture diagrams, P
 
 #### e. Usage Tab
 
-![Usage tab showing the total engagement count and a table of linked pentest engagements with project ID, state, and creation date.](../../images/client_assets_detail_usage.png)
+![Usage tab showing the total engagement count and a table of linked pentest engagements with project ID, state, and creation date.](../../images/V2_Images/client_assets_detail_usage.png)
 
 Provides a rollup of the asset's security testing history within your organization:
 

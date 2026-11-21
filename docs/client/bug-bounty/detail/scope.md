@@ -1,51 +1,83 @@
 # Program Scope
 
-> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who can edit:** Client Admin only (via Edit Program when Inactive).
+> **Who can view:** Client Admin, Client TPM, Client Viewer. **Who can change it:** SecurityBoat (see [Changing a Program](../edit-bug-bounty.md)).
 
-The **Scope** tab defines exactly what researchers are authorised to test under this program. It is the contract between your organisation and the researcher community — researchers must stay within this boundary.
+The **Scope** tab defines exactly what researchers are authorised to test under this program. Researchers must stay within this boundary.
 
 ---
 
 ## What you will see
 
-![Program Scope tab showing in-scope assets grouped by type (Web Application, API/Web Services, etc.) with target details, and the program details section below showing organisation, description, rules of engagement, and safe harbor policy.](../../../images/client_bb_detail_scope.png)
-
+![Program Scope tab showing in-scope assets as expandable cards.](../../../images/V2_Images/client_bb_detail_scope.png)
 
 ### In-scope assets
-![Program Scope tab showing in-scope assets grouped by type (Web Application, API/Web Services, etc.) with target details, and the program details section below showing organisation, description, rules of engagement, and safe harbor policy.](../../../images/client_bb_detail_scope_2.png)
 
-The Scope tab displays all assets that were linked to this program during creation. If no assets have been assigned, the tab shows: *"No assets in scope."*
+Every asset linked to the program is shown as an expandable card. The card header shows the asset name, an **Active** or **Inactive** badge, the asset types (e.g. WEB APPLICATION, API WEB SERVICES), and the asset's criticality. Click a card to expand it.
 
-Assets are grouped by **type** (Web Application, API / Web Services, Mobile Application, etc.). Under each type you will see the specific targets — URLs, IP ranges, API endpoints, or other relevant identifiers — that were set when the asset was registered in the **Assets** module.
+The expanded card shows the asset details researchers work from:
 
-> This is the definitive in-scope list. Testing anything outside these assets is out of scope and may result in a finding being discarded. Only assets registered in the **Assets** module can be added to a program — you cannot type in arbitrary URLs here.
+| Section | What it contains |
+|---------|------------------|
+| **Overview** | Description, types, criticality, and state of the asset |
+| **Scope** | The targets registered on the asset — URLs, IP ranges, API endpoints, app identifiers, or other details for its type |
+| **Attachments** | Files attached to the asset (read-only here) |
 
-### Program details
+If no assets are linked, the tab reads *"No assets in scope."*
 
-Below the asset list, a details section shows:
+> Only assets registered in the **Assets** module can be in scope. Testing anything outside these assets is out of scope.
+
+![Program Scope tab — scope definition and program overview.](../../../images/V2_Images/client_bb_detail_scope_2.png)
+
+### Scope definition
+
+| Field | What it means |
+|-------|---------------|
+| **In scope** | What researchers may test on the in-scope assets — endpoints, environments, and vulnerability classes that qualify |
+| **Out of scope** | What is explicitly excluded. Reports about these items do not qualify for a reward |
+
+### Program overview
 
 | Field | Description |
 |-------|-------------|
 | **Organisation** | Your organisation name |
-| **Description** | The program description explaining what the program covers |
-| **Rules of engagement** | Testing boundaries — permitted hours, rate limits, prohibited techniques, banned tools |
-| **Safe harbor** | Legal protection statement for researchers acting in good faith |
+| **In-scope assets** | Number of linked assets |
+| **Program type** | VDP or Bug Bounty |
+| **Description** | What the program covers |
+| **Rules of engagement** | Testing windows, rate limits, prohibited techniques |
+| **Safe harbor policy** | The platform's safe-harbor statement, when the program shows one. These programs also carry a **Safe Harbor** badge in the header |
+
+---
+
+## Test credentials and credential requests
+
+Some assets offer **test accounts** for researchers. Researchers request them from the Scope tab, and each request is reviewed before credentials are shared.
+
+The program's **Credential requests** tab lists those requests (with views for pending requests, assignees, reported issues, requests waiting for credentials, and all requests).
+
+| Program type | What client roles can do |
+|--------------|--------------------------|
+| **Self-Managed** | Client Admin and Client TPM can approve or reject requests and manage assignments. Client Viewer can view only. |
+| **SB-Managed** | All client roles can view. SecurityBoat handles the requests. |
+
+Researchers never see credentials until a request is approved and a credential set is assigned. Revealed credentials hide automatically after a short time.
+
+```mermaid
+flowchart LR
+    A[Researcher requests credentials] --> B([Pending review])
+    B -->|approved| C([Approved, waiting for credentials])
+    B -->|rejected| X([Rejected])
+    C -->|set assigned| D([Credentials assigned])
+    D --> E[Researcher reveals and tests]
+    E -->|finished| F[Researcher releases access]
+```
 
 ---
 
 ## Why scope matters
 
-- **Minimises noise:** A well-defined scope tells researchers exactly where to focus, reducing out-of-scope submissions.
-- **Legal protection:** The safe-harbor policy and rules of engagement provide legal clarity for both parties.
-- **Asset alignment:** Only assets you have formally registered and approved can become test targets — preventing accidental exposure of unregistered systems.
-
----
-
-## Updating the scope
-
-Scope can only be changed by editing the program. See the [Edit Program](../edit-bug-bounty.md) guide for instructions.
-
-> Editing is only available when a program is **Inactive**. If your program is Active and you need to change the scope, contact your CSM to discuss options.
+- **Less noise:** clear scope tells researchers where to focus.
+- **Legal clarity:** the safe-harbor policy and rules of engagement protect both parties.
+- **Asset alignment:** only registered assets can become test targets.
 
 ---
 
@@ -53,9 +85,10 @@ Scope can only be changed by editing the program. See the [Edit Program](../edit
 
 | Symptom | Cause / Fix |
 |---------|-------------|
-| **Asset list is empty** | No assets were added during program creation. Edit the program (when Inactive) or contact your CSM to add assets. |
-| **An asset I need is not in the dropdown** | Only assets registered in the **Assets** module appear. Add the asset there first, then edit the program scope. |
-| **A researcher tested something out of scope** | Findings on out-of-scope targets are typically discarded during triage. Use the **Rules of engagement** to clearly list what is out of bounds. |
+| **Asset list is empty** | No assets are linked. Ask your CSM to add assets to the program. |
+| **An asset shows Inactive** | The asset was marked inactive in the Assets module. Reactivate it there, or ask your CSM to remove it from scope. |
+| **A researcher tested something out of scope** | Out-of-scope reports are closed during triage. Make sure the **Out of scope** notes list what is excluded. |
+| **No approve/reject buttons on Credential requests** | The program is SB-Managed, or you are Client Viewer. |
 
 ---
 
