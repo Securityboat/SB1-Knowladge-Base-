@@ -12,6 +12,8 @@ To open it, click **Researchers** in the sidebar.
 
 ## The researcher directory
 
+![Researchers directory — search by name, headline, or skill, the researcher count, and the table of public researchers with country, skills, points, findings, and member-since date.](../images/V2_Images/client_researchers_list.png)
+
 | Element | What it does |
 |---------|--------------|
 | **Search** | *Search by name, headline, or skill…* — for example, type "API" or "Active Directory" to find researchers with that skill. |
