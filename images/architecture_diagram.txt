@@ -1,0 +1,6 @@
+This is a mock architecture and network diagram document for Acme Financial Services.
+Scope details:
+- Web App: https://portal.acmefs.example.com
+- API Base: https://api.acmefs.example.com/v2
+- Criticality: High
+- Internal Staging IP: 10.12.33.4/24
